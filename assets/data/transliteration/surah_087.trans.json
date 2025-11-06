@@ -1,0 +1,87 @@
+{
+  "number": 87,
+  "name": "Al-A'la",
+  "ayat_count": 19,
+  "ayat": [
+    {
+      "number": 1,
+      "transliteration": "sabbiḥisma rabbikal-a'lā"
+    },
+    {
+      "number": 2,
+      "transliteration": "allażī khalaqa fa sawwā"
+    },
+    {
+      "number": 3,
+      "transliteration": "wallażī qaddara fa hadā"
+    },
+    {
+      "number": 4,
+      "transliteration": "wallażī akhrajal-mar'ā"
+    },
+    {
+      "number": 5,
+      "transliteration": "fa ja'alahụ guṡā`an aḥwā"
+    },
+    {
+      "number": 6,
+      "transliteration": "sanuqri`uka fa lā tansā"
+    },
+    {
+      "number": 7,
+      "transliteration": "illā mā syā`allāh, innahụ ya'lamul-jahra wa mā yakhfā"
+    },
+    {
+      "number": 8,
+      "transliteration": "wa nuyassiruka lil-yusrā"
+    },
+    {
+      "number": 9,
+      "transliteration": "fa żakkir in nafa'atiż-żikrā"
+    },
+    {
+      "number": 10,
+      "transliteration": "sayażżakkaru may yakhsyā"
+    },
+    {
+      "number": 11,
+      "transliteration": "wa yatajannabuhal-asyqā"
+    },
+    {
+      "number": 12,
+      "transliteration": "allażī yaṣlan-nāral-kubrā"
+    },
+    {
+      "number": 13,
+      "transliteration": "ṡumma lā yamụtu fīhā wa lā yaḥyā"
+    },
+    {
+      "number": 14,
+      "transliteration": "qad aflaḥa man tazakkā"
+    },
+    {
+      "number": 15,
+      "transliteration": "wa żakarasma rabbihī fa ṣallā"
+    },
+    {
+      "number": 16,
+      "transliteration": "bal tu`ṡirụnal-ḥayātad-dun-yā"
+    },
+    {
+      "number": 17,
+      "transliteration": "wal-ākhiratu khairuw wa abqā"
+    },
+    {
+      "number": 18,
+      "transliteration": "inna hāżā lafiṣ-ṣuḥufil-ụlā"
+    },
+    {
+      "number": 19,
+      "transliteration": "ṣuḥufi ibrāhīma wa mụsā"
+    }
+  ],
+  "source": {
+    "dataset": "quran-indonesia-sql",
+    "version": "1.0"
+  }
+}

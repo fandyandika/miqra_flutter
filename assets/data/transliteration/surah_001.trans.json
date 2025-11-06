@@ -1,0 +1,39 @@
+{
+  "number": 1,
+  "name": "Al-Fatihah",
+  "ayat_count": 7,
+  "ayat": [
+    {
+      "number": 1,
+      "transliteration": "bismillāhir-raḥmānir-raḥīm"
+    },
+    {
+      "number": 2,
+      "transliteration": "al-ḥamdu lillāhi rabbil-'ālamīn"
+    },
+    {
+      "number": 3,
+      "transliteration": "ar-raḥmānir-raḥīm"
+    },
+    {
+      "number": 4,
+      "transliteration": "māliki yaumid-dīn"
+    },
+    {
+      "number": 5,
+      "transliteration": "iyyāka na'budu wa iyyāka nasta'īn"
+    },
+    {
+      "number": 6,
+      "transliteration": "ihdinaṣ-ṣirāṭal-mustaqīm"
+    },
+    {
+      "number": 7,
+      "transliteration": "ṣirāṭallażīna an'amta 'alaihim gairil-magḍụbi 'alaihim wa laḍ-ḍāllīn"
+    }
+  ],
+  "source": {
+    "dataset": "quran-indonesia-sql",
+    "version": "1.0"
+  }
+}

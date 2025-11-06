@@ -1,0 +1,35 @@
+{
+  "number": 114,
+  "name": "An-Nas",
+  "ayat_count": 6,
+  "ayat": [
+    {
+      "number": 1,
+      "transliteration": "qul a'ụżu birabbin-nās"
+    },
+    {
+      "number": 2,
+      "transliteration": "malikin-nās"
+    },
+    {
+      "number": 3,
+      "transliteration": "ilāhin-nās"
+    },
+    {
+      "number": 4,
+      "transliteration": "min syarril-waswāsil-khannās"
+    },
+    {
+      "number": 5,
+      "transliteration": "allażī yuwaswisu fī ṣudụrin-nās"
+    },
+    {
+      "number": 6,
+      "transliteration": "minal-jinnati wan-nās"
+    }
+  ],
+  "source": {
+    "dataset": "quran-indonesia-sql",
+    "version": "1.0"
+  }
+}

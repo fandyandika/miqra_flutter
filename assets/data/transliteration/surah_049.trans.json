@@ -1,0 +1,83 @@
+{
+  "number": 49,
+  "name": "Al-Hujurat",
+  "ayat_count": 18,
+  "ayat": [
+    {
+      "number": 1,
+      "transliteration": "yā ayyuhallażīna āmanụ lā tuqaddimụ baina yadayillāhi wa rasụlihī wattaqullāh, innallāha samī'un 'alīm"
+    },
+    {
+      "number": 2,
+      "transliteration": "yā ayyuhallażīna āmanụ lā tarfa'ū aṣwātakum fauqa ṣautin-nabiyyi wa lā taj-harụ lahụ bil-qauli kajahri ba'ḍikum liba'ḍin an taḥbaṭa a'mālukum wa antum lā tasy'urụn"
+    },
+    {
+      "number": 3,
+      "transliteration": "innallażīna yaguḍḍụna aṣwātahum 'inda rasụlillāhi ulā`ikallażīnamtaḥanallāhu qulụbahum lit-taqwā, lahum magfiratuw wa ajrun 'aẓīm"
+    },
+    {
+      "number": 4,
+      "transliteration": "innallażīna yunādụnaka miw warā`il-ḥujurāti akṡaruhum lā ya'qilụn"
+    },
+    {
+      "number": 5,
+      "transliteration": "walau annahum ṣabarụ ḥattā takhruja ilaihim lakāna khairal lahum, wallāhu gafụrur raḥīm"
+    },
+    {
+      "number": 6,
+      "transliteration": "yā ayyuhallażīna āmanū in jā`akum fāsiqum binaba`in fa tabayyanū an tuṣībụ qaumam bijahālatin fa tuṣbiḥụ 'alā mā fa'altum nādimīn"
+    },
+    {
+      "number": 7,
+      "transliteration": "wa'lamū anna fīkum rasụlallāh, lau yuṭī'ukum fī kaṡīrim minal-amri la'anittum wa lākinnallāha ḥabbaba ilaikumul-īmāna wa zayyanahụ fī qulụbikum wa karraha ilaikumul-kufra wal-fusụqa wal-'iṣyān, ulā`ika humur-rāsyidụn"
+    },
+    {
+      "number": 8,
+      "transliteration": "faḍlam minallāhi wa ni'mah, wallāhu 'alīmun ḥakīm"
+    },
+    {
+      "number": 9,
+      "transliteration": "wa in ṭā`ifatāni minal-mu`minīnaqtatalụ fa aṣliḥụ bainahumā, fa im bagat iḥdāhumā 'alal-ukhrā fa qātilullatī tabgī ḥattā tafī`a ilā amrillāh, fa in fā`at fa aṣliḥụ bainahumā bil-'adli wa aqsiṭụ, innallāha yuḥibbul-muqsiṭīn"
+    },
+    {
+      "number": 10,
+      "transliteration": "innamal-mu`minụna ikhwatun fa aṣliḥụ baina akhawaikum wattaqullāha la'allakum tur-ḥamụn"
+    },
+    {
+      "number": 11,
+      "transliteration": "yā ayyuhallażīna āmanụ lā yaskhar qaumum ming qaumin 'asā ay yakụnụ khairam min-hum wa lā nisā`um min nisā`in 'asā ay yakunna khairam min-hunn, wa lā talmizū anfusakum wa lā tanābazụ bil-alqāb, bi`sa lismul-fusụqu ba'dal-īmān, wa mal lam yatub fa ulā`ika humuẓ-ẓālimụn"
+    },
+    {
+      "number": 12,
+      "transliteration": "yā ayyuhallażīna āmanujtanibụ kaṡīram minaẓ-ẓanni inna ba'ḍaẓ-ẓanni iṡmuw wa lā tajassasụ wa lā yagtab ba'ḍukum ba'ḍā, a yuḥibbu aḥadukum ay ya`kula laḥma akhīhi maitan fa karihtumụh, wattaqullāh, innallāha tawwābur raḥīm"
+    },
+    {
+      "number": 13,
+      "transliteration": "yā ayyuhan-nāsu innā khalaqnākum min żakariw wa unṡā wa ja'alnākum syu'ụbaw wa qabā`ila lita'ārafụ, inna akramakum 'indallāhi atqākum, innallāha 'alīmun khabīr"
+    },
+    {
+      "number": 14,
+      "transliteration": "qālatil-a'rābu āmannā, qul lam tu`minụ wa lāking qụlū aslamnā wa lammā yadkhulil-īmānu fī qulụbikum, wa in tuṭī'ullāha wa rasụlahụ lā yalitkum min a'mālikum syai`ā, innallāha gafụrur raḥīm"
+    },
+    {
+      "number": 15,
+      "transliteration": "innamal-mu`minụnallażīna āmanụ billāhi wa rasụlihī ṡumma lam yartābụ wa jāhadụ bi`amwālihim wa anfusihim fī sabīlillāh, ulā`ika humuṣ-ṣādiqụn"
+    },
+    {
+      "number": 16,
+      "transliteration": "qul a tu'allimụnallāha bidīnikum, wallāhu ya'lamu mā fis-samāwāti wa mā fil-arḍ, wallāhu bikulli syai`in 'alīm"
+    },
+    {
+      "number": 17,
+      "transliteration": "yamunnụna 'alaika an aslamụ, qul lā tamunnụ 'alayya islāmakum, balillāhu yamunnu 'alaikum an hadākum lil-īmāni ing kuntum ṣādiqīn"
+    },
+    {
+      "number": 18,
+      "transliteration": "innallāha ya'lamu gaibas-samāwāti wal-arḍ, wallāhu baṣīrum bimā ta'malụn"
+    }
+  ],
+  "source": {
+    "dataset": "quran-indonesia-sql",
+    "version": "1.0"
+  }
+}

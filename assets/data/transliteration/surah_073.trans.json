@@ -1,0 +1,91 @@
+{
+  "number": 73,
+  "name": "Al-Muzzammil",
+  "ayat_count": 20,
+  "ayat": [
+    {
+      "number": 1,
+      "transliteration": "yā ayyuhal-muzzammil"
+    },
+    {
+      "number": 2,
+      "transliteration": "qumil-laila illā qalīlā"
+    },
+    {
+      "number": 3,
+      "transliteration": "niṣfahū awingquṣ min-hu qalīlā"
+    },
+    {
+      "number": 4,
+      "transliteration": "au zid 'alaihi wa rattilil-qur`āna tartīlā"
+    },
+    {
+      "number": 5,
+      "transliteration": "innā sanulqī 'alaika qaulan ṡaqīlā"
+    },
+    {
+      "number": 6,
+      "transliteration": "inna nāsyi`atal-laili hiya asyaddu waṭ`aw wa aqwamu qīlā"
+    },
+    {
+      "number": 7,
+      "transliteration": "inna laka fin-nahāri sab-ḥan ṭawīlā"
+    },
+    {
+      "number": 8,
+      "transliteration": "ważkurisma rabbika wa tabattal ilaihi tabtīlā"
+    },
+    {
+      "number": 9,
+      "transliteration": "rabbul-masyriqi wal-magribi lā ilāha illā huwa fattakhiż-hu wakīlā"
+    },
+    {
+      "number": 10,
+      "transliteration": "waṣbir 'alā mā yaqụlụna wahjur-hum hajran jamīlā"
+    },
+    {
+      "number": 11,
+      "transliteration": "wa żarnī wal-mukażżibīna ulin-na'mati wa mahhil-hum qalīlā"
+    },
+    {
+      "number": 12,
+      "transliteration": "inna ladainā angkālaw wa jaḥīmā"
+    },
+    {
+      "number": 13,
+      "transliteration": "wa ṭa'āman żā guṣṣatiw wa 'ażāban alīmā"
+    },
+    {
+      "number": 14,
+      "transliteration": "yauma tarjuful-arḍu wal-jibālu wa kānatil-jibālu kaṡībam mahīlā"
+    },
+    {
+      "number": 15,
+      "transliteration": "innā arsalnā ilaikum rasụlan syāhidan 'alaikum kamā arsalnā ilā fir'auna rasụlā"
+    },
+    {
+      "number": 16,
+      "transliteration": "fa 'aṣā fir'aunur-rasụla fa akhażnāhu akhżaw wabīlā"
+    },
+    {
+      "number": 17,
+      "transliteration": "fa kaifa tattaqụna ing kafartum yaumay yaj'alul-wildāna syībā"
+    },
+    {
+      "number": 18,
+      "transliteration": "as-samā`u munfaṭirum bih, kāna wa'duhụ maf'ụlā"
+    },
+    {
+      "number": 19,
+      "transliteration": "inna hāżihī tażkirah, fa man syā`attakhaża ilā rabbihī sabīlā"
+    },
+    {
+      "number": 20,
+      "transliteration": "inna rabbaka ya'lamu annaka taqụmu adnā min ṡuluṡayil-laili wa niṣfahụ wa ṡuluṡahụ wa ṭā`ifatum minallażīna ma'ak, wallāhu yuqaddirul-laila wan-nahār, 'alima al lan tuḥṣụhu fa tāba 'alaikum faqra`ụ mā tayassara minal-qur`ān, 'alima an sayakụnu mingkum marḍā wa ākharụna yaḍribụna fil-arḍi yabtagụna min faḍlillāhi wa ākharụna yuqātilụna fī sabīlillāhi faqra`ụ mā tayassara min-hu wa aqīmuṣ-ṣalāta wa ātuz-zakāta wa aqriḍullāha qarḍan ḥasanā, wa mā tuqaddimụ li`anfusikum min khairin tajidụhu 'indallāhi huwa khairaw wa a'ẓama ajrā, wastagfirullāh, innallāha gafụrur raḥīm"
+    }
+  ],
+  "source": {
+    "dataset": "quran-indonesia-sql",
+    "version": "1.0"
+  }
+}

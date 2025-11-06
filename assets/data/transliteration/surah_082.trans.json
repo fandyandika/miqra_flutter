@@ -1,0 +1,87 @@
+{
+  "number": 82,
+  "name": "Al-Infitar",
+  "ayat_count": 19,
+  "ayat": [
+    {
+      "number": 1,
+      "transliteration": "iżas-samā`unfaṭarat"
+    },
+    {
+      "number": 2,
+      "transliteration": "wa iżal-kawākibuntaṡarat"
+    },
+    {
+      "number": 3,
+      "transliteration": "wa iżal-biḥāru fujjirat"
+    },
+    {
+      "number": 4,
+      "transliteration": "wa iżal-qubụru bu'ṡirat"
+    },
+    {
+      "number": 5,
+      "transliteration": "'alimat nafsum mā qaddamat wa akhkharat"
+    },
+    {
+      "number": 6,
+      "transliteration": "yā ayyuhal-insānu mā garraka birabbikal-karīm"
+    },
+    {
+      "number": 7,
+      "transliteration": "allażī khalaqaka fa sawwāka fa 'adalak"
+    },
+    {
+      "number": 8,
+      "transliteration": "fī ayyi ṣụratim mā syā`a rakkabak"
+    },
+    {
+      "number": 9,
+      "transliteration": "kallā bal tukażżibụna bid-dīn"
+    },
+    {
+      "number": 10,
+      "transliteration": "wa inna 'alaikum laḥāfiẓīn"
+    },
+    {
+      "number": 11,
+      "transliteration": "kirāmang kātibīn"
+    },
+    {
+      "number": 12,
+      "transliteration": "ya'lamụna mā taf'alụn"
+    },
+    {
+      "number": 13,
+      "transliteration": "innal-abrāra lafī na'īm"
+    },
+    {
+      "number": 14,
+      "transliteration": "wa innal-fujjāra lafī jaḥīm"
+    },
+    {
+      "number": 15,
+      "transliteration": "yaṣlaunahā yaumad-dīn"
+    },
+    {
+      "number": 16,
+      "transliteration": "wa mā hum 'an-hā bigā`ibīn"
+    },
+    {
+      "number": 17,
+      "transliteration": "wa mā adrāka mā yaumud-dīn"
+    },
+    {
+      "number": 18,
+      "transliteration": "ṡumma mā adrāka mā yaumud-dīn"
+    },
+    {
+      "number": 19,
+      "transliteration": "yauma lā tamliku nafsul linafsin syai`ā, wal-amru yauma`iżil lillāh"
+    }
+  ],
+  "source": {
+    "dataset": "quran-indonesia-sql",
+    "version": "1.0"
+  }
+}

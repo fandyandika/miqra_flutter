@@ -1,0 +1,23 @@
+{
+  "number": 103,
+  "name": "Al-'Asr",
+  "ayat_count": 3,
+  "ayat": [
+    {
+      "number": 1,
+      "transliteration": "wal-'aṣr"
+    },
+    {
+      "number": 2,
+      "transliteration": "innal-insāna lafī khusr"
+    },
+    {
+      "number": 3,
+      "transliteration": "illallażīna āmanụ wa 'amiluṣ-ṣāliḥāti wa tawāṣau bil-ḥaqqi wa tawāṣau biṣ-ṣabr"
+    }
+  ],
+  "source": {
+    "dataset": "quran-indonesia-sql",
+    "version": "1.0"
+  }
+}

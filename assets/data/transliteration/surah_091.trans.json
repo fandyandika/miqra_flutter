@@ -1,0 +1,71 @@
+{
+  "number": 91,
+  "name": "Ash-Shams",
+  "ayat_count": 15,
+  "ayat": [
+    {
+      "number": 1,
+      "transliteration": "wasy-syamsi wa ḍuḥāhā"
+    },
+    {
+      "number": 2,
+      "transliteration": "wal-qamari iżā talāhā"
+    },
+    {
+      "number": 3,
+      "transliteration": "wan-nahāri iżā jallāhā"
+    },
+    {
+      "number": 4,
+      "transliteration": "wal-laili iżā yagsyāhā"
+    },
+    {
+      "number": 5,
+      "transliteration": "was-samā`i wa mā banāhā"
+    },
+    {
+      "number": 6,
+      "transliteration": "wal-arḍi wa mā ṭaḥāhā"
+    },
+    {
+      "number": 7,
+      "transliteration": "wa nafsiw wa mā sawwāhā"
+    },
+    {
+      "number": 8,
+      "transliteration": "fa al-hamahā fujụrahā wa taqwāhā"
+    },
+    {
+      "number": 9,
+      "transliteration": "qad aflaḥa man zakkāhā"
+    },
+    {
+      "number": 10,
+      "transliteration": "wa qad khāba man dassāhā"
+    },
+    {
+      "number": 11,
+      "transliteration": "każżabaṡ ṡamụdu biṭagwāhā"
+    },
+    {
+      "number": 12,
+      "transliteration": "iżimba'aṡa asyqāhā"
+    },
+    {
+      "number": 13,
+      "transliteration": "fa qāla lahum rasụlullāhi nāqatallāhi wa suqyāhā"
+    },
+    {
+      "number": 14,
+      "transliteration": "fa każżabụhu fa 'aqarụhā fa damdama 'alaihim rabbuhum biżambihim fa sawwāhā"
+    },
+    {
+      "number": 15,
+      "transliteration": "wa lā yakhāfu 'uqbāhā"
+    }
+  ],
+  "source": {
+    "dataset": "quran-indonesia-sql",
+    "version": "1.0"
+  }
+}

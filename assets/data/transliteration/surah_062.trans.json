@@ -1,0 +1,55 @@
+{
+  "number": 62,
+  "name": "Al-Jumu'ah",
+  "ayat_count": 11,
+  "ayat": [
+    {
+      "number": 1,
+      "transliteration": "yusabbiḥu lillāhi mā fis-samāwāti wa mā fil-arḍil-malikil-quddụsil-'azīzil-ḥakīm"
+    },
+    {
+      "number": 2,
+      "transliteration": "huwallażī ba'aṡa fil-ummiyyīna rasụlam min-hum yatlụ 'alaihim āyātihī wa yuzakkīhim wa yu'allimuhumul-kitāba wal-ḥikmata wa ing kānụ ming qablu lafī ḍalālim mubīn"
+    },
+    {
+      "number": 3,
+      "transliteration": "wa ākharīna min-hum lammā yal-ḥaqụ bihim, wa huwal-'azīzul-ḥakīm"
+    },
+    {
+      "number": 4,
+      "transliteration": "żālika faḍlullāhi yu`tīhi may yasyā`, wallāhu żul-faḍlil-'aẓīm"
+    },
+    {
+      "number": 5,
+      "transliteration": "maṡalullażīna ḥummilut-taurāta ṡumma lam yaḥmilụhā kamaṡalil-ḥimāri yaḥmilu asfārā, bi`sa maṡalul-qaumillażīna każżabụ bi`āyātillāh, wallāhu lā yahdil-qaumaẓ-ẓālimīn"
+    },
+    {
+      "number": 6,
+      "transliteration": "qul yā ayyuhallażīna hādū in za'amtum annakum auliyā`u lillāhi min dụnin-nāsi fa tamannawul-mauta ing kuntum ṣādiqīn"
+    },
+    {
+      "number": 7,
+      "transliteration": "wa lā yatamannaunahū abadam bimā qaddamat aidīhim, wallāhu 'alīmum biẓ-ẓālimīn"
+    },
+    {
+      "number": 8,
+      "transliteration": "qul innal-mautallażī tafirrụna min-hu fa innahụ mulāqīkum ṡumma turaddụna ilā 'ālimil-gaibi wasy-syahādati fa yunabbi`ukum bimā kuntum ta'malụn"
+    },
+    {
+      "number": 9,
+      "transliteration": "yā ayyuhallażīna āmanū iżā nụdiya liṣ-ṣalāti miy yaumil-jumu'ati fas'au ilā żikrillāhi wa żarul baī', żālikum khairul lakum ing kuntum ta'lamụn"
+    },
+    {
+      "number": 10,
+      "transliteration": "fa iżā quḍiyatiṣ-ṣalātu fantasyirụ fil-arḍi wabtagụ min faḍlillāhi ważkurullāha kaṡīral la'allakum tufliḥụn"
+    },
+    {
+      "number": 11,
+      "transliteration": "wa iżā ra`au tijāratan au lahwaninfaḍḍū ilaihā wa tarakụka qā`imā, qul mā 'indallāhi khairum minal-lahwi wa minat-tijārah, wallāhu khairur-rāziqīn"
+    }
+  ],
+  "source": {
+    "dataset": "quran-indonesia-sql",
+    "version": "1.0"
+  }
+}

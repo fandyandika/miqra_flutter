@@ -1,0 +1,2168 @@
+[
+  {
+    "number": 1,
+    "name_en": "The Opening",
+    "name_ar": "الفاتحة",
+    "name_translit": "Al-Faatiha",
+    "type": "Makkiyah",
+    "rukus": 1,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 1,
+    "juz_end": 1,
+    "hizb_start": 1,
+    "hizb_end": 1,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 7,
+    "name_id": "Al-Fatihah"
+  },
+  {
+    "number": 2,
+    "name_en": "The Cow",
+    "name_ar": "البقرة",
+    "name_translit": "Al-Baqara",
+    "type": "Madaniyah",
+    "rukus": 40,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 2,
+    "juz_end": 3,
+    "hizb_start": 2,
+    "hizb_end": 20,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 286,
+    "name_id": "Al-Baqarah"
+  },
+  {
+    "number": 3,
+    "name_en": "The Family of Imraan",
+    "name_ar": "آل عمران",
+    "name_translit": "Aal-i-Imraan",
+    "type": "Madaniyah",
+    "rukus": 20,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 4,
+    "juz_end": 4,
+    "hizb_start": 21,
+    "hizb_end": 30,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 200,
+    "name_id": "Ali 'Imran"
+  },
+  {
+    "number": 4,
+    "name_en": "The Women",
+    "name_ar": "النساء",
+    "name_translit": "An-Nisaa",
+    "type": "Madaniyah",
+    "rukus": 24,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 5,
+    "juz_end": 6,
+    "hizb_start": 31,
+    "hizb_end": 42,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 176,
+    "name_id": "An-Nisa'"
+  },
+  {
+    "number": 5,
+    "name_en": "The Table",
+    "name_ar": "المائدة",
+    "name_translit": "Al-Maaida",
+    "type": "Madaniyah",
+    "rukus": 16,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 7,
+    "juz_end": 7,
+    "hizb_start": 43,
+    "hizb_end": 51,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 120,
+    "name_id": "Al-Ma'idah"
+  },
+  {
+    "number": 6,
+    "name_en": "The Cattle",
+    "name_ar": "الأنعام",
+    "name_translit": "Al-An'aam",
+    "type": "Makkiyah",
+    "rukus": 20,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 8,
+    "juz_end": 8,
+    "hizb_start": 52,
+    "hizb_end": 60,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 165,
+    "name_id": "Al-An'am"
+  },
+  {
+    "number": 7,
+    "name_en": "The Heights",
+    "name_ar": "الأعراف",
+    "name_translit": "Al-A'raaf",
+    "type": "Makkiyah",
+    "rukus": 24,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 9,
+    "juz_end": 9,
+    "hizb_start": 61,
+    "hizb_end": 70,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 206,
+    "name_id": "Al-A'raf"
+  },
+  {
+    "number": 8,
+    "name_en": "The Spoils of War",
+    "name_ar": "الأنفال",
+    "name_translit": "Al-Anfaal",
+    "type": "Madaniyah",
+    "rukus": 10,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 10,
+    "juz_end": 10,
+    "hizb_start": 71,
+    "hizb_end": 74,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 75,
+    "name_id": "Al-Anfal"
+  },
+  {
+    "number": 9,
+    "name_en": "The Repentance",
+    "name_ar": "التوبة",
+    "name_translit": "At-Tawba",
+    "type": "Madaniyah",
+    "rukus": 16,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 11,
+    "juz_end": 11,
+    "hizb_start": 75,
+    "hizb_end": 83,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 129,
+    "name_id": "At-Tawbah"
+  },
+  {
+    "number": 10,
+    "name_en": "Jonas",
+    "name_ar": "يونس",
+    "name_translit": "Yunus",
+    "type": "Makkiyah",
+    "rukus": 11,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 11,
+    "juz_end": 11,
+    "hizb_start": 84,
+    "hizb_end": 88,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 109,
+    "name_id": "Yunus"
+  },
+  {
+    "number": 11,
+    "name_en": "Hud",
+    "name_ar": "هود",
+    "name_translit": "Hud",
+    "type": "Makkiyah",
+    "rukus": 10,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 12,
+    "juz_end": 12,
+    "hizb_start": 89,
+    "hizb_end": 94,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 123,
+    "name_id": "Hud"
+  },
+  {
+    "number": 12,
+    "name_en": "Joseph",
+    "name_ar": "يوسف",
+    "name_translit": "Yusuf",
+    "type": "Makkiyah",
+    "rukus": 12,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 13,
+    "juz_end": 13,
+    "hizb_start": 95,
+    "hizb_end": 99,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 111,
+    "name_id": "Yusuf"
+  },
+  {
+    "number": 13,
+    "name_en": "The Thunder",
+    "name_ar": "الرعد",
+    "name_translit": "Ar-Ra'd",
+    "type": "Madaniyah",
+    "rukus": 6,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 13,
+    "juz_end": 13,
+    "hizb_start": 100,
+    "hizb_end": 102,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 43,
+    "name_id": "Ar-Ra'd"
+  },
+  {
+    "number": 14,
+    "name_en": "Abraham",
+    "name_ar": "ابراهيم",
+    "name_translit": "Ibrahim",
+    "type": "Makkiyah",
+    "rukus": 7,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 13,
+    "juz_end": 13,
+    "hizb_start": 103,
+    "hizb_end": 104,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 52,
+    "name_id": "Ibrahim"
+  },
+  {
+    "number": 15,
+    "name_en": "The Rock",
+    "name_ar": "الحجر",
+    "name_translit": "Al-Hijr",
+    "type": "Makkiyah",
+    "rukus": 6,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 14,
+    "juz_end": 14,
+    "hizb_start": 105,
+    "hizb_end": 106,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 99,
+    "name_id": "Al-Hijr"
+  },
+  {
+    "number": 16,
+    "name_en": "The Bee",
+    "name_ar": "النحل",
+    "name_translit": "An-Nahl",
+    "type": "Makkiyah",
+    "rukus": 16,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 14,
+    "juz_end": 14,
+    "hizb_start": 107,
+    "hizb_end": 112,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 128,
+    "name_id": "An-Nahl"
+  },
+  {
+    "number": 17,
+    "name_en": "The Night Journey",
+    "name_ar": "الإسراء",
+    "name_translit": "Al-Israa",
+    "type": "Makkiyah",
+    "rukus": 12,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 15,
+    "juz_end": 15,
+    "hizb_start": 113,
+    "hizb_end": 117,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 111,
+    "name_id": "Al-Isra'"
+  },
+  {
+    "number": 18,
+    "name_en": "The Cave",
+    "name_ar": "الكهف",
+    "name_translit": "Al-Kahf",
+    "type": "Makkiyah",
+    "rukus": 12,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 16,
+    "juz_end": 16,
+    "hizb_start": 118,
+    "hizb_end": 122,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 110,
+    "name_id": "Al-Kahf"
+  },
+  {
+    "number": 19,
+    "name_en": "Mary",
+    "name_ar": "مريم",
+    "name_translit": "Maryam",
+    "type": "Makkiyah",
+    "rukus": 6,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 16,
+    "juz_end": 16,
+    "hizb_start": 123,
+    "hizb_end": 124,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 98,
+    "name_id": "Maryam"
+  },
+  {
+    "number": 20,
+    "name_en": "Taa-Haa",
+    "name_ar": "طه",
+    "name_translit": "Taa-Haa",
+    "type": "Makkiyah",
+    "rukus": 8,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 16,
+    "juz_end": 16,
+    "hizb_start": 125,
+    "hizb_end": 128,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 135,
+    "name_id": "Ta Ha"
+  },
+  {
+    "number": 21,
+    "name_en": "The Prophets",
+    "name_ar": "الأنبياء",
+    "name_translit": "Al-Anbiyaa",
+    "type": "Makkiyah",
+    "rukus": 7,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 17,
+    "juz_end": 17,
+    "hizb_start": 129,
+    "hizb_end": 132,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 112,
+    "name_id": "Al-Anbiya"
+  },
+  {
+    "number": 22,
+    "name_en": "The Pilgrimage",
+    "name_ar": "الحج",
+    "name_translit": "Al-Hajj",
+    "type": "Madaniyah",
+    "rukus": 10,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 17,
+    "juz_end": 17,
+    "hizb_start": 133,
+    "hizb_end": 136,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 78,
+    "name_id": "Al-Hajj"
+  },
+  {
+    "number": 23,
+    "name_en": "The Believers",
+    "name_ar": "المؤمنون",
+    "name_translit": "Al-Muminoon",
+    "type": "Makkiyah",
+    "rukus": 6,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 18,
+    "juz_end": 18,
+    "hizb_start": 137,
+    "hizb_end": 139,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 118,
+    "name_id": "Al-Mu'minun"
+  },
+  {
+    "number": 24,
+    "name_en": "The Light",
+    "name_ar": "النور",
+    "name_translit": "An-Noor",
+    "type": "Madaniyah",
+    "rukus": 9,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 18,
+    "juz_end": 18,
+    "hizb_start": 140,
+    "hizb_end": 143,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 64,
+    "name_id": "An-Nur"
+  },
+  {
+    "number": 25,
+    "name_en": "The Criterion",
+    "name_ar": "الفرقان",
+    "name_translit": "Al-Furqaan",
+    "type": "Makkiyah",
+    "rukus": 6,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 19,
+    "juz_end": 19,
+    "hizb_start": 144,
+    "hizb_end": 146,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 77,
+    "name_id": "Al-Furqan"
+  },
+  {
+    "number": 26,
+    "name_en": "The Poets",
+    "name_ar": "الشعراء",
+    "name_translit": "Ash-Shu'araa",
+    "type": "Makkiyah",
+    "rukus": 11,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 19,
+    "juz_end": 19,
+    "hizb_start": 147,
+    "hizb_end": 150,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 227,
+    "name_id": "Ash-Shu'ara"
+  },
+  {
+    "number": 27,
+    "name_en": "The Ant",
+    "name_ar": "النمل",
+    "name_translit": "An-Naml",
+    "type": "Makkiyah",
+    "rukus": 7,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 20,
+    "juz_end": 20,
+    "hizb_start": 151,
+    "hizb_end": 154,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 93,
+    "name_id": "An-Naml"
+  },
+  {
+    "number": 28,
+    "name_en": "The Stories",
+    "name_ar": "القصص",
+    "name_translit": "Al-Qasas",
+    "type": "Makkiyah",
+    "rukus": 8,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 20,
+    "juz_end": 20,
+    "hizb_start": 155,
+    "hizb_end": 158,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 88,
+    "name_id": "Al-Qasas"
+  },
+  {
+    "number": 29,
+    "name_en": "The Spider",
+    "name_ar": "العنكبوت",
+    "name_translit": "Al-Ankaboot",
+    "type": "Makkiyah",
+    "rukus": 7,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 21,
+    "juz_end": 21,
+    "hizb_start": 159,
+    "hizb_end": 161,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 69,
+    "name_id": "Al-'Ankabut"
+  },
+  {
+    "number": 30,
+    "name_en": "The Romans",
+    "name_ar": "الروم",
+    "name_translit": "Ar-Room",
+    "type": "Makkiyah",
+    "rukus": 6,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 21,
+    "juz_end": 21,
+    "hizb_start": 162,
+    "hizb_end": 164,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 60,
+    "name_id": "Ar-Rum"
+  },
+  {
+    "number": 31,
+    "name_en": "Luqman",
+    "name_ar": "لقمان",
+    "name_translit": "Luqman",
+    "type": "Makkiyah",
+    "rukus": 3,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 21,
+    "juz_end": 21,
+    "hizb_start": 165,
+    "hizb_end": 165,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 34,
+    "name_id": "Luqman"
+  },
+  {
+    "number": 32,
+    "name_en": "The Prostration",
+    "name_ar": "السجدة",
+    "name_translit": "As-Sajda",
+    "type": "Makkiyah",
+    "rukus": 3,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 21,
+    "juz_end": 21,
+    "hizb_start": 166,
+    "hizb_end": 166,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 30,
+    "name_id": "As-Sajdah"
+  },
+  {
+    "number": 33,
+    "name_en": "The Clans",
+    "name_ar": "الأحزاب",
+    "name_translit": "Al-Ahzaab",
+    "type": "Madaniyah",
+    "rukus": 9,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 22,
+    "juz_end": 22,
+    "hizb_start": 167,
+    "hizb_end": 171,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 73,
+    "name_id": "Al-Ahzab"
+  },
+  {
+    "number": 34,
+    "name_en": "Sheba",
+    "name_ar": "سبإ",
+    "name_translit": "Saba",
+    "type": "Makkiyah",
+    "rukus": 6,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 22,
+    "juz_end": 22,
+    "hizb_start": 172,
+    "hizb_end": 174,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 54,
+    "name_id": "Saba'"
+  },
+  {
+    "number": 35,
+    "name_en": "The Originator",
+    "name_ar": "فاطر",
+    "name_translit": "Faatir",
+    "type": "Makkiyah",
+    "rukus": 5,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 22,
+    "juz_end": 22,
+    "hizb_start": 175,
+    "hizb_end": 176,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 45,
+    "name_id": "Fatir"
+  },
+  {
+    "number": 36,
+    "name_en": "Yaseen",
+    "name_ar": "يس",
+    "name_translit": "Yaseen",
+    "type": "Makkiyah",
+    "rukus": 5,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 23,
+    "juz_end": 23,
+    "hizb_start": 177,
+    "hizb_end": 178,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 83,
+    "name_id": "Ya-Sin"
+  },
+  {
+    "number": 37,
+    "name_en": "Those drawn up in Ranks",
+    "name_ar": "الصافات",
+    "name_translit": "As-Saaffaat",
+    "type": "Makkiyah",
+    "rukus": 5,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 23,
+    "juz_end": 23,
+    "hizb_start": 179,
+    "hizb_end": 181,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 182,
+    "name_id": "As-Saffat"
+  },
+  {
+    "number": 38,
+    "name_en": "The letter Saad",
+    "name_ar": "ص",
+    "name_translit": "Saad",
+    "type": "Makkiyah",
+    "rukus": 5,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 23,
+    "juz_end": 23,
+    "hizb_start": 182,
+    "hizb_end": 183,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 88,
+    "name_id": "Sad"
+  },
+  {
+    "number": 39,
+    "name_en": "The Groups",
+    "name_ar": "الزمر",
+    "name_translit": "Az-Zumar",
+    "type": "Makkiyah",
+    "rukus": 8,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 24,
+    "juz_end": 24,
+    "hizb_start": 184,
+    "hizb_end": 186,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 75,
+    "name_id": "Az-Zumar"
+  },
+  {
+    "number": 40,
+    "name_en": "The Forgiver",
+    "name_ar": "غافر",
+    "name_translit": "Al-Ghaafir",
+    "type": "Makkiyah",
+    "rukus": 9,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 24,
+    "juz_end": 24,
+    "hizb_start": 187,
+    "hizb_end": 190,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 85,
+    "name_id": "Ghafir"
+  },
+  {
+    "number": 41,
+    "name_en": "Explained in detail",
+    "name_ar": "فصلت",
+    "name_translit": "Fussilat",
+    "type": "Makkiyah",
+    "rukus": 6,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 25,
+    "juz_end": 25,
+    "hizb_start": 191,
+    "hizb_end": 193,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 54,
+    "name_id": "Fussilat"
+  },
+  {
+    "number": 42,
+    "name_en": "Consultation",
+    "name_ar": "الشورى",
+    "name_translit": "Ash-Shura",
+    "type": "Makkiyah",
+    "rukus": 5,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 25,
+    "juz_end": 25,
+    "hizb_start": 194,
+    "hizb_end": 196,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 53,
+    "name_id": "Ash-Shura"
+  },
+  {
+    "number": 43,
+    "name_en": "Ornaments of gold",
+    "name_ar": "الزخرف",
+    "name_translit": "Az-Zukhruf",
+    "type": "Makkiyah",
+    "rukus": 7,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 25,
+    "juz_end": 25,
+    "hizb_start": 197,
+    "hizb_end": 198,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 89,
+    "name_id": "Az-Zukhruf"
+  },
+  {
+    "number": 44,
+    "name_en": "The Smoke",
+    "name_ar": "الدخان",
+    "name_translit": "Ad-Dukhaan",
+    "type": "Makkiyah",
+    "rukus": 3,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 25,
+    "juz_end": 25,
+    "hizb_start": 199,
+    "hizb_end": 199,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 59,
+    "name_id": "Ad-Dukhan"
+  },
+  {
+    "number": 45,
+    "name_en": "Crouching",
+    "name_ar": "الجاثية",
+    "name_translit": "Al-Jaathiya",
+    "type": "Makkiyah",
+    "rukus": 4,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 25,
+    "juz_end": 25,
+    "hizb_start": 200,
+    "hizb_end": 200,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 37,
+    "name_id": "Al-Jathiyah"
+  },
+  {
+    "number": 46,
+    "name_en": "The Dunes",
+    "name_ar": "الأحقاف",
+    "name_translit": "Al-Ahqaf",
+    "type": "Makkiyah",
+    "rukus": 4,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 26,
+    "juz_end": 26,
+    "hizb_start": 201,
+    "hizb_end": 202,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 35,
+    "name_id": "Al-Ahqaf"
+  },
+  {
+    "number": 47,
+    "name_en": "Muhammad",
+    "name_ar": "محمد",
+    "name_translit": "Muhammad",
+    "type": "Madaniyah",
+    "rukus": 4,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 26,
+    "juz_end": 26,
+    "hizb_start": 203,
+    "hizb_end": 204,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 38,
+    "name_id": "Muhammad"
+  },
+  {
+    "number": 48,
+    "name_en": "The Victory",
+    "name_ar": "الفتح",
+    "name_translit": "Al-Fath",
+    "type": "Madaniyah",
+    "rukus": 4,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 26,
+    "juz_end": 26,
+    "hizb_start": 205,
+    "hizb_end": 205,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 29,
+    "name_id": "Al-Fath"
+  },
+  {
+    "number": 49,
+    "name_en": "The Inner Apartments",
+    "name_ar": "الحجرات",
+    "name_translit": "Al-Hujuraat",
+    "type": "Madaniyah",
+    "rukus": 2,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 26,
+    "juz_end": 26,
+    "hizb_start": 206,
+    "hizb_end": 207,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 18,
+    "name_id": "Al-Hujurat"
+  },
+  {
+    "number": 50,
+    "name_en": "The letter Qaaf",
+    "name_ar": "ق",
+    "name_translit": "Qaaf",
+    "type": "Makkiyah",
+    "rukus": 3,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 26,
+    "juz_end": 26,
+    "hizb_start": 208,
+    "hizb_end": 208,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 45,
+    "name_id": "Qaf"
+  },
+  {
+    "number": 51,
+    "name_en": "The Winnowing Winds",
+    "name_ar": "الذاريات",
+    "name_translit": "Adh-Dhaariyat",
+    "type": "Makkiyah",
+    "rukus": 3,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 27,
+    "juz_end": 27,
+    "hizb_start": 209,
+    "hizb_end": 209,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 60,
+    "name_id": "Adh-Dhariyat"
+  },
+  {
+    "number": 52,
+    "name_en": "The Mount",
+    "name_ar": "الطور",
+    "name_translit": "At-Tur",
+    "type": "Makkiyah",
+    "rukus": 2,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 27,
+    "juz_end": 27,
+    "hizb_start": 210,
+    "hizb_end": 210,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 49,
+    "name_id": "At-Tur"
+  },
+  {
+    "number": 53,
+    "name_en": "The Star",
+    "name_ar": "النجم",
+    "name_translit": "An-Najm",
+    "type": "Makkiyah",
+    "rukus": 3,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 27,
+    "juz_end": 27,
+    "hizb_start": 211,
+    "hizb_end": 211,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 62,
+    "name_id": "An-Najm"
+  },
+  {
+    "number": 54,
+    "name_en": "The Moon",
+    "name_ar": "القمر",
+    "name_translit": "Al-Qamar",
+    "type": "Makkiyah",
+    "rukus": 3,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 27,
+    "juz_end": 27,
+    "hizb_start": 212,
+    "hizb_end": 212,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 55,
+    "name_id": "Al-Qamar"
+  },
+  {
+    "number": 55,
+    "name_en": "The Beneficent",
+    "name_ar": "الرحمن",
+    "name_translit": "Ar-Rahmaan",
+    "type": "Madaniyah",
+    "rukus": 3,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 27,
+    "juz_end": 27,
+    "hizb_start": 213,
+    "hizb_end": 213,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 78,
+    "name_id": "Ar-Rahman"
+  },
+  {
+    "number": 56,
+    "name_en": "The Inevitable",
+    "name_ar": "الواقعة",
+    "name_translit": "Al-Waaqia",
+    "type": "Makkiyah",
+    "rukus": 3,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 27,
+    "juz_end": 27,
+    "hizb_start": 214,
+    "hizb_end": 215,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 96,
+    "name_id": "Al-Waqi'ah"
+  },
+  {
+    "number": 57,
+    "name_en": "The Iron",
+    "name_ar": "الحديد",
+    "name_translit": "Al-Hadid",
+    "type": "Madaniyah",
+    "rukus": 4,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 27,
+    "juz_end": 27,
+    "hizb_start": 216,
+    "hizb_end": 216,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 29,
+    "name_id": "Al-Hadid"
+  },
+  {
+    "number": 58,
+    "name_en": "The Pleading Woman",
+    "name_ar": "المجادلة",
+    "name_translit": "Al-Mujaadila",
+    "type": "Madaniyah",
+    "rukus": 3,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 28,
+    "juz_end": 28,
+    "hizb_start": 217,
+    "hizb_end": 218,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 22,
+    "name_id": "Al-Mujadila"
+  },
+  {
+    "number": 59,
+    "name_en": "The Exile",
+    "name_ar": "الحشر",
+    "name_translit": "Al-Hashr",
+    "type": "Madaniyah",
+    "rukus": 3,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 28,
+    "juz_end": 28,
+    "hizb_start": 219,
+    "hizb_end": 219,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 24,
+    "name_id": "Al-Hashr"
+  },
+  {
+    "number": 60,
+    "name_en": "She that is to be examined",
+    "name_ar": "الممتحنة",
+    "name_translit": "Al-Mumtahana",
+    "type": "Madaniyah",
+    "rukus": 2,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 28,
+    "juz_end": 28,
+    "hizb_start": 220,
+    "hizb_end": 220,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 13,
+    "name_id": "Al-Mumtahanah"
+  },
+  {
+    "number": 61,
+    "name_en": "The Ranks",
+    "name_ar": "الصف",
+    "name_translit": "As-Saff",
+    "type": "Madaniyah",
+    "rukus": 2,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 28,
+    "juz_end": 28,
+    "hizb_start": 220,
+    "hizb_end": 220,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 14,
+    "name_id": "As-Saff"
+  },
+  {
+    "number": 62,
+    "name_en": "Friday",
+    "name_ar": "الجمعة",
+    "name_translit": "Al-Jumu'a",
+    "type": "Madaniyah",
+    "rukus": 2,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 28,
+    "juz_end": 28,
+    "hizb_start": 221,
+    "hizb_end": 221,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 11,
+    "name_id": "Al-Jumu'ah"
+  },
+  {
+    "number": 63,
+    "name_en": "The Hypocrites",
+    "name_ar": "المنافقون",
+    "name_translit": "Al-Munaafiqoon",
+    "type": "Madaniyah",
+    "rukus": 2,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 28,
+    "juz_end": 28,
+    "hizb_start": 222,
+    "hizb_end": 222,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 11,
+    "name_id": "Al-Munafiqun"
+  },
+  {
+    "number": 64,
+    "name_en": "Mutual Disillusion",
+    "name_ar": "التغابن",
+    "name_translit": "At-Taghaabun",
+    "type": "Madaniyah",
+    "rukus": 2,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 28,
+    "juz_end": 28,
+    "hizb_start": 222,
+    "hizb_end": 222,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 18,
+    "name_id": "At-Taghabun"
+  },
+  {
+    "number": 65,
+    "name_en": "Divorce",
+    "name_ar": "الطلاق",
+    "name_translit": "At-Talaaq",
+    "type": "Madaniyah",
+    "rukus": 2,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 28,
+    "juz_end": 28,
+    "hizb_start": 223,
+    "hizb_end": 223,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 12,
+    "name_id": "At-Talaq"
+  },
+  {
+    "number": 66,
+    "name_en": "The Prohibition",
+    "name_ar": "التحريم",
+    "name_translit": "At-Tahrim",
+    "type": "Madaniyah",
+    "rukus": 2,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 28,
+    "juz_end": 28,
+    "hizb_start": 224,
+    "hizb_end": 224,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 12,
+    "name_id": "At-Tahrim"
+  },
+  {
+    "number": 67,
+    "name_en": "The Sovereignty",
+    "name_ar": "الملك",
+    "name_translit": "Al-Mulk",
+    "type": "Makkiyah",
+    "rukus": 2,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 29,
+    "juz_end": 29,
+    "hizb_start": 225,
+    "hizb_end": 225,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 30,
+    "name_id": "Al-Mulk"
+  },
+  {
+    "number": 68,
+    "name_en": "The Pen",
+    "name_ar": "القلم",
+    "name_translit": "Al-Qalam",
+    "type": "Makkiyah",
+    "rukus": 2,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 29,
+    "juz_end": 29,
+    "hizb_start": 226,
+    "hizb_end": 226,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 52,
+    "name_id": "Al-Qalam"
+  },
+  {
+    "number": 69,
+    "name_en": "The Reality",
+    "name_ar": "الحاقة",
+    "name_translit": "Al-Haaqqa",
+    "type": "Makkiyah",
+    "rukus": 2,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 29,
+    "juz_end": 29,
+    "hizb_start": 227,
+    "hizb_end": 227,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 52,
+    "name_id": "Al-Haqqah"
+  },
+  {
+    "number": 70,
+    "name_en": "The Ascending Stairways",
+    "name_ar": "المعارج",
+    "name_translit": "Al-Ma'aarij",
+    "type": "Makkiyah",
+    "rukus": 2,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 29,
+    "juz_end": 29,
+    "hizb_start": 228,
+    "hizb_end": 228,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 44,
+    "name_id": "Al-Ma'arij"
+  },
+  {
+    "number": 71,
+    "name_en": "Noah",
+    "name_ar": "نوح",
+    "name_translit": "Nooh",
+    "type": "Makkiyah",
+    "rukus": 2,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 29,
+    "juz_end": 29,
+    "hizb_start": 228,
+    "hizb_end": 228,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 28,
+    "name_id": "Nuh"
+  },
+  {
+    "number": 72,
+    "name_en": "The Jinn",
+    "name_ar": "الجن",
+    "name_translit": "Al-Jinn",
+    "type": "Makkiyah",
+    "rukus": 2,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 29,
+    "juz_end": 29,
+    "hizb_start": 229,
+    "hizb_end": 229,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 28,
+    "name_id": "Al-Jinn"
+  },
+  {
+    "number": 73,
+    "name_en": "The Enshrouded One",
+    "name_ar": "المزمل",
+    "name_translit": "Al-Muzzammil",
+    "type": "Makkiyah",
+    "rukus": 2,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 29,
+    "juz_end": 29,
+    "hizb_start": 230,
+    "hizb_end": 230,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 20,
+    "name_id": "Al-Muzzammil"
+  },
+  {
+    "number": 74,
+    "name_en": "The Cloaked One",
+    "name_ar": "المدثر",
+    "name_translit": "Al-Muddaththir",
+    "type": "Makkiyah",
+    "rukus": 2,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 29,
+    "juz_end": 29,
+    "hizb_start": 230,
+    "hizb_end": 230,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 56,
+    "name_id": "Al-Muddaththir"
+  },
+  {
+    "number": 75,
+    "name_en": "The Resurrection",
+    "name_ar": "القيامة",
+    "name_translit": "Al-Qiyaama",
+    "type": "Makkiyah",
+    "rukus": 2,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 29,
+    "juz_end": 29,
+    "hizb_start": 231,
+    "hizb_end": 231,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 40,
+    "name_id": "Al-Qiyamah"
+  },
+  {
+    "number": 76,
+    "name_en": "Man",
+    "name_ar": "الانسان",
+    "name_translit": "Al-Insaan",
+    "type": "Madaniyah",
+    "rukus": 2,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 29,
+    "juz_end": 29,
+    "hizb_start": 232,
+    "hizb_end": 232,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 31,
+    "name_id": "Al-Insan"
+  },
+  {
+    "number": 77,
+    "name_en": "The Emissaries",
+    "name_ar": "المرسلات",
+    "name_translit": "Al-Mursalaat",
+    "type": "Makkiyah",
+    "rukus": 2,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 29,
+    "juz_end": 29,
+    "hizb_start": 232,
+    "hizb_end": 232,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 50,
+    "name_id": "Al-Mursalat"
+  },
+  {
+    "number": 78,
+    "name_en": "The Announcement",
+    "name_ar": "النبإ",
+    "name_translit": "An-Naba",
+    "type": "Makkiyah",
+    "rukus": 2,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 30,
+    "juz_end": 30,
+    "hizb_start": 233,
+    "hizb_end": 233,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 40,
+    "name_id": "An-Naba'"
+  },
+  {
+    "number": 79,
+    "name_en": "Those who drag forth",
+    "name_ar": "النازعات",
+    "name_translit": "An-Naazi'aat",
+    "type": "Makkiyah",
+    "rukus": 2,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 30,
+    "juz_end": 30,
+    "hizb_start": 233,
+    "hizb_end": 233,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 46,
+    "name_id": "An-Nazi'at"
+  },
+  {
+    "number": 80,
+    "name_en": "He frowned",
+    "name_ar": "عبس",
+    "name_translit": "Abasa",
+    "type": "Makkiyah",
+    "rukus": 1,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 30,
+    "juz_end": 30,
+    "hizb_start": 234,
+    "hizb_end": 234,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 42,
+    "name_id": "Abasa"
+  },
+  {
+    "number": 81,
+    "name_en": "The Overthrowing",
+    "name_ar": "التكوير",
+    "name_translit": "At-Takwir",
+    "type": "Makkiyah",
+    "rukus": 1,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 30,
+    "juz_end": 30,
+    "hizb_start": 234,
+    "hizb_end": 234,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 29,
+    "name_id": "At-Takwir"
+  },
+  {
+    "number": 82,
+    "name_en": "The Cleaving",
+    "name_ar": "الإنفطار",
+    "name_translit": "Al-Infitaar",
+    "type": "Makkiyah",
+    "rukus": 1,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 30,
+    "juz_end": 30,
+    "hizb_start": 235,
+    "hizb_end": 235,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 19,
+    "name_id": "Al-Infitar"
+  },
+  {
+    "number": 83,
+    "name_en": "Defrauding",
+    "name_ar": "المطففين",
+    "name_translit": "Al-Mutaffifin",
+    "type": "Makkiyah",
+    "rukus": 1,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 30,
+    "juz_end": 30,
+    "hizb_start": 235,
+    "hizb_end": 235,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 36,
+    "name_id": "Al-Mutaffifin"
+  },
+  {
+    "number": 84,
+    "name_en": "The Splitting Open",
+    "name_ar": "الإنشقاق",
+    "name_translit": "Al-Inshiqaaq",
+    "type": "Makkiyah",
+    "rukus": 1,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 30,
+    "juz_end": 30,
+    "hizb_start": 236,
+    "hizb_end": 236,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 25,
+    "name_id": "Al-Inshiqaq"
+  },
+  {
+    "number": 85,
+    "name_en": "The Constellations",
+    "name_ar": "البروج",
+    "name_translit": "Al-Burooj",
+    "type": "Makkiyah",
+    "rukus": 1,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 30,
+    "juz_end": 30,
+    "hizb_start": 236,
+    "hizb_end": 236,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 22,
+    "name_id": "Al-Buruj"
+  },
+  {
+    "number": 86,
+    "name_en": "The Morning Star",
+    "name_ar": "الطارق",
+    "name_translit": "At-Taariq",
+    "type": "Makkiyah",
+    "rukus": 1,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 30,
+    "juz_end": 30,
+    "hizb_start": 236,
+    "hizb_end": 236,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 17,
+    "name_id": "At-Tariq"
+  },
+  {
+    "number": 87,
+    "name_en": "The Most High",
+    "name_ar": "الأعلى",
+    "name_translit": "Al-A'laa",
+    "type": "Makkiyah",
+    "rukus": 1,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 30,
+    "juz_end": 30,
+    "hizb_start": 237,
+    "hizb_end": 237,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 19,
+    "name_id": "Al-A'la"
+  },
+  {
+    "number": 88,
+    "name_en": "The Overwhelming",
+    "name_ar": "الغاشية",
+    "name_translit": "Al-Ghaashiya",
+    "type": "Makkiyah",
+    "rukus": 1,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 30,
+    "juz_end": 30,
+    "hizb_start": 237,
+    "hizb_end": 237,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 26,
+    "name_id": "Al-Ghashiyah"
+  },
+  {
+    "number": 89,
+    "name_en": "The Dawn",
+    "name_ar": "الفجر",
+    "name_translit": "Al-Fajr",
+    "type": "Makkiyah",
+    "rukus": 1,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 30,
+    "juz_end": 30,
+    "hizb_start": 237,
+    "hizb_end": 237,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 30,
+    "name_id": "Al-Fajr"
+  },
+  {
+    "number": 90,
+    "name_en": "The City",
+    "name_ar": "البلد",
+    "name_translit": "Al-Balad",
+    "type": "Makkiyah",
+    "rukus": 1,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 30,
+    "juz_end": 30,
+    "hizb_start": 238,
+    "hizb_end": 238,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 20,
+    "name_id": "Al-Balad"
+  },
+  {
+    "number": 91,
+    "name_en": "The Sun",
+    "name_ar": "الشمس",
+    "name_translit": "Ash-Shams",
+    "type": "Makkiyah",
+    "rukus": 1,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 30,
+    "juz_end": 30,
+    "hizb_start": 238,
+    "hizb_end": 238,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 15,
+    "name_id": "Ash-Shams"
+  },
+  {
+    "number": 92,
+    "name_en": "The Night",
+    "name_ar": "الليل",
+    "name_translit": "Al-Lail",
+    "type": "Makkiyah",
+    "rukus": 1,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 30,
+    "juz_end": 30,
+    "hizb_start": 238,
+    "hizb_end": 238,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 21,
+    "name_id": "Al-Layl"
+  },
+  {
+    "number": 93,
+    "name_en": "The Morning Hours",
+    "name_ar": "الضحى",
+    "name_translit": "Ad-Dhuhaa",
+    "type": "Makkiyah",
+    "rukus": 1,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 30,
+    "juz_end": 30,
+    "hizb_start": 238,
+    "hizb_end": 238,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 11,
+    "name_id": "Ad-Duhaa"
+  },
+  {
+    "number": 94,
+    "name_en": "The Consolation",
+    "name_ar": "الشرح",
+    "name_translit": "Ash-Sharh",
+    "type": "Makkiyah",
+    "rukus": 1,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 30,
+    "juz_end": 30,
+    "hizb_start": 239,
+    "hizb_end": 239,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 8,
+    "name_id": "Ash-Sharh"
+  },
+  {
+    "number": 95,
+    "name_en": "The Fig",
+    "name_ar": "التين",
+    "name_translit": "At-Tin",
+    "type": "Makkiyah",
+    "rukus": 1,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 30,
+    "juz_end": 30,
+    "hizb_start": 239,
+    "hizb_end": 239,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 8,
+    "name_id": "At-Tin"
+  },
+  {
+    "number": 96,
+    "name_en": "The Clot",
+    "name_ar": "العلق",
+    "name_translit": "Al-Alaq",
+    "type": "Makkiyah",
+    "rukus": 1,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 30,
+    "juz_end": 30,
+    "hizb_start": 239,
+    "hizb_end": 239,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 19,
+    "name_id": "Al-'Alaq"
+  },
+  {
+    "number": 97,
+    "name_en": "The Power, Fate",
+    "name_ar": "القدر",
+    "name_translit": "Al-Qadr",
+    "type": "Makkiyah",
+    "rukus": 1,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 30,
+    "juz_end": 30,
+    "hizb_start": 239,
+    "hizb_end": 239,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 5,
+    "name_id": "Al-Qadr"
+  },
+  {
+    "number": 98,
+    "name_en": "The Evidence",
+    "name_ar": "البينة",
+    "name_translit": "Al-Bayyina",
+    "type": "Madaniyah",
+    "rukus": 1,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 30,
+    "juz_end": 30,
+    "hizb_start": 239,
+    "hizb_end": 239,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 8,
+    "name_id": "Al-Bayyinah"
+  },
+  {
+    "number": 99,
+    "name_en": "The Earthquake",
+    "name_ar": "الزلزلة",
+    "name_translit": "Az-Zalzala",
+    "type": "Madaniyah",
+    "rukus": 1,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 30,
+    "juz_end": 30,
+    "hizb_start": 239,
+    "hizb_end": 239,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 8,
+    "name_id": "Az-Zalzalah"
+  },
+  {
+    "number": 100,
+    "name_en": "The Chargers",
+    "name_ar": "العاديات",
+    "name_translit": "Al-Aadiyaat",
+    "type": "Makkiyah",
+    "rukus": 1,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 30,
+    "juz_end": 30,
+    "hizb_start": 240,
+    "hizb_end": 240,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 11,
+    "name_id": "Al-'Adiyat"
+  },
+  {
+    "number": 101,
+    "name_en": "The Calamity",
+    "name_ar": "القارعة",
+    "name_translit": "Al-Qaari'a",
+    "type": "Makkiyah",
+    "rukus": 1,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 30,
+    "juz_end": 30,
+    "hizb_start": 240,
+    "hizb_end": 240,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 11,
+    "name_id": "Al-Qari'ah"
+  },
+  {
+    "number": 102,
+    "name_en": "Competition",
+    "name_ar": "التكاثر",
+    "name_translit": "At-Takaathur",
+    "type": "Makkiyah",
+    "rukus": 1,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 30,
+    "juz_end": 30,
+    "hizb_start": 240,
+    "hizb_end": 240,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 8,
+    "name_id": "At-Takathur"
+  },
+  {
+    "number": 103,
+    "name_en": "The Declining Day, Epoch",
+    "name_ar": "العصر",
+    "name_translit": "Al-Asr",
+    "type": "Makkiyah",
+    "rukus": 1,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 30,
+    "juz_end": 30,
+    "hizb_start": 240,
+    "hizb_end": 240,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 3,
+    "name_id": "Al-'Asr"
+  },
+  {
+    "number": 104,
+    "name_en": "The Traducer",
+    "name_ar": "الهمزة",
+    "name_translit": "Al-Humaza",
+    "type": "Makkiyah",
+    "rukus": 1,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 30,
+    "juz_end": 30,
+    "hizb_start": 240,
+    "hizb_end": 240,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 9,
+    "name_id": "Al-Humazah"
+  },
+  {
+    "number": 105,
+    "name_en": "The Elephant",
+    "name_ar": "الفيل",
+    "name_translit": "Al-Fil",
+    "type": "Makkiyah",
+    "rukus": 1,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 30,
+    "juz_end": 30,
+    "hizb_start": 240,
+    "hizb_end": 240,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 5,
+    "name_id": "Al-Fil"
+  },
+  {
+    "number": 106,
+    "name_en": "Quraysh",
+    "name_ar": "قريش",
+    "name_translit": "Quraish",
+    "type": "Makkiyah",
+    "rukus": 1,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 30,
+    "juz_end": 30,
+    "hizb_start": 240,
+    "hizb_end": 240,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 4,
+    "name_id": "Quraysh"
+  },
+  {
+    "number": 107,
+    "name_en": "Almsgiving",
+    "name_ar": "الماعون",
+    "name_translit": "Al-Maa'un",
+    "type": "Makkiyah",
+    "rukus": 1,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 30,
+    "juz_end": 30,
+    "hizb_start": 240,
+    "hizb_end": 240,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 7,
+    "name_id": "Al-Ma'un"
+  },
+  {
+    "number": 108,
+    "name_en": "Abundance",
+    "name_ar": "الكوثر",
+    "name_translit": "Al-Kawthar",
+    "type": "Makkiyah",
+    "rukus": 1,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 30,
+    "juz_end": 30,
+    "hizb_start": 240,
+    "hizb_end": 240,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 3,
+    "name_id": "Al-Kawthar"
+  },
+  {
+    "number": 109,
+    "name_en": "The Disbelievers",
+    "name_ar": "الكافرون",
+    "name_translit": "Al-Kaafiroon",
+    "type": "Makkiyah",
+    "rukus": 1,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 30,
+    "juz_end": 30,
+    "hizb_start": 240,
+    "hizb_end": 240,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 6,
+    "name_id": "Al-Kafirun"
+  },
+  {
+    "number": 110,
+    "name_en": "Divine Support",
+    "name_ar": "النصر",
+    "name_translit": "An-Nasr",
+    "type": "Madaniyah",
+    "rukus": 1,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 30,
+    "juz_end": 30,
+    "hizb_start": 240,
+    "hizb_end": 240,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 3,
+    "name_id": "An-Nasr"
+  },
+  {
+    "number": 111,
+    "name_en": "The Palm Fibre",
+    "name_ar": "المسد",
+    "name_translit": "Al-Masad",
+    "type": "Makkiyah",
+    "rukus": 1,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 30,
+    "juz_end": 30,
+    "hizb_start": 240,
+    "hizb_end": 240,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 5,
+    "name_id": "Al-Masad"
+  },
+  {
+    "number": 112,
+    "name_en": "Sincerity",
+    "name_ar": "الإخلاص",
+    "name_translit": "Al-Ikhlaas",
+    "type": "Makkiyah",
+    "rukus": 1,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 30,
+    "juz_end": 30,
+    "hizb_start": 240,
+    "hizb_end": 240,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 4,
+    "name_id": "Al-Ikhlas"
+  },
+  {
+    "number": 113,
+    "name_en": "The Dawn",
+    "name_ar": "الفلق",
+    "name_translit": "Al-Falaq",
+    "type": "Makkiyah",
+    "rukus": 1,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 30,
+    "juz_end": 30,
+    "hizb_start": 240,
+    "hizb_end": 240,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 5,
+    "name_id": "Al-Falaq"
+  },
+  {
+    "number": 114,
+    "name_en": "Mankind",
+    "name_ar": "الناس",
+    "name_translit": "An-Naas",
+    "type": "Makkiyah",
+    "rukus": 1,
+    "page_start": null,
+    "page_end": null,
+    "juz_start": 30,
+    "juz_end": 30,
+    "hizb_start": 240,
+    "hizb_end": 240,
+    "source": {
+      "base": "tanzil_quran-data.xml"
+    },
+    "ayat_count": 6,
+    "name_id": "An-Nas"
+  }
+]

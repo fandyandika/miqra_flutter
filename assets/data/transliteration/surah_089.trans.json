@@ -1,0 +1,131 @@
+{
+  "number": 89,
+  "name": "Al-Fajr",
+  "ayat_count": 30,
+  "ayat": [
+    {
+      "number": 1,
+      "transliteration": "wal-fajr"
+    },
+    {
+      "number": 2,
+      "transliteration": "wa layālin 'asyr"
+    },
+    {
+      "number": 3,
+      "transliteration": "wasy-syaf'i wal-watr"
+    },
+    {
+      "number": 4,
+      "transliteration": "wal-laili iżā yasr"
+    },
+    {
+      "number": 5,
+      "transliteration": "hal fī żālika qasamul liżī ḥijr"
+    },
+    {
+      "number": 6,
+      "transliteration": "a lam tara kaifa fa'ala rabbuka bi'ād"
+    },
+    {
+      "number": 7,
+      "transliteration": "irama żātil-'imād"
+    },
+    {
+      "number": 8,
+      "transliteration": "allatī lam yukhlaq miṡluhā fil-bilād"
+    },
+    {
+      "number": 9,
+      "transliteration": "wa ṡamụdallażīna jābuṣ-ṣakhra bil-wād"
+    },
+    {
+      "number": 10,
+      "transliteration": "wa fir'auna żil-autād"
+    },
+    {
+      "number": 11,
+      "transliteration": "allażīna ṭagau fil-bilād"
+    },
+    {
+      "number": 12,
+      "transliteration": "fa akṡarụ fīhal-fasād"
+    },
+    {
+      "number": 13,
+      "transliteration": "fa ṣabba 'alaihim rabbuka sauṭa 'ażāb"
+    },
+    {
+      "number": 14,
+      "transliteration": "inna rabbaka labil-mirṣād"
+    },
+    {
+      "number": 15,
+      "transliteration": "fa ammal-insānu iżā mabtalāhu rabbuhụ fa akramahụ wa na''amahụ fa yaqụlu rabbī akraman"
+    },
+    {
+      "number": 16,
+      "transliteration": "wa ammā iżā mabtalāhu fa qadara 'alaihi rizqahụ fa yaqụlu rabbī ahānan"
+    },
+    {
+      "number": 17,
+      "transliteration": "kallā bal lā tukrimụnal-yatīm"
+    },
+    {
+      "number": 18,
+      "transliteration": "wa lā tahāḍḍụna 'alā ṭa'āmil-miskīn"
+    },
+    {
+      "number": 19,
+      "transliteration": "wa ta`kulụnat-turāṡa aklal lammā"
+    },
+    {
+      "number": 20,
+      "transliteration": "wa tuḥibbụnal-māla ḥubban jammā"
+    },
+    {
+      "number": 21,
+      "transliteration": "kallā iżā dukkatil-arḍu dakkan dakkā"
+    },
+    {
+      "number": 22,
+      "transliteration": "wa jā`a rabbuka wal-malaku ṣaffan ṣaffā"
+    },
+    {
+      "number": 23,
+      "transliteration": "wa jī`a yauma`iżim bijahannama yauma`iżiy yatażakkarul-insānu wa annā lahuż-żikrā"
+    },
+    {
+      "number": 24,
+      "transliteration": "yaqụlu yā laitanī qaddamtu liḥayātī"
+    },
+    {
+      "number": 25,
+      "transliteration": "fa yauma`iżil lā yu'ażżibu 'ażābahū aḥad"
+    },
+    {
+      "number": 26,
+      "transliteration": "wa lā yụṡiqu waṡāqahū aḥad"
+    },
+    {
+      "number": 27,
+      "transliteration": "yā ayyatuhan-nafsul-muṭma`innah"
+    },
+    {
+      "number": 28,
+      "transliteration": "irji'ī ilā rabbiki rāḍiyatam marḍiyyah"
+    },
+    {
+      "number": 29,
+      "transliteration": "fadkhulī fī 'ibādī"
+    },
+    {
+      "number": 30,
+      "transliteration": "wadkhulī jannatī"
+    }
+  ],
+  "source": {
+    "dataset": "quran-indonesia-sql",
+    "version": "1.0"
+  }
+}

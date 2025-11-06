@@ -1,0 +1,27 @@
+{
+  "number": 112,
+  "name": "Al-Ikhlas",
+  "ayat_count": 4,
+  "ayat": [
+    {
+      "number": 1,
+      "transliteration": "qul huwallāhu aḥad"
+    },
+    {
+      "number": 2,
+      "transliteration": "allāhuṣ-ṣamad"
+    },
+    {
+      "number": 3,
+      "transliteration": "lam yalid wa lam yụlad"
+    },
+    {
+      "number": 4,
+      "transliteration": "wa lam yakul lahụ kufuwan aḥad"
+    }
+  ],
+  "source": {
+    "dataset": "quran-indonesia-sql",
+    "version": "1.0"
+  }
+}

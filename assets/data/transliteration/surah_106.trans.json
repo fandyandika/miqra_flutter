@@ -1,0 +1,27 @@
+{
+  "number": 106,
+  "name": "Quraysh",
+  "ayat_count": 4,
+  "ayat": [
+    {
+      "number": 1,
+      "transliteration": "li`īlāfi quraīsy"
+    },
+    {
+      "number": 2,
+      "transliteration": "īlāfihim riḥlatasy-syitā`i waṣ-ṣaīf"
+    },
+    {
+      "number": 3,
+      "transliteration": "falya'budụ rabba hāżal-baīt"
+    },
+    {
+      "number": 4,
+      "transliteration": "allażī aṭ'amahum min jụ'iw wa āmanahum min khaụf"
+    }
+  ],
+  "source": {
+    "dataset": "quran-indonesia-sql",
+    "version": "1.0"
+  }
+}

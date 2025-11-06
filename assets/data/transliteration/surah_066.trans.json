@@ -1,0 +1,59 @@
+{
+  "number": 66,
+  "name": "At-Tahrim",
+  "ayat_count": 12,
+  "ayat": [
+    {
+      "number": 1,
+      "transliteration": "yā ayyuhan-nabiyyu lima tuḥarrimu mā aḥallallāhu lak, tabtagī marḍāta azwājik, wallāhu gafụrur raḥīm"
+    },
+    {
+      "number": 2,
+      "transliteration": "qad faraḍallāhu lakum taḥillata aimānikum, wallāhu maulākum, wa huwal-'alīmul-ḥakīm"
+    },
+    {
+      "number": 3,
+      "transliteration": "wa iż asarran-nabiyyu ilā ba'ḍi azwājihī ḥadīṡā, fa lammā nabba`at bihī wa aẓ-harahullāhu 'alaihi 'arrafa ba'ḍahụ wa a'raḍa 'am ba'ḍ, fa lammā nabba`ahā bihī qālat man amba`aka hāżā, qāla nabba`aniyal-'alīmul-khabīr"
+    },
+    {
+      "number": 4,
+      "transliteration": "in tatụbā ilallāhi fa qad ṣagat qulụbukumā, wa in taẓāharā 'alaihi fa innallāha huwa maulāhu wa jibrīlu wa ṣāliḥul-mu`minīn, wal-malā`ikatu ba'da żālika ẓahīr"
+    },
+    {
+      "number": 5,
+      "transliteration": "'asā rabbuhū in ṭallaqakunna ay yubdilahū azwājan khairam mingkunna muslimātim mu`mināting qānitātin tā`ibātin 'ābidātin sā`iḥātin ṡayyibātiw wa abkārā"
+    },
+    {
+      "number": 6,
+      "transliteration": "yā ayyuhallażīna āmanụ qū anfusakum wa ahlīkum nāraw wa qụduhan-nāsu wal-ḥijāratu 'alaihā malā`ikatun gilāẓun syidādul lā ya'ṣụnallāha mā amarahum wa yaf'alụna mā yu`marụn"
+    },
+    {
+      "number": 7,
+      "transliteration": "yā ayyuhallażīna kafarụ lā ta'tażirul-yaụm, innamā tujzauna mā kuntum ta'malụn"
+    },
+    {
+      "number": 8,
+      "transliteration": "yā ayyuhallażīna āmanụ tụbū ilallāhi taubatan naṣụḥā, 'asā rabbukum ay yukaffira 'angkum sayyi`ātikum wa yudkhilakum jannātin tajrī min taḥtihal-an-hāru yauma lā yukhzillāhun-nabiyya wallażīna āmanụ ma'ah, nụruhum yas'ā baina aidīhim wa bi`aimānihim yaqụlụna rabbanā atmim lanā nụranā wagfir lanā, innaka 'alā kulli syai`ing qadīr"
+    },
+    {
+      "number": 9,
+      "transliteration": "yā ayyuhan-nabiyyu jāhidil-kuffāra wal-munāfiqīna wagluẓ 'alaihim, wa ma`wāhum jahannam, wa bi`sal-maṣīr"
+    },
+    {
+      "number": 10,
+      "transliteration": "ḍaraballāhu maṡalal lillażīna kafarumra`ata nụḥiw wamra`ata lụṭ, kānatā taḥta 'abdaini min 'ibādinā ṣāliḥaini fa khānatāhumā fa lam yugniyā 'an-humā minallāhi syai`aw wa qīladkhulan-nāra ma'ad-dākhilīn"
+    },
+    {
+      "number": 11,
+      "transliteration": "wa ḍaraballāhu maṡalal lillażīna āmanumra`ata fir'aụn, iż qālat rabbibni lī 'indaka baitan fil-jannati wa najjinī min fir'auna wa 'amalihī wa najjinī minal-qaumiẓ-ẓālimīn"
+    },
+    {
+      "number": 12,
+      "transliteration": "wa maryamabnata 'imrānallatī aḥṣanat farjahā fa nafakhnā fīhi mir rụḥinā wa ṣaddaqat bikalimāti rabbihā wa kutubihī wa kānat minal-qānitīn"
+    }
+  ],
+  "source": {
+    "dataset": "quran-indonesia-sql",
+    "version": "1.0"
+  }
+}

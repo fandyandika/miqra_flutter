@@ -1,0 +1,135 @@
+{
+  "number": 76,
+  "name": "Al-Insan",
+  "ayat_count": 31,
+  "ayat": [
+    {
+      "number": 1,
+      "transliteration": "hal atā 'alal-insāni ḥīnum minad-dahri lam yakun syai`am mażkụrā"
+    },
+    {
+      "number": 2,
+      "transliteration": "innā khalaqnal-insāna min nuṭfatin amsyājin nabtalīhi fa ja'alnāhu samī'an baṣīrā"
+    },
+    {
+      "number": 3,
+      "transliteration": "innā hadaināhus-sabīla immā syākiraw wa immā kafụrā"
+    },
+    {
+      "number": 4,
+      "transliteration": "innā a'tadnā lil-kāfirīna salāsila wa aglālaw wa sa'īrā"
+    },
+    {
+      "number": 5,
+      "transliteration": "innal-abrāra yasyrabụna ming ka`sing kāna mizājuhā kāfụrā"
+    },
+    {
+      "number": 6,
+      "transliteration": "'ainay yasyrabu bihā 'ibādullāhi yufajjirụnahā tafjīrā"
+    },
+    {
+      "number": 7,
+      "transliteration": "yụfụna bin-nażri wa yakhāfụna yaumang kāna syarruhụ mustaṭīrā"
+    },
+    {
+      "number": 8,
+      "transliteration": "wa yuṭ'imụnaṭ-ṭa'āma 'alā ḥubbihī miskīnaw wa yatīmaw wa asīrā"
+    },
+    {
+      "number": 9,
+      "transliteration": "innamā nuṭ'imukum liwaj-hillāhi lā nurīdu mingkum jazā`aw wa lā syukụrā"
+    },
+    {
+      "number": 10,
+      "transliteration": "innā nakhāfu mir rabbinā yauman 'abụsang qamṭarīrā"
+    },
+    {
+      "number": 11,
+      "transliteration": "fa waqāhumullāhu syarra żālikal-yaumi wa laqqāhum naḍrataw wa surụrā"
+    },
+    {
+      "number": 12,
+      "transliteration": "wa jazāhum bimā ṣabarụ jannataw wa ḥarīrā"
+    },
+    {
+      "number": 13,
+      "transliteration": "muttaki`īna fīhā 'alal-arā`ik, lā yarauna fīhā syamsaw wa lā zamharīrā"
+    },
+    {
+      "number": 14,
+      "transliteration": "wa dāniyatan 'alaihim ẓilāluhā wa żullilat quṭụfuhā tażlīlā"
+    },
+    {
+      "number": 15,
+      "transliteration": "wa yuṭāfu 'alaihim bi`āniyatim min fiḍḍatiw wa akwābing kānat qawārīrā"
+    },
+    {
+      "number": 16,
+      "transliteration": "qawārīra min fiḍḍating qaddarụhā taqdīrā"
+    },
+    {
+      "number": 17,
+      "transliteration": "wa yusqauna fīhā ka`sang kāna mizājuhā zanjabīlā"
+    },
+    {
+      "number": 18,
+      "transliteration": "'ainan fīhā tusammā salsabīlā"
+    },
+    {
+      "number": 19,
+      "transliteration": "wa yaṭụfu 'alaihim wildānum mukhalladụn, iżā ra`aitahum ḥasibtahum lu`lu`am manṡụrā"
+    },
+    {
+      "number": 20,
+      "transliteration": "wa iżā ra`aita ṡamma ra`aita na'īmaw wa mulkang kabīrā"
+    },
+    {
+      "number": 21,
+      "transliteration": "'āliyahum ṡiyābu sundusin khuḍruw wa istabraquw wa ḥullū asāwira min fiḍḍah, wa saqāhum rabbuhum syarāban ṭahụrā"
+    },
+    {
+      "number": 22,
+      "transliteration": "inna hāżā kāna lakum jazā`aw wa kāna sa'yukum masykụrā"
+    },
+    {
+      "number": 23,
+      "transliteration": "innā naḥnu nazzalnā 'alaikal-qur`āna tanzīlā"
+    },
+    {
+      "number": 24,
+      "transliteration": "faṣbir liḥukmi rabbika wa lā tuṭi' min-hum āṡiman au kafụrā"
+    },
+    {
+      "number": 25,
+      "transliteration": "ważkurisma rabbika bukrataw wa aṣīlā"
+    },
+    {
+      "number": 26,
+      "transliteration": "wa minal-laili fasjud lahụ wa sabbiḥ-hu lailan ṭawīlā"
+    },
+    {
+      "number": 27,
+      "transliteration": "inna hā`ulā`i yuḥibbụnal-'ājilata wa yażarụna warā`ahum yauman ṡaqīlā"
+    },
+    {
+      "number": 28,
+      "transliteration": "naḥnu khalaqnāhum wa syadadnā asrahum, wa iżā syi`nā baddalnā amṡālahum tabdīlā"
+    },
+    {
+      "number": 29,
+      "transliteration": "inna hāżihī tażkirah, fa man syā`attakhaża ilā rabbihī sabīlā"
+    },
+    {
+      "number": 30,
+      "transliteration": "wa mā tasyā`ụna illā ay yasyā`allāh, innallāha kāna 'alīman ḥakīmā"
+    },
+    {
+      "number": 31,
+      "transliteration": "yudkhilu may yasyā`u fī raḥmatih, waẓ-ẓālimīna a'adda lahum 'ażāban alīmā"
+    }
+  ],
+  "source": {
+    "dataset": "quran-indonesia-sql",
+    "version": "1.0"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "number": 97,
+  "name": "Al-Qadr",
+  "ayat_count": 5,
+  "ayat": [
+    {
+      "number": 1,
+      "transliteration": "innā anzalnāhu fī lailatil-qadr"
+    },
+    {
+      "number": 2,
+      "transliteration": "wa mā adrāka mā lailatul-qadr"
+    },
+    {
+      "number": 3,
+      "transliteration": "lailatul-qadri khairum min alfi syahr"
+    },
+    {
+      "number": 4,
+      "transliteration": "tanazzalul-malā`ikatu war-rụḥu fīhā bi`iżni rabbihim, ming kulli amr"
+    },
+    {
+      "number": 5,
+      "transliteration": "salāmun hiya ḥattā maṭla'il-fajr"
+    }
+  ],
+  "source": {
+    "dataset": "quran-indonesia-sql",
+    "version": "1.0"
+  }
+}

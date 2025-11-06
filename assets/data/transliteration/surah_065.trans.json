@@ -1,0 +1,59 @@
+{
+  "number": 65,
+  "name": "At-Talaq",
+  "ayat_count": 12,
+  "ayat": [
+    {
+      "number": 1,
+      "transliteration": "yā ayyuhan-nabiyyu iżā ṭallaqtumun-nisā`a fa ṭalliqụhunna li'iddatihinna wa aḥṣul-'iddah, wattaqullāha rabbakum, lā tukhrijụhunna mim buyụtihinna wa lā yakhrujna illā ay ya`tīna bifāḥisyatim mubayyinah, wa tilka ḥudụdullāh, wa may yata'adda ḥudụdallāhi fa qad ẓalama nafsah, lā tadrī la'allallāha yuḥdiṡu ba'da żālika amrā"
+    },
+    {
+      "number": 2,
+      "transliteration": "fa iżā balagna ajalahunna fa amsikụhunna bima'rụfin au fāriqụhunna bima'rụfiw wa asy-hidụ żawai 'adlim mingkum wa aqīmusy-syahādata lillāh, żālikum yụ'aẓu bihī mang kāna yu`minu billāhi wal-yaumil-ākhir, wa may yattaqillāha yaj'al lahụ makhrajā"
+    },
+    {
+      "number": 3,
+      "transliteration": "wa yarzuq-hu min ḥaiṡu lā yaḥtasib, wa may yatawakkal 'alallāhi fa huwa ḥasbuh, innallāha bāligu amrih, qad ja'alallāhu likulli syai`ing qadrā"
+    },
+    {
+      "number": 4,
+      "transliteration": "wal-lā`i ya`isna minal-maḥīḍi min nisā`ikum inirtabtum fa 'iddatuhunna ṡalāṡatu asy-huriw wal-lā`i lam yahiḍn, wa ulātul-aḥmāli ajaluhunna ay yaḍa'na ḥamlahunn, wa may yattaqillāha yaj'al lahụ min amrihī yusrā"
+    },
+    {
+      "number": 5,
+      "transliteration": "żālika amrullāhi anzalahū ilaikum, wa may yattaqillāha yukaffir 'an-hu sayyi`ātihī wa yu'ẓim lahū ajrā"
+    },
+    {
+      "number": 6,
+      "transliteration": "askinụhunna min ḥaiṡu sakantum miw wujdikum wa lā tuḍārrụhunna lituḍayyiqụ 'alaihinn, wa ing kunna ulāti ḥamlin fa anfiqụ 'alaihinna ḥattā yaḍa'na ḥamlahunn, fa in arḍa'na lakum fa ātụhunna ujụrahunn, wa`tamirụ bainakum bima'rụf, wa in ta'āsartum fa saturḍi'u lahū ukhrā"
+    },
+    {
+      "number": 7,
+      "transliteration": "liyunfiq żụ sa'atim min sa'atih, wa mang qudira 'alaihi rizquhụ falyunfiq mimmā ātāhullāh, lā yukallifullāhu nafsan illā mā ātāhā, sayaj'alullāhu ba'da 'usriy yusrā"
+    },
+    {
+      "number": 8,
+      "transliteration": "wa ka`ayyim ming qaryatin 'atat 'an amri rabbihā wa rusulihī fa ḥāsabnāhā ḥisāban syadīdaw wa 'ażżabnāhā 'ażāban nukrā"
+    },
+    {
+      "number": 9,
+      "transliteration": "fa żāqat wa bāla amrihā wa kāna 'āqibatu amrihā khusrā"
+    },
+    {
+      "number": 10,
+      "transliteration": "a'addallāhu lahum 'ażāban syadīdan fattaqullāha yā ulil-albāb, allażīna āmanụ qad anzalallāhu ilaikum żikrā"
+    },
+    {
+      "number": 11,
+      "transliteration": "rasụlay yatlụ 'alaikum āyātillāhi mubayyinātil liyukhrijallażīna āmanụ wa 'amiluṣ-ṣāliḥāti minaẓ-ẓulumāti ilan-nụr, wa may yu`mim billāhi wa ya'mal ṣāliḥay yudkhil-hu jannātin tajrī min taḥtihal-an-hāru khālidīna fīhā abadā, qad aḥsanallāhu lahụ rizqā"
+    },
+    {
+      "number": 12,
+      "transliteration": "allāhullażī khalaqa sab'a samāwātiw wa minal-arḍi miṡlahunn, yatanazzalul-amru bainahunna lita'lamū annallāha 'alā kulli syai`ing qadīruw wa annallāha qad aḥāṭa bikulli syai`in 'ilmā"
+    }
+  ],
+  "source": {
+    "dataset": "quran-indonesia-sql",
+    "version": "1.0"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "number": 61,
+  "name": "As-Saff",
+  "ayat_count": 14,
+  "ayat": [
+    {
+      "number": 1,
+      "transliteration": "sabbaḥa lillāhi mā fis-samāwāti wa mā fil-arḍ, wa huwal-'azīzul-ḥakīm"
+    },
+    {
+      "number": 2,
+      "transliteration": "yā ayyuhallażīna āmanụ lima taqụlụna mā lā taf'alụn"
+    },
+    {
+      "number": 3,
+      "transliteration": "kabura maqtan 'indallāhi an taqụlụ mā lā taf'alụn"
+    },
+    {
+      "number": 4,
+      "transliteration": "innallāha yuḥibbullażīna yuqātilụna fī sabīlihī ṣaffang ka`annahum bun-yānum marṣụṣ"
+    },
+    {
+      "number": 5,
+      "transliteration": "wa iż qāla mụsā liqaumihī yā qaumi lima tu`żụnanī wa qat ta'lamụna annī rasụlullāhi ilaikum, fa lammā zāgū azāgallāhu qulụbahum, wallāhu lā yahdil-qaumal-fāsiqīn"
+    },
+    {
+      "number": 6,
+      "transliteration": "wa iż qāla 'īsabnu maryama yā banī isrā`īla innī rasụlullāhi ilaikum muṣaddiqal limā baina yadayya minat-taurāti wa mubasysyiram birasụliy ya`tī mim ba'dismuhū aḥmad, fa lammā jā`ahum bil-bayyināti qālụ hāżā siḥrum mubīn"
+    },
+    {
+      "number": 7,
+      "transliteration": "wa man aẓlamu mim maniftarā 'alallāhil-każiba wa huwa yud'ā ilal-islām, wallāhu lā yahdil-qaumaẓ-ẓālimīn"
+    },
+    {
+      "number": 8,
+      "transliteration": "yurīdụna liyuṭfi`ụ nụrallāhi bi`afwāhihim, wallāhu mutimmu nụrihī walau karihal-kāfirụn"
+    },
+    {
+      "number": 9,
+      "transliteration": "huwallażī arsala rasụlahụ bil-hudā wa dīnil-ḥaqqi liyuẓ-hirahụ 'alad-dīni kullihī walau karihal-musyrikụn"
+    },
+    {
+      "number": 10,
+      "transliteration": "yā ayyuhallażīna āmanụ hal adullukum 'alā tijāratin tunjīkum min 'ażābin alīm"
+    },
+    {
+      "number": 11,
+      "transliteration": "tu`minụna billāhi wa rasụlihī wa tujāhidụna fī sabīlillāhi bi`amwālikum wa anfusikum, żālikum khairul lakum ing kuntum ta'lamụn"
+    },
+    {
+      "number": 12,
+      "transliteration": "yagfir lakum żunụbakum wa yudkhilkum jannātin tajrī min taḥtihal-an-hāru wa masākina ṭayyibatan fī jannāti 'adn, żālikal-fauzul-'aẓīm"
+    },
+    {
+      "number": 13,
+      "transliteration": "wa ukhrā tuḥibbụnahā, naṣrum minallāhi wa fat-ḥung qarīb, wa basysyiril-mu`minīn"
+    },
+    {
+      "number": 14,
+      "transliteration": "yā ayyuhallażīna āmanụ kụnū anṣārallāhi kamā qāla 'īsabnu maryama lil-ḥawāriyyīna man anṣārī ilallāh, qālal-ḥawāriyyụna naḥnu anṣārullāhi fa āmanat ṭā`ifatum mim banī isrā`īla wa kafarat ṭā`ifah, fa ayyadnallażīna āmanụ 'alā 'aduwwihim fa aṣbaḥụ ẓāhirīn"
+    }
+  ],
+  "source": {
+    "dataset": "quran-indonesia-sql",
+    "version": "1.0"
+  }
+}

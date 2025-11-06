@@ -1,0 +1,31 @@
+{
+  "number": 111,
+  "name": "Al-Masad",
+  "ayat_count": 5,
+  "ayat": [
+    {
+      "number": 1,
+      "transliteration": "tabbat yadā abī lahabiw wa tabb"
+    },
+    {
+      "number": 2,
+      "transliteration": "mā agnā 'an-hu māluhụ wa mā kasab"
+    },
+    {
+      "number": 3,
+      "transliteration": "sayaṣlā nāran żāta lahab"
+    },
+    {
+      "number": 4,
+      "transliteration": "wamra`atuh, ḥammālatal-ḥaṭab"
+    },
+    {
+      "number": 5,
+      "transliteration": "fī jīdihā ḥablum mim masad"
+    }
+  ],
+  "source": {
+    "dataset": "quran-indonesia-sql",
+    "version": "1.0"
+  }
+}

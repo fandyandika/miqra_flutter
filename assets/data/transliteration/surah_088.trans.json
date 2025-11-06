@@ -1,0 +1,115 @@
+{
+  "number": 88,
+  "name": "Al-Ghashiyah",
+  "ayat_count": 26,
+  "ayat": [
+    {
+      "number": 1,
+      "transliteration": "hal atāka ḥadīṡul-gāsyiyah"
+    },
+    {
+      "number": 2,
+      "transliteration": "wujụhuy yauma`iżin khāsyi'ah"
+    },
+    {
+      "number": 3,
+      "transliteration": "'āmilatun nāṣibah"
+    },
+    {
+      "number": 4,
+      "transliteration": "taṣlā nāran ḥāmiyah"
+    },
+    {
+      "number": 5,
+      "transliteration": "tusqā min 'ainin āniyah"
+    },
+    {
+      "number": 6,
+      "transliteration": "laisa lahum ṭa'āmun illā min ḍarī'"
+    },
+    {
+      "number": 7,
+      "transliteration": "lā yusminu wa lā yugnī min jụ'"
+    },
+    {
+      "number": 8,
+      "transliteration": "wujụhuy yauma`iżin nā'imah"
+    },
+    {
+      "number": 9,
+      "transliteration": "lisa'yihā rāḍiyah"
+    },
+    {
+      "number": 10,
+      "transliteration": "fī jannatin 'āliyah"
+    },
+    {
+      "number": 11,
+      "transliteration": "lā tasma'u fīhā lāgiyah"
+    },
+    {
+      "number": 12,
+      "transliteration": "fīhā 'ainun jāriyah"
+    },
+    {
+      "number": 13,
+      "transliteration": "fīhā sururum marfụ'ah"
+    },
+    {
+      "number": 14,
+      "transliteration": "wa akwābum mauḍụ'ah"
+    },
+    {
+      "number": 15,
+      "transliteration": "wa namāriqu maṣfụfah"
+    },
+    {
+      "number": 16,
+      "transliteration": "wa zarābiyyu mabṡụṡah"
+    },
+    {
+      "number": 17,
+      "transliteration": "a fa lā yanẓurụna ilal-ibili kaifa khuliqat"
+    },
+    {
+      "number": 18,
+      "transliteration": "wa ilas-samā`i kaifa rufi'at"
+    },
+    {
+      "number": 19,
+      "transliteration": "wa ilal-jibāli kaifa nuṣibat"
+    },
+    {
+      "number": 20,
+      "transliteration": "wa ilal-arḍi kaifa suṭiḥat"
+    },
+    {
+      "number": 21,
+      "transliteration": "fa żakkir, innamā anta mużakkir"
+    },
+    {
+      "number": 22,
+      "transliteration": "lasta 'alaihim bimuṣaiṭir"
+    },
+    {
+      "number": 23,
+      "transliteration": "illā man tawallā wa kafar"
+    },
+    {
+      "number": 24,
+      "transliteration": "fa yu'ażżibuhullāhul-'ażābal-akbar"
+    },
+    {
+      "number": 25,
+      "transliteration": "inna ilainā iyābahum"
+    },
+    {
+      "number": 26,
+      "transliteration": "ṡumma inna 'alainā ḥisābahum"
+    }
+  ],
+  "source": {
+    "dataset": "quran-indonesia-sql",
+    "version": "1.0"
+  }
+}

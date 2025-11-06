@@ -1,0 +1,39 @@
+{
+  "number": 107,
+  "name": "Al-Ma'un",
+  "ayat_count": 7,
+  "ayat": [
+    {
+      "number": 1,
+      "transliteration": "a ra`aitallażī yukażżibu bid-dīn"
+    },
+    {
+      "number": 2,
+      "transliteration": "fa żālikallażī yadu''ul-yatīm"
+    },
+    {
+      "number": 3,
+      "transliteration": "wa lā yaḥuḍḍu 'alā ṭa'āmil-miskīn"
+    },
+    {
+      "number": 4,
+      "transliteration": "fa wailul lil-muṣallīn"
+    },
+    {
+      "number": 5,
+      "transliteration": "allażīna hum 'an ṣalātihim sāhụn"
+    },
+    {
+      "number": 6,
+      "transliteration": "allażīna hum yurā`ụn"
+    },
+    {
+      "number": 7,
+      "transliteration": "wa yamna'ụnal-mā'ụn"
+    }
+  ],
+  "source": {
+    "dataset": "quran-indonesia-sql",
+    "version": "1.0"
+  }
+}

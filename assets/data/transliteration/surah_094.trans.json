@@ -1,0 +1,43 @@
+{
+  "number": 94,
+  "name": "Ash-Sharh",
+  "ayat_count": 8,
+  "ayat": [
+    {
+      "number": 1,
+      "transliteration": "a lam nasyraḥ laka ṣadrak"
+    },
+    {
+      "number": 2,
+      "transliteration": "wa waḍa'nā 'angka wizrak"
+    },
+    {
+      "number": 3,
+      "transliteration": "allażī angqaḍa ẓahrak"
+    },
+    {
+      "number": 4,
+      "transliteration": "wa rafa'nā laka żikrak"
+    },
+    {
+      "number": 5,
+      "transliteration": "fa inna ma'al-'usri yusrā"
+    },
+    {
+      "number": 6,
+      "transliteration": "inna ma'al-'usri yusrā"
+    },
+    {
+      "number": 7,
+      "transliteration": "fa iżā faragta fanṣab"
+    },
+    {
+      "number": 8,
+      "transliteration": "wa ilā rabbika fargab"
+    }
+  ],
+  "source": {
+    "dataset": "quran-indonesia-sql",
+    "version": "1.0"
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "number": 45,
+  "name": "Al-Jathiyah",
+  "ayat_count": 37,
+  "ayat": [
+    {
+      "number": 1,
+      "transliteration": "ḥā mīm"
+    },
+    {
+      "number": 2,
+      "transliteration": "tanzīlul-kitābi minallāhil-'azīzil-ḥakīm"
+    },
+    {
+      "number": 3,
+      "transliteration": "inna fis-samāwāti wal-arḍi la`āyātil lil-mu`minīn"
+    },
+    {
+      "number": 4,
+      "transliteration": "wa fī khalqikum wa mā yabuṡṡu min dābbatin āyātul liqaumiy yụqinụn"
+    },
+    {
+      "number": 5,
+      "transliteration": "wakhtilāfil-laili wan-nahāri wa mā anzalallāhu minas-samā`i mir rizqin fa aḥyā bihil-arḍa ba'da mautihā wa taṣrīfir-riyāḥi āyātul liqaumiy ya'qilụn"
+    },
+    {
+      "number": 6,
+      "transliteration": "tilka āyātullāhi natlụhā 'alaika bil-ḥaqq, fa bi`ayyi ḥadīṡim ba'dallāhi wa āyātihī yu`minụn"
+    },
+    {
+      "number": 7,
+      "transliteration": "wailul likulli affākin aṡīm"
+    },
+    {
+      "number": 8,
+      "transliteration": "yasma'u āyātillāhi tutlā 'alaihi ṡumma yuṣirru mustakbirang ka`al lam yasma'hā, fa basysyir-hu bi'ażābin alīm"
+    },
+    {
+      "number": 9,
+      "transliteration": "wa iżā 'alima min āyātinā syai`anittakhażahā huzuwā, ulā`ika lahum 'ażābum muhīn"
+    },
+    {
+      "number": 10,
+      "transliteration": "miw warā`ihim jahannam, wa lā yugnī 'an-hum mā kasabụ syai`aw wa lā mattakhażụ min dụnillāhi auliyā`, wa lahum 'ażābun 'aẓīm"
+    },
+    {
+      "number": 11,
+      "transliteration": "hāżā hudā, wallażīna kafarụ bi`āyāti rabbihim lahum 'ażābum mir rijzin alīm"
+    },
+    {
+      "number": 12,
+      "transliteration": "allāhullażī sakhkhara lakumul-baḥra litajriyal-fulku fīhi bi`amrihī wa litabtagụ min faḍlihī wa la'allakum tasykurụn"
+    },
+    {
+      "number": 13,
+      "transliteration": "wa sakhkhara lakum mā fis-samāwāti wa mā fil-arḍi jamī'am min-h, inna fī żālika la`āyātil liqaumiy yatafakkarụn"
+    },
+    {
+      "number": 14,
+      "transliteration": "qul lillażīna āmanụ yagfirụ lillażīna lā yarjụna ayyāmallāhi liyajziya qaumam bimā kānụ yaksibụn"
+    },
+    {
+      "number": 15,
+      "transliteration": "man 'amila ṣāliḥan fa linafsih, wa man asā`a fa 'alaihā ṡumma ilā rabbikum turja'ụn"
+    },
+    {
+      "number": 16,
+      "transliteration": "wa laqad ātainā banī isrā`īlal-kitāba wal-ḥukma wan-nubuwwata wa razaqnāhum minaṭ-ṭayyibāti wa faḍḍalnāhum 'alal-'ālamīn"
+    },
+    {
+      "number": 17,
+      "transliteration": "wa ātaināhum bayyinātim minal-amr, fa makhtalafū illā mim ba'di mā jā`ahumul-'ilmu bagyam bainahum, inna rabbaka yaqḍī bainahum yaumal-qiyāmati fīmā kānụ fīhi yakhtalifụn"
+    },
+    {
+      "number": 18,
+      "transliteration": "ṡumma ja'alnāka 'alā syarī'atim minal-amri fattabi'hā wa lā tattabi' ahwā`allażīna lā ya'lamụn"
+    },
+    {
+      "number": 19,
+      "transliteration": "innahum lay yugnụ 'angka minallāhi syai`ā, wa innaẓ-ẓālimīna ba'ḍuhum auliyā`u ba'ḍ, wallāhu waliyyul-muttaqīn"
+    },
+    {
+      "number": 20,
+      "transliteration": "hāżā baṣā`iru lin-nāsi wa hudaw wa raḥmatul liqaumiy yụqinụn"
+    },
+    {
+      "number": 21,
+      "transliteration": "am ḥasiballażīnajtaraḥus-sayyi`āti an naj'alahum kallażīna āmanụ wa 'amiluṣ-ṣāliḥāti sawā`am maḥyāhum wa mamātuhum, sā`a mā yaḥkumụn"
+    },
+    {
+      "number": 22,
+      "transliteration": "wa khalaqallāhus-samāwāti wal-arḍa bil-ḥaqqi wa litujzā kullu nafsim bimā kasabat wa hum lā yuẓlamụn"
+    },
+    {
+      "number": 23,
+      "transliteration": "a fa ra`aita manittakhaża ilāhahụ hawāhu wa aḍallahullāhu 'alā 'ilmiw wa khatama 'alā sam'ihī wa qalbihī wa ja'ala 'alā baṣarihī gisyāwah, fa may yahdīhi mim ba'dillāh, a fa lā tażakkarụn"
+    },
+    {
+      "number": 24,
+      "transliteration": "wa qālụ mā hiya illā ḥayātunad-dun-yā namụtu wa naḥyā wa mā yuhlikunā illad-dahr, wa mā lahum biżālika min 'ilm, in hum illā yaẓunnụn"
+    },
+    {
+      "number": 25,
+      "transliteration": "wa iżā tutlā 'alaihim āyātunā bayyinātim mā kāna ḥujjatahum illā ang qālu`tụ bi`ābā`inā ing kuntum ṣādiqīn"
+    },
+    {
+      "number": 26,
+      "transliteration": "qulillāhu yuḥyīkum ṡumma yumītukum ṡumma yajma'ukum ilā yaumil-qiyāmati lā raiba fīhi wa lākinna akṡaran-nāsi lā ya'lamụn"
+    },
+    {
+      "number": 27,
+      "transliteration": "wa lillāhi mulkus-samāwāti wal-arḍ, wa yauma taqụmus-sā'atu yauma`iżiy yakhsarul-mubṭilụn"
+    },
+    {
+      "number": 28,
+      "transliteration": "wa tarā kulla ummatin jāṡiyah, kullu ummatin tud'ā ilā kitābihā, al-yauma tujzauna mā kuntum ta'malụn"
+    },
+    {
+      "number": 29,
+      "transliteration": "hāżā kitābunā yanṭiqu 'alaikum bil-ḥaqq, innā kunnā nastansikhu mā kuntum ta'malụn"
+    },
+    {
+      "number": 30,
+      "transliteration": "fa ammallażīna āmanụ wa 'amiluṣ-ṣāliḥāti fa yudkhiluhum rabbuhum fī raḥmatih, żālika huwal-fauzul-mubīn"
+    },
+    {
+      "number": 31,
+      "transliteration": "wa ammallażīna kafarụ, a fa lam takun āyātī tutlā 'alaikum fastakbartum wa kuntum qaumam mujrimīn"
+    },
+    {
+      "number": 32,
+      "transliteration": "wa iżā qīla inna wa'dallāhi ḥaqquw was-sā'atu lā raiba fīhā qultum mā nadrī mas-sā'atu in naẓunnu illā ẓannaw wa mā naḥnu bimustaiqinīn"
+    },
+    {
+      "number": 33,
+      "transliteration": "wa badā lahum sayyi`ātu mā 'amilụ wa ḥāqa bihim mā kānụ bihī yastahzi`ụn"
+    },
+    {
+      "number": 34,
+      "transliteration": "wa qīlal-yauma nansākum kamā nasītum liqā`a yaumikum hāżā wa ma`wākumun-nāru wa mā lakum min nāṣirīn"
+    },
+    {
+      "number": 35,
+      "transliteration": "żālikum bi`annakumuttakhażtum āyātillāhi huzuwaw wa garratkumul-ḥayātud-dun-yā, fal-yauma lā yukhrajụna min-hā wa lā hum yusta'tabụn"
+    },
+    {
+      "number": 36,
+      "transliteration": "fa lillāhil-ḥamdu rabbis-samāwāti wa rabbil-arḍi rabbil-'ālamīn"
+    },
+    {
+      "number": 37,
+      "transliteration": "wa lahul-kibriyā`u fis-samāwāti wal-arḍ, wa huwal-'azīzul-ḥakīm"
+    }
+  ],
+  "source": {
+    "dataset": "quran-indonesia-sql",
+    "version": "1.0"
+  }
+}

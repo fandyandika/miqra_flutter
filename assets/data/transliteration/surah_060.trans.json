@@ -1,0 +1,63 @@
+{
+  "number": 60,
+  "name": "Al-Mumtahanah",
+  "ayat_count": 13,
+  "ayat": [
+    {
+      "number": 1,
+      "transliteration": "yā ayyuhallażīna āmanụ lā tattakhiżụ 'aduwwī wa 'aduwwakum auliyā`a tulqụna ilaihim bil-mawaddati wa qad kafarụ bimā jā`akum minal-ḥaqq, yukhrijụnar-rasụla wa iyyākum an tu`minụ billāhi rabbikum, ing kuntum kharajtum jihādan fī sabīlī wabtigā`a marḍātī tusirrụna ilaihim bil-mawaddati wa ana a'lamu bimā akhfaitum wa mā a'lantum, wa may yaf'al-hu mingkum fa qad ḍalla sawā`as-sabīl"
+    },
+    {
+      "number": 2,
+      "transliteration": "iy yaṡqafụkum yakụnụ lakum a'dā`aw wa yabsuṭū ilaikum aidiyahum wa alsinatahum bis-sū`i wa waddụ lau takfurụn"
+    },
+    {
+      "number": 3,
+      "transliteration": "lan tanfa'akum ar-ḥāmukum wa lā aulādukum, yaumal-qiyāmati yafṣilu bainakum, wallāhu bimā ta'malụna baṣīr"
+    },
+    {
+      "number": 4,
+      "transliteration": "qad kānat lakum uswatun ḥasanatun fī ibrāhīma wallażīna ma'ah, iż qālụ liqaumihim innā bura`ā`u mingkum wa mimmā ta'budụna min dụnillāhi kafarnā bikum wa badā bainanā wa bainakumul-'adāwatu wal-bagḍā`u abadan ḥattā tu`minụ billāhi waḥdahū illā qaula ibrāhīma li`abīhi la`astagfiranna laka wa mā amliku laka minallāhi min syaī`, rabbanā 'alaika tawakkalnā wa ilaika anabnā wa ilaikal-maṣīr"
+    },
+    {
+      "number": 5,
+      "transliteration": "rabbanā lā taj'alnā fitnatal lillażīna kafarụ wagfir lanā rabbanā, innaka antal-'azīzul-ḥakīm"
+    },
+    {
+      "number": 6,
+      "transliteration": "laqad kāna lakum fīhim uswatun ḥasanatul limang kāna yarjullāha wal-yaumal-ākhir, wa may yatawalla fa innallāha huwal-ganiyyul-ḥamīd"
+    },
+    {
+      "number": 7,
+      "transliteration": "'asallāhu ay yaj'ala bainakum wa bainallażīna 'ādaitum min-hum mawaddah, wallāhu qadīrun, wallāhu gafụrur raḥīm"
+    },
+    {
+      "number": 8,
+      "transliteration": "lā yan-hākumullāhu 'anillażīna lam yuqātilụkum fid-dīni wa lam yukhrijụkum min diyārikum an tabarrụhum wa tuqsiṭū ilaihim, innallāha yuḥibbul-muqsiṭīn"
+    },
+    {
+      "number": 9,
+      "transliteration": "innamā yan-hākumullāhu 'anillażīna qātalụkum fid-dīni wa akhrajụkum min diyārikum wa ẓāharụ 'alā ikhrājikum an tawallauhum, wa may yatawallahum fa ulā`ika humuẓ-ẓālimụn"
+    },
+    {
+      "number": 10,
+      "transliteration": "yā ayyuhallażīna āmanū iżā jā`akumul-mu`minātu muhājirātin famtaḥinụhunn, allāhu a'lamu bi`īmānihinna fa in 'alimtumụhunna mu`minātin fa lā tarji'ụhunna ilal-kuffār, lā hunna ḥillul lahum wa lā hum yaḥillụna lahunn, wa ātụhum mā anfaqụ, wa lā junāḥa 'alaikum an tangkiḥụhunna iżā ātaitumụhunna ujụrahunn, wa lā tumsikụ bi'iṣamil-kawāfiri was`alụ mā anfaqtum walyas`alụ mā anfaqụ, żālikum ḥukmullāh, yaḥkumu bainakum, wallāhu 'alīmun ḥakīm"
+    },
+    {
+      "number": 11,
+      "transliteration": "wa in fātakum syai`um min azwājikum ilal-kuffāri fa āqabtum fa ātullażīna żahabat azwājuhum miṡla mā anfaqụ, wattaqullāhallażī antum bihī mu`minụn"
+    },
+    {
+      "number": 12,
+      "transliteration": "yā ayyuhan-nabiyyu iżā jā`akal-mu`minātu yubāyi'naka 'alā al lā yusyrikna billāhi syai`aw wa lā yasriqna wa lā yaznīna wa lā yaqtulna aulādahunna wa lā ya`tīna bibuhtāniy yaftarīnahụ baina aidīhinna wa arjulihinna wa lā ya'ṣīnaka fī ma'rụfin fa bāyi'hunna wastagfir lahunnallāh, innallāha gafụrur raḥīm"
+    },
+    {
+      "number": 13,
+      "transliteration": "yā ayyuhallażīna āmanụ lā tatawallau qauman gaḍiballāhu 'alaihim qad ya`isụ minal-ākhirati kamā ya`isal-kuffāru min aṣ-ḥābil-qubụr"
+    }
+  ],
+  "source": {
+    "dataset": "quran-indonesia-sql",
+    "version": "1.0"
+  }
+}

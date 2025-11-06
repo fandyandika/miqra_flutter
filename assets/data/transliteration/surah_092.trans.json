@@ -1,0 +1,95 @@
+{
+  "number": 92,
+  "name": "Al-Layl",
+  "ayat_count": 21,
+  "ayat": [
+    {
+      "number": 1,
+      "transliteration": "wal-laili iżā yagsyā"
+    },
+    {
+      "number": 2,
+      "transliteration": "wan-nahāri iżā tajallā"
+    },
+    {
+      "number": 3,
+      "transliteration": "wa mā khalaqaż-żakara wal-unṡā"
+    },
+    {
+      "number": 4,
+      "transliteration": "inna sa'yakum lasyattā"
+    },
+    {
+      "number": 5,
+      "transliteration": "fa ammā man a'ṭā wattaqā"
+    },
+    {
+      "number": 6,
+      "transliteration": "wa ṣaddaqa bil-ḥusnā"
+    },
+    {
+      "number": 7,
+      "transliteration": "fa sanuyassiruhụ lil-yusrā"
+    },
+    {
+      "number": 8,
+      "transliteration": "wa ammā mam bakhila wastagnā"
+    },
+    {
+      "number": 9,
+      "transliteration": "wa każżaba bil-ḥusnā"
+    },
+    {
+      "number": 10,
+      "transliteration": "fa sanuyassiruhụ lil-'usrā"
+    },
+    {
+      "number": 11,
+      "transliteration": "wa mā yugnī 'an-hu māluhū iżā taraddā"
+    },
+    {
+      "number": 12,
+      "transliteration": "inna 'alainā lal-hudā"
+    },
+    {
+      "number": 13,
+      "transliteration": "wa inna lanā lal-ākhirata wal-ụlā"
+    },
+    {
+      "number": 14,
+      "transliteration": "fa anżartukum nāran talaẓẓā"
+    },
+    {
+      "number": 15,
+      "transliteration": "lā yaṣlāhā illal-asyqā"
+    },
+    {
+      "number": 16,
+      "transliteration": "allażī każżaba wa tawallā"
+    },
+    {
+      "number": 17,
+      "transliteration": "wa sayujannabuhal-atqā"
+    },
+    {
+      "number": 18,
+      "transliteration": "allażī yu`tī mālahụ yatazakkā"
+    },
+    {
+      "number": 19,
+      "transliteration": "wa mā li`aḥadin 'indahụ min ni'matin tujzā"
+    },
+    {
+      "number": 20,
+      "transliteration": "illabtigā`a waj-hi rabbihil-a'lā"
+    },
+    {
+      "number": 21,
+      "transliteration": "wa lasaufa yarḍā"
+    }
+  ],
+  "source": {
+    "dataset": "quran-indonesia-sql",
+    "version": "1.0"
+  }
+}

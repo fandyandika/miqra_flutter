@@ -1,0 +1,123 @@
+{
+  "number": 71,
+  "name": "Nuh",
+  "ayat_count": 28,
+  "ayat": [
+    {
+      "number": 1,
+      "transliteration": "innā arsalnā nụhan ilā qaumihī an anżir qaumaka ming qabli ay ya`tiyahum 'ażābun alīm"
+    },
+    {
+      "number": 2,
+      "transliteration": "qāla yā qaumi innī lakum nażīrum mubīn"
+    },
+    {
+      "number": 3,
+      "transliteration": "ani'budullāha wattaqụhu wa aṭī'ụn"
+    },
+    {
+      "number": 4,
+      "transliteration": "yagfir lakum min żunụbikum wa yu`akhkhirkum ilā ajalim musammā, inna ajalallāhi iżā jā`a lā yu`akhkhar, lau kuntum ta'lamụn"
+    },
+    {
+      "number": 5,
+      "transliteration": "qāla rabbi innī da'autu qaumī lailaw wa nahārā"
+    },
+    {
+      "number": 6,
+      "transliteration": "fa lam yazid-hum du'ā`ī illā firārā"
+    },
+    {
+      "number": 7,
+      "transliteration": "wa innī kullamā da'autuhum litagfira lahum ja'alū aṣābi'ahum fī āżānihim wastagsyau ṡiyābahum wa aṣarrụ wastakbarustikbārā"
+    },
+    {
+      "number": 8,
+      "transliteration": "ṡumma innī da'autuhum jihārā"
+    },
+    {
+      "number": 9,
+      "transliteration": "ṡumma innī a'lantu lahum wa asrartu lahum isrārā"
+    },
+    {
+      "number": 10,
+      "transliteration": "fa qultustagfirụ rabbakum innahụ kāna gaffārā"
+    },
+    {
+      "number": 11,
+      "transliteration": "yursilis-samā`a 'alaikum midrārā"
+    },
+    {
+      "number": 12,
+      "transliteration": "wa yumdidkum bi`amwāliw wa banīna wa yaj'al lakum jannātiw wa yaj'al lakum an-hārā"
+    },
+    {
+      "number": 13,
+      "transliteration": "mā lakum lā tarjụna lillāhi waqārā"
+    },
+    {
+      "number": 14,
+      "transliteration": "wa qad khalaqakum aṭwārā"
+    },
+    {
+      "number": 15,
+      "transliteration": "a lam tarau kaifa khalaqallāhu sab'a samāwātin ṭibāqā"
+    },
+    {
+      "number": 16,
+      "transliteration": "wa ja'alal-qamara fīhinna nụraw wa ja'alasy-syamsa sirājā"
+    },
+    {
+      "number": 17,
+      "transliteration": "wallāhu ambatakum minal-arḍi nabātā"
+    },
+    {
+      "number": 18,
+      "transliteration": "ṡumma yu'īdukum fīhā wa yukhrijukum ikhrājā"
+    },
+    {
+      "number": 19,
+      "transliteration": "wallāhu ja'ala lakumul-arḍa bisāṭā"
+    },
+    {
+      "number": 20,
+      "transliteration": "litaslukụ min-hā subulan fijājā"
+    },
+    {
+      "number": 21,
+      "transliteration": "qāla nụḥur rabbi innahum 'aṣaunī wattaba'ụ mal lam yazid-hu māluhụ wa waladuhū illā khasārā"
+    },
+    {
+      "number": 22,
+      "transliteration": "wa makarụ makrang kubbārā"
+    },
+    {
+      "number": 23,
+      "transliteration": "wa qālụ lā tażarunna ālihatakum wa lā tażarunna waddaw wa lā suwā'aw wa lā yagụṡa wa ya'ụqa wa nasrā"
+    },
+    {
+      "number": 24,
+      "transliteration": "wa qad aḍallụ kaṡīrā, wa lā tazidiẓ-ẓālimīna illā ḍalālā"
+    },
+    {
+      "number": 25,
+      "transliteration": "mimmā khaṭī`ātihim ugriqụ fa udkhilụ nāran fa lam yajidụ lahum min dụnillāhi anṣārā"
+    },
+    {
+      "number": 26,
+      "transliteration": "wa qāla nụḥur rabbi lā tażar 'alal-arḍi minal-kāfirīna dayyārā"
+    },
+    {
+      "number": 27,
+      "transliteration": "innaka in tażar-hum yuḍillụ 'ibādaka wa lā yalidū illā fājirang kaffārā"
+    },
+    {
+      "number": 28,
+      "transliteration": "rabbigfir lī wa liwālidayya wa liman dakhala baitiya mu`minaw wa lil-mu`minīna wal-mu`mināt, wa lā tazidiẓ-ẓālimīna illā tabārā"
+    }
+  ],
+  "source": {
+    "dataset": "quran-indonesia-sql",
+    "version": "1.0"
+  }
+}

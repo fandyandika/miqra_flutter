@@ -1,0 +1,55 @@
+{
+  "number": 101,
+  "name": "Al-Qari'ah",
+  "ayat_count": 11,
+  "ayat": [
+    {
+      "number": 1,
+      "transliteration": "al-qāri'ah"
+    },
+    {
+      "number": 2,
+      "transliteration": "mal-qāri'ah"
+    },
+    {
+      "number": 3,
+      "transliteration": "wa mā adrāka mal-qāri'ah"
+    },
+    {
+      "number": 4,
+      "transliteration": "yauma yakụnun-nāsu kal-farāsyil-mabṡụṡ"
+    },
+    {
+      "number": 5,
+      "transliteration": "wa takụnul-jibālu kal-'ihnil-manfụsy"
+    },
+    {
+      "number": 6,
+      "transliteration": "fa ammā man ṡaqulat mawāzīnuh"
+    },
+    {
+      "number": 7,
+      "transliteration": "fa huwa fī 'īsyatir rāḍiyah"
+    },
+    {
+      "number": 8,
+      "transliteration": "wa ammā man khaffat mawāzīnuh"
+    },
+    {
+      "number": 9,
+      "transliteration": "fa ummuhụ hāwiyah"
+    },
+    {
+      "number": 10,
+      "transliteration": "wa mā adrāka mā hiyah"
+    },
+    {
+      "number": 11,
+      "transliteration": "nārun ḥāmiyah"
+    }
+  ],
+  "source": {
+    "dataset": "quran-indonesia-sql",
+    "version": "1.0"
+  }
+}
