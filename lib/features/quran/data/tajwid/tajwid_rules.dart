@@ -23,26 +23,30 @@ class TajwidRule {
 /// Tajwid color palette matching standard tajwid color scheme.
 ///
 /// Color mapping based on standard tajwid categorization:
-/// - Blue/Cyan: Iqlab, Madd Muttasil
+/// - Purple/Magenta: Ghunnah & Idghaam dengan Ghunnah
+/// - Blue gradient: Different shades for each Madd type
+/// - Cyan: Iqlab
 /// - Dark Blue: Qalqalah
-/// - Purple/Magenta: Ghunnah, Idghaam dengan Ghunnah, Madd Lazim
 /// - Green: Ikhfa
 /// - Red: Idghaam tanpa Ghunnah
 final Map<String, Color> tajwidPalette = {
-  // Purple/Magenta - Ghunnah & Idghaam dengan Ghunnah & Madd Lazim
+  // Purple/Magenta - Ghunnah & Idghaam dengan Ghunnah
   TajwidRule.ghunnah: const Color(0xFF9C27B0), // Purple
   TajwidRule.idghaamGhunnah: const Color(0xFF9C27B0), // Purple
   TajwidRule.idghaamMutajanisayn: const Color(0xFF9C27B0), // Purple
   TajwidRule.idghaamMutaqaribayn: const Color(0xFF9C27B0), // Purple
   TajwidRule.idghaamShafawi: const Color(0xFF9C27B0), // Purple
-  TajwidRule.madd6: const Color(0xFF9C27B0), // Purple (Madd Lazim)
   
-  // Blue/Cyan - Iqlab & Madd Muttasil
+  // Madd - Different colors for each type
+  TajwidRule.madd6: const Color(0xFFE023E0), // Magenta (Madd Lazim - wajib, 6 harakat)
+  TajwidRule.maddMuttasil: const Color(0xFF0DCDCD), // Teal (Madd Muttasil - wajib, dalam satu kata)
+  TajwidRule.maddMunfasil: const Color(0xFF19B100), // Green (Madd Munfasil - jaiz, antar kata)
+  
+  // Cyan - Iqlab
   TajwidRule.iqlab: const Color(0xFF00BCD4), // Cyan
-  TajwidRule.maddMuttasil: const Color(0xFF00BCD4), // Cyan
   
-  // Dark Blue - Qalqalah
-  TajwidRule.qalqalah: const Color(0xFF1976D2), // Dark Blue
+  // Dark Blue - Qalqalah (different shade from madd_6)
+  TajwidRule.qalqalah: const Color(0xFF1565C0), // Darker Blue
   
   // Green - Ikhfa
   TajwidRule.ikhfa: const Color(0xFF4CAF50), // Green
@@ -50,8 +54,5 @@ final Map<String, Color> tajwidPalette = {
   
   // Red - Idghaam tanpa Ghunnah
   TajwidRule.idghaamNoGhunnah: const Color(0xFFF44336), // Red
-  
-  // Purple - Madd Munfasil (keep same as madd_6 for consistency)
-  TajwidRule.maddMunfasil: const Color(0xFF9C27B0), // Purple
 };
 
