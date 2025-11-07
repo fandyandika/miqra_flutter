@@ -1,0 +1,51 @@
+{
+  "surah_number": 107,
+  "verses": [
+    {
+      "ayah": 1,
+      "spans": []
+    },
+    {
+      "ayah": 2,
+      "spans": []
+    },
+    {
+      "ayah": 3,
+      "spans": []
+    },
+    {
+      "ayah": 4,
+      "spans": [
+        {
+          "rule": "idghaam_no_ghunnah",
+          "start": 7,
+          "end": 12
+        }
+      ]
+    },
+    {
+      "ayah": 5,
+      "spans": [
+        {
+          "rule": "ikhfa",
+          "start": 18,
+          "end": 23
+        }
+      ]
+    },
+    {
+      "ayah": 6,
+      "spans": [
+        {
+          "rule": "madd_muttasil",
+          "start": 20,
+          "end": 22
+        }
+      ]
+    },
+    {
+      "ayah": 7,
+      "spans": []
+    }
+  ]
+}

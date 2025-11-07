@@ -1,0 +1,45 @@
+---
+description: Miqra App
+alwaysApply: false
+---
+# Miqra App — Project Context (Lean v2.2)
+> Minimal context so Cursor always generates Flutter + Riverpod + Supabase code in Rahmah UX style.
+
+## Stack
+- Flutter 3.x (Material/Cupertino), Dart null-safety
+- State: Riverpod (+ hooks)
+- Backend: Supabase (Postgres, Auth, Storage, Realtime) + RLS
+- Local cache: Isar/SQLite
+- Monitoring: Sentry, Analytics: PostHog
+- Design: Rahmah UX (calm, minimal, ethical)
+
+## Architecture
+- Feature-first folders; keep modules independent
+- Local-first → sync later (no hard fails offline)
+- One primary action per screen; reduce UI noise
+- Avoid over-abstraction; prefer composition
+
+## Security & Privacy
+- Enforce RLS: `auth.uid()` on all user tables
+- Reflections/dua private by default; encrypt locally
+- No secrets in code; signed URLs with short expiry
+- No random rewards / gambling-like mechanics
+
+## Rahmah UX (only what impacts code)
+- Calmer feedback (no guilt): use soft states, timeouts ≤ 250ms
+- Typography: Amiri (Arabic), Inter (Latin) if applicable
+- Colors (tokens only): turquoise, coral, gold, sand
+- Large tap targets; accessible contrast; support RTL
+
+## Performance
+- Minimize rebuilds (HookConsumerWidget, const where possible)
+- Lazy-load Qur’an data; paginate streams
+- Profile with `--profile`; avoid heavy animations
+
+## Output expectations
+- Riverpod providers for state
+- Repositories/services for IO
+- Small, focused widgets; early returns over deep nesting
+- Meaningful names; no magic numbers (use constants)
+
+# End

@@ -1,0 +1,681 @@
+{
+  "surah_number": 69,
+  "verses": [
+    {
+      "ayah": 1,
+      "spans": [
+        {
+          "rule": "madd_6",
+          "start": 6,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "ayah": 2,
+      "spans": [
+        {
+          "rule": "madd_6",
+          "start": 9,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "ayah": 3,
+      "spans": [
+        {
+          "rule": "madd_munfasil",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "rule": "qalqalah",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "rule": "madd_6",
+          "start": 26,
+          "end": 28
+        }
+      ]
+    },
+    {
+      "ayah": 4,
+      "spans": [
+        {
+          "rule": "iqlab",
+          "start": 25,
+          "end": 29
+        }
+      ]
+    },
+    {
+      "ayah": 5,
+      "spans": [
+        {
+          "rule": "ghunnah",
+          "start": 4,
+          "end": 7
+        }
+      ]
+    },
+    {
+      "ayah": 6,
+      "spans": [
+        {
+          "rule": "ghunnah",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "rule": "ikhfa",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "rule": "ikhfa",
+          "start": 36,
+          "end": 40
+        }
+      ]
+    },
+    {
+      "ayah": 7,
+      "spans": [
+        {
+          "rule": "qalqalah",
+          "start": 24,
+          "end": 26
+        },
+        {
+          "rule": "idghaam_ghunnah",
+          "start": 35,
+          "end": 40
+        },
+        {
+          "rule": "ikhfa",
+          "start": 68,
+          "end": 73
+        },
+        {
+          "rule": "ghunnah",
+          "start": 110,
+          "end": 113
+        }
+      ]
+    },
+    {
+      "ayah": 8,
+      "spans": [
+        {
+          "rule": "idghaam_shafawi",
+          "start": 17,
+          "end": 23
+        },
+        {
+          "rule": "iqlab",
+          "start": 25,
+          "end": 28
+        }
+      ]
+    },
+    {
+      "ayah": 9,
+      "spans": [
+        {
+          "rule": "madd_muttasil",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "rule": "ikhfa",
+          "start": 24,
+          "end": 29
+        },
+        {
+          "rule": "qalqalah",
+          "start": 29,
+          "end": 31
+        }
+      ]
+    },
+    {
+      "ayah": 10,
+      "spans": [
+        {
+          "rule": "idghaam_no_ghunnah",
+          "start": 49,
+          "end": 54
+        }
+      ]
+    },
+    {
+      "ayah": 11,
+      "spans": [
+        {
+          "rule": "ghunnah",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "rule": "ghunnah",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "rule": "madd_muttasil",
+          "start": 25,
+          "end": 27
+        }
+      ]
+    },
+    {
+      "ayah": 12,
+      "spans": [
+        {
+          "rule": "qalqalah",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "rule": "idghaam_ghunnah",
+          "start": 30,
+          "end": 35
+        },
+        {
+          "rule": "madd_munfasil",
+          "start": 43,
+          "end": 45
+        },
+        {
+          "rule": "idghaam_ghunnah",
+          "start": 51,
+          "end": 56
+        }
+      ]
+    },
+    {
+      "ayah": 13,
+      "spans": [
+        {
+          "rule": "idghaam_ghunnah",
+          "start": 36,
+          "end": 41
+        }
+      ]
+    },
+    {
+      "ayah": 14,
+      "spans": [
+        {
+          "rule": "idghaam_ghunnah",
+          "start": 52,
+          "end": 57
+        }
+      ]
+    },
+    {
+      "ayah": 15,
+      "spans": [
+        {
+          "rule": "idghaam_ghunnah",
+          "start": 12,
+          "end": 17
+        }
+      ]
+    },
+    {
+      "ayah": 16,
+      "spans": [
+        {
+          "rule": "ikhfa",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "rule": "madd_muttasil",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "rule": "idghaam_ghunnah",
+          "start": 42,
+          "end": 47
+        }
+      ]
+    },
+    {
+      "ayah": 17,
+      "spans": [
+        {
+          "rule": "madd_munfasil",
+          "start": 15,
+          "end": 19
+        },
+        {
+          "rule": "madd_muttasil",
+          "start": 26,
+          "end": 28
+        },
+        {
+          "rule": "ikhfa",
+          "start": 83,
+          "end": 87
+        }
+      ]
+    },
+    {
+      "ayah": 18,
+      "spans": [
+        {
+          "rule": "ikhfa",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "rule": "ikhfa",
+          "start": 39,
+          "end": 43
+        }
+      ]
+    },
+    {
+      "ayah": 19,
+      "spans": [
+        {
+          "rule": "ghunnah",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "rule": "madd_muttasil",
+          "start": 58,
+          "end": 60
+        },
+        {
+          "rule": "qalqalah",
+          "start": 66,
+          "end": 68
+        }
+      ]
+    },
+    {
+      "ayah": 20,
+      "spans": [
+        {
+          "rule": "ghunnah",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "rule": "ikhfa",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "rule": "ghunnah",
+          "start": 19,
+          "end": 22
+        }
+      ]
+    },
+    {
+      "ayah": 21,
+      "spans": [
+        {
+          "rule": "idghaam_no_ghunnah",
+          "start": 19,
+          "end": 24
+        }
+      ]
+    },
+    {
+      "ayah": 22,
+      "spans": [
+        {
+          "rule": "ghunnah",
+          "start": 7,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "ayah": 23,
+      "spans": []
+    },
+    {
+      "ayah": 24,
+      "spans": [
+        {
+          "rule": "madd_muttasil",
+          "start": 25,
+          "end": 28
+        },
+        {
+          "rule": "iqlab",
+          "start": 30,
+          "end": 35
+        },
+        {
+          "rule": "madd_munfasil",
+          "start": 38,
+          "end": 40
+        }
+      ]
+    },
+    {
+      "ayah": 25,
+      "spans": [
+        {
+          "rule": "ghunnah",
+          "start": 4,
+          "end": 7
+        }
+      ]
+    },
+    {
+      "ayah": 26,
+      "spans": [
+        {
+          "rule": "qalqalah",
+          "start": 9,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "ayah": 27,
+      "spans": []
+    },
+    {
+      "ayah": 28,
+      "spans": [
+        {
+          "rule": "madd_munfasil",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "rule": "ghunnah",
+          "start": 15,
+          "end": 18
+        }
+      ]
+    },
+    {
+      "ayah": 29,
+      "spans": [
+        {
+          "rule": "ghunnah",
+          "start": 9,
+          "end": 12
+        }
+      ]
+    },
+    {
+      "ayah": 30,
+      "spans": []
+    },
+    {
+      "ayah": 31,
+      "spans": [
+        {
+          "rule": "ghunnah",
+          "start": 2,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "ayah": 32,
+      "spans": [
+        {
+          "rule": "ghunnah",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "rule": "ikhfa",
+          "start": 20,
+          "end": 24
+        },
+        {
+          "rule": "qalqalah",
+          "start": 34,
+          "end": 36
+        },
+        {
+          "rule": "ikhfa",
+          "start": 49,
+          "end": 54
+        }
+      ]
+    },
+    {
+      "ayah": 33,
+      "spans": [
+        {
+          "rule": "ghunnah",
+          "start": 2,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "ayah": 34,
+      "spans": []
+    },
+    {
+      "ayah": 35,
+      "spans": []
+    },
+    {
+      "ayah": 36,
+      "spans": []
+    },
+    {
+      "ayah": 37,
+      "spans": [
+        {
+          "rule": "madd_munfasil",
+          "start": 14,
+          "end": 16
+        }
+      ]
+    },
+    {
+      "ayah": 38,
+      "spans": [
+        {
+          "rule": "madd_munfasil",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "rule": "qalqalah",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "rule": "qalqalah",
+          "start": 24,
+          "end": 26
+        }
+      ]
+    },
+    {
+      "ayah": 39,
+      "spans": [
+        {
+          "rule": "qalqalah",
+          "start": 12,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "ayah": 40,
+      "spans": [
+        {
+          "rule": "ghunnah",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "rule": "ikhfa",
+          "start": 24,
+          "end": 28
+        }
+      ]
+    },
+    {
+      "ayah": 41,
+      "spans": [
+        {
+          "rule": "ikhfa",
+          "start": 27,
+          "end": 32
+        },
+        {
+          "rule": "idghaam_ghunnah",
+          "start": 37,
+          "end": 43
+        }
+      ]
+    },
+    {
+      "ayah": 42,
+      "spans": [
+        {
+          "rule": "ikhfa",
+          "start": 21,
+          "end": 26
+        },
+        {
+          "rule": "idghaam_ghunnah",
+          "start": 31,
+          "end": 37
+        }
+      ]
+    },
+    {
+      "ayah": 43,
+      "spans": [
+        {
+          "rule": "ikhfa",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "rule": "idghaam_ghunnah",
+          "start": 9,
+          "end": 14
+        },
+        {
+          "rule": "idghaam_no_ghunnah",
+          "start": 14,
+          "end": 20
+        }
+      ]
+    },
+    {
+      "ayah": 44,
+      "spans": []
+    },
+    {
+      "ayah": 45,
+      "spans": []
+    },
+    {
+      "ayah": 46,
+      "spans": [
+        {
+          "rule": "ghunnah",
+          "start": 2,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "ayah": 47,
+      "spans": [
+        {
+          "rule": "ikhfa",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "rule": "idghaam_shafawi",
+          "start": 12,
+          "end": 18
+        }
+      ]
+    },
+    {
+      "ayah": 48,
+      "spans": [
+        {
+          "rule": "ghunnah",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "rule": "idghaam_no_ghunnah",
+          "start": 21,
+          "end": 26
+        }
+      ]
+    },
+    {
+      "ayah": 49,
+      "spans": [
+        {
+          "rule": "ghunnah",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "rule": "ghunnah",
+          "start": 22,
+          "end": 25
+        },
+        {
+          "rule": "ikhfa",
+          "start": 28,
+          "end": 32
+        },
+        {
+          "rule": "idghaam_shafawi",
+          "start": 32,
+          "end": 38
+        }
+      ]
+    },
+    {
+      "ayah": 50,
+      "spans": [
+        {
+          "rule": "ghunnah",
+          "start": 4,
+          "end": 7
+        }
+      ]
+    },
+    {
+      "ayah": 51,
+      "spans": [
+        {
+          "rule": "ghunnah",
+          "start": 4,
+          "end": 7
+        }
+      ]
+    },
+    {
+      "ayah": 52,
+      "spans": []
+    }
+  ]
+}

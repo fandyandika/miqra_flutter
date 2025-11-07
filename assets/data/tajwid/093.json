@@ -1,0 +1,116 @@
+{
+  "surah_number": 93,
+  "verses": [
+    {
+      "ayah": 1,
+      "spans": []
+    },
+    {
+      "ayah": 2,
+      "spans": []
+    },
+    {
+      "ayah": 3,
+      "spans": []
+    },
+    {
+      "ayah": 4,
+      "spans": [
+        {
+          "rule": "idghaam_no_ghunnah",
+          "start": 20,
+          "end": 25
+        }
+      ]
+    },
+    {
+      "ayah": 5,
+      "spans": []
+    },
+    {
+      "ayah": 6,
+      "spans": [
+        {
+          "rule": "qalqalah",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "rule": "ikhfa",
+          "start": 23,
+          "end": 28
+        }
+      ]
+    },
+    {
+      "ayah": 7,
+      "spans": [
+        {
+          "rule": "madd_6",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "rule": "ikhfa",
+          "start": 17,
+          "end": 22
+        }
+      ]
+    },
+    {
+      "ayah": 8,
+      "spans": [
+        {
+          "rule": "madd_muttasil",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "rule": "ikhfa",
+          "start": 19,
+          "end": 24
+        }
+      ]
+    },
+    {
+      "ayah": 9,
+      "spans": [
+        {
+          "rule": "ghunnah",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "rule": "qalqalah",
+          "start": 29,
+          "end": 31
+        }
+      ]
+    },
+    {
+      "ayah": 10,
+      "spans": [
+        {
+          "rule": "ghunnah",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "rule": "madd_muttasil",
+          "start": 14,
+          "end": 16
+        }
+      ]
+    },
+    {
+      "ayah": 11,
+      "spans": [
+        {
+          "rule": "ghunnah",
+          "start": 4,
+          "end": 7
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "surah_number": 1,
+  "verses": [
+    {
+      "ayah": 1,
+      "spans": []
+    },
+    {
+      "ayah": 2,
+      "spans": []
+    },
+    {
+      "ayah": 3,
+      "spans": []
+    },
+    {
+      "ayah": 4,
+      "spans": []
+    },
+    {
+      "ayah": 5,
+      "spans": []
+    },
+    {
+      "ayah": 6,
+      "spans": []
+    },
+    {
+      "ayah": 7,
+      "spans": [
+        {
+          "rule": "madd_6",
+          "start": 87,
+          "end": 89
+        }
+      ]
+    }
+  ]
+}

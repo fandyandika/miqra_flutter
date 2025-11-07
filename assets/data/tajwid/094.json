@@ -1,0 +1,78 @@
+{
+  "surah_number": 94,
+  "verses": [
+    {
+      "ayah": 1,
+      "spans": [
+        {
+          "rule": "qalqalah",
+          "start": 23,
+          "end": 25
+        }
+      ]
+    },
+    {
+      "ayah": 2,
+      "spans": [
+        {
+          "rule": "ikhfa",
+          "start": 14,
+          "end": 18
+        }
+      ]
+    },
+    {
+      "ayah": 3,
+      "spans": [
+        {
+          "rule": "madd_munfasil",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "rule": "ikhfa",
+          "start": 12,
+          "end": 16
+        }
+      ]
+    },
+    {
+      "ayah": 4,
+      "spans": []
+    },
+    {
+      "ayah": 5,
+      "spans": [
+        {
+          "rule": "ghunnah",
+          "start": 4,
+          "end": 7
+        }
+      ]
+    },
+    {
+      "ayah": 6,
+      "spans": [
+        {
+          "rule": "ghunnah",
+          "start": 2,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "ayah": 7,
+      "spans": [
+        {
+          "rule": "ikhfa",
+          "start": 20,
+          "end": 24
+        }
+      ]
+    },
+    {
+      "ayah": 8,
+      "spans": []
+    }
+  ]
+}

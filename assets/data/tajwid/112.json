@@ -1,0 +1,50 @@
+{
+  "surah_number": 112,
+  "verses": [
+    {
+      "ayah": 1,
+      "spans": [
+        {
+          "rule": "qalqalah",
+          "start": 22,
+          "end": 23
+        }
+      ]
+    },
+    {
+      "ayah": 2,
+      "spans": [
+        {
+          "rule": "qalqalah",
+          "start": 16,
+          "end": 17
+        }
+      ]
+    },
+    {
+      "ayah": 3,
+      "spans": [
+        {
+          "rule": "qalqalah",
+          "start": 9,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "ayah": 4,
+      "spans": [
+        {
+          "rule": "idghaam_no_ghunnah",
+          "start": 11,
+          "end": 17
+        },
+        {
+          "rule": "qalqalah",
+          "start": 32,
+          "end": 33
+        }
+      ]
+    }
+  ]
+}

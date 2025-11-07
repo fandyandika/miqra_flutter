@@ -1,0 +1,39 @@
+{
+  "surah_number": 108,
+  "verses": [
+    {
+      "ayah": 1,
+      "spans": [
+        {
+          "rule": "ghunnah",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "rule": "madd_munfasil",
+          "start": 5,
+          "end": 7
+        }
+      ]
+    },
+    {
+      "ayah": 2,
+      "spans": []
+    },
+    {
+      "ayah": 3,
+      "spans": [
+        {
+          "rule": "ghunnah",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "rule": "qalqalah",
+          "start": 26,
+          "end": 28
+        }
+      ]
+    }
+  ]
+}

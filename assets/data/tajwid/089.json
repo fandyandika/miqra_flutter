@@ -1,0 +1,405 @@
+{
+  "surah_number": 89,
+  "verses": [
+    {
+      "ayah": 1,
+      "spans": [
+        {
+          "rule": "qalqalah",
+          "start": 7,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "ayah": 2,
+      "spans": []
+    },
+    {
+      "ayah": 3,
+      "spans": []
+    },
+    {
+      "ayah": 4,
+      "spans": []
+    },
+    {
+      "ayah": 5,
+      "spans": [
+        {
+          "rule": "idghaam_no_ghunnah",
+          "start": 22,
+          "end": 27
+        },
+        {
+          "rule": "qalqalah",
+          "start": 34,
+          "end": 36
+        }
+      ]
+    },
+    {
+      "ayah": 6,
+      "spans": [
+        {
+          "rule": "qalqalah",
+          "start": 39,
+          "end": 40
+        }
+      ]
+    },
+    {
+      "ayah": 7,
+      "spans": [
+        {
+          "rule": "qalqalah",
+          "start": 21,
+          "end": 22
+        }
+      ]
+    },
+    {
+      "ayah": 8,
+      "spans": [
+        {
+          "rule": "qalqalah",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "rule": "qalqalah",
+          "start": 45,
+          "end": 46
+        }
+      ]
+    },
+    {
+      "ayah": 9,
+      "spans": [
+        {
+          "rule": "qalqalah",
+          "start": 48,
+          "end": 49
+        }
+      ]
+    },
+    {
+      "ayah": 10,
+      "spans": [
+        {
+          "rule": "qalqalah",
+          "start": 27,
+          "end": 28
+        }
+      ]
+    },
+    {
+      "ayah": 11,
+      "spans": [
+        {
+          "rule": "qalqalah",
+          "start": 31,
+          "end": 32
+        }
+      ]
+    },
+    {
+      "ayah": 12,
+      "spans": [
+        {
+          "rule": "qalqalah",
+          "start": 30,
+          "end": 31
+        }
+      ]
+    },
+    {
+      "ayah": 13,
+      "spans": [
+        {
+          "rule": "qalqalah",
+          "start": 39,
+          "end": 40
+        }
+      ]
+    },
+    {
+      "ayah": 14,
+      "spans": [
+        {
+          "rule": "ghunnah",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "rule": "qalqalah",
+          "start": 28,
+          "end": 29
+        }
+      ]
+    },
+    {
+      "ayah": 15,
+      "spans": [
+        {
+          "rule": "ghunnah",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "rule": "ikhfa",
+          "start": 14,
+          "end": 18
+        },
+        {
+          "rule": "qalqalah",
+          "start": 33,
+          "end": 35
+        },
+        {
+          "rule": "madd_munfasil",
+          "start": 93,
+          "end": 96
+        }
+      ]
+    },
+    {
+      "ayah": 16,
+      "spans": [
+        {
+          "rule": "ghunnah",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "rule": "madd_munfasil",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "rule": "qalqalah",
+          "start": 21,
+          "end": 23
+        },
+        {
+          "rule": "madd_munfasil",
+          "start": 77,
+          "end": 80
+        }
+      ]
+    },
+    {
+      "ayah": 17,
+      "spans": []
+    },
+    {
+      "ayah": 18,
+      "spans": [
+        {
+          "rule": "madd_6",
+          "start": 9,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "ayah": 19,
+      "spans": [
+        {
+          "rule": "idghaam_no_ghunnah",
+          "start": 31,
+          "end": 37
+        },
+        {
+          "rule": "ghunnah",
+          "start": 37,
+          "end": 40
+        }
+      ]
+    },
+    {
+      "ayah": 20,
+      "spans": [
+        {
+          "rule": "ikhfa",
+          "start": 28,
+          "end": 33
+        },
+        {
+          "rule": "ghunnah",
+          "start": 33,
+          "end": 36
+        }
+      ]
+    },
+    {
+      "ayah": 21,
+      "spans": [
+        {
+          "rule": "madd_munfasil",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "rule": "ikhfa",
+          "start": 36,
+          "end": 41
+        }
+      ]
+    },
+    {
+      "ayah": 22,
+      "spans": [
+        {
+          "rule": "madd_muttasil",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "rule": "ikhfa",
+          "start": 34,
+          "end": 39
+        }
+      ]
+    },
+    {
+      "ayah": 23,
+      "spans": [
+        {
+          "rule": "madd_muttasil",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "rule": "iqlab",
+          "start": 21,
+          "end": 25
+        },
+        {
+          "rule": "ghunnah",
+          "start": 30,
+          "end": 33
+        },
+        {
+          "rule": "idghaam_ghunnah",
+          "start": 47,
+          "end": 52
+        },
+        {
+          "rule": "ikhfa",
+          "start": 67,
+          "end": 71
+        },
+        {
+          "rule": "ghunnah",
+          "start": 79,
+          "end": 82
+        }
+      ]
+    },
+    {
+      "ayah": 24,
+      "spans": []
+    },
+    {
+      "ayah": 25,
+      "spans": [
+        {
+          "rule": "idghaam_no_ghunnah",
+          "start": 12,
+          "end": 17
+        },
+        {
+          "rule": "madd_munfasil",
+          "start": 37,
+          "end": 39
+        },
+        {
+          "rule": "qalqalah",
+          "start": 44,
+          "end": 45
+        }
+      ]
+    },
+    {
+      "ayah": 26,
+      "spans": [
+        {
+          "rule": "madd_munfasil",
+          "start": 24,
+          "end": 26
+        },
+        {
+          "rule": "qalqalah",
+          "start": 31,
+          "end": 32
+        }
+      ]
+    },
+    {
+      "ayah": 27,
+      "spans": [
+        {
+          "rule": "madd_munfasil",
+          "start": 1,
+          "end": 3
+        },
+        {
+          "rule": "ghunnah",
+          "start": 16,
+          "end": 19
+        },
+        {
+          "rule": "qalqalah",
+          "start": 29,
+          "end": 31
+        },
+        {
+          "rule": "ghunnah",
+          "start": 36,
+          "end": 39
+        }
+      ]
+    },
+    {
+      "ayah": 28,
+      "spans": [
+        {
+          "rule": "madd_munfasil",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "rule": "idghaam_ghunnah",
+          "start": 33,
+          "end": 38
+        }
+      ]
+    },
+    {
+      "ayah": 29,
+      "spans": [
+        {
+          "rule": "qalqalah",
+          "start": 3,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "ayah": 30,
+      "spans": [
+        {
+          "rule": "qalqalah",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "rule": "ghunnah",
+          "start": 14,
+          "end": 17
+        }
+      ]
+    }
+  ]
+}

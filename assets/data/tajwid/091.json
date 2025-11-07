@@ -1,0 +1,140 @@
+{
+  "surah_number": 91,
+  "verses": [
+    {
+      "ayah": 1,
+      "spans": []
+    },
+    {
+      "ayah": 2,
+      "spans": []
+    },
+    {
+      "ayah": 3,
+      "spans": [
+        {
+          "rule": "ghunnah",
+          "start": 4,
+          "end": 7
+        }
+      ]
+    },
+    {
+      "ayah": 4,
+      "spans": []
+    },
+    {
+      "ayah": 5,
+      "spans": [
+        {
+          "rule": "madd_muttasil",
+          "start": 9,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "ayah": 6,
+      "spans": []
+    },
+    {
+      "ayah": 7,
+      "spans": [
+        {
+          "rule": "idghaam_ghunnah",
+          "start": 7,
+          "end": 12
+        }
+      ]
+    },
+    {
+      "ayah": 8,
+      "spans": [
+        {
+          "rule": "qalqalah",
+          "start": 30,
+          "end": 32
+        }
+      ]
+    },
+    {
+      "ayah": 9,
+      "spans": [
+        {
+          "rule": "qalqalah",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "rule": "ikhfa",
+          "start": 16,
+          "end": 21
+        }
+      ]
+    },
+    {
+      "ayah": 10,
+      "spans": [
+        {
+          "rule": "qalqalah",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "rule": "ikhfa",
+          "start": 15,
+          "end": 20
+        }
+      ]
+    },
+    {
+      "ayah": 11,
+      "spans": []
+    },
+    {
+      "ayah": 12,
+      "spans": [
+        {
+          "rule": "iqlab",
+          "start": 8,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "ayah": 13,
+      "spans": [
+        {
+          "rule": "qalqalah",
+          "start": 52,
+          "end": 54
+        }
+      ]
+    },
+    {
+      "ayah": 14,
+      "spans": [
+        {
+          "rule": "ikhfa_shafawi",
+          "start": 58,
+          "end": 63
+        },
+        {
+          "rule": "iqlab",
+          "start": 67,
+          "end": 69
+        }
+      ]
+    },
+    {
+      "ayah": 15,
+      "spans": [
+        {
+          "rule": "qalqalah",
+          "start": 16,
+          "end": 18
+        }
+      ]
+    }
+  ]
+}

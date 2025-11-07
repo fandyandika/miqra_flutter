@@ -1,0 +1,80 @@
+{
+  "surah_number": 113,
+  "verses": [
+    {
+      "ayah": 1,
+      "spans": [
+        {
+          "rule": "qalqalah",
+          "start": 29,
+          "end": 30
+        }
+      ]
+    },
+    {
+      "ayah": 2,
+      "spans": [
+        {
+          "rule": "ikhfa",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "rule": "qalqalah",
+          "start": 19,
+          "end": 20
+        }
+      ]
+    },
+    {
+      "ayah": 3,
+      "spans": [
+        {
+          "rule": "ikhfa",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "rule": "qalqalah",
+          "start": 31,
+          "end": 32
+        }
+      ]
+    },
+    {
+      "ayah": 4,
+      "spans": [
+        {
+          "rule": "ikhfa",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "rule": "ghunnah",
+          "start": 15,
+          "end": 18
+        },
+        {
+          "rule": "qalqalah",
+          "start": 37,
+          "end": 38
+        }
+      ]
+    },
+    {
+      "ayah": 5,
+      "spans": [
+        {
+          "rule": "ikhfa",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "rule": "qalqalah",
+          "start": 31,
+          "end": 32
+        }
+      ]
+    }
+  ]
+}

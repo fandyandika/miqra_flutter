@@ -1,0 +1,34 @@
+{
+  "surah_number": 103,
+  "verses": [
+    {
+      "ayah": 1,
+      "spans": []
+    },
+    {
+      "ayah": 2,
+      "spans": [
+        {
+          "rule": "ghunnah",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "rule": "ikhfa",
+          "start": 11,
+          "end": 15
+        }
+      ]
+    },
+    {
+      "ayah": 3,
+      "spans": [
+        {
+          "rule": "qalqalah",
+          "start": 98,
+          "end": 100
+        }
+      ]
+    }
+  ]
+}

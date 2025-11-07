@@ -1,0 +1,98 @@
+{
+  "surah_number": 99,
+  "verses": [
+    {
+      "ayah": 1,
+      "spans": []
+    },
+    {
+      "ayah": 2,
+      "spans": []
+    },
+    {
+      "ayah": 3,
+      "spans": [
+        {
+          "rule": "ikhfa",
+          "start": 13,
+          "end": 17
+        }
+      ]
+    },
+    {
+      "ayah": 4,
+      "spans": [
+        {
+          "rule": "ikhfa",
+          "start": 10,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "ayah": 5,
+      "spans": [
+        {
+          "rule": "ghunnah",
+          "start": 4,
+          "end": 7
+        }
+      ]
+    },
+    {
+      "ayah": 6,
+      "spans": [
+        {
+          "rule": "idghaam_ghunnah",
+          "start": 10,
+          "end": 15
+        },
+        {
+          "rule": "ghunnah",
+          "start": 24,
+          "end": 27
+        },
+        {
+          "rule": "idghaam_no_ghunnah",
+          "start": 39,
+          "end": 48
+        }
+      ]
+    },
+    {
+      "ayah": 7,
+      "spans": [
+        {
+          "rule": "idghaam_ghunnah",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "rule": "idghaam_ghunnah",
+          "start": 40,
+          "end": 46
+        }
+      ]
+    },
+    {
+      "ayah": 8,
+      "spans": [
+        {
+          "rule": "idghaam_ghunnah",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "rule": "ikhfa",
+          "start": 33,
+          "end": 37
+        },
+        {
+          "rule": "idghaam_ghunnah",
+          "start": 39,
+          "end": 45
+        }
+      ]
+    }
+  ]
+}

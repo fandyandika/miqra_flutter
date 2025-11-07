@@ -1,0 +1,58 @@
+{
+  "surah_number": 106,
+  "verses": [
+    {
+      "ayah": 1,
+      "spans": []
+    },
+    {
+      "ayah": 2,
+      "spans": [
+        {
+          "rule": "madd_muttasil",
+          "start": 27,
+          "end": 29
+        }
+      ]
+    },
+    {
+      "ayah": 3,
+      "spans": []
+    },
+    {
+      "ayah": 4,
+      "spans": [
+        {
+          "rule": "madd_munfasil",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "rule": "qalqalah",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "rule": "idghaam_shafawi",
+          "start": 20,
+          "end": 26
+        },
+        {
+          "rule": "ikhfa",
+          "start": 26,
+          "end": 31
+        },
+        {
+          "rule": "idghaam_ghunnah",
+          "start": 34,
+          "end": 41
+        },
+        {
+          "rule": "idghaam_shafawi",
+          "start": 50,
+          "end": 56
+        }
+      ]
+    }
+  ]
+}

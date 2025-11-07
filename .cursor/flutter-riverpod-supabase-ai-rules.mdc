@@ -1,4 +1,7 @@
-
+---
+description: Riverpod, Supabase AI rules
+alwaysApply: false
+---
 You are an expert in Flutter, Dart, Riverpod, Freezed, Flutter Hooks, and Supabase.
 
 Key Principles

@@ -1,0 +1,53 @@
+{
+  "surah_number": 105,
+  "verses": [
+    {
+      "ayah": 1,
+      "spans": []
+    },
+    {
+      "ayah": 2,
+      "spans": [
+        {
+          "rule": "qalqalah",
+          "start": 9,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "ayah": 3,
+      "spans": []
+    },
+    {
+      "ayah": 4,
+      "spans": [
+        {
+          "rule": "ikhfa_shafawi",
+          "start": 10,
+          "end": 15
+        },
+        {
+          "rule": "idghaam_ghunnah",
+          "start": 23,
+          "end": 28
+        },
+        {
+          "rule": "ikhfa",
+          "start": 28,
+          "end": 33
+        }
+      ]
+    },
+    {
+      "ayah": 5,
+      "spans": [
+        {
+          "rule": "idghaam_ghunnah",
+          "start": 20,
+          "end": 25
+        }
+      ]
+    }
+  ]
+}
