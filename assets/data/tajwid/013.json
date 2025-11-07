@@ -15,6 +15,11 @@
           "end": 6
         },
         {
+          "rule": "madd_6",
+          "start": 6,
+          "end": 8
+        },
+        {
           "rule": "madd_munfasil",
           "start": 43,
           "end": 46

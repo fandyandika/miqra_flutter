@@ -97,7 +97,7 @@ class ReaderScreen extends ConsumerWidget {
                         child: Text(
                           '${v.ayah}',
                           style: TextStyle(
-                            fontFamily: 'Roboto',
+                            fontFamily: 'Inter',
                             fontSize: 12,
                             fontWeight: FontWeight.w600,
                             color: Theme.of(context).colorScheme.primary,
@@ -108,7 +108,7 @@ class ReaderScreen extends ConsumerWidget {
                       Expanded(
                         child: RichText(
                           textAlign: TextAlign.right,
-                          text: _buildTajwidTextSpan(v.textAr, spans, tajwidEnabled),
+                          text: _buildTajwidTextSpanSafe(v.textAr, spans, tajwidEnabled),
                         ),
                       ),
                     ],
@@ -121,7 +121,7 @@ class ReaderScreen extends ConsumerWidget {
                     child: Text(
                       v.textTranslit!,
                       style: TextStyle(
-                        fontFamily: 'Roboto',
+                        fontFamily: 'Inter',
                         fontSize: 12,
                         height: 1.3,
                         color: Colors.grey[600],
@@ -138,7 +138,7 @@ class ReaderScreen extends ConsumerWidget {
                     child: Text(
                       v.textId,
                       style: const TextStyle(
-                        fontFamily: 'Roboto',
+                        fontFamily: 'Inter',
                         fontSize: 14,
                         height: 1.4,
                       ),
@@ -180,7 +180,7 @@ class ReaderScreen extends ConsumerWidget {
                       child: Text(
                         '${v.ayah}',
                         style: TextStyle(
-                          fontFamily: 'Roboto',
+                          fontFamily: 'Inter',
                           fontSize: 12,
                           fontWeight: FontWeight.w600,
                           color: Theme.of(context).colorScheme.primary,
@@ -193,10 +193,10 @@ class ReaderScreen extends ConsumerWidget {
                         v.textAr,
                         textAlign: TextAlign.right,
                         style: const TextStyle(
-                          fontFamily: 'Indopak',
+                          fontFamily: 'IndopakNastaleeq',
                           fontSize: 28,
                           height: 1.5,
-                          letterSpacing: 0.5,
+                          letterSpacing: 0,
                         ),
                       ),
                     ),
@@ -237,7 +237,7 @@ class ReaderScreen extends ConsumerWidget {
                       child: Text(
                         '${v.ayah}',
                         style: TextStyle(
-                          fontFamily: 'Roboto',
+                          fontFamily: 'Inter',
                           fontSize: 12,
                           fontWeight: FontWeight.w600,
                           color: Theme.of(context).colorScheme.primary,
@@ -250,10 +250,10 @@ class ReaderScreen extends ConsumerWidget {
                         v.textAr,
                         textAlign: TextAlign.right,
                         style: const TextStyle(
-                          fontFamily: 'Indopak',
+                          fontFamily: 'IndopakNastaleeq',
                           fontSize: 28,
                           height: 1.5,
-                          letterSpacing: 0.5,
+                          letterSpacing: 0,
                         ),
                       ),
                     ),
@@ -269,10 +269,10 @@ class ReaderScreen extends ConsumerWidget {
 
   TextSpan _buildTajwidTextSpan(String textAr, List<TajwidSpan> spans, bool enabled) {
     const baseStyle = TextStyle(
-      fontFamily: 'Indopak',
+      fontFamily: 'IndopakNastaleeq',
       fontSize: 28,
       height: 1.5,
-      letterSpacing: 0.5,
+      letterSpacing: 0,
       color: Colors.black87,
     );
 
@@ -293,15 +293,19 @@ class ReaderScreen extends ConsumerWidget {
       
       if (end <= start) continue;
       
-      // Add text before span
-      if (start > lastPos) {
-        final beforeText = textAr.substring(lastPos, start);
+      // Handle overlap: only process the part that hasn't been processed yet
+      final actualStart = start > lastPos ? start : lastPos;
+      if (actualStart >= end) continue; // Skip if fully overlapped
+      
+      // Add text before span (if any)
+      if (actualStart > lastPos) {
+        final beforeText = textAr.substring(lastPos, actualStart);
         buffer.write(beforeText);
         textSpans.add(TextSpan(text: beforeText, style: baseStyle));
       }
       
-      // Add colored span text
-      final spanText = textAr.substring(start, end);
+      // Add colored span text (only the non-overlapped part)
+      final spanText = textAr.substring(actualStart, end);
       buffer.write(spanText);
       final color = tajwidPalette[span.rule] ?? Colors.red;
       textSpans.add(TextSpan(
@@ -324,6 +328,27 @@ class ReaderScreen extends ConsumerWidget {
         'TextSpan concatenation mismatch: expected "${textAr}", got "${buffer.toString()}"');
     
     return TextSpan(children: textSpans);
+  }
+
+  /// Safe wrapper for _buildTajwidTextSpan with error handling.
+  /// Falls back to plain text if tajwid rendering fails.
+  TextSpan _buildTajwidTextSpanSafe(String textAr, List<TajwidSpan> spans, bool enabled) {
+    try {
+      return _buildTajwidTextSpan(textAr, spans, enabled);
+    } catch (e) {
+      // Log error but don't crash - fallback to plain text
+      debugPrint('Tajwid rendering error for text (length: ${textAr.length}): $e');
+      return TextSpan(
+        text: textAr,
+        style: const TextStyle(
+          fontFamily: 'IndopakNastaleeq',
+          fontSize: 28,
+          height: 1.5,
+          letterSpacing: 0,
+          color: Colors.black87,
+        ),
+      );
+    }
   }
 }
 

@@ -8,6 +8,11 @@
           "rule": "madd_6",
           "start": 1,
           "end": 3
+        },
+        {
+          "rule": "madd_6",
+          "start": 3,
+          "end": 6
         }
       ]
     },

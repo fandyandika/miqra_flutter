@@ -112,9 +112,9 @@ flutter:
 
   # Fonts
   fonts:
-    - family: Indopak
+    - family: IndopakNastaleeq
       fonts:
-        - asset: assets/fonts/Indopak.ttf
-    - family: Roboto
+        - asset: assets/fonts/IndopakNastaleeq.ttf
+    - family: Inter
       fonts:
-        - asset: assets/fonts/Roboto-VariableFont_wdth,wght.ttf
+        - asset: assets/fonts/Inter-VariableFont_opsz,wght.ttf

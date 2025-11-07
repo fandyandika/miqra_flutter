@@ -13,6 +13,11 @@
           "rule": "madd_6",
           "start": 3,
           "end": 6
+        },
+        {
+          "rule": "madd_6",
+          "start": 6,
+          "end": 8
         }
       ]
     },
