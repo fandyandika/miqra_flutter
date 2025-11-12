@@ -189,15 +189,9 @@ class ReaderScreen extends ConsumerWidget {
                     ),
                     // Arabic text
                     Expanded(
-                      child: Text(
-                        v.textAr,
+                      child: RichText(
                         textAlign: TextAlign.right,
-                        style: const TextStyle(
-                          fontFamily: 'IndopakNastaleeq',
-                          fontSize: 28,
-                          height: 1.5,
-                          letterSpacing: 0,
-                        ),
+                        text: _buildTajwidTextSpanSafe(v.textAr, <TajwidSpan>[], tajwidEnabled),
                       ),
                     ),
                   ],
@@ -246,15 +240,9 @@ class ReaderScreen extends ConsumerWidget {
                     ),
                     // Arabic text
                     Expanded(
-                      child: Text(
-                        v.textAr,
+                      child: RichText(
                         textAlign: TextAlign.right,
-                        style: const TextStyle(
-                          fontFamily: 'IndopakNastaleeq',
-                          fontSize: 28,
-                          height: 1.5,
-                          letterSpacing: 0,
-                        ),
+                        text: _buildTajwidTextSpanSafe(v.textAr, <TajwidSpan>[], tajwidEnabled),
                       ),
                     ),
                   ],
