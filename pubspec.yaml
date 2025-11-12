@@ -41,6 +41,9 @@ dependencies:
   # Backend
   supabase_flutter: ^2.5.6
 
+  # Authentication
+  google_sign_in: ^6.2.1
+
   # Local storage
   hive: ^2.2.3
   hive_flutter: ^1.1.0
@@ -95,6 +98,7 @@ flutter:
 
   # Assets
   assets:
+    - assets/.env
     - assets/data/
     - assets/data/quran/
     - assets/data/quran/cpfair/

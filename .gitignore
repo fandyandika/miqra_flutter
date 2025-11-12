@@ -14,6 +14,9 @@ migrate_working_dir/
 
 # Environment variables
 .env*
+# But allow .env.example files (templates)
+!.env.example
+!assets/.env.example
 
 # IntelliJ related
 *.iml
@@ -46,3 +49,18 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Supabase
+supabase/.branches
+supabase/.temp
+supabase/.seed
+
+# Temporary SQL scripts (helper files for manual application)
+supabase/scripts/*.sql
+
+# Log files
+logs/
+*.log
+*.txt
+!pubspec.lock
+!analysis_options.yaml

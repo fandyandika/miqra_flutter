@@ -324,8 +324,7 @@ class ReaderScreen extends ConsumerWidget {
     try {
       return _buildTajwidTextSpan(textAr, spans, enabled);
     } catch (e) {
-      // Log error but don't crash - fallback to plain text
-      debugPrint('Tajwid rendering error for text (length: ${textAr.length}): $e');
+      // Fallback to plain text on error
       return TextSpan(
         text: textAr,
         style: const TextStyle(

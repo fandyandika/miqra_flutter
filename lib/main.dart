@@ -11,17 +11,40 @@ import 'router/app_router.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   
-  // Load .env file
+  // Load .env file from assets (as per Flutter best practices)
   try {
-    await dotenv.load(fileName: ".env.dev");
+    await dotenv.load(fileName: "assets/.env");
   } catch (e) {
-    // .env.dev not found, continue with empty env vars
+    // Will try to use --dart-define or fallback to empty values
   }
 
-  // Run app immediately, initialize services in background (non-blocking)
+  // Get credentials (priority: --dart-define > .env file)
+  final supabaseUrl = Env.supabaseUrl;
+  final supabaseAnonKey = Env.supabaseAnonKey;
+  
+  // Initialize Supabase BEFORE running app (as per Supabase official docs)
+  // Reference: https://supabase.com/docs/guides/getting-started/tutorials/with-flutter
+  if (supabaseUrl.isEmpty || supabaseAnonKey.isEmpty) {
+    throw Exception(
+      'Supabase credentials missing.\n'
+      'Please ensure assets/.env exists with SUPABASE_URL and SUPABASE_ANON_KEY\n'
+      'Or use --dart-define flags when running the app.',
+    );
+  }
+
+  // Initialize Supabase (as per official docs)
+  await Supabase.initialize(
+    url: supabaseUrl,
+    anonKey: supabaseAnonKey,
+    authOptions: const FlutterAuthClientOptions(
+      authFlowType: AuthFlowType.pkce,
+    ),
+  );
+
+  // Run app AFTER Supabase is ready
   runApp(const ProviderScope(child: MiqraApp()));
   
-  // Initialize services asynchronously without blocking
+  // Initialize other services asynchronously without blocking
   unawaited(_initializeServicesAsync());
 }
 
@@ -41,32 +64,20 @@ Future<void> _initializeServicesAsync() async {
       // Sentry init failed, continue without it
     }
   }
-
-  // Initialize Supabase
-  try {
-    final supabaseUrl = Env.supabaseUrl;
-    final supabaseAnonKey = Env.supabaseAnonKey;
-    if (supabaseUrl.isNotEmpty && supabaseAnonKey.isNotEmpty) {
-      await Future.any([
-        Supabase.initialize(url: supabaseUrl, anonKey: supabaseAnonKey),
-        Future.delayed(const Duration(seconds: 5)),
-      ]).timeout(const Duration(seconds: 6));
-    }
-  } catch (e) {
-    // Supabase init failed or timed out, continue without it
-  }
 }
 
 
-class MiqraApp extends StatelessWidget {
+class MiqraApp extends ConsumerWidget {
   const MiqraApp({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    final router = ref.watch(appRouterProvider);
+    
     return MaterialApp.router(
       title: 'Miqra',
       theme: buildAppTheme(),
-      routerConfig: appRouter,
+      routerConfig: router,
       debugShowCheckedModeBanner: false,
     );
   }
