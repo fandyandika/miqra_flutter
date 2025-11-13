@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import '../providers/quran_providers.dart';
 import '../data/models/surah_model.dart';
 import '../data/models/tajwid_model_v2.dart';
@@ -86,7 +87,7 @@ class ReaderScreen extends ConsumerWidget {
     
     return asyncTajwid.when(
       data: (tajwidSurah) => ListView.builder(
-        padding: const EdgeInsets.fromLTRB(16, 12, 16, 28),
+        padding: EdgeInsets.zero,
         itemCount: surah.verses.length,
         cacheExtent: 500,
         itemBuilder: (context, i) {
@@ -94,9 +95,12 @@ class ReaderScreen extends ConsumerWidget {
           final spans = tajwidEnabled 
               ? tajwidSurah.getSpansForAyah(v.ayah)
               : <TajwidSpan>[];
+          // Selang-seling warna background
+          final isEven = i % 2 == 0;
           return RepaintBoundary(
-            child: Padding(
-              padding: const EdgeInsets.only(bottom: 16),
+            child: Container(
+              color: isEven ? Colors.transparent : Colors.grey[50],
+              padding: const EdgeInsets.fromLTRB(8, 8, 8, 8),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
@@ -104,69 +108,77 @@ class ReaderScreen extends ConsumerWidget {
                     textDirection: TextDirection.rtl,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      // Ayah number badge
-                      Container(
-                        margin: const EdgeInsets.only(left: 8, top: 4),
-                        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                        decoration: BoxDecoration(
-                          color: Theme.of(context).colorScheme.primary.withOpacity(0.1),
-                          borderRadius: BorderRadius.circular(12),
-                          border: Border.all(
-                            color: Theme.of(context).colorScheme.primary.withOpacity(0.3),
-                            width: 1,
-                          ),
-                        ),
-                        child: Text(
-                          '${v.ayah}',
-                          style: TextStyle(
-                            fontFamily: 'Inter',
-                            fontSize: 12,
-                            fontWeight: FontWeight.w600,
-                            color: Theme.of(context).colorScheme.primary,
+                      // Arabic text (lebih masuk ke pinggir kanan)
+                      Expanded(
+                        child: Padding(
+                          padding: const EdgeInsets.only(right: 0),
+                          child: RichText(
+                            textAlign: TextAlign.right,
+                            text: _buildTajwidTextSpanSafe(v.textAr, spans, tajwidEnabled),
                           ),
                         ),
                       ),
-                      // Arabic text
-                      Expanded(
-                        child: RichText(
-                          textAlign: TextAlign.right,
-                          text: _buildTajwidTextSpanSafe(v.textAr, spans, tajwidEnabled),
+                      // Ayah number badge dengan logo (sejajar dengan text latin)
+                      Container(
+                        margin: const EdgeInsets.only(left: 0, top: 0),
+                        width: 28,
+                        height: 28,
+                        child: Stack(
+                          alignment: Alignment.center,
+                          children: [
+                            SvgPicture.asset(
+                              'assets/data/image/logoayat.svg',
+                              width: 28,
+                              height: 28,
+                              fit: BoxFit.contain,
+                            ),
+                            Text(
+                              '${v.ayah}',
+                              style: const TextStyle(
+                                fontFamily: 'Inter',
+                                fontSize: 11,
+                                fontWeight: FontWeight.w700,
+                              ),
+                            ),
+                          ],
                         ),
                       ),
                     ],
                   ),
-              if (v.textTranslit != null)
-                Directionality(
-                  textDirection: TextDirection.ltr,
-                  child: Padding(
-                    padding: const EdgeInsets.only(top: 4),
-                    child: Text(
-                      v.textTranslit!,
-                      style: TextStyle(
-                        fontFamily: 'Inter',
-                        fontSize: 12,
-                        height: 1.3,
-                        color: Colors.grey[600],
-                        fontStyle: FontStyle.italic,
+                  if (v.textTranslit != null)
+                    Directionality(
+                      textDirection: TextDirection.ltr,
+                      child: Padding(
+                        padding: const EdgeInsets.only(top: 4, left: 24, right: 8),
+                        child: Text(
+                          v.textTranslit!,
+                          textAlign: TextAlign.left,
+                          style: TextStyle(
+                            fontFamily: 'Inter',
+                            fontSize: 12,
+                            height: 1.3,
+                            color: Colors.grey[600],
+                            fontStyle: FontStyle.italic,
+                          ),
+                        ),
                       ),
                     ),
-                  ),
-                ),
-              if (showTrans)
-                Directionality(
-                  textDirection: TextDirection.ltr,
-                  child: Padding(
-                    padding: const EdgeInsets.only(top: 6),
-                    child: Text(
-                      v.textId,
-                      style: const TextStyle(
-                        fontFamily: 'Inter',
-                        fontSize: 14,
-                        height: 1.4,
+                  if (showTrans)
+                    Directionality(
+                      textDirection: TextDirection.ltr,
+                      child: Padding(
+                        padding: const EdgeInsets.only(top: 6, left: 24, right: 8),
+                        child: Text(
+                          v.textId,
+                          textAlign: TextAlign.left,
+                          style: const TextStyle(
+                            fontFamily: 'Inter',
+                            fontSize: 14,
+                            height: 1.4,
+                          ),
+                        ),
                       ),
                     ),
-                  ),
-                ),
                 ],
               ),
             ),
@@ -174,12 +186,15 @@ class ReaderScreen extends ConsumerWidget {
         },
       ),
       loading: () => ListView.builder(
-        padding: const EdgeInsets.fromLTRB(16, 12, 16, 28),
+        padding: EdgeInsets.zero,
         itemCount: surah.verses.length,
         itemBuilder: (context, i) {
           final v = surah.verses[i];
-          return Padding(
-            padding: const EdgeInsets.only(bottom: 16),
+          // Selang-seling warna background
+          final isEven = i % 2 == 0;
+          return Container(
+            color: isEven ? Colors.transparent : Colors.grey[50],
+            padding: const EdgeInsets.fromLTRB(16, 8, 8, 8),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
@@ -187,33 +202,39 @@ class ReaderScreen extends ConsumerWidget {
                   textDirection: TextDirection.rtl,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    // Ayah number badge
-                    Container(
-                      margin: const EdgeInsets.only(left: 8, top: 4),
-                      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                      decoration: BoxDecoration(
-                        color: Theme.of(context).colorScheme.primary.withOpacity(0.1),
-                        borderRadius: BorderRadius.circular(12),
-                        border: Border.all(
-                          color: Theme.of(context).colorScheme.primary.withOpacity(0.3),
-                          width: 1,
-                        ),
-                      ),
-                      child: Text(
-                        '${v.ayah}',
-                        style: TextStyle(
-                          fontFamily: 'Inter',
-                          fontSize: 12,
-                          fontWeight: FontWeight.w600,
-                          color: Theme.of(context).colorScheme.primary,
+                    // Arabic text (lebih masuk ke pinggir kanan)
+                    Expanded(
+                      child: Padding(
+                        padding: const EdgeInsets.only(right: 0),
+                        child: RichText(
+                          textAlign: TextAlign.right,
+                          text: _buildTajwidTextSpanSafe(v.textAr, <TajwidSpan>[], tajwidEnabled),
                         ),
                       ),
                     ),
-                    // Arabic text
-                    Expanded(
-                      child: RichText(
-                        textAlign: TextAlign.right,
-                        text: _buildTajwidTextSpanSafe(v.textAr, <TajwidSpan>[], tajwidEnabled),
+                    // Ayah number badge dengan logo (sejajar dengan text latin)
+                    Container(
+                      margin: const EdgeInsets.only(left: 0, top: 4),
+                      width: 28,
+                      height: 28,
+                      child: Stack(
+                        alignment: Alignment.center,
+                        children: [
+                          SvgPicture.asset(
+                            'assets/data/image/logoayat.svg',
+                            width: 28,
+                            height: 28,
+                            fit: BoxFit.contain,
+                          ),
+                          Text(
+                            '${v.ayah}',
+                            style: const TextStyle(
+                              fontFamily: 'Inter',
+                              fontSize: 11,
+                              fontWeight: FontWeight.w700,
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   ],
@@ -225,12 +246,15 @@ class ReaderScreen extends ConsumerWidget {
       ),
       error: (e, _) => ListView.builder(
         // Fail softly: render without tajwid if file missing
-        padding: const EdgeInsets.fromLTRB(16, 12, 16, 28),
+        padding: EdgeInsets.zero,
         itemCount: surah.verses.length,
         itemBuilder: (context, i) {
           final v = surah.verses[i];
-          return Padding(
-            padding: const EdgeInsets.only(bottom: 16),
+          // Selang-seling warna background
+          final isEven = i % 2 == 0;
+          return Container(
+            color: isEven ? Colors.transparent : Colors.grey[50],
+            padding: const EdgeInsets.fromLTRB(16, 8, 8, 8),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
@@ -238,33 +262,39 @@ class ReaderScreen extends ConsumerWidget {
                   textDirection: TextDirection.rtl,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    // Ayah number badge
-                    Container(
-                      margin: const EdgeInsets.only(left: 8, top: 4),
-                      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                      decoration: BoxDecoration(
-                        color: Theme.of(context).colorScheme.primary.withOpacity(0.1),
-                        borderRadius: BorderRadius.circular(12),
-                        border: Border.all(
-                          color: Theme.of(context).colorScheme.primary.withOpacity(0.3),
-                          width: 1,
-                        ),
-                      ),
-                      child: Text(
-                        '${v.ayah}',
-                        style: TextStyle(
-                          fontFamily: 'Inter',
-                          fontSize: 12,
-                          fontWeight: FontWeight.w600,
-                          color: Theme.of(context).colorScheme.primary,
+                    // Arabic text (lebih masuk ke pinggir kanan)
+                    Expanded(
+                      child: Padding(
+                        padding: const EdgeInsets.only(right: 0),
+                        child: RichText(
+                          textAlign: TextAlign.right,
+                          text: _buildTajwidTextSpanSafe(v.textAr, <TajwidSpan>[], tajwidEnabled),
                         ),
                       ),
                     ),
-                    // Arabic text
-                    Expanded(
-                      child: RichText(
-                        textAlign: TextAlign.right,
-                        text: _buildTajwidTextSpanSafe(v.textAr, <TajwidSpan>[], tajwidEnabled),
+                    // Ayah number badge dengan logo (sejajar dengan text latin)
+                    Container(
+                      margin: const EdgeInsets.only(left: 0, top: 4),
+                      width: 28,
+                      height: 28,
+                      child: Stack(
+                        alignment: Alignment.center,
+                        children: [
+                          SvgPicture.asset(
+                            'assets/data/image/logoayat.svg',
+                            width: 28,
+                            height: 28,
+                            fit: BoxFit.contain,
+                          ),
+                          Text(
+                            '${v.ayah}',
+                            style: const TextStyle(
+                              fontFamily: 'Inter',
+                              fontSize: 11,
+                              fontWeight: FontWeight.w700,
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   ],
