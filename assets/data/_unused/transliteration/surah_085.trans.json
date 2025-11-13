@@ -1,0 +1,99 @@
+{
+  "number": 85,
+  "name": "Al-Buruj",
+  "ayat_count": 22,
+  "ayat": [
+    {
+      "number": 1,
+      "transliteration": "was-samā`i żātil-burụj"
+    },
+    {
+      "number": 2,
+      "transliteration": "wal-yaumil-mau'ụd"
+    },
+    {
+      "number": 3,
+      "transliteration": "wa syāhidiw wa masy-hụd"
+    },
+    {
+      "number": 4,
+      "transliteration": "qutila aṣ-ḥābul-ukhdụd"
+    },
+    {
+      "number": 5,
+      "transliteration": "an-nāri żātil-waqụd"
+    },
+    {
+      "number": 6,
+      "transliteration": "iż hum 'alaihā qu'ụd"
+    },
+    {
+      "number": 7,
+      "transliteration": "wa hum 'alā mā yaf'alụna bil-mu`minīna syuhụd"
+    },
+    {
+      "number": 8,
+      "transliteration": "wa mā naqamụ min-hum illā ay yu`minụ billāhil-'azīzil-ḥamīd"
+    },
+    {
+      "number": 9,
+      "transliteration": "allażī lahụ mulkus-samāwāti wal-arḍ, wallāhu 'alā kulli syai`in syahīd"
+    },
+    {
+      "number": 10,
+      "transliteration": "innallażīna fatanul-mu`minīna wal-mu`mināti ṡumma lam yatụbụ fa lahum 'ażābu jahannama wa lahum 'ażābul-ḥarīq"
+    },
+    {
+      "number": 11,
+      "transliteration": "innallażīna āmanụ wa 'amiluṣ-ṣāliḥāti lahum jannātun tajrī min taḥtihal-an-hār, żālikal-fauzul-kabīr"
+    },
+    {
+      "number": 12,
+      "transliteration": "inna baṭsya rabbika lasyadīd"
+    },
+    {
+      "number": 13,
+      "transliteration": "innahụ huwa yubdi`u wa yu'īd"
+    },
+    {
+      "number": 14,
+      "transliteration": "wa huwal-gafụrul-wadụd"
+    },
+    {
+      "number": 15,
+      "transliteration": "żul-'arsyil-majīd"
+    },
+    {
+      "number": 16,
+      "transliteration": "fa''ālul limā yurīd"
+    },
+    {
+      "number": 17,
+      "transliteration": "hal atāka ḥadīṡul-junụd"
+    },
+    {
+      "number": 18,
+      "transliteration": "fir'auna wa ṡamụd"
+    },
+    {
+      "number": 19,
+      "transliteration": "balillażīna kafarụ fī takżīb"
+    },
+    {
+      "number": 20,
+      "transliteration": "wallāhu miw warā`ihim muḥīṭ"
+    },
+    {
+      "number": 21,
+      "transliteration": "bal huwa qur`ānum majīd"
+    },
+    {
+      "number": 22,
+      "transliteration": "fī lauḥim maḥfụẓ"
+    }
+  ],
+  "source": {
+    "dataset": "quran-indonesia-sql",
+    "version": "1.0"
+  }
+}

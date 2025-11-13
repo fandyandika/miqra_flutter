@@ -1,0 +1,43 @@
+{
+  "number": 102,
+  "name": "At-Takathur",
+  "ayat_count": 8,
+  "ayat": [
+    {
+      "number": 1,
+      "transliteration": "al-hākumut-takāṡur"
+    },
+    {
+      "number": 2,
+      "transliteration": "ḥattā zurtumul-maqābir"
+    },
+    {
+      "number": 3,
+      "transliteration": "kallā saufa ta'lamụn"
+    },
+    {
+      "number": 4,
+      "transliteration": "ṡumma kallā saufa ta'lamụn"
+    },
+    {
+      "number": 5,
+      "transliteration": "kallā lau ta'lamụna 'ilmal-yaqīn"
+    },
+    {
+      "number": 6,
+      "transliteration": "latarawunnal-jaḥīm"
+    },
+    {
+      "number": 7,
+      "transliteration": "ṡumma latarawunnahā 'ainal-yaqīn"
+    },
+    {
+      "number": 8,
+      "transliteration": "ṡumma latus`alunna yauma`iżin 'anin-na'īm"
+    }
+  ],
+  "source": {
+    "dataset": "quran-indonesia-sql",
+    "version": "1.0"
+  }
+}

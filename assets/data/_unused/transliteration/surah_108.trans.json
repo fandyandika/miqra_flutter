@@ -1,0 +1,23 @@
+{
+  "number": 108,
+  "name": "Al-Kawthar",
+  "ayat_count": 3,
+  "ayat": [
+    {
+      "number": 1,
+      "transliteration": "innā a'ṭainākal-kauṡar"
+    },
+    {
+      "number": 2,
+      "transliteration": "fa ṣalli lirabbika wan-ḥar"
+    },
+    {
+      "number": 3,
+      "transliteration": "inna syāni`aka huwal-abtar"
+    }
+  ],
+  "source": {
+    "dataset": "quran-indonesia-sql",
+    "version": "1.0"
+  }
+}

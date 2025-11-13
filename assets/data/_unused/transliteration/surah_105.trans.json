@@ -1,0 +1,31 @@
+{
+  "number": 105,
+  "name": "Al-Fil",
+  "ayat_count": 5,
+  "ayat": [
+    {
+      "number": 1,
+      "transliteration": "a lam tara kaifa fa'ala rabbuka bi`aṣ-ḥābil-fīl"
+    },
+    {
+      "number": 2,
+      "transliteration": "a lam yaj'al kaidahum fī taḍlīl"
+    },
+    {
+      "number": 3,
+      "transliteration": "wa arsala 'alaihim ṭairan abābīl"
+    },
+    {
+      "number": 4,
+      "transliteration": "tarmīhim biḥijāratim min sijjīl"
+    },
+    {
+      "number": 5,
+      "transliteration": "fa ja'alahum ka'aṣfim ma`kụl"
+    }
+  ],
+  "source": {
+    "dataset": "quran-indonesia-sql",
+    "version": "1.0"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "number": 110,
+  "name": "An-Nasr",
+  "ayat_count": 3,
+  "ayat": [
+    {
+      "number": 1,
+      "transliteration": "iżā jā`a naṣrullāhi wal-fat-ḥ"
+    },
+    {
+      "number": 2,
+      "transliteration": "wa ra`aitan-nāsa yadkhulụna fī dīnillāhi afwājā"
+    },
+    {
+      "number": 3,
+      "transliteration": "fa sabbiḥ biḥamdi rabbika wastagfir-h, innahụ kāna tawwābā"
+    }
+  ],
+  "source": {
+    "dataset": "quran-indonesia-sql",
+    "version": "1.0"
+  }
+}

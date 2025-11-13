@@ -1,0 +1,55 @@
+{
+  "number": 63,
+  "name": "Al-Munafiqun",
+  "ayat_count": 11,
+  "ayat": [
+    {
+      "number": 1,
+      "transliteration": "iżā jā`akal munāfiqụna qālụ nasy-hadu innaka larasụlullāh, wallāhu ya'lamu innaka larasụluh, wallāhu yasy-hadu innal-munāfiqīna lakāżibụn"
+    },
+    {
+      "number": 2,
+      "transliteration": "ittakhażū aimānahum junnatan fa ṣaddụ 'an sabīlillāh, innahum sā`a mā kānụ ya'malụn"
+    },
+    {
+      "number": 3,
+      "transliteration": "żālika bi`annahum āmanụ ṡumma kafarụ fa ṭubi'a 'alā qulụbihim fa hum lā yafqahụn"
+    },
+    {
+      "number": 4,
+      "transliteration": "wa iżā ra`aitahum tu'jibuka ajsāmuhum, wa iy yaqụlụ tasma' liqaulihim, ka`annahum khusyubum musannadah, yaḥsabụna kulla ṣaiḥatin 'alaihim, humul-'aduwwu faḥżar-hum, qātalahumullāhu annā yu`fakụn"
+    },
+    {
+      "number": 5,
+      "transliteration": "wa iżā qīla lahum ta'ālau yastagfir lakum rasụlullāhi lawwau ru`ụsahum wa ra`aitahum yaṣuddụna wa hum mustakbirụn"
+    },
+    {
+      "number": 6,
+      "transliteration": "sawā`un 'alaihim astagfarta lahum am lam tastagfir lahum, lay yagfirallāhu lahum, innallāha lā yahdil-qaumal-fāsiqīn"
+    },
+    {
+      "number": 7,
+      "transliteration": "humullażīna yaqụlụna lā tunfiqụ 'alā man 'inda rasụlillāhi ḥattā yanfaḍḍụ, wa lillāhi khazā`inus-samāwāti wal-arḍi wa lākinnal-munāfiqīna lā yafqahụn"
+    },
+    {
+      "number": 8,
+      "transliteration": "yaqụlụna la`ir raja'nā ilal-madīnati layukhrijannal-a'azzu min-hal-ażall, wa lillāhil-'izzatu wa lirasụlihī wa lil-mu`minīna wa lākinnal-munāfiqīna lā ya'lamụn"
+    },
+    {
+      "number": 9,
+      "transliteration": "yā ayyuhallażīna āmanụ lā tul-hikum amwālukum wa lā aulādukum 'an żikrillāh, wa may yaf'al żālika fa ulā`ika humul-khāsirụn"
+    },
+    {
+      "number": 10,
+      "transliteration": "wa anfiqụ mimmā razaqnākum ming qabli ay ya`tiya aḥadakumul-mautu fa yaqụla rabbi lau lā akhkhartanī ilā ajaling qarībin fa aṣṣaddaqa wa akum minaṣ-ṣāliḥīn"
+    },
+    {
+      "number": 11,
+      "transliteration": "wa lay yu`akhkhirallāhu nafsan iżā jā`a ajaluhā, wallāhu khabīrum bimā ta'malụn"
+    }
+  ],
+  "source": {
+    "dataset": "quran-indonesia-sql",
+    "version": "1.0"
+  }
+}

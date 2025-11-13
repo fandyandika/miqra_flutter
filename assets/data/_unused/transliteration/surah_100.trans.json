@@ -1,0 +1,55 @@
+{
+  "number": 100,
+  "name": "Al-'Adiyat",
+  "ayat_count": 11,
+  "ayat": [
+    {
+      "number": 1,
+      "transliteration": "wal-'ādiyāti ḍab-ḥā"
+    },
+    {
+      "number": 2,
+      "transliteration": "fal-mụriyāti qad-ḥā"
+    },
+    {
+      "number": 3,
+      "transliteration": "fal-mugīrāti ṣub-ḥā"
+    },
+    {
+      "number": 4,
+      "transliteration": "fa aṡarna bihī naq'ā"
+    },
+    {
+      "number": 5,
+      "transliteration": "fa wasaṭna bihī jam'ā"
+    },
+    {
+      "number": 6,
+      "transliteration": "innal-insāna lirabbihī lakanụd"
+    },
+    {
+      "number": 7,
+      "transliteration": "wa innahụ 'alā żālika lasyahīd"
+    },
+    {
+      "number": 8,
+      "transliteration": "wa innahụ liḥubbil-khairi lasyadīd"
+    },
+    {
+      "number": 9,
+      "transliteration": "a fa lā ya'lamu iżā bu'ṡira mā fil-qubụr"
+    },
+    {
+      "number": 10,
+      "transliteration": "wa huṣṣila mā fiṣ-ṣudụr"
+    },
+    {
+      "number": 11,
+      "transliteration": "inna rabbahum bihim yauma`iżil lakhabīr"
+    }
+  ],
+  "source": {
+    "dataset": "quran-indonesia-sql",
+    "version": "1.0"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "number": 95,
+  "name": "At-Tin",
+  "ayat_count": 8,
+  "ayat": [
+    {
+      "number": 1,
+      "transliteration": "wat-tīni waz-zaitụn"
+    },
+    {
+      "number": 2,
+      "transliteration": "wa ṭụri sīnīn"
+    },
+    {
+      "number": 3,
+      "transliteration": "wa hāżal-baladil-amīn"
+    },
+    {
+      "number": 4,
+      "transliteration": "laqad khalaqnal-insāna fī aḥsani taqwīm"
+    },
+    {
+      "number": 5,
+      "transliteration": "ṡumma radadnāhu asfala sāfilīn"
+    },
+    {
+      "number": 6,
+      "transliteration": "illallażīna āmanụ wa 'amiluṣ-ṣāliḥāti fa lahum ajrun gairu mamnụn"
+    },
+    {
+      "number": 7,
+      "transliteration": "fa mā yukażżibuka ba'du bid-dīn"
+    },
+    {
+      "number": 8,
+      "transliteration": "a laisallāhu bi`aḥkamil-ḥākimīn"
+    }
+  ],
+  "source": {
+    "dataset": "quran-indonesia-sql",
+    "version": "1.0"
+  }
+}

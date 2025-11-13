@@ -1,0 +1,47 @@
+{
+  "number": 104,
+  "name": "Al-Humazah",
+  "ayat_count": 9,
+  "ayat": [
+    {
+      "number": 1,
+      "transliteration": "wailul likulli humazatil lumazah"
+    },
+    {
+      "number": 2,
+      "transliteration": "allażī jama'a mālaw wa 'addadah"
+    },
+    {
+      "number": 3,
+      "transliteration": "yaḥsabu anna mālahū akhladah"
+    },
+    {
+      "number": 4,
+      "transliteration": "kallā layumbażanna fil-ḥuṭamah"
+    },
+    {
+      "number": 5,
+      "transliteration": "wa mā adrāka mal-ḥuṭamah"
+    },
+    {
+      "number": 6,
+      "transliteration": "nārullāhil-mụqadah"
+    },
+    {
+      "number": 7,
+      "transliteration": "allatī taṭṭali'u 'alal-af`idah"
+    },
+    {
+      "number": 8,
+      "transliteration": "innahā 'alaihim mu`ṣadah"
+    },
+    {
+      "number": 9,
+      "transliteration": "fī 'amadim mumaddadah"
+    }
+  ],
+  "source": {
+    "dataset": "quran-indonesia-sql",
+    "version": "1.0"
+  }
+}

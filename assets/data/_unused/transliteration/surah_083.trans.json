@@ -1,0 +1,155 @@
+{
+  "number": 83,
+  "name": "Al-Mutaffifin",
+  "ayat_count": 36,
+  "ayat": [
+    {
+      "number": 1,
+      "transliteration": "wailul lil-muṭaffifīn"
+    },
+    {
+      "number": 2,
+      "transliteration": "allażīna iżaktālụ 'alan-nāsi yastaufụn"
+    },
+    {
+      "number": 3,
+      "transliteration": "wa iżā kālụhum aw wazanụhum yukhsirụn"
+    },
+    {
+      "number": 4,
+      "transliteration": "alā yaẓunnu ulā`ika annahum mab'ụṡụn"
+    },
+    {
+      "number": 5,
+      "transliteration": "liyaumin 'aẓīm"
+    },
+    {
+      "number": 6,
+      "transliteration": "yauma yaqụmun-nāsu lirabbil-'ālamīn"
+    },
+    {
+      "number": 7,
+      "transliteration": "kallā inna kitābal-fujjāri lafī sijjīn"
+    },
+    {
+      "number": 8,
+      "transliteration": "wa mā adrāka mā sijjīn"
+    },
+    {
+      "number": 9,
+      "transliteration": "kitābum marqụm"
+    },
+    {
+      "number": 10,
+      "transliteration": "wailuy yauma`iżil lil-mukażżibīn"
+    },
+    {
+      "number": 11,
+      "transliteration": "allażīna yukażżibụna biyaumid-dīn"
+    },
+    {
+      "number": 12,
+      "transliteration": "wa mā yukażżibu bihī illā kullu mu'tadin aṡīm"
+    },
+    {
+      "number": 13,
+      "transliteration": "iżā tutlā 'alaihi āyātunā qāla asāṭīrul-awwalīn"
+    },
+    {
+      "number": 14,
+      "transliteration": "kallā bal rāna 'alā qulụbihim mā kānụ yaksibụn"
+    },
+    {
+      "number": 15,
+      "transliteration": "kallā innahum 'ar rabbihim yauma`iżil lamaḥjụbụn"
+    },
+    {
+      "number": 16,
+      "transliteration": "ṡumma innahum laṣālul-jaḥīm"
+    },
+    {
+      "number": 17,
+      "transliteration": "ṡumma yuqālu hāżallażī kuntum bihī tukażżibụn"
+    },
+    {
+      "number": 18,
+      "transliteration": "kallā inna kitābal-abrāri lafī 'illiyyīn"
+    },
+    {
+      "number": 19,
+      "transliteration": "wa mā adrāka mā 'illiyyụn"
+    },
+    {
+      "number": 20,
+      "transliteration": "kitābum marqụm"
+    },
+    {
+      "number": 21,
+      "transliteration": "yasy-haduhul-muqarrabụn"
+    },
+    {
+      "number": 22,
+      "transliteration": "innal-abrāra lafī na'īm"
+    },
+    {
+      "number": 23,
+      "transliteration": "'alal-arā`iki yanẓurụn"
+    },
+    {
+      "number": 24,
+      "transliteration": "ta'rifu fī wujụhihim naḍratan na'īm"
+    },
+    {
+      "number": 25,
+      "transliteration": "yusqauna mir raḥīqim makhtụm"
+    },
+    {
+      "number": 26,
+      "transliteration": "khitāmuhụ misk, wa fī żālika falyatanāfasil-mutanāfisụn"
+    },
+    {
+      "number": 27,
+      "transliteration": "wa mizājuhụ min tasnīm"
+    },
+    {
+      "number": 28,
+      "transliteration": "'ainay yasyrabu bihal-muqarrabụn"
+    },
+    {
+      "number": 29,
+      "transliteration": "innallażīna ajramụ kānụ minallażīna āmanụ yaḍ-ḥakụn"
+    },
+    {
+      "number": 30,
+      "transliteration": "wa iżā marrụ bihim yatagāmazụn"
+    },
+    {
+      "number": 31,
+      "transliteration": "wa iżangqalabū ilā ahlihimungqalabụ fakihīn"
+    },
+    {
+      "number": 32,
+      "transliteration": "wa iżā ra`auhum qālū inna hā`ulā`i laḍāllụn"
+    },
+    {
+      "number": 33,
+      "transliteration": "wa mā ursilụ 'alaihim ḥāfiẓīn"
+    },
+    {
+      "number": 34,
+      "transliteration": "fal-yaumallażīna āmanụ minal-kuffāri yaḍ-ḥakụn"
+    },
+    {
+      "number": 35,
+      "transliteration": "'alal-arā`iki yanẓurụn"
+    },
+    {
+      "number": 36,
+      "transliteration": "hal ṡuwwibal-kuffāru mā kānụ yaf'alụn"
+    }
+  ],
+  "source": {
+    "dataset": "quran-indonesia-sql",
+    "version": "1.0"
+  }
+}

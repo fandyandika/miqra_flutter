@@ -1,0 +1,35 @@
+{
+  "number": 109,
+  "name": "Al-Kafirun",
+  "ayat_count": 6,
+  "ayat": [
+    {
+      "number": 1,
+      "transliteration": "qul yā ayyuhal-kāfirụn"
+    },
+    {
+      "number": 2,
+      "transliteration": "lā a'budu mā ta'budụn"
+    },
+    {
+      "number": 3,
+      "transliteration": "wa lā antum 'ābidụna mā a'bud"
+    },
+    {
+      "number": 4,
+      "transliteration": "wa lā ana 'ābidum mā 'abattum"
+    },
+    {
+      "number": 5,
+      "transliteration": "wa lā antum 'ābidụna mā a'bud"
+    },
+    {
+      "number": 6,
+      "transliteration": "lakum dīnukum wa liya dīn"
+    }
+  ],
+  "source": {
+    "dataset": "quran-indonesia-sql",
+    "version": "1.0"
+  }
+}

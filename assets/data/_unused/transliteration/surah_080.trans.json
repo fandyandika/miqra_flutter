@@ -1,0 +1,179 @@
+{
+  "number": 80,
+  "name": "Abasa",
+  "ayat_count": 42,
+  "ayat": [
+    {
+      "number": 1,
+      "transliteration": "'abasa wa tawallā"
+    },
+    {
+      "number": 2,
+      "transliteration": "an jā`ahul-a'mā"
+    },
+    {
+      "number": 3,
+      "transliteration": "wa mā yudrīka la'allahụ yazzakkā"
+    },
+    {
+      "number": 4,
+      "transliteration": "au yażżakkaru fa tanfa'ahuż-żikrā"
+    },
+    {
+      "number": 5,
+      "transliteration": "ammā manistagnā"
+    },
+    {
+      "number": 6,
+      "transliteration": "fa anta lahụ taṣaddā"
+    },
+    {
+      "number": 7,
+      "transliteration": "wa mā 'alaika allā yazzakkā"
+    },
+    {
+      "number": 8,
+      "transliteration": "wa ammā man jā`aka yas'ā"
+    },
+    {
+      "number": 9,
+      "transliteration": "wa huwa yakhsyā"
+    },
+    {
+      "number": 10,
+      "transliteration": "fa anta 'an-hu talahhā"
+    },
+    {
+      "number": 11,
+      "transliteration": "kallā innahā tażkirah"
+    },
+    {
+      "number": 12,
+      "transliteration": "fa man syā`a żakarah"
+    },
+    {
+      "number": 13,
+      "transliteration": "fī ṣuḥufim mukarramah"
+    },
+    {
+      "number": 14,
+      "transliteration": "marfụ'atim muṭahharah"
+    },
+    {
+      "number": 15,
+      "transliteration": "bi`aidī safarah"
+    },
+    {
+      "number": 16,
+      "transliteration": "kirāmim bararah"
+    },
+    {
+      "number": 17,
+      "transliteration": "qutilal-insānu mā akfarah"
+    },
+    {
+      "number": 18,
+      "transliteration": "min ayyi syai`in khalaqah"
+    },
+    {
+      "number": 19,
+      "transliteration": "min nuṭfah, khalaqahụ fa qaddarah"
+    },
+    {
+      "number": 20,
+      "transliteration": "ṡummas-sabīla yassarah"
+    },
+    {
+      "number": 21,
+      "transliteration": "ṡumma amātahụ fa aqbarah"
+    },
+    {
+      "number": 22,
+      "transliteration": "ṡumma iżā syā`a ansyarah"
+    },
+    {
+      "number": 23,
+      "transliteration": "kallā lammā yaqḍi mā amarah"
+    },
+    {
+      "number": 24,
+      "transliteration": "falyanẓuril-insānu ilā ṭa'āmih"
+    },
+    {
+      "number": 25,
+      "transliteration": "annā ṣababnal-mā`a ṣabbā"
+    },
+    {
+      "number": 26,
+      "transliteration": "ṡumma syaqaqnal-arḍa syaqqā"
+    },
+    {
+      "number": 27,
+      "transliteration": "fa ambatnā fīhā ḥabbā"
+    },
+    {
+      "number": 28,
+      "transliteration": "wa 'inabaw wa qaḍbā"
+    },
+    {
+      "number": 29,
+      "transliteration": "wa zaitụnaw wa nakhlā"
+    },
+    {
+      "number": 30,
+      "transliteration": "wa ḥadā`iqa gulbā"
+    },
+    {
+      "number": 31,
+      "transliteration": "wa fākihataw wa abbā"
+    },
+    {
+      "number": 32,
+      "transliteration": "matā'al lakum wa li`an'āmikum"
+    },
+    {
+      "number": 33,
+      "transliteration": "fa iżā jā`atiṣ-ṣākhkhah"
+    },
+    {
+      "number": 34,
+      "transliteration": "yauma yafirrul-mar`u min akhīh"
+    },
+    {
+      "number": 35,
+      "transliteration": "wa ummihī wa abīh"
+    },
+    {
+      "number": 36,
+      "transliteration": "wa ṣāḥibatihī wa banīh"
+    },
+    {
+      "number": 37,
+      "transliteration": "likullimri`im min-hum yauma`iżin sya`nuy yugnīh"
+    },
+    {
+      "number": 38,
+      "transliteration": "wujụhuy yauma`iżim musfirah"
+    },
+    {
+      "number": 39,
+      "transliteration": "ḍāḥikatum mustabsyirah"
+    },
+    {
+      "number": 40,
+      "transliteration": "wa wujụhuy yauma`iżin 'alaihā gabarah"
+    },
+    {
+      "number": 41,
+      "transliteration": "tarhaquhā qatarah"
+    },
+    {
+      "number": 42,
+      "transliteration": "ulā`ika humul-kafaratul-fajarah"
+    }
+  ],
+  "source": {
+    "dataset": "quran-indonesia-sql",
+    "version": "1.0"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "number": 96,
+  "name": "Al-'Alaq",
+  "ayat_count": 19,
+  "ayat": [
+    {
+      "number": 1,
+      "transliteration": "iqra` bismi rabbikallażī khalaq"
+    },
+    {
+      "number": 2,
+      "transliteration": "khalaqal-insāna min 'alaq"
+    },
+    {
+      "number": 3,
+      "transliteration": "iqra` wa rabbukal-akram"
+    },
+    {
+      "number": 4,
+      "transliteration": "allażī 'allama bil-qalam"
+    },
+    {
+      "number": 5,
+      "transliteration": "'allamal-insāna mā lam ya'lam"
+    },
+    {
+      "number": 6,
+      "transliteration": "kallā innal-insāna layaṭgā"
+    },
+    {
+      "number": 7,
+      "transliteration": "ar ra`āhustagnā"
+    },
+    {
+      "number": 8,
+      "transliteration": "inna ilā rabbikar-ruj'ā"
+    },
+    {
+      "number": 9,
+      "transliteration": "a ra`aitallażī yan-hā"
+    },
+    {
+      "number": 10,
+      "transliteration": "'abdan iżā ṣallā"
+    },
+    {
+      "number": 11,
+      "transliteration": "a ra`aita ing kāna 'alal-hudā"
+    },
+    {
+      "number": 12,
+      "transliteration": "au amara bit-taqwā"
+    },
+    {
+      "number": 13,
+      "transliteration": "a ra`aita ing każżaba wa tawallā"
+    },
+    {
+      "number": 14,
+      "transliteration": "a lam ya'lam bi`annallāha yarā"
+    },
+    {
+      "number": 15,
+      "transliteration": "kallā la`il lam yantahi lanasfa'am bin-nāṣiyah"
+    },
+    {
+      "number": 16,
+      "transliteration": "nāṣiyating kāżibatin khāṭi`ah"
+    },
+    {
+      "number": 17,
+      "transliteration": "falyad'u nādiyah"
+    },
+    {
+      "number": 18,
+      "transliteration": "sanad'uz-zabāniyah"
+    },
+    {
+      "number": 19,
+      "transliteration": "kallā, lā tuṭi'hu wasjud waqtarib"
+    }
+  ],
+  "source": {
+    "dataset": "quran-indonesia-sql",
+    "version": "1.0"
+  }
+}

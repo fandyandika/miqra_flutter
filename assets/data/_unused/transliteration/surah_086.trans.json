@@ -1,0 +1,79 @@
+{
+  "number": 86,
+  "name": "At-Tariq",
+  "ayat_count": 17,
+  "ayat": [
+    {
+      "number": 1,
+      "transliteration": "was-samā`i waṭ-ṭāriq"
+    },
+    {
+      "number": 2,
+      "transliteration": "wa mā adrāka maṭ-ṭāriq"
+    },
+    {
+      "number": 3,
+      "transliteration": "an-najmuṡ-ṡāqib"
+    },
+    {
+      "number": 4,
+      "transliteration": "ing kullu nafsil lammā 'alaihā ḥāfiẓ"
+    },
+    {
+      "number": 5,
+      "transliteration": "falyanẓuril-insānu mimma khuliq"
+    },
+    {
+      "number": 6,
+      "transliteration": "khuliqa mim mā`in dāfiq"
+    },
+    {
+      "number": 7,
+      "transliteration": "yakhruju mim bainiṣ-ṣulbi wat-tarā`ib"
+    },
+    {
+      "number": 8,
+      "transliteration": "innahụ 'alā raj'ihī laqādir"
+    },
+    {
+      "number": 9,
+      "transliteration": "yauma tublas-sarā`ir"
+    },
+    {
+      "number": 10,
+      "transliteration": "fa mā lahụ ming quwwatiw wa lā nāṣir"
+    },
+    {
+      "number": 11,
+      "transliteration": "was-samā`i żātir-raj'"
+    },
+    {
+      "number": 12,
+      "transliteration": "wal-arḍi żātiṣ-ṣad'"
+    },
+    {
+      "number": 13,
+      "transliteration": "innahụ laqaulun faṣl"
+    },
+    {
+      "number": 14,
+      "transliteration": "wa mā huwa bil-hazl"
+    },
+    {
+      "number": 15,
+      "transliteration": "innahum yakīdụna kaidā"
+    },
+    {
+      "number": 16,
+      "transliteration": "wa akīdu kaidā"
+    },
+    {
+      "number": 17,
+      "transliteration": "fa mahhilil-kāfirīna am-hil-hum ruwaidā"
+    }
+  ],
+  "source": {
+    "dataset": "quran-indonesia-sql",
+    "version": "1.0"
+  }
+}

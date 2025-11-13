@@ -1,0 +1,127 @@
+{
+  "number": 81,
+  "name": "At-Takwir",
+  "ayat_count": 29,
+  "ayat": [
+    {
+      "number": 1,
+      "transliteration": "iżasy-syamsu kuwwirat"
+    },
+    {
+      "number": 2,
+      "transliteration": "wa iżan-nujụmungkadarat"
+    },
+    {
+      "number": 3,
+      "transliteration": "wa iżal-jibālu suyyirat"
+    },
+    {
+      "number": 4,
+      "transliteration": "wa iżal-'isyāru 'uṭṭilat"
+    },
+    {
+      "number": 5,
+      "transliteration": "wa iżal-wuḥụsyu ḥusyirat"
+    },
+    {
+      "number": 6,
+      "transliteration": "wa iżal-biḥāru sujjirat"
+    },
+    {
+      "number": 7,
+      "transliteration": "wa iżan-nufụsu zuwwijat"
+    },
+    {
+      "number": 8,
+      "transliteration": "wa iżal-mau`ụdatu su`ilat"
+    },
+    {
+      "number": 9,
+      "transliteration": "bi`ayyi żambing qutilat"
+    },
+    {
+      "number": 10,
+      "transliteration": "wa iżaṣ-ṣuḥufu nusyirat"
+    },
+    {
+      "number": 11,
+      "transliteration": "wa iżas-samā`u kusyiṭat"
+    },
+    {
+      "number": 12,
+      "transliteration": "wa iżal-jaḥīmu su''irat"
+    },
+    {
+      "number": 13,
+      "transliteration": "wa iżal-jannatu uzlifat"
+    },
+    {
+      "number": 14,
+      "transliteration": "'alimat nafsum mā aḥḍarat"
+    },
+    {
+      "number": 15,
+      "transliteration": "fa lā uqsimu bil-khunnas"
+    },
+    {
+      "number": 16,
+      "transliteration": "al-jawāril-kunnas"
+    },
+    {
+      "number": 17,
+      "transliteration": "wal-laili iżā 'as'as"
+    },
+    {
+      "number": 18,
+      "transliteration": "waṣ-ṣub-ḥi iżā tanaffas"
+    },
+    {
+      "number": 19,
+      "transliteration": "innahụ laqaulu rasụling karīm"
+    },
+    {
+      "number": 20,
+      "transliteration": "żī quwwatin 'inda żil-'arsyi makīn"
+    },
+    {
+      "number": 21,
+      "transliteration": "muṭā'in ṡamma amīn"
+    },
+    {
+      "number": 22,
+      "transliteration": "wa mā ṣāḥibukum bimajnụn"
+    },
+    {
+      "number": 23,
+      "transliteration": "wa laqad ra`āhu bil-ufuqil-mubīn"
+    },
+    {
+      "number": 24,
+      "transliteration": "wa mā huwa 'alal-gaibi biḍanīn"
+    },
+    {
+      "number": 25,
+      "transliteration": "wa mā huwa biqauli syaiṭānir rajīm"
+    },
+    {
+      "number": 26,
+      "transliteration": "fa aina taż-habụn"
+    },
+    {
+      "number": 27,
+      "transliteration": "in huwa illā żikrul lil-'ālamīn"
+    },
+    {
+      "number": 28,
+      "transliteration": "liman syā`a mingkum ay yastaqīm"
+    },
+    {
+      "number": 29,
+      "transliteration": "wa mā tasyā`ụna illā ay yasyā`allāhu rabbul-'ālamīn"
+    }
+  ],
+  "source": {
+    "dataset": "quran-indonesia-sql",
+    "version": "1.0"
+  }
+}

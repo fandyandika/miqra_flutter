@@ -1,0 +1,91 @@
+{
+  "number": 90,
+  "name": "Al-Balad",
+  "ayat_count": 20,
+  "ayat": [
+    {
+      "number": 1,
+      "transliteration": "lā uqsimu bihāżal-balad"
+    },
+    {
+      "number": 2,
+      "transliteration": "wa anta ḥillum bihāżal-balad"
+    },
+    {
+      "number": 3,
+      "transliteration": "wa wālidiw wa mā walad"
+    },
+    {
+      "number": 4,
+      "transliteration": "laqad khalaqnal-insāna fī kabad"
+    },
+    {
+      "number": 5,
+      "transliteration": "a yaḥsabu al lay yaqdira 'alaihi aḥad"
+    },
+    {
+      "number": 6,
+      "transliteration": "yaqụlu ahlaktu mālal lubadā"
+    },
+    {
+      "number": 7,
+      "transliteration": "a yaḥsabu al lam yarahū aḥad"
+    },
+    {
+      "number": 8,
+      "transliteration": "a lam naj'al lahụ 'ainaīn"
+    },
+    {
+      "number": 9,
+      "transliteration": "wa lisānaw wa syafataīn"
+    },
+    {
+      "number": 10,
+      "transliteration": "wa hadaināhun-najdaīn"
+    },
+    {
+      "number": 11,
+      "transliteration": "fa laqtaḥamal-'aqabah"
+    },
+    {
+      "number": 12,
+      "transliteration": "wa mā adrāka mal-'aqabah"
+    },
+    {
+      "number": 13,
+      "transliteration": "fakku raqabah"
+    },
+    {
+      "number": 14,
+      "transliteration": "au iṭ'āmun fī yaumin żī masgabah"
+    },
+    {
+      "number": 15,
+      "transliteration": "yatīman żā maqrabah"
+    },
+    {
+      "number": 16,
+      "transliteration": "au miskīnan żā matrabah"
+    },
+    {
+      "number": 17,
+      "transliteration": "ṡumma kāna minallażīna āmanụ wa tawāṣau biṣ-ṣabri wa tawāṣau bil-mar-ḥamah"
+    },
+    {
+      "number": 18,
+      "transliteration": "ulā`ika aṣ-ḥābul-maimanah"
+    },
+    {
+      "number": 19,
+      "transliteration": "wallażīna kafarụ bi`āyātinā hum aṣ-ḥābul-masy`amah"
+    },
+    {
+      "number": 20,
+      "transliteration": "'alaihim nārum mu`ṣadah"
+    }
+  ],
+  "source": {
+    "dataset": "quran-indonesia-sql",
+    "version": "1.0"
+  }
+}

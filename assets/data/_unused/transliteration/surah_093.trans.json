@@ -1,0 +1,55 @@
+{
+  "number": 93,
+  "name": "Ad-Duhaa",
+  "ayat_count": 11,
+  "ayat": [
+    {
+      "number": 1,
+      "transliteration": "waḍ-ḍuḥā"
+    },
+    {
+      "number": 2,
+      "transliteration": "wal-laili iżā sajā"
+    },
+    {
+      "number": 3,
+      "transliteration": "mā wadda'aka rabbuka wa mā qalā"
+    },
+    {
+      "number": 4,
+      "transliteration": "wa lal-ākhiratu khairul laka minal-ụlā"
+    },
+    {
+      "number": 5,
+      "transliteration": "wa lasaufa yu'ṭīka rabbuka fa tarḍā"
+    },
+    {
+      "number": 6,
+      "transliteration": "a lam yajidka yatīman fa āwā"
+    },
+    {
+      "number": 7,
+      "transliteration": "wa wajadaka ḍāllan fa hadā"
+    },
+    {
+      "number": 8,
+      "transliteration": "wa wajadaka 'ā`ilan fa agnā"
+    },
+    {
+      "number": 9,
+      "transliteration": "fa ammal-yatīma fa lā taq-har"
+    },
+    {
+      "number": 10,
+      "transliteration": "wa ammas-sā`ila fa lā tan-har"
+    },
+    {
+      "number": 11,
+      "transliteration": "wa ammā bini'mati rabbika fa ḥaddiṡ"
+    }
+  ],
+  "source": {
+    "dataset": "quran-indonesia-sql",
+    "version": "1.0"
+  }
+}

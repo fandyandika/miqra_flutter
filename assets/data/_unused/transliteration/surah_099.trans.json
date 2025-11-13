@@ -1,0 +1,43 @@
+{
+  "number": 99,
+  "name": "Az-Zalzalah",
+  "ayat_count": 8,
+  "ayat": [
+    {
+      "number": 1,
+      "transliteration": "iżā zulzilatil-arḍu zilzālahā"
+    },
+    {
+      "number": 2,
+      "transliteration": "wa akhrajatil-arḍu aṡqālahā"
+    },
+    {
+      "number": 3,
+      "transliteration": "wa qālal-insānu mā lahā"
+    },
+    {
+      "number": 4,
+      "transliteration": "yauma`iżin tuḥaddiṡu akhbārahā"
+    },
+    {
+      "number": 5,
+      "transliteration": "bi`anna rabbaka auḥā lahā"
+    },
+    {
+      "number": 6,
+      "transliteration": "yauma`iżiy yaṣdurun-nāsu asytātal liyurau a'mālahum"
+    },
+    {
+      "number": 7,
+      "transliteration": "fa may ya'mal miṡqāla żarratin khairay yarah"
+    },
+    {
+      "number": 8,
+      "transliteration": "wa may ya'mal miṡqāla żarratin syarray yarah"
+    }
+  ],
+  "source": {
+    "dataset": "quran-indonesia-sql",
+    "version": "1.0"
+  }
+}

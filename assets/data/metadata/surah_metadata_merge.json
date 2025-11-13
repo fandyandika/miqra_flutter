@@ -1,0 +1,6728 @@
+{
+  "version": "1.0",
+  "source": "quran-indonesia.sql",
+  "generated_at": "2025-11-13T04:06:45.702859+00:00",
+  "surahs": [
+    {
+      "surah": 1,
+      "code_3": "001",
+      "name_ar": "الفاتحة",
+      "name_id": "Al-Fatihah",
+      "name_id_translation": "Pembukaan",
+      "name_en": "The Opening",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 7,
+      "rukus": 1,
+      "juz": {
+        "start": 1,
+        "end": 1
+      },
+      "juz_segments": [
+        {
+          "juz": 1,
+          "start_ayah": 1,
+          "end_ayah": 7
+        }
+      ],
+      "pages": {
+        "start": 1,
+        "end": 1
+      },
+      "page_ranges": [
+        {
+          "page": 1,
+          "start_ayah": 1,
+          "end_ayah": 7
+        }
+      ]
+    },
+    {
+      "surah": 2,
+      "code_3": "002",
+      "name_ar": "البقرة",
+      "name_id": "Al-Baqarah",
+      "name_id_translation": "Sapi Betina",
+      "name_en": "The Cow",
+      "place": "Medina",
+      "type": "Madaniyah",
+      "ayah_count": 286,
+      "rukus": 40,
+      "juz": {
+        "start": 1,
+        "end": 3
+      },
+      "juz_segments": [
+        {
+          "juz": 1,
+          "start_ayah": 1,
+          "end_ayah": 141
+        },
+        {
+          "juz": 2,
+          "start_ayah": 142,
+          "end_ayah": 252
+        },
+        {
+          "juz": 3,
+          "start_ayah": 253,
+          "end_ayah": 286
+        }
+      ],
+      "pages": {
+        "start": 2,
+        "end": 49
+      },
+      "page_ranges": [
+        {
+          "page": 2,
+          "start_ayah": 1,
+          "end_ayah": 5
+        },
+        {
+          "page": 3,
+          "start_ayah": 6,
+          "end_ayah": 16
+        },
+        {
+          "page": 4,
+          "start_ayah": 17,
+          "end_ayah": 24
+        },
+        {
+          "page": 5,
+          "start_ayah": 25,
+          "end_ayah": 29
+        },
+        {
+          "page": 6,
+          "start_ayah": 30,
+          "end_ayah": 37
+        },
+        {
+          "page": 7,
+          "start_ayah": 38,
+          "end_ayah": 48
+        },
+        {
+          "page": 8,
+          "start_ayah": 49,
+          "end_ayah": 57
+        },
+        {
+          "page": 9,
+          "start_ayah": 58,
+          "end_ayah": 61
+        },
+        {
+          "page": 10,
+          "start_ayah": 62,
+          "end_ayah": 69
+        },
+        {
+          "page": 11,
+          "start_ayah": 70,
+          "end_ayah": 76
+        },
+        {
+          "page": 12,
+          "start_ayah": 77,
+          "end_ayah": 83
+        },
+        {
+          "page": 13,
+          "start_ayah": 84,
+          "end_ayah": 88
+        },
+        {
+          "page": 14,
+          "start_ayah": 89,
+          "end_ayah": 93
+        },
+        {
+          "page": 15,
+          "start_ayah": 94,
+          "end_ayah": 101
+        },
+        {
+          "page": 16,
+          "start_ayah": 102,
+          "end_ayah": 105
+        },
+        {
+          "page": 17,
+          "start_ayah": 106,
+          "end_ayah": 112
+        },
+        {
+          "page": 18,
+          "start_ayah": 113,
+          "end_ayah": 119
+        },
+        {
+          "page": 19,
+          "start_ayah": 120,
+          "end_ayah": 126
+        },
+        {
+          "page": 20,
+          "start_ayah": 127,
+          "end_ayah": 134
+        },
+        {
+          "page": 21,
+          "start_ayah": 135,
+          "end_ayah": 141
+        },
+        {
+          "page": 22,
+          "start_ayah": 142,
+          "end_ayah": 145
+        },
+        {
+          "page": 23,
+          "start_ayah": 146,
+          "end_ayah": 153
+        },
+        {
+          "page": 24,
+          "start_ayah": 154,
+          "end_ayah": 163
+        },
+        {
+          "page": 25,
+          "start_ayah": 164,
+          "end_ayah": 169
+        },
+        {
+          "page": 26,
+          "start_ayah": 170,
+          "end_ayah": 176
+        },
+        {
+          "page": 27,
+          "start_ayah": 177,
+          "end_ayah": 181
+        },
+        {
+          "page": 28,
+          "start_ayah": 182,
+          "end_ayah": 186
+        },
+        {
+          "page": 29,
+          "start_ayah": 187,
+          "end_ayah": 190
+        },
+        {
+          "page": 30,
+          "start_ayah": 191,
+          "end_ayah": 196
+        },
+        {
+          "page": 31,
+          "start_ayah": 197,
+          "end_ayah": 202
+        },
+        {
+          "page": 32,
+          "start_ayah": 203,
+          "end_ayah": 210
+        },
+        {
+          "page": 33,
+          "start_ayah": 211,
+          "end_ayah": 215
+        },
+        {
+          "page": 34,
+          "start_ayah": 216,
+          "end_ayah": 219
+        },
+        {
+          "page": 35,
+          "start_ayah": 220,
+          "end_ayah": 224
+        },
+        {
+          "page": 36,
+          "start_ayah": 225,
+          "end_ayah": 230
+        },
+        {
+          "page": 37,
+          "start_ayah": 231,
+          "end_ayah": 233
+        },
+        {
+          "page": 38,
+          "start_ayah": 234,
+          "end_ayah": 237
+        },
+        {
+          "page": 39,
+          "start_ayah": 238,
+          "end_ayah": 245
+        },
+        {
+          "page": 40,
+          "start_ayah": 246,
+          "end_ayah": 248
+        },
+        {
+          "page": 41,
+          "start_ayah": 249,
+          "end_ayah": 252
+        },
+        {
+          "page": 42,
+          "start_ayah": 253,
+          "end_ayah": 256
+        },
+        {
+          "page": 43,
+          "start_ayah": 257,
+          "end_ayah": 259
+        },
+        {
+          "page": 44,
+          "start_ayah": 260,
+          "end_ayah": 264
+        },
+        {
+          "page": 45,
+          "start_ayah": 265,
+          "end_ayah": 269
+        },
+        {
+          "page": 46,
+          "start_ayah": 270,
+          "end_ayah": 274
+        },
+        {
+          "page": 47,
+          "start_ayah": 275,
+          "end_ayah": 281
+        },
+        {
+          "page": 48,
+          "start_ayah": 282,
+          "end_ayah": 282
+        },
+        {
+          "page": 49,
+          "start_ayah": 283,
+          "end_ayah": 286
+        }
+      ]
+    },
+    {
+      "surah": 3,
+      "code_3": "003",
+      "name_ar": "آل عمران",
+      "name_id": "Ali 'Imran",
+      "name_id_translation": "Keluarga Imran",
+      "name_en": "The Family of Imraan",
+      "place": "Medina",
+      "type": "Madaniyah",
+      "ayah_count": 200,
+      "rukus": 20,
+      "juz": {
+        "start": 3,
+        "end": 4
+      },
+      "juz_segments": [
+        {
+          "juz": 3,
+          "start_ayah": 1,
+          "end_ayah": 92
+        },
+        {
+          "juz": 4,
+          "start_ayah": 93,
+          "end_ayah": 200
+        }
+      ],
+      "pages": {
+        "start": 50,
+        "end": 76
+      },
+      "page_ranges": [
+        {
+          "page": 50,
+          "start_ayah": 1,
+          "end_ayah": 9
+        },
+        {
+          "page": 51,
+          "start_ayah": 10,
+          "end_ayah": 15
+        },
+        {
+          "page": 52,
+          "start_ayah": 16,
+          "end_ayah": 22
+        },
+        {
+          "page": 53,
+          "start_ayah": 23,
+          "end_ayah": 29
+        },
+        {
+          "page": 54,
+          "start_ayah": 30,
+          "end_ayah": 37
+        },
+        {
+          "page": 55,
+          "start_ayah": 38,
+          "end_ayah": 45
+        },
+        {
+          "page": 56,
+          "start_ayah": 46,
+          "end_ayah": 52
+        },
+        {
+          "page": 57,
+          "start_ayah": 53,
+          "end_ayah": 61
+        },
+        {
+          "page": 58,
+          "start_ayah": 62,
+          "end_ayah": 70
+        },
+        {
+          "page": 59,
+          "start_ayah": 71,
+          "end_ayah": 77
+        },
+        {
+          "page": 60,
+          "start_ayah": 78,
+          "end_ayah": 83
+        },
+        {
+          "page": 61,
+          "start_ayah": 84,
+          "end_ayah": 91
+        },
+        {
+          "page": 62,
+          "start_ayah": 92,
+          "end_ayah": 100
+        },
+        {
+          "page": 63,
+          "start_ayah": 101,
+          "end_ayah": 108
+        },
+        {
+          "page": 64,
+          "start_ayah": 109,
+          "end_ayah": 115
+        },
+        {
+          "page": 65,
+          "start_ayah": 116,
+          "end_ayah": 121
+        },
+        {
+          "page": 66,
+          "start_ayah": 122,
+          "end_ayah": 132
+        },
+        {
+          "page": 67,
+          "start_ayah": 133,
+          "end_ayah": 140
+        },
+        {
+          "page": 68,
+          "start_ayah": 141,
+          "end_ayah": 148
+        },
+        {
+          "page": 69,
+          "start_ayah": 149,
+          "end_ayah": 153
+        },
+        {
+          "page": 70,
+          "start_ayah": 154,
+          "end_ayah": 157
+        },
+        {
+          "page": 71,
+          "start_ayah": 158,
+          "end_ayah": 165
+        },
+        {
+          "page": 72,
+          "start_ayah": 166,
+          "end_ayah": 173
+        },
+        {
+          "page": 73,
+          "start_ayah": 174,
+          "end_ayah": 180
+        },
+        {
+          "page": 74,
+          "start_ayah": 181,
+          "end_ayah": 186
+        },
+        {
+          "page": 75,
+          "start_ayah": 187,
+          "end_ayah": 194
+        },
+        {
+          "page": 76,
+          "start_ayah": 195,
+          "end_ayah": 200
+        }
+      ]
+    },
+    {
+      "surah": 4,
+      "code_3": "004",
+      "name_ar": "النساء",
+      "name_id": "An-Nisa'",
+      "name_id_translation": "Wanita",
+      "name_en": "The Women",
+      "place": "Medina",
+      "type": "Madaniyah",
+      "ayah_count": 176,
+      "rukus": 24,
+      "juz": {
+        "start": 4,
+        "end": 6
+      },
+      "juz_segments": [
+        {
+          "juz": 4,
+          "start_ayah": 1,
+          "end_ayah": 23
+        },
+        {
+          "juz": 5,
+          "start_ayah": 24,
+          "end_ayah": 147
+        },
+        {
+          "juz": 6,
+          "start_ayah": 148,
+          "end_ayah": 176
+        }
+      ],
+      "pages": {
+        "start": 77,
+        "end": 106
+      },
+      "page_ranges": [
+        {
+          "page": 77,
+          "start_ayah": 1,
+          "end_ayah": 6
+        },
+        {
+          "page": 78,
+          "start_ayah": 7,
+          "end_ayah": 11
+        },
+        {
+          "page": 79,
+          "start_ayah": 12,
+          "end_ayah": 14
+        },
+        {
+          "page": 80,
+          "start_ayah": 15,
+          "end_ayah": 19
+        },
+        {
+          "page": 81,
+          "start_ayah": 20,
+          "end_ayah": 23
+        },
+        {
+          "page": 82,
+          "start_ayah": 24,
+          "end_ayah": 26
+        },
+        {
+          "page": 83,
+          "start_ayah": 27,
+          "end_ayah": 33
+        },
+        {
+          "page": 84,
+          "start_ayah": 34,
+          "end_ayah": 37
+        },
+        {
+          "page": 85,
+          "start_ayah": 38,
+          "end_ayah": 44
+        },
+        {
+          "page": 86,
+          "start_ayah": 45,
+          "end_ayah": 51
+        },
+        {
+          "page": 87,
+          "start_ayah": 52,
+          "end_ayah": 59
+        },
+        {
+          "page": 88,
+          "start_ayah": 60,
+          "end_ayah": 65
+        },
+        {
+          "page": 89,
+          "start_ayah": 66,
+          "end_ayah": 74
+        },
+        {
+          "page": 90,
+          "start_ayah": 75,
+          "end_ayah": 79
+        },
+        {
+          "page": 91,
+          "start_ayah": 80,
+          "end_ayah": 86
+        },
+        {
+          "page": 92,
+          "start_ayah": 87,
+          "end_ayah": 91
+        },
+        {
+          "page": 93,
+          "start_ayah": 92,
+          "end_ayah": 94
+        },
+        {
+          "page": 94,
+          "start_ayah": 95,
+          "end_ayah": 101
+        },
+        {
+          "page": 95,
+          "start_ayah": 102,
+          "end_ayah": 105
+        },
+        {
+          "page": 96,
+          "start_ayah": 106,
+          "end_ayah": 113
+        },
+        {
+          "page": 97,
+          "start_ayah": 114,
+          "end_ayah": 121
+        },
+        {
+          "page": 98,
+          "start_ayah": 122,
+          "end_ayah": 127
+        },
+        {
+          "page": 99,
+          "start_ayah": 128,
+          "end_ayah": 134
+        },
+        {
+          "page": 100,
+          "start_ayah": 135,
+          "end_ayah": 140
+        },
+        {
+          "page": 101,
+          "start_ayah": 141,
+          "end_ayah": 147
+        },
+        {
+          "page": 102,
+          "start_ayah": 148,
+          "end_ayah": 154
+        },
+        {
+          "page": 103,
+          "start_ayah": 155,
+          "end_ayah": 162
+        },
+        {
+          "page": 104,
+          "start_ayah": 163,
+          "end_ayah": 170
+        },
+        {
+          "page": 105,
+          "start_ayah": 171,
+          "end_ayah": 175
+        },
+        {
+          "page": 106,
+          "start_ayah": 176,
+          "end_ayah": 176
+        }
+      ]
+    },
+    {
+      "surah": 5,
+      "code_3": "005",
+      "name_ar": "المائدة",
+      "name_id": "Al-Ma'idah",
+      "name_id_translation": "Hidangan",
+      "name_en": "The Table",
+      "place": "Medina",
+      "type": "Madaniyah",
+      "ayah_count": 120,
+      "rukus": 16,
+      "juz": {
+        "start": 6,
+        "end": 7
+      },
+      "juz_segments": [
+        {
+          "juz": 6,
+          "start_ayah": 1,
+          "end_ayah": 81
+        },
+        {
+          "juz": 7,
+          "start_ayah": 82,
+          "end_ayah": 120
+        }
+      ],
+      "pages": {
+        "start": 106,
+        "end": 127
+      },
+      "page_ranges": [
+        {
+          "page": 106,
+          "start_ayah": 1,
+          "end_ayah": 2
+        },
+        {
+          "page": 107,
+          "start_ayah": 3,
+          "end_ayah": 5
+        },
+        {
+          "page": 108,
+          "start_ayah": 6,
+          "end_ayah": 9
+        },
+        {
+          "page": 109,
+          "start_ayah": 10,
+          "end_ayah": 13
+        },
+        {
+          "page": 110,
+          "start_ayah": 14,
+          "end_ayah": 17
+        },
+        {
+          "page": 111,
+          "start_ayah": 18,
+          "end_ayah": 23
+        },
+        {
+          "page": 112,
+          "start_ayah": 24,
+          "end_ayah": 31
+        },
+        {
+          "page": 113,
+          "start_ayah": 32,
+          "end_ayah": 36
+        },
+        {
+          "page": 114,
+          "start_ayah": 37,
+          "end_ayah": 41
+        },
+        {
+          "page": 115,
+          "start_ayah": 42,
+          "end_ayah": 45
+        },
+        {
+          "page": 116,
+          "start_ayah": 46,
+          "end_ayah": 50
+        },
+        {
+          "page": 117,
+          "start_ayah": 51,
+          "end_ayah": 57
+        },
+        {
+          "page": 118,
+          "start_ayah": 58,
+          "end_ayah": 64
+        },
+        {
+          "page": 119,
+          "start_ayah": 65,
+          "end_ayah": 70
+        },
+        {
+          "page": 120,
+          "start_ayah": 71,
+          "end_ayah": 76
+        },
+        {
+          "page": 121,
+          "start_ayah": 77,
+          "end_ayah": 82
+        },
+        {
+          "page": 122,
+          "start_ayah": 83,
+          "end_ayah": 89
+        },
+        {
+          "page": 123,
+          "start_ayah": 90,
+          "end_ayah": 95
+        },
+        {
+          "page": 124,
+          "start_ayah": 96,
+          "end_ayah": 103
+        },
+        {
+          "page": 125,
+          "start_ayah": 104,
+          "end_ayah": 108
+        },
+        {
+          "page": 126,
+          "start_ayah": 109,
+          "end_ayah": 113
+        },
+        {
+          "page": 127,
+          "start_ayah": 114,
+          "end_ayah": 120
+        }
+      ]
+    },
+    {
+      "surah": 6,
+      "code_3": "006",
+      "name_ar": "الأنعام",
+      "name_id": "Al-An'am",
+      "name_id_translation": "Binatang Ternak",
+      "name_en": "The Cattle",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 165,
+      "rukus": 20,
+      "juz": {
+        "start": 7,
+        "end": 8
+      },
+      "juz_segments": [
+        {
+          "juz": 7,
+          "start_ayah": 1,
+          "end_ayah": 110
+        },
+        {
+          "juz": 8,
+          "start_ayah": 111,
+          "end_ayah": 165
+        }
+      ],
+      "pages": {
+        "start": 128,
+        "end": 150
+      },
+      "page_ranges": [
+        {
+          "page": 128,
+          "start_ayah": 1,
+          "end_ayah": 8
+        },
+        {
+          "page": 129,
+          "start_ayah": 9,
+          "end_ayah": 18
+        },
+        {
+          "page": 130,
+          "start_ayah": 19,
+          "end_ayah": 27
+        },
+        {
+          "page": 131,
+          "start_ayah": 28,
+          "end_ayah": 35
+        },
+        {
+          "page": 132,
+          "start_ayah": 36,
+          "end_ayah": 44
+        },
+        {
+          "page": 133,
+          "start_ayah": 45,
+          "end_ayah": 52
+        },
+        {
+          "page": 134,
+          "start_ayah": 53,
+          "end_ayah": 59
+        },
+        {
+          "page": 135,
+          "start_ayah": 60,
+          "end_ayah": 68
+        },
+        {
+          "page": 136,
+          "start_ayah": 69,
+          "end_ayah": 73
+        },
+        {
+          "page": 137,
+          "start_ayah": 74,
+          "end_ayah": 81
+        },
+        {
+          "page": 138,
+          "start_ayah": 82,
+          "end_ayah": 90
+        },
+        {
+          "page": 139,
+          "start_ayah": 91,
+          "end_ayah": 94
+        },
+        {
+          "page": 140,
+          "start_ayah": 95,
+          "end_ayah": 101
+        },
+        {
+          "page": 141,
+          "start_ayah": 102,
+          "end_ayah": 110
+        },
+        {
+          "page": 142,
+          "start_ayah": 111,
+          "end_ayah": 118
+        },
+        {
+          "page": 143,
+          "start_ayah": 119,
+          "end_ayah": 124
+        },
+        {
+          "page": 144,
+          "start_ayah": 125,
+          "end_ayah": 131
+        },
+        {
+          "page": 145,
+          "start_ayah": 132,
+          "end_ayah": 137
+        },
+        {
+          "page": 146,
+          "start_ayah": 138,
+          "end_ayah": 142
+        },
+        {
+          "page": 147,
+          "start_ayah": 143,
+          "end_ayah": 146
+        },
+        {
+          "page": 148,
+          "start_ayah": 147,
+          "end_ayah": 151
+        },
+        {
+          "page": 149,
+          "start_ayah": 152,
+          "end_ayah": 157
+        },
+        {
+          "page": 150,
+          "start_ayah": 158,
+          "end_ayah": 165
+        }
+      ]
+    },
+    {
+      "surah": 7,
+      "code_3": "007",
+      "name_ar": "الأعراف",
+      "name_id": "Al-A'raf",
+      "name_id_translation": "Tempat Tertinggi",
+      "name_en": "The Heights",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 206,
+      "rukus": 24,
+      "juz": {
+        "start": 8,
+        "end": 9
+      },
+      "juz_segments": [
+        {
+          "juz": 8,
+          "start_ayah": 1,
+          "end_ayah": 87
+        },
+        {
+          "juz": 9,
+          "start_ayah": 88,
+          "end_ayah": 206
+        }
+      ],
+      "pages": {
+        "start": 151,
+        "end": 176
+      },
+      "page_ranges": [
+        {
+          "page": 151,
+          "start_ayah": 1,
+          "end_ayah": 11
+        },
+        {
+          "page": 152,
+          "start_ayah": 12,
+          "end_ayah": 22
+        },
+        {
+          "page": 153,
+          "start_ayah": 23,
+          "end_ayah": 30
+        },
+        {
+          "page": 154,
+          "start_ayah": 31,
+          "end_ayah": 37
+        },
+        {
+          "page": 155,
+          "start_ayah": 38,
+          "end_ayah": 43
+        },
+        {
+          "page": 156,
+          "start_ayah": 44,
+          "end_ayah": 51
+        },
+        {
+          "page": 157,
+          "start_ayah": 52,
+          "end_ayah": 57
+        },
+        {
+          "page": 158,
+          "start_ayah": 58,
+          "end_ayah": 67
+        },
+        {
+          "page": 159,
+          "start_ayah": 68,
+          "end_ayah": 73
+        },
+        {
+          "page": 160,
+          "start_ayah": 74,
+          "end_ayah": 81
+        },
+        {
+          "page": 161,
+          "start_ayah": 82,
+          "end_ayah": 87
+        },
+        {
+          "page": 162,
+          "start_ayah": 88,
+          "end_ayah": 95
+        },
+        {
+          "page": 163,
+          "start_ayah": 96,
+          "end_ayah": 104
+        },
+        {
+          "page": 164,
+          "start_ayah": 105,
+          "end_ayah": 120
+        },
+        {
+          "page": 165,
+          "start_ayah": 121,
+          "end_ayah": 130
+        },
+        {
+          "page": 166,
+          "start_ayah": 131,
+          "end_ayah": 137
+        },
+        {
+          "page": 167,
+          "start_ayah": 138,
+          "end_ayah": 143
+        },
+        {
+          "page": 168,
+          "start_ayah": 144,
+          "end_ayah": 149
+        },
+        {
+          "page": 169,
+          "start_ayah": 150,
+          "end_ayah": 155
+        },
+        {
+          "page": 170,
+          "start_ayah": 156,
+          "end_ayah": 159
+        },
+        {
+          "page": 171,
+          "start_ayah": 160,
+          "end_ayah": 163
+        },
+        {
+          "page": 172,
+          "start_ayah": 164,
+          "end_ayah": 170
+        },
+        {
+          "page": 173,
+          "start_ayah": 171,
+          "end_ayah": 178
+        },
+        {
+          "page": 174,
+          "start_ayah": 179,
+          "end_ayah": 187
+        },
+        {
+          "page": 175,
+          "start_ayah": 188,
+          "end_ayah": 195
+        },
+        {
+          "page": 176,
+          "start_ayah": 196,
+          "end_ayah": 206
+        }
+      ]
+    },
+    {
+      "surah": 8,
+      "code_3": "008",
+      "name_ar": "الأنفال",
+      "name_id": "Al-Anfal",
+      "name_id_translation": "Rampasan Perang",
+      "name_en": "The Spoils of War",
+      "place": "Medina",
+      "type": "Madaniyah",
+      "ayah_count": 75,
+      "rukus": 10,
+      "juz": {
+        "start": 9,
+        "end": 10
+      },
+      "juz_segments": [
+        {
+          "juz": 9,
+          "start_ayah": 1,
+          "end_ayah": 40
+        },
+        {
+          "juz": 10,
+          "start_ayah": 41,
+          "end_ayah": 75
+        }
+      ],
+      "pages": {
+        "start": 177,
+        "end": 186
+      },
+      "page_ranges": [
+        {
+          "page": 177,
+          "start_ayah": 1,
+          "end_ayah": 8
+        },
+        {
+          "page": 178,
+          "start_ayah": 9,
+          "end_ayah": 16
+        },
+        {
+          "page": 179,
+          "start_ayah": 17,
+          "end_ayah": 25
+        },
+        {
+          "page": 180,
+          "start_ayah": 26,
+          "end_ayah": 33
+        },
+        {
+          "page": 181,
+          "start_ayah": 34,
+          "end_ayah": 40
+        },
+        {
+          "page": 182,
+          "start_ayah": 41,
+          "end_ayah": 45
+        },
+        {
+          "page": 183,
+          "start_ayah": 46,
+          "end_ayah": 52
+        },
+        {
+          "page": 184,
+          "start_ayah": 53,
+          "end_ayah": 61
+        },
+        {
+          "page": 185,
+          "start_ayah": 62,
+          "end_ayah": 69
+        },
+        {
+          "page": 186,
+          "start_ayah": 70,
+          "end_ayah": 75
+        }
+      ]
+    },
+    {
+      "surah": 9,
+      "code_3": "009",
+      "name_ar": "التوبة",
+      "name_id": "At-Tawbah",
+      "name_id_translation": "Pengampunan",
+      "name_en": "The Repentance",
+      "place": "Medina",
+      "type": "Madaniyah",
+      "ayah_count": 129,
+      "rukus": 16,
+      "juz": {
+        "start": 10,
+        "end": 11
+      },
+      "juz_segments": [
+        {
+          "juz": 10,
+          "start_ayah": 1,
+          "end_ayah": 92
+        },
+        {
+          "juz": 11,
+          "start_ayah": 93,
+          "end_ayah": 129
+        }
+      ],
+      "pages": {
+        "start": 187,
+        "end": 207
+      },
+      "page_ranges": [
+        {
+          "page": 187,
+          "start_ayah": 1,
+          "end_ayah": 6
+        },
+        {
+          "page": 188,
+          "start_ayah": 7,
+          "end_ayah": 13
+        },
+        {
+          "page": 189,
+          "start_ayah": 14,
+          "end_ayah": 20
+        },
+        {
+          "page": 190,
+          "start_ayah": 21,
+          "end_ayah": 26
+        },
+        {
+          "page": 191,
+          "start_ayah": 27,
+          "end_ayah": 31
+        },
+        {
+          "page": 192,
+          "start_ayah": 32,
+          "end_ayah": 36
+        },
+        {
+          "page": 193,
+          "start_ayah": 37,
+          "end_ayah": 40
+        },
+        {
+          "page": 194,
+          "start_ayah": 41,
+          "end_ayah": 47
+        },
+        {
+          "page": 195,
+          "start_ayah": 48,
+          "end_ayah": 54
+        },
+        {
+          "page": 196,
+          "start_ayah": 55,
+          "end_ayah": 61
+        },
+        {
+          "page": 197,
+          "start_ayah": 62,
+          "end_ayah": 68
+        },
+        {
+          "page": 198,
+          "start_ayah": 69,
+          "end_ayah": 72
+        },
+        {
+          "page": 199,
+          "start_ayah": 73,
+          "end_ayah": 79
+        },
+        {
+          "page": 200,
+          "start_ayah": 80,
+          "end_ayah": 86
+        },
+        {
+          "page": 201,
+          "start_ayah": 87,
+          "end_ayah": 93
+        },
+        {
+          "page": 202,
+          "start_ayah": 94,
+          "end_ayah": 99
+        },
+        {
+          "page": 203,
+          "start_ayah": 100,
+          "end_ayah": 106
+        },
+        {
+          "page": 204,
+          "start_ayah": 107,
+          "end_ayah": 111
+        },
+        {
+          "page": 205,
+          "start_ayah": 112,
+          "end_ayah": 117
+        },
+        {
+          "page": 206,
+          "start_ayah": 118,
+          "end_ayah": 122
+        },
+        {
+          "page": 207,
+          "start_ayah": 123,
+          "end_ayah": 129
+        }
+      ]
+    },
+    {
+      "surah": 10,
+      "code_3": "010",
+      "name_ar": "يونس",
+      "name_id": "Yunus",
+      "name_id_translation": "Yunus",
+      "name_en": "Jonas",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 109,
+      "rukus": 11,
+      "juz": {
+        "start": 11,
+        "end": 11
+      },
+      "juz_segments": [
+        {
+          "juz": 11,
+          "start_ayah": 1,
+          "end_ayah": 109
+        }
+      ],
+      "pages": {
+        "start": 208,
+        "end": 221
+      },
+      "page_ranges": [
+        {
+          "page": 208,
+          "start_ayah": 1,
+          "end_ayah": 6
+        },
+        {
+          "page": 209,
+          "start_ayah": 7,
+          "end_ayah": 14
+        },
+        {
+          "page": 210,
+          "start_ayah": 15,
+          "end_ayah": 20
+        },
+        {
+          "page": 211,
+          "start_ayah": 21,
+          "end_ayah": 25
+        },
+        {
+          "page": 212,
+          "start_ayah": 26,
+          "end_ayah": 33
+        },
+        {
+          "page": 213,
+          "start_ayah": 34,
+          "end_ayah": 42
+        },
+        {
+          "page": 214,
+          "start_ayah": 43,
+          "end_ayah": 53
+        },
+        {
+          "page": 215,
+          "start_ayah": 54,
+          "end_ayah": 61
+        },
+        {
+          "page": 216,
+          "start_ayah": 62,
+          "end_ayah": 70
+        },
+        {
+          "page": 217,
+          "start_ayah": 71,
+          "end_ayah": 78
+        },
+        {
+          "page": 218,
+          "start_ayah": 79,
+          "end_ayah": 88
+        },
+        {
+          "page": 219,
+          "start_ayah": 89,
+          "end_ayah": 97
+        },
+        {
+          "page": 220,
+          "start_ayah": 98,
+          "end_ayah": 106
+        },
+        {
+          "page": 221,
+          "start_ayah": 107,
+          "end_ayah": 109
+        }
+      ]
+    },
+    {
+      "surah": 11,
+      "code_3": "011",
+      "name_ar": "هود",
+      "name_id": "Hud",
+      "name_id_translation": "Hud",
+      "name_en": "Hud",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 123,
+      "rukus": 10,
+      "juz": {
+        "start": 11,
+        "end": 12
+      },
+      "juz_segments": [
+        {
+          "juz": 11,
+          "start_ayah": 1,
+          "end_ayah": 5
+        },
+        {
+          "juz": 12,
+          "start_ayah": 6,
+          "end_ayah": 123
+        }
+      ],
+      "pages": {
+        "start": 221,
+        "end": 235
+      },
+      "page_ranges": [
+        {
+          "page": 221,
+          "start_ayah": 1,
+          "end_ayah": 5
+        },
+        {
+          "page": 222,
+          "start_ayah": 6,
+          "end_ayah": 12
+        },
+        {
+          "page": 223,
+          "start_ayah": 13,
+          "end_ayah": 19
+        },
+        {
+          "page": 224,
+          "start_ayah": 20,
+          "end_ayah": 28
+        },
+        {
+          "page": 225,
+          "start_ayah": 29,
+          "end_ayah": 37
+        },
+        {
+          "page": 226,
+          "start_ayah": 38,
+          "end_ayah": 45
+        },
+        {
+          "page": 227,
+          "start_ayah": 46,
+          "end_ayah": 53
+        },
+        {
+          "page": 228,
+          "start_ayah": 54,
+          "end_ayah": 62
+        },
+        {
+          "page": 229,
+          "start_ayah": 63,
+          "end_ayah": 71
+        },
+        {
+          "page": 230,
+          "start_ayah": 72,
+          "end_ayah": 81
+        },
+        {
+          "page": 231,
+          "start_ayah": 82,
+          "end_ayah": 88
+        },
+        {
+          "page": 232,
+          "start_ayah": 89,
+          "end_ayah": 97
+        },
+        {
+          "page": 233,
+          "start_ayah": 98,
+          "end_ayah": 108
+        },
+        {
+          "page": 234,
+          "start_ayah": 109,
+          "end_ayah": 117
+        },
+        {
+          "page": 235,
+          "start_ayah": 118,
+          "end_ayah": 123
+        }
+      ]
+    },
+    {
+      "surah": 12,
+      "code_3": "012",
+      "name_ar": "يوسف",
+      "name_id": "Yusuf",
+      "name_id_translation": "Yusuf",
+      "name_en": "Joseph",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 111,
+      "rukus": 12,
+      "juz": {
+        "start": 12,
+        "end": 13
+      },
+      "juz_segments": [
+        {
+          "juz": 12,
+          "start_ayah": 1,
+          "end_ayah": 52
+        },
+        {
+          "juz": 13,
+          "start_ayah": 53,
+          "end_ayah": 111
+        }
+      ],
+      "pages": {
+        "start": 235,
+        "end": 248
+      },
+      "page_ranges": [
+        {
+          "page": 235,
+          "start_ayah": 1,
+          "end_ayah": 4
+        },
+        {
+          "page": 236,
+          "start_ayah": 5,
+          "end_ayah": 14
+        },
+        {
+          "page": 237,
+          "start_ayah": 15,
+          "end_ayah": 22
+        },
+        {
+          "page": 238,
+          "start_ayah": 23,
+          "end_ayah": 30
+        },
+        {
+          "page": 239,
+          "start_ayah": 31,
+          "end_ayah": 37
+        },
+        {
+          "page": 240,
+          "start_ayah": 38,
+          "end_ayah": 43
+        },
+        {
+          "page": 241,
+          "start_ayah": 44,
+          "end_ayah": 52
+        },
+        {
+          "page": 242,
+          "start_ayah": 53,
+          "end_ayah": 63
+        },
+        {
+          "page": 243,
+          "start_ayah": 64,
+          "end_ayah": 69
+        },
+        {
+          "page": 244,
+          "start_ayah": 70,
+          "end_ayah": 78
+        },
+        {
+          "page": 245,
+          "start_ayah": 79,
+          "end_ayah": 86
+        },
+        {
+          "page": 246,
+          "start_ayah": 87,
+          "end_ayah": 95
+        },
+        {
+          "page": 247,
+          "start_ayah": 96,
+          "end_ayah": 103
+        },
+        {
+          "page": 248,
+          "start_ayah": 104,
+          "end_ayah": 111
+        }
+      ]
+    },
+    {
+      "surah": 13,
+      "code_3": "013",
+      "name_ar": "الرعد",
+      "name_id": "Ar-Ra'd",
+      "name_id_translation": "Petir",
+      "name_en": "The Thunder",
+      "place": "Medina",
+      "type": "Madaniyah",
+      "ayah_count": 43,
+      "rukus": 6,
+      "juz": {
+        "start": 13,
+        "end": 13
+      },
+      "juz_segments": [
+        {
+          "juz": 13,
+          "start_ayah": 1,
+          "end_ayah": 43
+        }
+      ],
+      "pages": {
+        "start": 249,
+        "end": 255
+      },
+      "page_ranges": [
+        {
+          "page": 249,
+          "start_ayah": 1,
+          "end_ayah": 5
+        },
+        {
+          "page": 250,
+          "start_ayah": 6,
+          "end_ayah": 13
+        },
+        {
+          "page": 251,
+          "start_ayah": 14,
+          "end_ayah": 18
+        },
+        {
+          "page": 252,
+          "start_ayah": 19,
+          "end_ayah": 28
+        },
+        {
+          "page": 253,
+          "start_ayah": 29,
+          "end_ayah": 34
+        },
+        {
+          "page": 254,
+          "start_ayah": 35,
+          "end_ayah": 42
+        },
+        {
+          "page": 255,
+          "start_ayah": 43,
+          "end_ayah": 43
+        }
+      ]
+    },
+    {
+      "surah": 14,
+      "code_3": "014",
+      "name_ar": "ابراهيم",
+      "name_id": "Ibrahim",
+      "name_id_translation": "Ibrahim",
+      "name_en": "Abraham",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 52,
+      "rukus": 7,
+      "juz": {
+        "start": 13,
+        "end": 13
+      },
+      "juz_segments": [
+        {
+          "juz": 13,
+          "start_ayah": 1,
+          "end_ayah": 52
+        }
+      ],
+      "pages": {
+        "start": 255,
+        "end": 261
+      },
+      "page_ranges": [
+        {
+          "page": 255,
+          "start_ayah": 1,
+          "end_ayah": 5
+        },
+        {
+          "page": 256,
+          "start_ayah": 6,
+          "end_ayah": 10
+        },
+        {
+          "page": 257,
+          "start_ayah": 11,
+          "end_ayah": 18
+        },
+        {
+          "page": 258,
+          "start_ayah": 19,
+          "end_ayah": 24
+        },
+        {
+          "page": 259,
+          "start_ayah": 25,
+          "end_ayah": 33
+        },
+        {
+          "page": 260,
+          "start_ayah": 34,
+          "end_ayah": 42
+        },
+        {
+          "page": 261,
+          "start_ayah": 43,
+          "end_ayah": 52
+        }
+      ]
+    },
+    {
+      "surah": 15,
+      "code_3": "015",
+      "name_ar": "الحجر",
+      "name_id": "Al-Hijr",
+      "name_id_translation": "Hijr",
+      "name_en": "The Rock",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 99,
+      "rukus": 6,
+      "juz": {
+        "start": 14,
+        "end": 14
+      },
+      "juz_segments": [
+        {
+          "juz": 14,
+          "start_ayah": 1,
+          "end_ayah": 99
+        }
+      ],
+      "pages": {
+        "start": 262,
+        "end": 267
+      },
+      "page_ranges": [
+        {
+          "page": 262,
+          "start_ayah": 1,
+          "end_ayah": 15
+        },
+        {
+          "page": 263,
+          "start_ayah": 16,
+          "end_ayah": 31
+        },
+        {
+          "page": 264,
+          "start_ayah": 32,
+          "end_ayah": 51
+        },
+        {
+          "page": 265,
+          "start_ayah": 52,
+          "end_ayah": 70
+        },
+        {
+          "page": 266,
+          "start_ayah": 71,
+          "end_ayah": 90
+        },
+        {
+          "page": 267,
+          "start_ayah": 91,
+          "end_ayah": 99
+        }
+      ]
+    },
+    {
+      "surah": 16,
+      "code_3": "016",
+      "name_ar": "النحل",
+      "name_id": "An-Nahl",
+      "name_id_translation": "Lebah",
+      "name_en": "The Bee",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 128,
+      "rukus": 16,
+      "juz": {
+        "start": 14,
+        "end": 14
+      },
+      "juz_segments": [
+        {
+          "juz": 14,
+          "start_ayah": 1,
+          "end_ayah": 128
+        }
+      ],
+      "pages": {
+        "start": 267,
+        "end": 281
+      },
+      "page_ranges": [
+        {
+          "page": 267,
+          "start_ayah": 1,
+          "end_ayah": 6
+        },
+        {
+          "page": 268,
+          "start_ayah": 7,
+          "end_ayah": 14
+        },
+        {
+          "page": 269,
+          "start_ayah": 15,
+          "end_ayah": 26
+        },
+        {
+          "page": 270,
+          "start_ayah": 27,
+          "end_ayah": 34
+        },
+        {
+          "page": 271,
+          "start_ayah": 35,
+          "end_ayah": 42
+        },
+        {
+          "page": 272,
+          "start_ayah": 43,
+          "end_ayah": 54
+        },
+        {
+          "page": 273,
+          "start_ayah": 55,
+          "end_ayah": 64
+        },
+        {
+          "page": 274,
+          "start_ayah": 65,
+          "end_ayah": 72
+        },
+        {
+          "page": 275,
+          "start_ayah": 73,
+          "end_ayah": 79
+        },
+        {
+          "page": 276,
+          "start_ayah": 80,
+          "end_ayah": 87
+        },
+        {
+          "page": 277,
+          "start_ayah": 88,
+          "end_ayah": 93
+        },
+        {
+          "page": 278,
+          "start_ayah": 94,
+          "end_ayah": 102
+        },
+        {
+          "page": 279,
+          "start_ayah": 103,
+          "end_ayah": 110
+        },
+        {
+          "page": 280,
+          "start_ayah": 111,
+          "end_ayah": 118
+        },
+        {
+          "page": 281,
+          "start_ayah": 119,
+          "end_ayah": 128
+        }
+      ]
+    },
+    {
+      "surah": 17,
+      "code_3": "017",
+      "name_ar": "الإسراء",
+      "name_id": "Al-Isra'",
+      "name_id_translation": "Memperjalankan Malam Hari",
+      "name_en": "The Night Journey",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 111,
+      "rukus": 12,
+      "juz": {
+        "start": 15,
+        "end": 15
+      },
+      "juz_segments": [
+        {
+          "juz": 15,
+          "start_ayah": 1,
+          "end_ayah": 111
+        }
+      ],
+      "pages": {
+        "start": 282,
+        "end": 293
+      },
+      "page_ranges": [
+        {
+          "page": 282,
+          "start_ayah": 1,
+          "end_ayah": 7
+        },
+        {
+          "page": 283,
+          "start_ayah": 8,
+          "end_ayah": 17
+        },
+        {
+          "page": 284,
+          "start_ayah": 18,
+          "end_ayah": 27
+        },
+        {
+          "page": 285,
+          "start_ayah": 28,
+          "end_ayah": 38
+        },
+        {
+          "page": 286,
+          "start_ayah": 39,
+          "end_ayah": 49
+        },
+        {
+          "page": 287,
+          "start_ayah": 50,
+          "end_ayah": 58
+        },
+        {
+          "page": 288,
+          "start_ayah": 59,
+          "end_ayah": 66
+        },
+        {
+          "page": 289,
+          "start_ayah": 67,
+          "end_ayah": 75
+        },
+        {
+          "page": 290,
+          "start_ayah": 76,
+          "end_ayah": 86
+        },
+        {
+          "page": 291,
+          "start_ayah": 87,
+          "end_ayah": 96
+        },
+        {
+          "page": 292,
+          "start_ayah": 97,
+          "end_ayah": 104
+        },
+        {
+          "page": 293,
+          "start_ayah": 105,
+          "end_ayah": 111
+        }
+      ]
+    },
+    {
+      "surah": 18,
+      "code_3": "018",
+      "name_ar": "الكهف",
+      "name_id": "Al-Kahf",
+      "name_id_translation": "Goa",
+      "name_en": "The Cave",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 110,
+      "rukus": 12,
+      "juz": {
+        "start": 15,
+        "end": 16
+      },
+      "juz_segments": [
+        {
+          "juz": 15,
+          "start_ayah": 1,
+          "end_ayah": 74
+        },
+        {
+          "juz": 16,
+          "start_ayah": 75,
+          "end_ayah": 110
+        }
+      ],
+      "pages": {
+        "start": 293,
+        "end": 304
+      },
+      "page_ranges": [
+        {
+          "page": 293,
+          "start_ayah": 1,
+          "end_ayah": 4
+        },
+        {
+          "page": 294,
+          "start_ayah": 5,
+          "end_ayah": 15
+        },
+        {
+          "page": 295,
+          "start_ayah": 16,
+          "end_ayah": 20
+        },
+        {
+          "page": 296,
+          "start_ayah": 21,
+          "end_ayah": 27
+        },
+        {
+          "page": 297,
+          "start_ayah": 28,
+          "end_ayah": 34
+        },
+        {
+          "page": 298,
+          "start_ayah": 35,
+          "end_ayah": 45
+        },
+        {
+          "page": 299,
+          "start_ayah": 46,
+          "end_ayah": 53
+        },
+        {
+          "page": 300,
+          "start_ayah": 54,
+          "end_ayah": 61
+        },
+        {
+          "page": 301,
+          "start_ayah": 62,
+          "end_ayah": 74
+        },
+        {
+          "page": 302,
+          "start_ayah": 75,
+          "end_ayah": 83
+        },
+        {
+          "page": 303,
+          "start_ayah": 84,
+          "end_ayah": 97
+        },
+        {
+          "page": 304,
+          "start_ayah": 98,
+          "end_ayah": 110
+        }
+      ]
+    },
+    {
+      "surah": 19,
+      "code_3": "019",
+      "name_ar": "مريم",
+      "name_id": "Maryam",
+      "name_id_translation": "Maryam",
+      "name_en": "Mary",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 98,
+      "rukus": 6,
+      "juz": {
+        "start": 16,
+        "end": 16
+      },
+      "juz_segments": [
+        {
+          "juz": 16,
+          "start_ayah": 1,
+          "end_ayah": 98
+        }
+      ],
+      "pages": {
+        "start": 305,
+        "end": 312
+      },
+      "page_ranges": [
+        {
+          "page": 305,
+          "start_ayah": 1,
+          "end_ayah": 11
+        },
+        {
+          "page": 306,
+          "start_ayah": 12,
+          "end_ayah": 25
+        },
+        {
+          "page": 307,
+          "start_ayah": 26,
+          "end_ayah": 38
+        },
+        {
+          "page": 308,
+          "start_ayah": 39,
+          "end_ayah": 51
+        },
+        {
+          "page": 309,
+          "start_ayah": 52,
+          "end_ayah": 64
+        },
+        {
+          "page": 310,
+          "start_ayah": 65,
+          "end_ayah": 76
+        },
+        {
+          "page": 311,
+          "start_ayah": 77,
+          "end_ayah": 95
+        },
+        {
+          "page": 312,
+          "start_ayah": 96,
+          "end_ayah": 98
+        }
+      ]
+    },
+    {
+      "surah": 20,
+      "code_3": "020",
+      "name_ar": "طه",
+      "name_id": "Ta Ha",
+      "name_id_translation": "Taha",
+      "name_en": "Taa-Haa",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 135,
+      "rukus": 8,
+      "juz": {
+        "start": 16,
+        "end": 16
+      },
+      "juz_segments": [
+        {
+          "juz": 16,
+          "start_ayah": 1,
+          "end_ayah": 135
+        }
+      ],
+      "pages": {
+        "start": 312,
+        "end": 321
+      },
+      "page_ranges": [
+        {
+          "page": 312,
+          "start_ayah": 1,
+          "end_ayah": 12
+        },
+        {
+          "page": 313,
+          "start_ayah": 13,
+          "end_ayah": 37
+        },
+        {
+          "page": 314,
+          "start_ayah": 38,
+          "end_ayah": 51
+        },
+        {
+          "page": 315,
+          "start_ayah": 52,
+          "end_ayah": 64
+        },
+        {
+          "page": 316,
+          "start_ayah": 65,
+          "end_ayah": 76
+        },
+        {
+          "page": 317,
+          "start_ayah": 77,
+          "end_ayah": 87
+        },
+        {
+          "page": 318,
+          "start_ayah": 88,
+          "end_ayah": 98
+        },
+        {
+          "page": 319,
+          "start_ayah": 99,
+          "end_ayah": 113
+        },
+        {
+          "page": 320,
+          "start_ayah": 114,
+          "end_ayah": 125
+        },
+        {
+          "page": 321,
+          "start_ayah": 126,
+          "end_ayah": 135
+        }
+      ]
+    },
+    {
+      "surah": 21,
+      "code_3": "021",
+      "name_ar": "الأنبياء",
+      "name_id": "Al-Anbiya",
+      "name_id_translation": "Para Nabi",
+      "name_en": "The Prophets",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 112,
+      "rukus": 7,
+      "juz": {
+        "start": 17,
+        "end": 17
+      },
+      "juz_segments": [
+        {
+          "juz": 17,
+          "start_ayah": 1,
+          "end_ayah": 112
+        }
+      ],
+      "pages": {
+        "start": 322,
+        "end": 331
+      },
+      "page_ranges": [
+        {
+          "page": 322,
+          "start_ayah": 1,
+          "end_ayah": 10
+        },
+        {
+          "page": 323,
+          "start_ayah": 11,
+          "end_ayah": 24
+        },
+        {
+          "page": 324,
+          "start_ayah": 25,
+          "end_ayah": 35
+        },
+        {
+          "page": 325,
+          "start_ayah": 36,
+          "end_ayah": 44
+        },
+        {
+          "page": 326,
+          "start_ayah": 45,
+          "end_ayah": 57
+        },
+        {
+          "page": 327,
+          "start_ayah": 58,
+          "end_ayah": 72
+        },
+        {
+          "page": 328,
+          "start_ayah": 73,
+          "end_ayah": 81
+        },
+        {
+          "page": 329,
+          "start_ayah": 82,
+          "end_ayah": 90
+        },
+        {
+          "page": 330,
+          "start_ayah": 91,
+          "end_ayah": 101
+        },
+        {
+          "page": 331,
+          "start_ayah": 102,
+          "end_ayah": 112
+        }
+      ]
+    },
+    {
+      "surah": 22,
+      "code_3": "022",
+      "name_ar": "الحج",
+      "name_id": "Al-Hajj",
+      "name_id_translation": "Haji",
+      "name_en": "The Pilgrimage",
+      "place": "Medina",
+      "type": "Madaniyah",
+      "ayah_count": 78,
+      "rukus": 10,
+      "juz": {
+        "start": 17,
+        "end": 17
+      },
+      "juz_segments": [
+        {
+          "juz": 17,
+          "start_ayah": 1,
+          "end_ayah": 78
+        }
+      ],
+      "pages": {
+        "start": 332,
+        "end": 341
+      },
+      "page_ranges": [
+        {
+          "page": 332,
+          "start_ayah": 1,
+          "end_ayah": 5
+        },
+        {
+          "page": 333,
+          "start_ayah": 6,
+          "end_ayah": 15
+        },
+        {
+          "page": 334,
+          "start_ayah": 16,
+          "end_ayah": 23
+        },
+        {
+          "page": 335,
+          "start_ayah": 24,
+          "end_ayah": 30
+        },
+        {
+          "page": 336,
+          "start_ayah": 31,
+          "end_ayah": 38
+        },
+        {
+          "page": 337,
+          "start_ayah": 39,
+          "end_ayah": 46
+        },
+        {
+          "page": 338,
+          "start_ayah": 47,
+          "end_ayah": 55
+        },
+        {
+          "page": 339,
+          "start_ayah": 56,
+          "end_ayah": 64
+        },
+        {
+          "page": 340,
+          "start_ayah": 65,
+          "end_ayah": 72
+        },
+        {
+          "page": 341,
+          "start_ayah": 73,
+          "end_ayah": 78
+        }
+      ]
+    },
+    {
+      "surah": 23,
+      "code_3": "023",
+      "name_ar": "المؤمنون",
+      "name_id": "Al-Mu'minun",
+      "name_id_translation": "Orang-Orang Mukmin",
+      "name_en": "The Believers",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 118,
+      "rukus": 6,
+      "juz": {
+        "start": 18,
+        "end": 18
+      },
+      "juz_segments": [
+        {
+          "juz": 18,
+          "start_ayah": 1,
+          "end_ayah": 118
+        }
+      ],
+      "pages": {
+        "start": 342,
+        "end": 349
+      },
+      "page_ranges": [
+        {
+          "page": 342,
+          "start_ayah": 1,
+          "end_ayah": 17
+        },
+        {
+          "page": 343,
+          "start_ayah": 18,
+          "end_ayah": 27
+        },
+        {
+          "page": 344,
+          "start_ayah": 28,
+          "end_ayah": 42
+        },
+        {
+          "page": 345,
+          "start_ayah": 43,
+          "end_ayah": 59
+        },
+        {
+          "page": 346,
+          "start_ayah": 60,
+          "end_ayah": 74
+        },
+        {
+          "page": 347,
+          "start_ayah": 75,
+          "end_ayah": 89
+        },
+        {
+          "page": 348,
+          "start_ayah": 90,
+          "end_ayah": 104
+        },
+        {
+          "page": 349,
+          "start_ayah": 105,
+          "end_ayah": 118
+        }
+      ]
+    },
+    {
+      "surah": 24,
+      "code_3": "024",
+      "name_ar": "النور",
+      "name_id": "An-Nur",
+      "name_id_translation": "Cahaya",
+      "name_en": "The Light",
+      "place": "Medina",
+      "type": "Madaniyah",
+      "ayah_count": 64,
+      "rukus": 9,
+      "juz": {
+        "start": 18,
+        "end": 18
+      },
+      "juz_segments": [
+        {
+          "juz": 18,
+          "start_ayah": 1,
+          "end_ayah": 64
+        }
+      ],
+      "pages": {
+        "start": 350,
+        "end": 359
+      },
+      "page_ranges": [
+        {
+          "page": 350,
+          "start_ayah": 1,
+          "end_ayah": 10
+        },
+        {
+          "page": 351,
+          "start_ayah": 11,
+          "end_ayah": 20
+        },
+        {
+          "page": 352,
+          "start_ayah": 21,
+          "end_ayah": 27
+        },
+        {
+          "page": 353,
+          "start_ayah": 28,
+          "end_ayah": 31
+        },
+        {
+          "page": 354,
+          "start_ayah": 32,
+          "end_ayah": 36
+        },
+        {
+          "page": 355,
+          "start_ayah": 37,
+          "end_ayah": 43
+        },
+        {
+          "page": 356,
+          "start_ayah": 44,
+          "end_ayah": 53
+        },
+        {
+          "page": 357,
+          "start_ayah": 54,
+          "end_ayah": 58
+        },
+        {
+          "page": 358,
+          "start_ayah": 59,
+          "end_ayah": 61
+        },
+        {
+          "page": 359,
+          "start_ayah": 62,
+          "end_ayah": 64
+        }
+      ]
+    },
+    {
+      "surah": 25,
+      "code_3": "025",
+      "name_ar": "الفرقان",
+      "name_id": "Al-Furqan",
+      "name_id_translation": "Pembeda",
+      "name_en": "The Criterion",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 77,
+      "rukus": 6,
+      "juz": {
+        "start": 18,
+        "end": 19
+      },
+      "juz_segments": [
+        {
+          "juz": 18,
+          "start_ayah": 1,
+          "end_ayah": 20
+        },
+        {
+          "juz": 19,
+          "start_ayah": 21,
+          "end_ayah": 77
+        }
+      ],
+      "pages": {
+        "start": 359,
+        "end": 366
+      },
+      "page_ranges": [
+        {
+          "page": 359,
+          "start_ayah": 1,
+          "end_ayah": 2
+        },
+        {
+          "page": 360,
+          "start_ayah": 3,
+          "end_ayah": 11
+        },
+        {
+          "page": 361,
+          "start_ayah": 12,
+          "end_ayah": 20
+        },
+        {
+          "page": 362,
+          "start_ayah": 21,
+          "end_ayah": 32
+        },
+        {
+          "page": 363,
+          "start_ayah": 33,
+          "end_ayah": 43
+        },
+        {
+          "page": 364,
+          "start_ayah": 44,
+          "end_ayah": 55
+        },
+        {
+          "page": 365,
+          "start_ayah": 56,
+          "end_ayah": 67
+        },
+        {
+          "page": 366,
+          "start_ayah": 68,
+          "end_ayah": 77
+        }
+      ]
+    },
+    {
+      "surah": 26,
+      "code_3": "026",
+      "name_ar": "الشعراء",
+      "name_id": "Ash-Shu'ara",
+      "name_id_translation": "Para Penyair",
+      "name_en": "The Poets",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 227,
+      "rukus": 11,
+      "juz": {
+        "start": 19,
+        "end": 19
+      },
+      "juz_segments": [
+        {
+          "juz": 19,
+          "start_ayah": 1,
+          "end_ayah": 227
+        }
+      ],
+      "pages": {
+        "start": 367,
+        "end": 376
+      },
+      "page_ranges": [
+        {
+          "page": 367,
+          "start_ayah": 1,
+          "end_ayah": 19
+        },
+        {
+          "page": 368,
+          "start_ayah": 20,
+          "end_ayah": 39
+        },
+        {
+          "page": 369,
+          "start_ayah": 40,
+          "end_ayah": 60
+        },
+        {
+          "page": 370,
+          "start_ayah": 61,
+          "end_ayah": 83
+        },
+        {
+          "page": 371,
+          "start_ayah": 84,
+          "end_ayah": 111
+        },
+        {
+          "page": 372,
+          "start_ayah": 112,
+          "end_ayah": 136
+        },
+        {
+          "page": 373,
+          "start_ayah": 137,
+          "end_ayah": 159
+        },
+        {
+          "page": 374,
+          "start_ayah": 160,
+          "end_ayah": 183
+        },
+        {
+          "page": 375,
+          "start_ayah": 184,
+          "end_ayah": 206
+        },
+        {
+          "page": 376,
+          "start_ayah": 207,
+          "end_ayah": 227
+        }
+      ]
+    },
+    {
+      "surah": 27,
+      "code_3": "027",
+      "name_ar": "النمل",
+      "name_id": "An-Naml",
+      "name_id_translation": "Semut-semut",
+      "name_en": "The Ant",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 93,
+      "rukus": 7,
+      "juz": {
+        "start": 19,
+        "end": 20
+      },
+      "juz_segments": [
+        {
+          "juz": 19,
+          "start_ayah": 1,
+          "end_ayah": 55
+        },
+        {
+          "juz": 20,
+          "start_ayah": 56,
+          "end_ayah": 93
+        }
+      ],
+      "pages": {
+        "start": 377,
+        "end": 385
+      },
+      "page_ranges": [
+        {
+          "page": 377,
+          "start_ayah": 1,
+          "end_ayah": 13
+        },
+        {
+          "page": 378,
+          "start_ayah": 14,
+          "end_ayah": 22
+        },
+        {
+          "page": 379,
+          "start_ayah": 23,
+          "end_ayah": 35
+        },
+        {
+          "page": 380,
+          "start_ayah": 36,
+          "end_ayah": 44
+        },
+        {
+          "page": 381,
+          "start_ayah": 45,
+          "end_ayah": 55
+        },
+        {
+          "page": 382,
+          "start_ayah": 56,
+          "end_ayah": 63
+        },
+        {
+          "page": 383,
+          "start_ayah": 64,
+          "end_ayah": 76
+        },
+        {
+          "page": 384,
+          "start_ayah": 77,
+          "end_ayah": 88
+        },
+        {
+          "page": 385,
+          "start_ayah": 89,
+          "end_ayah": 93
+        }
+      ]
+    },
+    {
+      "surah": 28,
+      "code_3": "028",
+      "name_ar": "القصص",
+      "name_id": "Al-Qasas",
+      "name_id_translation": "Kisah-Kisah",
+      "name_en": "The Stories",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 88,
+      "rukus": 8,
+      "juz": {
+        "start": 20,
+        "end": 20
+      },
+      "juz_segments": [
+        {
+          "juz": 20,
+          "start_ayah": 1,
+          "end_ayah": 88
+        }
+      ],
+      "pages": {
+        "start": 385,
+        "end": 396
+      },
+      "page_ranges": [
+        {
+          "page": 385,
+          "start_ayah": 1,
+          "end_ayah": 5
+        },
+        {
+          "page": 386,
+          "start_ayah": 6,
+          "end_ayah": 13
+        },
+        {
+          "page": 387,
+          "start_ayah": 14,
+          "end_ayah": 21
+        },
+        {
+          "page": 388,
+          "start_ayah": 22,
+          "end_ayah": 28
+        },
+        {
+          "page": 389,
+          "start_ayah": 29,
+          "end_ayah": 35
+        },
+        {
+          "page": 390,
+          "start_ayah": 36,
+          "end_ayah": 43
+        },
+        {
+          "page": 391,
+          "start_ayah": 44,
+          "end_ayah": 50
+        },
+        {
+          "page": 392,
+          "start_ayah": 51,
+          "end_ayah": 59
+        },
+        {
+          "page": 393,
+          "start_ayah": 60,
+          "end_ayah": 70
+        },
+        {
+          "page": 394,
+          "start_ayah": 71,
+          "end_ayah": 77
+        },
+        {
+          "page": 395,
+          "start_ayah": 78,
+          "end_ayah": 84
+        },
+        {
+          "page": 396,
+          "start_ayah": 85,
+          "end_ayah": 88
+        }
+      ]
+    },
+    {
+      "surah": 29,
+      "code_3": "029",
+      "name_ar": "العنكبوت",
+      "name_id": "Al-'Ankabut",
+      "name_id_translation": "Laba-Laba",
+      "name_en": "The Spider",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 69,
+      "rukus": 7,
+      "juz": {
+        "start": 20,
+        "end": 21
+      },
+      "juz_segments": [
+        {
+          "juz": 20,
+          "start_ayah": 1,
+          "end_ayah": 45
+        },
+        {
+          "juz": 21,
+          "start_ayah": 46,
+          "end_ayah": 69
+        }
+      ],
+      "pages": {
+        "start": 396,
+        "end": 404
+      },
+      "page_ranges": [
+        {
+          "page": 396,
+          "start_ayah": 1,
+          "end_ayah": 6
+        },
+        {
+          "page": 397,
+          "start_ayah": 7,
+          "end_ayah": 14
+        },
+        {
+          "page": 398,
+          "start_ayah": 15,
+          "end_ayah": 23
+        },
+        {
+          "page": 399,
+          "start_ayah": 24,
+          "end_ayah": 30
+        },
+        {
+          "page": 400,
+          "start_ayah": 31,
+          "end_ayah": 38
+        },
+        {
+          "page": 401,
+          "start_ayah": 39,
+          "end_ayah": 45
+        },
+        {
+          "page": 402,
+          "start_ayah": 46,
+          "end_ayah": 52
+        },
+        {
+          "page": 403,
+          "start_ayah": 53,
+          "end_ayah": 63
+        },
+        {
+          "page": 404,
+          "start_ayah": 64,
+          "end_ayah": 69
+        }
+      ]
+    },
+    {
+      "surah": 30,
+      "code_3": "030",
+      "name_ar": "الروم",
+      "name_id": "Ar-Rum",
+      "name_id_translation": "Romawi",
+      "name_en": "The Romans",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 60,
+      "rukus": 6,
+      "juz": {
+        "start": 21,
+        "end": 21
+      },
+      "juz_segments": [
+        {
+          "juz": 21,
+          "start_ayah": 1,
+          "end_ayah": 60
+        }
+      ],
+      "pages": {
+        "start": 404,
+        "end": 410
+      },
+      "page_ranges": [
+        {
+          "page": 404,
+          "start_ayah": 1,
+          "end_ayah": 5
+        },
+        {
+          "page": 405,
+          "start_ayah": 6,
+          "end_ayah": 15
+        },
+        {
+          "page": 406,
+          "start_ayah": 16,
+          "end_ayah": 24
+        },
+        {
+          "page": 407,
+          "start_ayah": 25,
+          "end_ayah": 32
+        },
+        {
+          "page": 408,
+          "start_ayah": 33,
+          "end_ayah": 41
+        },
+        {
+          "page": 409,
+          "start_ayah": 42,
+          "end_ayah": 50
+        },
+        {
+          "page": 410,
+          "start_ayah": 51,
+          "end_ayah": 60
+        }
+      ]
+    },
+    {
+      "surah": 31,
+      "code_3": "031",
+      "name_ar": "لقمان",
+      "name_id": "Luqman",
+      "name_id_translation": "Luqman",
+      "name_en": "Luqman",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 34,
+      "rukus": 3,
+      "juz": {
+        "start": 21,
+        "end": 21
+      },
+      "juz_segments": [
+        {
+          "juz": 21,
+          "start_ayah": 1,
+          "end_ayah": 34
+        }
+      ],
+      "pages": {
+        "start": 411,
+        "end": 414
+      },
+      "page_ranges": [
+        {
+          "page": 411,
+          "start_ayah": 1,
+          "end_ayah": 11
+        },
+        {
+          "page": 412,
+          "start_ayah": 12,
+          "end_ayah": 19
+        },
+        {
+          "page": 413,
+          "start_ayah": 20,
+          "end_ayah": 28
+        },
+        {
+          "page": 414,
+          "start_ayah": 29,
+          "end_ayah": 34
+        }
+      ]
+    },
+    {
+      "surah": 32,
+      "code_3": "032",
+      "name_ar": "السجدة",
+      "name_id": "As-Sajdah",
+      "name_id_translation": "Sajdah",
+      "name_en": "The Prostration",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 30,
+      "rukus": 3,
+      "juz": {
+        "start": 21,
+        "end": 21
+      },
+      "juz_segments": [
+        {
+          "juz": 21,
+          "start_ayah": 1,
+          "end_ayah": 30
+        }
+      ],
+      "pages": {
+        "start": 415,
+        "end": 417
+      },
+      "page_ranges": [
+        {
+          "page": 415,
+          "start_ayah": 1,
+          "end_ayah": 11
+        },
+        {
+          "page": 416,
+          "start_ayah": 12,
+          "end_ayah": 20
+        },
+        {
+          "page": 417,
+          "start_ayah": 21,
+          "end_ayah": 30
+        }
+      ]
+    },
+    {
+      "surah": 33,
+      "code_3": "033",
+      "name_ar": "الأحزاب",
+      "name_id": "Al-Ahzab",
+      "name_id_translation": "Golongan Yang Bersekutu",
+      "name_en": "The Clans",
+      "place": "Medina",
+      "type": "Madaniyah",
+      "ayah_count": 73,
+      "rukus": 9,
+      "juz": {
+        "start": 21,
+        "end": 22
+      },
+      "juz_segments": [
+        {
+          "juz": 21,
+          "start_ayah": 1,
+          "end_ayah": 30
+        },
+        {
+          "juz": 22,
+          "start_ayah": 31,
+          "end_ayah": 73
+        }
+      ],
+      "pages": {
+        "start": 418,
+        "end": 427
+      },
+      "page_ranges": [
+        {
+          "page": 418,
+          "start_ayah": 1,
+          "end_ayah": 6
+        },
+        {
+          "page": 419,
+          "start_ayah": 7,
+          "end_ayah": 15
+        },
+        {
+          "page": 420,
+          "start_ayah": 16,
+          "end_ayah": 22
+        },
+        {
+          "page": 421,
+          "start_ayah": 23,
+          "end_ayah": 30
+        },
+        {
+          "page": 422,
+          "start_ayah": 31,
+          "end_ayah": 35
+        },
+        {
+          "page": 423,
+          "start_ayah": 36,
+          "end_ayah": 43
+        },
+        {
+          "page": 424,
+          "start_ayah": 44,
+          "end_ayah": 50
+        },
+        {
+          "page": 425,
+          "start_ayah": 51,
+          "end_ayah": 54
+        },
+        {
+          "page": 426,
+          "start_ayah": 55,
+          "end_ayah": 62
+        },
+        {
+          "page": 427,
+          "start_ayah": 63,
+          "end_ayah": 73
+        }
+      ]
+    },
+    {
+      "surah": 34,
+      "code_3": "034",
+      "name_ar": "سبإ",
+      "name_id": "Saba'",
+      "name_id_translation": "Saba'",
+      "name_en": "Sheba",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 54,
+      "rukus": 6,
+      "juz": {
+        "start": 22,
+        "end": 22
+      },
+      "juz_segments": [
+        {
+          "juz": 22,
+          "start_ayah": 1,
+          "end_ayah": 54
+        }
+      ],
+      "pages": {
+        "start": 428,
+        "end": 434
+      },
+      "page_ranges": [
+        {
+          "page": 428,
+          "start_ayah": 1,
+          "end_ayah": 7
+        },
+        {
+          "page": 429,
+          "start_ayah": 8,
+          "end_ayah": 14
+        },
+        {
+          "page": 430,
+          "start_ayah": 15,
+          "end_ayah": 22
+        },
+        {
+          "page": 431,
+          "start_ayah": 23,
+          "end_ayah": 31
+        },
+        {
+          "page": 432,
+          "start_ayah": 32,
+          "end_ayah": 39
+        },
+        {
+          "page": 433,
+          "start_ayah": 40,
+          "end_ayah": 48
+        },
+        {
+          "page": 434,
+          "start_ayah": 49,
+          "end_ayah": 54
+        }
+      ]
+    },
+    {
+      "surah": 35,
+      "code_3": "035",
+      "name_ar": "فاطر",
+      "name_id": "Fatir",
+      "name_id_translation": "Maha Pencipta",
+      "name_en": "The Originator",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 45,
+      "rukus": 5,
+      "juz": {
+        "start": 22,
+        "end": 22
+      },
+      "juz_segments": [
+        {
+          "juz": 22,
+          "start_ayah": 1,
+          "end_ayah": 45
+        }
+      ],
+      "pages": {
+        "start": 434,
+        "end": 440
+      },
+      "page_ranges": [
+        {
+          "page": 434,
+          "start_ayah": 1,
+          "end_ayah": 3
+        },
+        {
+          "page": 435,
+          "start_ayah": 4,
+          "end_ayah": 11
+        },
+        {
+          "page": 436,
+          "start_ayah": 12,
+          "end_ayah": 18
+        },
+        {
+          "page": 437,
+          "start_ayah": 19,
+          "end_ayah": 30
+        },
+        {
+          "page": 438,
+          "start_ayah": 31,
+          "end_ayah": 38
+        },
+        {
+          "page": 439,
+          "start_ayah": 39,
+          "end_ayah": 44
+        },
+        {
+          "page": 440,
+          "start_ayah": 45,
+          "end_ayah": 45
+        }
+      ]
+    },
+    {
+      "surah": 36,
+      "code_3": "036",
+      "name_ar": "يس",
+      "name_id": "Ya-Sin",
+      "name_id_translation": "Yasin",
+      "name_en": "Yaseen",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 83,
+      "rukus": 5,
+      "juz": {
+        "start": 22,
+        "end": 23
+      },
+      "juz_segments": [
+        {
+          "juz": 22,
+          "start_ayah": 1,
+          "end_ayah": 27
+        },
+        {
+          "juz": 23,
+          "start_ayah": 28,
+          "end_ayah": 83
+        }
+      ],
+      "pages": {
+        "start": 440,
+        "end": 445
+      },
+      "page_ranges": [
+        {
+          "page": 440,
+          "start_ayah": 1,
+          "end_ayah": 12
+        },
+        {
+          "page": 441,
+          "start_ayah": 13,
+          "end_ayah": 27
+        },
+        {
+          "page": 442,
+          "start_ayah": 28,
+          "end_ayah": 40
+        },
+        {
+          "page": 443,
+          "start_ayah": 41,
+          "end_ayah": 54
+        },
+        {
+          "page": 444,
+          "start_ayah": 55,
+          "end_ayah": 70
+        },
+        {
+          "page": 445,
+          "start_ayah": 71,
+          "end_ayah": 83
+        }
+      ]
+    },
+    {
+      "surah": 37,
+      "code_3": "037",
+      "name_ar": "الصافات",
+      "name_id": "As-Saffat",
+      "name_id_translation": "Barisan-Barisan",
+      "name_en": "Those drawn up in Ranks",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 182,
+      "rukus": 5,
+      "juz": {
+        "start": 23,
+        "end": 23
+      },
+      "juz_segments": [
+        {
+          "juz": 23,
+          "start_ayah": 1,
+          "end_ayah": 182
+        }
+      ],
+      "pages": {
+        "start": 446,
+        "end": 452
+      },
+      "page_ranges": [
+        {
+          "page": 446,
+          "start_ayah": 1,
+          "end_ayah": 24
+        },
+        {
+          "page": 447,
+          "start_ayah": 25,
+          "end_ayah": 51
+        },
+        {
+          "page": 448,
+          "start_ayah": 52,
+          "end_ayah": 76
+        },
+        {
+          "page": 449,
+          "start_ayah": 77,
+          "end_ayah": 102
+        },
+        {
+          "page": 450,
+          "start_ayah": 103,
+          "end_ayah": 126
+        },
+        {
+          "page": 451,
+          "start_ayah": 127,
+          "end_ayah": 153
+        },
+        {
+          "page": 452,
+          "start_ayah": 154,
+          "end_ayah": 182
+        }
+      ]
+    },
+    {
+      "surah": 38,
+      "code_3": "038",
+      "name_ar": "ص",
+      "name_id": "Sad",
+      "name_id_translation": "Sad",
+      "name_en": "The letter Saad",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 88,
+      "rukus": 5,
+      "juz": {
+        "start": 23,
+        "end": 23
+      },
+      "juz_segments": [
+        {
+          "juz": 23,
+          "start_ayah": 1,
+          "end_ayah": 88
+        }
+      ],
+      "pages": {
+        "start": 453,
+        "end": 458
+      },
+      "page_ranges": [
+        {
+          "page": 453,
+          "start_ayah": 1,
+          "end_ayah": 16
+        },
+        {
+          "page": 454,
+          "start_ayah": 17,
+          "end_ayah": 26
+        },
+        {
+          "page": 455,
+          "start_ayah": 27,
+          "end_ayah": 42
+        },
+        {
+          "page": 456,
+          "start_ayah": 43,
+          "end_ayah": 61
+        },
+        {
+          "page": 457,
+          "start_ayah": 62,
+          "end_ayah": 83
+        },
+        {
+          "page": 458,
+          "start_ayah": 84,
+          "end_ayah": 88
+        }
+      ]
+    },
+    {
+      "surah": 39,
+      "code_3": "039",
+      "name_ar": "الزمر",
+      "name_id": "Az-Zumar",
+      "name_id_translation": "Rombongan",
+      "name_en": "The Groups",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 75,
+      "rukus": 8,
+      "juz": {
+        "start": 23,
+        "end": 24
+      },
+      "juz_segments": [
+        {
+          "juz": 23,
+          "start_ayah": 1,
+          "end_ayah": 31
+        },
+        {
+          "juz": 24,
+          "start_ayah": 32,
+          "end_ayah": 75
+        }
+      ],
+      "pages": {
+        "start": 458,
+        "end": 467
+      },
+      "page_ranges": [
+        {
+          "page": 458,
+          "start_ayah": 1,
+          "end_ayah": 5
+        },
+        {
+          "page": 459,
+          "start_ayah": 6,
+          "end_ayah": 10
+        },
+        {
+          "page": 460,
+          "start_ayah": 11,
+          "end_ayah": 21
+        },
+        {
+          "page": 461,
+          "start_ayah": 22,
+          "end_ayah": 31
+        },
+        {
+          "page": 462,
+          "start_ayah": 32,
+          "end_ayah": 40
+        },
+        {
+          "page": 463,
+          "start_ayah": 41,
+          "end_ayah": 47
+        },
+        {
+          "page": 464,
+          "start_ayah": 48,
+          "end_ayah": 56
+        },
+        {
+          "page": 465,
+          "start_ayah": 57,
+          "end_ayah": 67
+        },
+        {
+          "page": 466,
+          "start_ayah": 68,
+          "end_ayah": 74
+        },
+        {
+          "page": 467,
+          "start_ayah": 75,
+          "end_ayah": 75
+        }
+      ]
+    },
+    {
+      "surah": 40,
+      "code_3": "040",
+      "name_ar": "غافر",
+      "name_id": "Ghafir",
+      "name_id_translation": "Maha Pengampun",
+      "name_en": "The Forgiver",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 85,
+      "rukus": 9,
+      "juz": {
+        "start": 24,
+        "end": 24
+      },
+      "juz_segments": [
+        {
+          "juz": 24,
+          "start_ayah": 1,
+          "end_ayah": 85
+        }
+      ],
+      "pages": {
+        "start": 467,
+        "end": 476
+      },
+      "page_ranges": [
+        {
+          "page": 467,
+          "start_ayah": 1,
+          "end_ayah": 7
+        },
+        {
+          "page": 468,
+          "start_ayah": 8,
+          "end_ayah": 16
+        },
+        {
+          "page": 469,
+          "start_ayah": 17,
+          "end_ayah": 25
+        },
+        {
+          "page": 470,
+          "start_ayah": 26,
+          "end_ayah": 33
+        },
+        {
+          "page": 471,
+          "start_ayah": 34,
+          "end_ayah": 40
+        },
+        {
+          "page": 472,
+          "start_ayah": 41,
+          "end_ayah": 49
+        },
+        {
+          "page": 473,
+          "start_ayah": 50,
+          "end_ayah": 58
+        },
+        {
+          "page": 474,
+          "start_ayah": 59,
+          "end_ayah": 66
+        },
+        {
+          "page": 475,
+          "start_ayah": 67,
+          "end_ayah": 77
+        },
+        {
+          "page": 476,
+          "start_ayah": 78,
+          "end_ayah": 85
+        }
+      ]
+    },
+    {
+      "surah": 41,
+      "code_3": "041",
+      "name_ar": "فصلت",
+      "name_id": "Fussilat",
+      "name_id_translation": "Yang Dijelaskan",
+      "name_en": "Explained in detail",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 54,
+      "rukus": 6,
+      "juz": {
+        "start": 24,
+        "end": 25
+      },
+      "juz_segments": [
+        {
+          "juz": 24,
+          "start_ayah": 1,
+          "end_ayah": 46
+        },
+        {
+          "juz": 25,
+          "start_ayah": 47,
+          "end_ayah": 54
+        }
+      ],
+      "pages": {
+        "start": 477,
+        "end": 482
+      },
+      "page_ranges": [
+        {
+          "page": 477,
+          "start_ayah": 1,
+          "end_ayah": 11
+        },
+        {
+          "page": 478,
+          "start_ayah": 12,
+          "end_ayah": 20
+        },
+        {
+          "page": 479,
+          "start_ayah": 21,
+          "end_ayah": 29
+        },
+        {
+          "page": 480,
+          "start_ayah": 30,
+          "end_ayah": 38
+        },
+        {
+          "page": 481,
+          "start_ayah": 39,
+          "end_ayah": 46
+        },
+        {
+          "page": 482,
+          "start_ayah": 47,
+          "end_ayah": 54
+        }
+      ]
+    },
+    {
+      "surah": 42,
+      "code_3": "042",
+      "name_ar": "الشورى",
+      "name_id": "Ash-Shura",
+      "name_id_translation": "Musyawarah",
+      "name_en": "Consultation",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 53,
+      "rukus": 5,
+      "juz": {
+        "start": 25,
+        "end": 25
+      },
+      "juz_segments": [
+        {
+          "juz": 25,
+          "start_ayah": 1,
+          "end_ayah": 53
+        }
+      ],
+      "pages": {
+        "start": 483,
+        "end": 489
+      },
+      "page_ranges": [
+        {
+          "page": 483,
+          "start_ayah": 1,
+          "end_ayah": 10
+        },
+        {
+          "page": 484,
+          "start_ayah": 11,
+          "end_ayah": 15
+        },
+        {
+          "page": 485,
+          "start_ayah": 16,
+          "end_ayah": 22
+        },
+        {
+          "page": 486,
+          "start_ayah": 23,
+          "end_ayah": 31
+        },
+        {
+          "page": 487,
+          "start_ayah": 32,
+          "end_ayah": 44
+        },
+        {
+          "page": 488,
+          "start_ayah": 45,
+          "end_ayah": 51
+        },
+        {
+          "page": 489,
+          "start_ayah": 52,
+          "end_ayah": 53
+        }
+      ]
+    },
+    {
+      "surah": 43,
+      "code_3": "043",
+      "name_ar": "الزخرف",
+      "name_id": "Az-Zukhruf",
+      "name_id_translation": "Perhiasan",
+      "name_en": "Ornaments of gold",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 89,
+      "rukus": 7,
+      "juz": {
+        "start": 25,
+        "end": 25
+      },
+      "juz_segments": [
+        {
+          "juz": 25,
+          "start_ayah": 1,
+          "end_ayah": 89
+        }
+      ],
+      "pages": {
+        "start": 489,
+        "end": 495
+      },
+      "page_ranges": [
+        {
+          "page": 489,
+          "start_ayah": 1,
+          "end_ayah": 10
+        },
+        {
+          "page": 490,
+          "start_ayah": 11,
+          "end_ayah": 22
+        },
+        {
+          "page": 491,
+          "start_ayah": 23,
+          "end_ayah": 33
+        },
+        {
+          "page": 492,
+          "start_ayah": 34,
+          "end_ayah": 47
+        },
+        {
+          "page": 493,
+          "start_ayah": 48,
+          "end_ayah": 60
+        },
+        {
+          "page": 494,
+          "start_ayah": 61,
+          "end_ayah": 73
+        },
+        {
+          "page": 495,
+          "start_ayah": 74,
+          "end_ayah": 89
+        }
+      ]
+    },
+    {
+      "surah": 44,
+      "code_3": "044",
+      "name_ar": "الدخان",
+      "name_id": "Ad-Dukhan",
+      "name_id_translation": "Kabut",
+      "name_en": "The Smoke",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 59,
+      "rukus": 3,
+      "juz": {
+        "start": 25,
+        "end": 25
+      },
+      "juz_segments": [
+        {
+          "juz": 25,
+          "start_ayah": 1,
+          "end_ayah": 59
+        }
+      ],
+      "pages": {
+        "start": 496,
+        "end": 498
+      },
+      "page_ranges": [
+        {
+          "page": 496,
+          "start_ayah": 1,
+          "end_ayah": 18
+        },
+        {
+          "page": 497,
+          "start_ayah": 19,
+          "end_ayah": 39
+        },
+        {
+          "page": 498,
+          "start_ayah": 40,
+          "end_ayah": 59
+        }
+      ]
+    },
+    {
+      "surah": 45,
+      "code_3": "045",
+      "name_ar": "الجاثية",
+      "name_id": "Al-Jathiyah",
+      "name_id_translation": "Berlutut",
+      "name_en": "Crouching",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 37,
+      "rukus": 4,
+      "juz": {
+        "start": 25,
+        "end": 25
+      },
+      "juz_segments": [
+        {
+          "juz": 25,
+          "start_ayah": 1,
+          "end_ayah": 37
+        }
+      ],
+      "pages": {
+        "start": 499,
+        "end": 502
+      },
+      "page_ranges": [
+        {
+          "page": 499,
+          "start_ayah": 1,
+          "end_ayah": 13
+        },
+        {
+          "page": 500,
+          "start_ayah": 14,
+          "end_ayah": 22
+        },
+        {
+          "page": 501,
+          "start_ayah": 23,
+          "end_ayah": 32
+        },
+        {
+          "page": 502,
+          "start_ayah": 33,
+          "end_ayah": 37
+        }
+      ]
+    },
+    {
+      "surah": 46,
+      "code_3": "046",
+      "name_ar": "الأحقاف",
+      "name_id": "Al-Ahqaf",
+      "name_id_translation": "Bukit Pasir",
+      "name_en": "The Dunes",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 35,
+      "rukus": 4,
+      "juz": {
+        "start": 26,
+        "end": 26
+      },
+      "juz_segments": [
+        {
+          "juz": 26,
+          "start_ayah": 1,
+          "end_ayah": 35
+        }
+      ],
+      "pages": {
+        "start": 502,
+        "end": 506
+      },
+      "page_ranges": [
+        {
+          "page": 502,
+          "start_ayah": 1,
+          "end_ayah": 5
+        },
+        {
+          "page": 503,
+          "start_ayah": 6,
+          "end_ayah": 14
+        },
+        {
+          "page": 504,
+          "start_ayah": 15,
+          "end_ayah": 20
+        },
+        {
+          "page": 505,
+          "start_ayah": 21,
+          "end_ayah": 28
+        },
+        {
+          "page": 506,
+          "start_ayah": 29,
+          "end_ayah": 35
+        }
+      ]
+    },
+    {
+      "surah": 47,
+      "code_3": "047",
+      "name_ar": "محمد",
+      "name_id": "Muhammad",
+      "name_id_translation": "Muhammad",
+      "name_en": "Muhammad",
+      "place": "Medina",
+      "type": "Madaniyah",
+      "ayah_count": 38,
+      "rukus": 4,
+      "juz": {
+        "start": 26,
+        "end": 26
+      },
+      "juz_segments": [
+        {
+          "juz": 26,
+          "start_ayah": 1,
+          "end_ayah": 38
+        }
+      ],
+      "pages": {
+        "start": 507,
+        "end": 510
+      },
+      "page_ranges": [
+        {
+          "page": 507,
+          "start_ayah": 1,
+          "end_ayah": 11
+        },
+        {
+          "page": 508,
+          "start_ayah": 12,
+          "end_ayah": 19
+        },
+        {
+          "page": 509,
+          "start_ayah": 20,
+          "end_ayah": 29
+        },
+        {
+          "page": 510,
+          "start_ayah": 30,
+          "end_ayah": 38
+        }
+      ]
+    },
+    {
+      "surah": 48,
+      "code_3": "048",
+      "name_ar": "الفتح",
+      "name_id": "Al-Fath",
+      "name_id_translation": "Kemenangan",
+      "name_en": "The Victory",
+      "place": "Medina",
+      "type": "Madaniyah",
+      "ayah_count": 29,
+      "rukus": 4,
+      "juz": {
+        "start": 26,
+        "end": 26
+      },
+      "juz_segments": [
+        {
+          "juz": 26,
+          "start_ayah": 1,
+          "end_ayah": 29
+        }
+      ],
+      "pages": {
+        "start": 511,
+        "end": 515
+      },
+      "page_ranges": [
+        {
+          "page": 511,
+          "start_ayah": 1,
+          "end_ayah": 9
+        },
+        {
+          "page": 512,
+          "start_ayah": 10,
+          "end_ayah": 15
+        },
+        {
+          "page": 513,
+          "start_ayah": 16,
+          "end_ayah": 23
+        },
+        {
+          "page": 514,
+          "start_ayah": 24,
+          "end_ayah": 28
+        },
+        {
+          "page": 515,
+          "start_ayah": 29,
+          "end_ayah": 29
+        }
+      ]
+    },
+    {
+      "surah": 49,
+      "code_3": "049",
+      "name_ar": "الحجرات",
+      "name_id": "Al-Hujurat",
+      "name_id_translation": "Kamar-Kamar",
+      "name_en": "The Inner Apartments",
+      "place": "Medina",
+      "type": "Madaniyah",
+      "ayah_count": 18,
+      "rukus": 2,
+      "juz": {
+        "start": 26,
+        "end": 26
+      },
+      "juz_segments": [
+        {
+          "juz": 26,
+          "start_ayah": 1,
+          "end_ayah": 18
+        }
+      ],
+      "pages": {
+        "start": 515,
+        "end": 517
+      },
+      "page_ranges": [
+        {
+          "page": 515,
+          "start_ayah": 1,
+          "end_ayah": 4
+        },
+        {
+          "page": 516,
+          "start_ayah": 5,
+          "end_ayah": 11
+        },
+        {
+          "page": 517,
+          "start_ayah": 12,
+          "end_ayah": 18
+        }
+      ]
+    },
+    {
+      "surah": 50,
+      "code_3": "050",
+      "name_ar": "ق",
+      "name_id": "Qaf",
+      "name_id_translation": "Qaf",
+      "name_en": "The letter Qaaf",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 45,
+      "rukus": 3,
+      "juz": {
+        "start": 26,
+        "end": 26
+      },
+      "juz_segments": [
+        {
+          "juz": 26,
+          "start_ayah": 1,
+          "end_ayah": 45
+        }
+      ],
+      "pages": {
+        "start": 518,
+        "end": 520
+      },
+      "page_ranges": [
+        {
+          "page": 518,
+          "start_ayah": 1,
+          "end_ayah": 15
+        },
+        {
+          "page": 519,
+          "start_ayah": 16,
+          "end_ayah": 35
+        },
+        {
+          "page": 520,
+          "start_ayah": 36,
+          "end_ayah": 45
+        }
+      ]
+    },
+    {
+      "surah": 51,
+      "code_3": "051",
+      "name_ar": "الذاريات",
+      "name_id": "Adh-Dhariyat",
+      "name_id_translation": "Angin yang Menerbangkan",
+      "name_en": "The Winnowing Winds",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 60,
+      "rukus": 3,
+      "juz": {
+        "start": 26,
+        "end": 27
+      },
+      "juz_segments": [
+        {
+          "juz": 26,
+          "start_ayah": 1,
+          "end_ayah": 30
+        },
+        {
+          "juz": 27,
+          "start_ayah": 31,
+          "end_ayah": 60
+        }
+      ],
+      "pages": {
+        "start": 520,
+        "end": 523
+      },
+      "page_ranges": [
+        {
+          "page": 520,
+          "start_ayah": 1,
+          "end_ayah": 6
+        },
+        {
+          "page": 521,
+          "start_ayah": 7,
+          "end_ayah": 30
+        },
+        {
+          "page": 522,
+          "start_ayah": 31,
+          "end_ayah": 51
+        },
+        {
+          "page": 523,
+          "start_ayah": 52,
+          "end_ayah": 60
+        }
+      ]
+    },
+    {
+      "surah": 52,
+      "code_3": "052",
+      "name_ar": "الطور",
+      "name_id": "At-Tur",
+      "name_id_translation": "Bukit Tursina",
+      "name_en": "The Mount",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 49,
+      "rukus": 2,
+      "juz": {
+        "start": 27,
+        "end": 27
+      },
+      "juz_segments": [
+        {
+          "juz": 27,
+          "start_ayah": 1,
+          "end_ayah": 49
+        }
+      ],
+      "pages": {
+        "start": 523,
+        "end": 525
+      },
+      "page_ranges": [
+        {
+          "page": 523,
+          "start_ayah": 1,
+          "end_ayah": 14
+        },
+        {
+          "page": 524,
+          "start_ayah": 15,
+          "end_ayah": 31
+        },
+        {
+          "page": 525,
+          "start_ayah": 32,
+          "end_ayah": 49
+        }
+      ]
+    },
+    {
+      "surah": 53,
+      "code_3": "053",
+      "name_ar": "النجم",
+      "name_id": "An-Najm",
+      "name_id_translation": "Bintang",
+      "name_en": "The Star",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 62,
+      "rukus": 3,
+      "juz": {
+        "start": 27,
+        "end": 27
+      },
+      "juz_segments": [
+        {
+          "juz": 27,
+          "start_ayah": 1,
+          "end_ayah": 62
+        }
+      ],
+      "pages": {
+        "start": 526,
+        "end": 528
+      },
+      "page_ranges": [
+        {
+          "page": 526,
+          "start_ayah": 1,
+          "end_ayah": 26
+        },
+        {
+          "page": 527,
+          "start_ayah": 27,
+          "end_ayah": 44
+        },
+        {
+          "page": 528,
+          "start_ayah": 45,
+          "end_ayah": 62
+        }
+      ]
+    },
+    {
+      "surah": 54,
+      "code_3": "054",
+      "name_ar": "القمر",
+      "name_id": "Al-Qamar",
+      "name_id_translation": "Bulan",
+      "name_en": "The Moon",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 55,
+      "rukus": 3,
+      "juz": {
+        "start": 27,
+        "end": 27
+      },
+      "juz_segments": [
+        {
+          "juz": 27,
+          "start_ayah": 1,
+          "end_ayah": 55
+        }
+      ],
+      "pages": {
+        "start": 528,
+        "end": 531
+      },
+      "page_ranges": [
+        {
+          "page": 528,
+          "start_ayah": 1,
+          "end_ayah": 6
+        },
+        {
+          "page": 529,
+          "start_ayah": 7,
+          "end_ayah": 27
+        },
+        {
+          "page": 530,
+          "start_ayah": 28,
+          "end_ayah": 49
+        },
+        {
+          "page": 531,
+          "start_ayah": 50,
+          "end_ayah": 55
+        }
+      ]
+    },
+    {
+      "surah": 55,
+      "code_3": "055",
+      "name_ar": "الرحمن",
+      "name_id": "Ar-Rahman",
+      "name_id_translation": "Maha Pengasih",
+      "name_en": "The Beneficent",
+      "place": "Medina",
+      "type": "Madaniyah",
+      "ayah_count": 78,
+      "rukus": 3,
+      "juz": {
+        "start": 27,
+        "end": 27
+      },
+      "juz_segments": [
+        {
+          "juz": 27,
+          "start_ayah": 1,
+          "end_ayah": 78
+        }
+      ],
+      "pages": {
+        "start": 531,
+        "end": 534
+      },
+      "page_ranges": [
+        {
+          "page": 531,
+          "start_ayah": 1,
+          "end_ayah": 16
+        },
+        {
+          "page": 532,
+          "start_ayah": 17,
+          "end_ayah": 40
+        },
+        {
+          "page": 533,
+          "start_ayah": 41,
+          "end_ayah": 67
+        },
+        {
+          "page": 534,
+          "start_ayah": 68,
+          "end_ayah": 78
+        }
+      ]
+    },
+    {
+      "surah": 56,
+      "code_3": "056",
+      "name_ar": "الواقعة",
+      "name_id": "Al-Waqi'ah",
+      "name_id_translation": "Hari Kiamat",
+      "name_en": "The Inevitable",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 96,
+      "rukus": 3,
+      "juz": {
+        "start": 27,
+        "end": 27
+      },
+      "juz_segments": [
+        {
+          "juz": 27,
+          "start_ayah": 1,
+          "end_ayah": 96
+        }
+      ],
+      "pages": {
+        "start": 534,
+        "end": 537
+      },
+      "page_ranges": [
+        {
+          "page": 534,
+          "start_ayah": 1,
+          "end_ayah": 16
+        },
+        {
+          "page": 535,
+          "start_ayah": 17,
+          "end_ayah": 50
+        },
+        {
+          "page": 536,
+          "start_ayah": 51,
+          "end_ayah": 76
+        },
+        {
+          "page": 537,
+          "start_ayah": 77,
+          "end_ayah": 96
+        }
+      ]
+    },
+    {
+      "surah": 57,
+      "code_3": "057",
+      "name_ar": "الحديد",
+      "name_id": "Al-Hadid",
+      "name_id_translation": "Besi",
+      "name_en": "The Iron",
+      "place": "Medina",
+      "type": "Madaniyah",
+      "ayah_count": 29,
+      "rukus": 4,
+      "juz": {
+        "start": 27,
+        "end": 27
+      },
+      "juz_segments": [
+        {
+          "juz": 27,
+          "start_ayah": 1,
+          "end_ayah": 29
+        }
+      ],
+      "pages": {
+        "start": 537,
+        "end": 541
+      },
+      "page_ranges": [
+        {
+          "page": 537,
+          "start_ayah": 1,
+          "end_ayah": 3
+        },
+        {
+          "page": 538,
+          "start_ayah": 4,
+          "end_ayah": 11
+        },
+        {
+          "page": 539,
+          "start_ayah": 12,
+          "end_ayah": 18
+        },
+        {
+          "page": 540,
+          "start_ayah": 19,
+          "end_ayah": 24
+        },
+        {
+          "page": 541,
+          "start_ayah": 25,
+          "end_ayah": 29
+        }
+      ]
+    },
+    {
+      "surah": 58,
+      "code_3": "058",
+      "name_ar": "المجادلة",
+      "name_id": "Al-Mujadila",
+      "name_id_translation": "Gugatan",
+      "name_en": "The Pleading Woman",
+      "place": "Medina",
+      "type": "Madaniyah",
+      "ayah_count": 22,
+      "rukus": 3,
+      "juz": {
+        "start": 28,
+        "end": 28
+      },
+      "juz_segments": [
+        {
+          "juz": 28,
+          "start_ayah": 1,
+          "end_ayah": 22
+        }
+      ],
+      "pages": {
+        "start": 542,
+        "end": 545
+      },
+      "page_ranges": [
+        {
+          "page": 542,
+          "start_ayah": 1,
+          "end_ayah": 6
+        },
+        {
+          "page": 543,
+          "start_ayah": 7,
+          "end_ayah": 11
+        },
+        {
+          "page": 544,
+          "start_ayah": 12,
+          "end_ayah": 21
+        },
+        {
+          "page": 545,
+          "start_ayah": 22,
+          "end_ayah": 22
+        }
+      ]
+    },
+    {
+      "surah": 59,
+      "code_3": "059",
+      "name_ar": "الحشر",
+      "name_id": "Al-Hashr",
+      "name_id_translation": "Pengusiran",
+      "name_en": "The Exile",
+      "place": "Medina",
+      "type": "Madaniyah",
+      "ayah_count": 24,
+      "rukus": 3,
+      "juz": {
+        "start": 28,
+        "end": 28
+      },
+      "juz_segments": [
+        {
+          "juz": 28,
+          "start_ayah": 1,
+          "end_ayah": 24
+        }
+      ],
+      "pages": {
+        "start": 545,
+        "end": 548
+      },
+      "page_ranges": [
+        {
+          "page": 545,
+          "start_ayah": 1,
+          "end_ayah": 3
+        },
+        {
+          "page": 546,
+          "start_ayah": 4,
+          "end_ayah": 9
+        },
+        {
+          "page": 547,
+          "start_ayah": 10,
+          "end_ayah": 16
+        },
+        {
+          "page": 548,
+          "start_ayah": 17,
+          "end_ayah": 24
+        }
+      ]
+    },
+    {
+      "surah": 60,
+      "code_3": "060",
+      "name_ar": "الممتحنة",
+      "name_id": "Al-Mumtahanah",
+      "name_id_translation": "Wanita Yang Diuji",
+      "name_en": "She that is to be examined",
+      "place": "Medina",
+      "type": "Madaniyah",
+      "ayah_count": 13,
+      "rukus": 2,
+      "juz": {
+        "start": 28,
+        "end": 28
+      },
+      "juz_segments": [
+        {
+          "juz": 28,
+          "start_ayah": 1,
+          "end_ayah": 13
+        }
+      ],
+      "pages": {
+        "start": 549,
+        "end": 551
+      },
+      "page_ranges": [
+        {
+          "page": 549,
+          "start_ayah": 1,
+          "end_ayah": 5
+        },
+        {
+          "page": 550,
+          "start_ayah": 6,
+          "end_ayah": 11
+        },
+        {
+          "page": 551,
+          "start_ayah": 12,
+          "end_ayah": 13
+        }
+      ]
+    },
+    {
+      "surah": 61,
+      "code_3": "061",
+      "name_ar": "الصف",
+      "name_id": "As-Saff",
+      "name_id_translation": "Barisan",
+      "name_en": "The Ranks",
+      "place": "Medina",
+      "type": "Madaniyah",
+      "ayah_count": 14,
+      "rukus": 2,
+      "juz": {
+        "start": 28,
+        "end": 28
+      },
+      "juz_segments": [
+        {
+          "juz": 28,
+          "start_ayah": 1,
+          "end_ayah": 14
+        }
+      ],
+      "pages": {
+        "start": 551,
+        "end": 552
+      },
+      "page_ranges": [
+        {
+          "page": 551,
+          "start_ayah": 1,
+          "end_ayah": 5
+        },
+        {
+          "page": 552,
+          "start_ayah": 6,
+          "end_ayah": 14
+        }
+      ]
+    },
+    {
+      "surah": 62,
+      "code_3": "062",
+      "name_ar": "الجمعة",
+      "name_id": "Al-Jumu'ah",
+      "name_id_translation": "Jumat",
+      "name_en": "Friday",
+      "place": "Medina",
+      "type": "Madaniyah",
+      "ayah_count": 11,
+      "rukus": 2,
+      "juz": {
+        "start": 28,
+        "end": 28
+      },
+      "juz_segments": [
+        {
+          "juz": 28,
+          "start_ayah": 1,
+          "end_ayah": 11
+        }
+      ],
+      "pages": {
+        "start": 553,
+        "end": 554
+      },
+      "page_ranges": [
+        {
+          "page": 553,
+          "start_ayah": 1,
+          "end_ayah": 8
+        },
+        {
+          "page": 554,
+          "start_ayah": 9,
+          "end_ayah": 11
+        }
+      ]
+    },
+    {
+      "surah": 63,
+      "code_3": "063",
+      "name_ar": "المنافقون",
+      "name_id": "Al-Munafiqun",
+      "name_id_translation": "Orang-Orang Munafik",
+      "name_en": "The Hypocrites",
+      "place": "Medina",
+      "type": "Madaniyah",
+      "ayah_count": 11,
+      "rukus": 2,
+      "juz": {
+        "start": 28,
+        "end": 28
+      },
+      "juz_segments": [
+        {
+          "juz": 28,
+          "start_ayah": 1,
+          "end_ayah": 11
+        }
+      ],
+      "pages": {
+        "start": 554,
+        "end": 555
+      },
+      "page_ranges": [
+        {
+          "page": 554,
+          "start_ayah": 1,
+          "end_ayah": 4
+        },
+        {
+          "page": 555,
+          "start_ayah": 5,
+          "end_ayah": 11
+        }
+      ]
+    },
+    {
+      "surah": 64,
+      "code_3": "064",
+      "name_ar": "التغابن",
+      "name_id": "At-Taghabun",
+      "name_id_translation": "Pengungkapan Kesalahan",
+      "name_en": "Mutual Disillusion",
+      "place": "Medina",
+      "type": "Madaniyah",
+      "ayah_count": 18,
+      "rukus": 2,
+      "juz": {
+        "start": 28,
+        "end": 28
+      },
+      "juz_segments": [
+        {
+          "juz": 28,
+          "start_ayah": 1,
+          "end_ayah": 18
+        }
+      ],
+      "pages": {
+        "start": 556,
+        "end": 557
+      },
+      "page_ranges": [
+        {
+          "page": 556,
+          "start_ayah": 1,
+          "end_ayah": 9
+        },
+        {
+          "page": 557,
+          "start_ayah": 10,
+          "end_ayah": 18
+        }
+      ]
+    },
+    {
+      "surah": 65,
+      "code_3": "065",
+      "name_ar": "الطلاق",
+      "name_id": "At-Talaq",
+      "name_id_translation": "Talak",
+      "name_en": "Divorce",
+      "place": "Medina",
+      "type": "Madaniyah",
+      "ayah_count": 12,
+      "rukus": 2,
+      "juz": {
+        "start": 28,
+        "end": 28
+      },
+      "juz_segments": [
+        {
+          "juz": 28,
+          "start_ayah": 1,
+          "end_ayah": 12
+        }
+      ],
+      "pages": {
+        "start": 558,
+        "end": 559
+      },
+      "page_ranges": [
+        {
+          "page": 558,
+          "start_ayah": 1,
+          "end_ayah": 5
+        },
+        {
+          "page": 559,
+          "start_ayah": 6,
+          "end_ayah": 12
+        }
+      ]
+    },
+    {
+      "surah": 66,
+      "code_3": "066",
+      "name_ar": "التحريم",
+      "name_id": "At-Tahrim",
+      "name_id_translation": "Pengharaman",
+      "name_en": "The Prohibition",
+      "place": "Medina",
+      "type": "Madaniyah",
+      "ayah_count": 12,
+      "rukus": 2,
+      "juz": {
+        "start": 28,
+        "end": 28
+      },
+      "juz_segments": [
+        {
+          "juz": 28,
+          "start_ayah": 1,
+          "end_ayah": 12
+        }
+      ],
+      "pages": {
+        "start": 560,
+        "end": 561
+      },
+      "page_ranges": [
+        {
+          "page": 560,
+          "start_ayah": 1,
+          "end_ayah": 7
+        },
+        {
+          "page": 561,
+          "start_ayah": 8,
+          "end_ayah": 12
+        }
+      ]
+    },
+    {
+      "surah": 67,
+      "code_3": "067",
+      "name_ar": "الملك",
+      "name_id": "Al-Mulk",
+      "name_id_translation": "Kerajaan",
+      "name_en": "The Sovereignty",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 30,
+      "rukus": 2,
+      "juz": {
+        "start": 29,
+        "end": 29
+      },
+      "juz_segments": [
+        {
+          "juz": 29,
+          "start_ayah": 1,
+          "end_ayah": 30
+        }
+      ],
+      "pages": {
+        "start": 562,
+        "end": 564
+      },
+      "page_ranges": [
+        {
+          "page": 562,
+          "start_ayah": 1,
+          "end_ayah": 12
+        },
+        {
+          "page": 563,
+          "start_ayah": 13,
+          "end_ayah": 26
+        },
+        {
+          "page": 564,
+          "start_ayah": 27,
+          "end_ayah": 30
+        }
+      ]
+    },
+    {
+      "surah": 68,
+      "code_3": "068",
+      "name_ar": "القلم",
+      "name_id": "Al-Qalam",
+      "name_id_translation": "Pena",
+      "name_en": "The Pen",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 52,
+      "rukus": 2,
+      "juz": {
+        "start": 29,
+        "end": 29
+      },
+      "juz_segments": [
+        {
+          "juz": 29,
+          "start_ayah": 1,
+          "end_ayah": 52
+        }
+      ],
+      "pages": {
+        "start": 564,
+        "end": 566
+      },
+      "page_ranges": [
+        {
+          "page": 564,
+          "start_ayah": 1,
+          "end_ayah": 15
+        },
+        {
+          "page": 565,
+          "start_ayah": 16,
+          "end_ayah": 42
+        },
+        {
+          "page": 566,
+          "start_ayah": 43,
+          "end_ayah": 52
+        }
+      ]
+    },
+    {
+      "surah": 69,
+      "code_3": "069",
+      "name_ar": "الحاقة",
+      "name_id": "Al-Haqqah",
+      "name_id_translation": "Hari Kiamat",
+      "name_en": "The Reality",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 52,
+      "rukus": 2,
+      "juz": {
+        "start": 29,
+        "end": 29
+      },
+      "juz_segments": [
+        {
+          "juz": 29,
+          "start_ayah": 1,
+          "end_ayah": 52
+        }
+      ],
+      "pages": {
+        "start": 566,
+        "end": 568
+      },
+      "page_ranges": [
+        {
+          "page": 566,
+          "start_ayah": 1,
+          "end_ayah": 8
+        },
+        {
+          "page": 567,
+          "start_ayah": 9,
+          "end_ayah": 34
+        },
+        {
+          "page": 568,
+          "start_ayah": 35,
+          "end_ayah": 52
+        }
+      ]
+    },
+    {
+      "surah": 70,
+      "code_3": "070",
+      "name_ar": "المعارج",
+      "name_id": "Al-Ma'arij",
+      "name_id_translation": "Tempat Naik",
+      "name_en": "The Ascending Stairways",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 44,
+      "rukus": 2,
+      "juz": {
+        "start": 29,
+        "end": 29
+      },
+      "juz_segments": [
+        {
+          "juz": 29,
+          "start_ayah": 1,
+          "end_ayah": 44
+        }
+      ],
+      "pages": {
+        "start": 568,
+        "end": 570
+      },
+      "page_ranges": [
+        {
+          "page": 568,
+          "start_ayah": 1,
+          "end_ayah": 10
+        },
+        {
+          "page": 569,
+          "start_ayah": 11,
+          "end_ayah": 39
+        },
+        {
+          "page": 570,
+          "start_ayah": 40,
+          "end_ayah": 44
+        }
+      ]
+    },
+    {
+      "surah": 71,
+      "code_3": "071",
+      "name_ar": "نوح",
+      "name_id": "Nuh",
+      "name_id_translation": "Nuh",
+      "name_en": "Noah",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 28,
+      "rukus": 2,
+      "juz": {
+        "start": 29,
+        "end": 29
+      },
+      "juz_segments": [
+        {
+          "juz": 29,
+          "start_ayah": 1,
+          "end_ayah": 28
+        }
+      ],
+      "pages": {
+        "start": 570,
+        "end": 571
+      },
+      "page_ranges": [
+        {
+          "page": 570,
+          "start_ayah": 1,
+          "end_ayah": 10
+        },
+        {
+          "page": 571,
+          "start_ayah": 11,
+          "end_ayah": 28
+        }
+      ]
+    },
+    {
+      "surah": 72,
+      "code_3": "072",
+      "name_ar": "الجن",
+      "name_id": "Al-Jinn",
+      "name_id_translation": "Jin",
+      "name_en": "The Jinn",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 28,
+      "rukus": 2,
+      "juz": {
+        "start": 29,
+        "end": 29
+      },
+      "juz_segments": [
+        {
+          "juz": 29,
+          "start_ayah": 1,
+          "end_ayah": 28
+        }
+      ],
+      "pages": {
+        "start": 572,
+        "end": 573
+      },
+      "page_ranges": [
+        {
+          "page": 572,
+          "start_ayah": 1,
+          "end_ayah": 13
+        },
+        {
+          "page": 573,
+          "start_ayah": 14,
+          "end_ayah": 28
+        }
+      ]
+    },
+    {
+      "surah": 73,
+      "code_3": "073",
+      "name_ar": "المزمل",
+      "name_id": "Al-Muzzammil",
+      "name_id_translation": "Orang Yang Berselimut",
+      "name_en": "The Enshrouded One",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 20,
+      "rukus": 2,
+      "juz": {
+        "start": 29,
+        "end": 29
+      },
+      "juz_segments": [
+        {
+          "juz": 29,
+          "start_ayah": 1,
+          "end_ayah": 20
+        }
+      ],
+      "pages": {
+        "start": 574,
+        "end": 575
+      },
+      "page_ranges": [
+        {
+          "page": 574,
+          "start_ayah": 1,
+          "end_ayah": 19
+        },
+        {
+          "page": 575,
+          "start_ayah": 20,
+          "end_ayah": 20
+        }
+      ]
+    },
+    {
+      "surah": 74,
+      "code_3": "074",
+      "name_ar": "المدثر",
+      "name_id": "Al-Muddaththir",
+      "name_id_translation": "Orang Yang Berkemul",
+      "name_en": "The Cloaked One",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 56,
+      "rukus": 2,
+      "juz": {
+        "start": 29,
+        "end": 29
+      },
+      "juz_segments": [
+        {
+          "juz": 29,
+          "start_ayah": 1,
+          "end_ayah": 56
+        }
+      ],
+      "pages": {
+        "start": 575,
+        "end": 577
+      },
+      "page_ranges": [
+        {
+          "page": 575,
+          "start_ayah": 1,
+          "end_ayah": 17
+        },
+        {
+          "page": 576,
+          "start_ayah": 18,
+          "end_ayah": 47
+        },
+        {
+          "page": 577,
+          "start_ayah": 48,
+          "end_ayah": 56
+        }
+      ]
+    },
+    {
+      "surah": 75,
+      "code_3": "075",
+      "name_ar": "القيامة",
+      "name_id": "Al-Qiyamah",
+      "name_id_translation": "Hari Kiamat",
+      "name_en": "The Resurrection",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 40,
+      "rukus": 2,
+      "juz": {
+        "start": 29,
+        "end": 29
+      },
+      "juz_segments": [
+        {
+          "juz": 29,
+          "start_ayah": 1,
+          "end_ayah": 40
+        }
+      ],
+      "pages": {
+        "start": 577,
+        "end": 578
+      },
+      "page_ranges": [
+        {
+          "page": 577,
+          "start_ayah": 1,
+          "end_ayah": 19
+        },
+        {
+          "page": 578,
+          "start_ayah": 20,
+          "end_ayah": 40
+        }
+      ]
+    },
+    {
+      "surah": 76,
+      "code_3": "076",
+      "name_ar": "الانسان",
+      "name_id": "Al-Insan",
+      "name_id_translation": "Manusia",
+      "name_en": "Man",
+      "place": "Medina",
+      "type": "Madaniyah",
+      "ayah_count": 31,
+      "rukus": 2,
+      "juz": {
+        "start": 29,
+        "end": 29
+      },
+      "juz_segments": [
+        {
+          "juz": 29,
+          "start_ayah": 1,
+          "end_ayah": 31
+        }
+      ],
+      "pages": {
+        "start": 578,
+        "end": 580
+      },
+      "page_ranges": [
+        {
+          "page": 578,
+          "start_ayah": 1,
+          "end_ayah": 5
+        },
+        {
+          "page": 579,
+          "start_ayah": 6,
+          "end_ayah": 25
+        },
+        {
+          "page": 580,
+          "start_ayah": 26,
+          "end_ayah": 31
+        }
+      ]
+    },
+    {
+      "surah": 77,
+      "code_3": "077",
+      "name_ar": "المرسلات",
+      "name_id": "Al-Mursalat",
+      "name_id_translation": "Malaikat Yang Diutus",
+      "name_en": "The Emissaries",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 50,
+      "rukus": 2,
+      "juz": {
+        "start": 29,
+        "end": 29
+      },
+      "juz_segments": [
+        {
+          "juz": 29,
+          "start_ayah": 1,
+          "end_ayah": 50
+        }
+      ],
+      "pages": {
+        "start": 580,
+        "end": 581
+      },
+      "page_ranges": [
+        {
+          "page": 580,
+          "start_ayah": 1,
+          "end_ayah": 19
+        },
+        {
+          "page": 581,
+          "start_ayah": 20,
+          "end_ayah": 50
+        }
+      ]
+    },
+    {
+      "surah": 78,
+      "code_3": "078",
+      "name_ar": "النبإ",
+      "name_id": "An-Naba'",
+      "name_id_translation": "Berita Besar",
+      "name_en": "The Announcement",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 40,
+      "rukus": 2,
+      "juz": {
+        "start": 30,
+        "end": 30
+      },
+      "juz_segments": [
+        {
+          "juz": 30,
+          "start_ayah": 1,
+          "end_ayah": 40
+        }
+      ],
+      "pages": {
+        "start": 582,
+        "end": 583
+      },
+      "page_ranges": [
+        {
+          "page": 582,
+          "start_ayah": 1,
+          "end_ayah": 30
+        },
+        {
+          "page": 583,
+          "start_ayah": 31,
+          "end_ayah": 40
+        }
+      ]
+    },
+    {
+      "surah": 79,
+      "code_3": "079",
+      "name_ar": "النازعات",
+      "name_id": "An-Nazi'at",
+      "name_id_translation": "Malaikat Yang Mencabut",
+      "name_en": "Those who drag forth",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 46,
+      "rukus": 2,
+      "juz": {
+        "start": 30,
+        "end": 30
+      },
+      "juz_segments": [
+        {
+          "juz": 30,
+          "start_ayah": 1,
+          "end_ayah": 46
+        }
+      ],
+      "pages": {
+        "start": 583,
+        "end": 584
+      },
+      "page_ranges": [
+        {
+          "page": 583,
+          "start_ayah": 1,
+          "end_ayah": 15
+        },
+        {
+          "page": 584,
+          "start_ayah": 16,
+          "end_ayah": 46
+        }
+      ]
+    },
+    {
+      "surah": 80,
+      "code_3": "080",
+      "name_ar": "عبس",
+      "name_id": "Abasa",
+      "name_id_translation": "Bermuka Masam",
+      "name_en": "He frowned",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 42,
+      "rukus": 1,
+      "juz": {
+        "start": 30,
+        "end": 30
+      },
+      "juz_segments": [
+        {
+          "juz": 30,
+          "start_ayah": 1,
+          "end_ayah": 42
+        }
+      ],
+      "pages": {
+        "start": 585,
+        "end": 585
+      },
+      "page_ranges": [
+        {
+          "page": 585,
+          "start_ayah": 1,
+          "end_ayah": 42
+        }
+      ]
+    },
+    {
+      "surah": 81,
+      "code_3": "081",
+      "name_ar": "التكوير",
+      "name_id": "At-Takwir",
+      "name_id_translation": "Penggulungan",
+      "name_en": "The Overthrowing",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 29,
+      "rukus": 1,
+      "juz": {
+        "start": 30,
+        "end": 30
+      },
+      "juz_segments": [
+        {
+          "juz": 30,
+          "start_ayah": 1,
+          "end_ayah": 29
+        }
+      ],
+      "pages": {
+        "start": 586,
+        "end": 586
+      },
+      "page_ranges": [
+        {
+          "page": 586,
+          "start_ayah": 1,
+          "end_ayah": 29
+        }
+      ]
+    },
+    {
+      "surah": 82,
+      "code_3": "082",
+      "name_ar": "الإنفطار",
+      "name_id": "Al-Infitar",
+      "name_id_translation": "Terbelah",
+      "name_en": "The Cleaving",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 19,
+      "rukus": 1,
+      "juz": {
+        "start": 30,
+        "end": 30
+      },
+      "juz_segments": [
+        {
+          "juz": 30,
+          "start_ayah": 1,
+          "end_ayah": 19
+        }
+      ],
+      "pages": {
+        "start": 587,
+        "end": 587
+      },
+      "page_ranges": [
+        {
+          "page": 587,
+          "start_ayah": 1,
+          "end_ayah": 19
+        }
+      ]
+    },
+    {
+      "surah": 83,
+      "code_3": "083",
+      "name_ar": "المطففين",
+      "name_id": "Al-Mutaffifin",
+      "name_id_translation": "Orang-Orang Curang",
+      "name_en": "Defrauding",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 36,
+      "rukus": 1,
+      "juz": {
+        "start": 30,
+        "end": 30
+      },
+      "juz_segments": [
+        {
+          "juz": 30,
+          "start_ayah": 1,
+          "end_ayah": 36
+        }
+      ],
+      "pages": {
+        "start": 587,
+        "end": 589
+      },
+      "page_ranges": [
+        {
+          "page": 587,
+          "start_ayah": 1,
+          "end_ayah": 6
+        },
+        {
+          "page": 588,
+          "start_ayah": 7,
+          "end_ayah": 34
+        },
+        {
+          "page": 589,
+          "start_ayah": 35,
+          "end_ayah": 36
+        }
+      ]
+    },
+    {
+      "surah": 84,
+      "code_3": "084",
+      "name_ar": "الإنشقاق",
+      "name_id": "Al-Inshiqaq",
+      "name_id_translation": "Terbelah",
+      "name_en": "The Splitting Open",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 25,
+      "rukus": 1,
+      "juz": {
+        "start": 30,
+        "end": 30
+      },
+      "juz_segments": [
+        {
+          "juz": 30,
+          "start_ayah": 1,
+          "end_ayah": 25
+        }
+      ],
+      "pages": {
+        "start": 589,
+        "end": 589
+      },
+      "page_ranges": [
+        {
+          "page": 589,
+          "start_ayah": 1,
+          "end_ayah": 25
+        }
+      ]
+    },
+    {
+      "surah": 85,
+      "code_3": "085",
+      "name_ar": "البروج",
+      "name_id": "Al-Buruj",
+      "name_id_translation": "Gugusan Bintang",
+      "name_en": "The Constellations",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 22,
+      "rukus": 1,
+      "juz": {
+        "start": 30,
+        "end": 30
+      },
+      "juz_segments": [
+        {
+          "juz": 30,
+          "start_ayah": 1,
+          "end_ayah": 22
+        }
+      ],
+      "pages": {
+        "start": 590,
+        "end": 590
+      },
+      "page_ranges": [
+        {
+          "page": 590,
+          "start_ayah": 1,
+          "end_ayah": 22
+        }
+      ]
+    },
+    {
+      "surah": 86,
+      "code_3": "086",
+      "name_ar": "الطارق",
+      "name_id": "At-Tariq",
+      "name_id_translation": "Yang Datang Di Malam Hari",
+      "name_en": "The Morning Star",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 17,
+      "rukus": 1,
+      "juz": {
+        "start": 30,
+        "end": 30
+      },
+      "juz_segments": [
+        {
+          "juz": 30,
+          "start_ayah": 1,
+          "end_ayah": 17
+        }
+      ],
+      "pages": {
+        "start": 591,
+        "end": 591
+      },
+      "page_ranges": [
+        {
+          "page": 591,
+          "start_ayah": 1,
+          "end_ayah": 17
+        }
+      ]
+    },
+    {
+      "surah": 87,
+      "code_3": "087",
+      "name_ar": "الأعلى",
+      "name_id": "Al-A'la",
+      "name_id_translation": "Maha Tinggi",
+      "name_en": "The Most High",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 19,
+      "rukus": 1,
+      "juz": {
+        "start": 30,
+        "end": 30
+      },
+      "juz_segments": [
+        {
+          "juz": 30,
+          "start_ayah": 1,
+          "end_ayah": 19
+        }
+      ],
+      "pages": {
+        "start": 591,
+        "end": 592
+      },
+      "page_ranges": [
+        {
+          "page": 591,
+          "start_ayah": 1,
+          "end_ayah": 15
+        },
+        {
+          "page": 592,
+          "start_ayah": 16,
+          "end_ayah": 19
+        }
+      ]
+    },
+    {
+      "surah": 88,
+      "code_3": "088",
+      "name_ar": "الغاشية",
+      "name_id": "Al-Ghashiyah",
+      "name_id_translation": "Hari Kiamat",
+      "name_en": "The Overwhelming",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 26,
+      "rukus": 1,
+      "juz": {
+        "start": 30,
+        "end": 30
+      },
+      "juz_segments": [
+        {
+          "juz": 30,
+          "start_ayah": 1,
+          "end_ayah": 26
+        }
+      ],
+      "pages": {
+        "start": 592,
+        "end": 592
+      },
+      "page_ranges": [
+        {
+          "page": 592,
+          "start_ayah": 1,
+          "end_ayah": 26
+        }
+      ]
+    },
+    {
+      "surah": 89,
+      "code_3": "089",
+      "name_ar": "الفجر",
+      "name_id": "Al-Fajr",
+      "name_id_translation": "Fajar",
+      "name_en": "The Dawn",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 30,
+      "rukus": 1,
+      "juz": {
+        "start": 30,
+        "end": 30
+      },
+      "juz_segments": [
+        {
+          "juz": 30,
+          "start_ayah": 1,
+          "end_ayah": 30
+        }
+      ],
+      "pages": {
+        "start": 593,
+        "end": 594
+      },
+      "page_ranges": [
+        {
+          "page": 593,
+          "start_ayah": 1,
+          "end_ayah": 23
+        },
+        {
+          "page": 594,
+          "start_ayah": 24,
+          "end_ayah": 30
+        }
+      ]
+    },
+    {
+      "surah": 90,
+      "code_3": "090",
+      "name_ar": "البلد",
+      "name_id": "Al-Balad",
+      "name_id_translation": "Negeri",
+      "name_en": "The City",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 20,
+      "rukus": 1,
+      "juz": {
+        "start": 30,
+        "end": 30
+      },
+      "juz_segments": [
+        {
+          "juz": 30,
+          "start_ayah": 1,
+          "end_ayah": 20
+        }
+      ],
+      "pages": {
+        "start": 594,
+        "end": 594
+      },
+      "page_ranges": [
+        {
+          "page": 594,
+          "start_ayah": 1,
+          "end_ayah": 20
+        }
+      ]
+    },
+    {
+      "surah": 91,
+      "code_3": "091",
+      "name_ar": "الشمس",
+      "name_id": "Ash-Shams",
+      "name_id_translation": "Matahari",
+      "name_en": "The Sun",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 15,
+      "rukus": 1,
+      "juz": {
+        "start": 30,
+        "end": 30
+      },
+      "juz_segments": [
+        {
+          "juz": 30,
+          "start_ayah": 1,
+          "end_ayah": 15
+        }
+      ],
+      "pages": {
+        "start": 595,
+        "end": 595
+      },
+      "page_ranges": [
+        {
+          "page": 595,
+          "start_ayah": 1,
+          "end_ayah": 15
+        }
+      ]
+    },
+    {
+      "surah": 92,
+      "code_3": "092",
+      "name_ar": "الليل",
+      "name_id": "Al-Layl",
+      "name_id_translation": "Malam",
+      "name_en": "The Night",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 21,
+      "rukus": 1,
+      "juz": {
+        "start": 30,
+        "end": 30
+      },
+      "juz_segments": [
+        {
+          "juz": 30,
+          "start_ayah": 1,
+          "end_ayah": 21
+        }
+      ],
+      "pages": {
+        "start": 595,
+        "end": 596
+      },
+      "page_ranges": [
+        {
+          "page": 595,
+          "start_ayah": 1,
+          "end_ayah": 14
+        },
+        {
+          "page": 596,
+          "start_ayah": 15,
+          "end_ayah": 21
+        }
+      ]
+    },
+    {
+      "surah": 93,
+      "code_3": "093",
+      "name_ar": "الضحى",
+      "name_id": "Ad-Duhaa",
+      "name_id_translation": "Duha",
+      "name_en": "The Morning Hours",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 11,
+      "rukus": 1,
+      "juz": {
+        "start": 30,
+        "end": 30
+      },
+      "juz_segments": [
+        {
+          "juz": 30,
+          "start_ayah": 1,
+          "end_ayah": 11
+        }
+      ],
+      "pages": {
+        "start": 596,
+        "end": 596
+      },
+      "page_ranges": [
+        {
+          "page": 596,
+          "start_ayah": 1,
+          "end_ayah": 11
+        }
+      ]
+    },
+    {
+      "surah": 94,
+      "code_3": "094",
+      "name_ar": "الشرح",
+      "name_id": "Ash-Sharh",
+      "name_id_translation": "Lapang",
+      "name_en": "The Consolation",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 8,
+      "rukus": 1,
+      "juz": {
+        "start": 30,
+        "end": 30
+      },
+      "juz_segments": [
+        {
+          "juz": 30,
+          "start_ayah": 1,
+          "end_ayah": 8
+        }
+      ],
+      "pages": {
+        "start": 596,
+        "end": 596
+      },
+      "page_ranges": [
+        {
+          "page": 596,
+          "start_ayah": 1,
+          "end_ayah": 8
+        }
+      ]
+    },
+    {
+      "surah": 95,
+      "code_3": "095",
+      "name_ar": "التين",
+      "name_id": "At-Tin",
+      "name_id_translation": "Buah Tin",
+      "name_en": "The Fig",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 8,
+      "rukus": 1,
+      "juz": {
+        "start": 30,
+        "end": 30
+      },
+      "juz_segments": [
+        {
+          "juz": 30,
+          "start_ayah": 1,
+          "end_ayah": 8
+        }
+      ],
+      "pages": {
+        "start": 597,
+        "end": 597
+      },
+      "page_ranges": [
+        {
+          "page": 597,
+          "start_ayah": 1,
+          "end_ayah": 8
+        }
+      ]
+    },
+    {
+      "surah": 96,
+      "code_3": "096",
+      "name_ar": "العلق",
+      "name_id": "Al-'Alaq",
+      "name_id_translation": "Segumpal Darah",
+      "name_en": "The Clot",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 19,
+      "rukus": 1,
+      "juz": {
+        "start": 30,
+        "end": 30
+      },
+      "juz_segments": [
+        {
+          "juz": 30,
+          "start_ayah": 1,
+          "end_ayah": 19
+        }
+      ],
+      "pages": {
+        "start": 597,
+        "end": 597
+      },
+      "page_ranges": [
+        {
+          "page": 597,
+          "start_ayah": 1,
+          "end_ayah": 19
+        }
+      ]
+    },
+    {
+      "surah": 97,
+      "code_3": "097",
+      "name_ar": "القدر",
+      "name_id": "Al-Qadr",
+      "name_id_translation": "Kemuliaan",
+      "name_en": "The Power, Fate",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 5,
+      "rukus": 1,
+      "juz": {
+        "start": 30,
+        "end": 30
+      },
+      "juz_segments": [
+        {
+          "juz": 30,
+          "start_ayah": 1,
+          "end_ayah": 5
+        }
+      ],
+      "pages": {
+        "start": 598,
+        "end": 598
+      },
+      "page_ranges": [
+        {
+          "page": 598,
+          "start_ayah": 1,
+          "end_ayah": 5
+        }
+      ]
+    },
+    {
+      "surah": 98,
+      "code_3": "098",
+      "name_ar": "البينة",
+      "name_id": "Al-Bayyinah",
+      "name_id_translation": "Bukti Nyata",
+      "name_en": "The Evidence",
+      "place": "Medina",
+      "type": "Madaniyah",
+      "ayah_count": 8,
+      "rukus": 1,
+      "juz": {
+        "start": 30,
+        "end": 30
+      },
+      "juz_segments": [
+        {
+          "juz": 30,
+          "start_ayah": 1,
+          "end_ayah": 8
+        }
+      ],
+      "pages": {
+        "start": 598,
+        "end": 599
+      },
+      "page_ranges": [
+        {
+          "page": 598,
+          "start_ayah": 1,
+          "end_ayah": 7
+        },
+        {
+          "page": 599,
+          "start_ayah": 8,
+          "end_ayah": 8
+        }
+      ]
+    },
+    {
+      "surah": 99,
+      "code_3": "099",
+      "name_ar": "الزلزلة",
+      "name_id": "Az-Zalzalah",
+      "name_id_translation": "Guncangan",
+      "name_en": "The Earthquake",
+      "place": "Medina",
+      "type": "Madaniyah",
+      "ayah_count": 8,
+      "rukus": 1,
+      "juz": {
+        "start": 30,
+        "end": 30
+      },
+      "juz_segments": [
+        {
+          "juz": 30,
+          "start_ayah": 1,
+          "end_ayah": 8
+        }
+      ],
+      "pages": {
+        "start": 599,
+        "end": 599
+      },
+      "page_ranges": [
+        {
+          "page": 599,
+          "start_ayah": 1,
+          "end_ayah": 8
+        }
+      ]
+    },
+    {
+      "surah": 100,
+      "code_3": "100",
+      "name_ar": "العاديات",
+      "name_id": "Al-'Adiyat",
+      "name_id_translation": "Kuda Yang Berlari Kencang",
+      "name_en": "The Chargers",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 11,
+      "rukus": 1,
+      "juz": {
+        "start": 30,
+        "end": 30
+      },
+      "juz_segments": [
+        {
+          "juz": 30,
+          "start_ayah": 1,
+          "end_ayah": 11
+        }
+      ],
+      "pages": {
+        "start": 599,
+        "end": 600
+      },
+      "page_ranges": [
+        {
+          "page": 599,
+          "start_ayah": 1,
+          "end_ayah": 9
+        },
+        {
+          "page": 600,
+          "start_ayah": 10,
+          "end_ayah": 11
+        }
+      ]
+    },
+    {
+      "surah": 101,
+      "code_3": "101",
+      "name_ar": "القارعة",
+      "name_id": "Al-Qari'ah",
+      "name_id_translation": "Hari Kiamat",
+      "name_en": "The Calamity",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 11,
+      "rukus": 1,
+      "juz": {
+        "start": 30,
+        "end": 30
+      },
+      "juz_segments": [
+        {
+          "juz": 30,
+          "start_ayah": 1,
+          "end_ayah": 11
+        }
+      ],
+      "pages": {
+        "start": 600,
+        "end": 600
+      },
+      "page_ranges": [
+        {
+          "page": 600,
+          "start_ayah": 1,
+          "end_ayah": 11
+        }
+      ]
+    },
+    {
+      "surah": 102,
+      "code_3": "102",
+      "name_ar": "التكاثر",
+      "name_id": "At-Takathur",
+      "name_id_translation": "Bermegah-Megahan",
+      "name_en": "Competition",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 8,
+      "rukus": 1,
+      "juz": {
+        "start": 30,
+        "end": 30
+      },
+      "juz_segments": [
+        {
+          "juz": 30,
+          "start_ayah": 1,
+          "end_ayah": 8
+        }
+      ],
+      "pages": {
+        "start": 600,
+        "end": 600
+      },
+      "page_ranges": [
+        {
+          "page": 600,
+          "start_ayah": 1,
+          "end_ayah": 8
+        }
+      ]
+    },
+    {
+      "surah": 103,
+      "code_3": "103",
+      "name_ar": "العصر",
+      "name_id": "Al-'Asr",
+      "name_id_translation": "Asar",
+      "name_en": "The Declining Day, Epoch",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 3,
+      "rukus": 1,
+      "juz": {
+        "start": 30,
+        "end": 30
+      },
+      "juz_segments": [
+        {
+          "juz": 30,
+          "start_ayah": 1,
+          "end_ayah": 3
+        }
+      ],
+      "pages": {
+        "start": 601,
+        "end": 601
+      },
+      "page_ranges": [
+        {
+          "page": 601,
+          "start_ayah": 1,
+          "end_ayah": 3
+        }
+      ]
+    },
+    {
+      "surah": 104,
+      "code_3": "104",
+      "name_ar": "الهمزة",
+      "name_id": "Al-Humazah",
+      "name_id_translation": "Pengumpat",
+      "name_en": "The Traducer",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 9,
+      "rukus": 1,
+      "juz": {
+        "start": 30,
+        "end": 30
+      },
+      "juz_segments": [
+        {
+          "juz": 30,
+          "start_ayah": 1,
+          "end_ayah": 9
+        }
+      ],
+      "pages": {
+        "start": 601,
+        "end": 601
+      },
+      "page_ranges": [
+        {
+          "page": 601,
+          "start_ayah": 1,
+          "end_ayah": 9
+        }
+      ]
+    },
+    {
+      "surah": 105,
+      "code_3": "105",
+      "name_ar": "الفيل",
+      "name_id": "Al-Fil",
+      "name_id_translation": "Gajah",
+      "name_en": "The Elephant",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 5,
+      "rukus": 1,
+      "juz": {
+        "start": 30,
+        "end": 30
+      },
+      "juz_segments": [
+        {
+          "juz": 30,
+          "start_ayah": 1,
+          "end_ayah": 5
+        }
+      ],
+      "pages": {
+        "start": 601,
+        "end": 601
+      },
+      "page_ranges": [
+        {
+          "page": 601,
+          "start_ayah": 1,
+          "end_ayah": 5
+        }
+      ]
+    },
+    {
+      "surah": 106,
+      "code_3": "106",
+      "name_ar": "قريش",
+      "name_id": "Quraysh",
+      "name_id_translation": "Quraisy",
+      "name_en": "Quraysh",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 4,
+      "rukus": 1,
+      "juz": {
+        "start": 30,
+        "end": 30
+      },
+      "juz_segments": [
+        {
+          "juz": 30,
+          "start_ayah": 1,
+          "end_ayah": 4
+        }
+      ],
+      "pages": {
+        "start": 602,
+        "end": 602
+      },
+      "page_ranges": [
+        {
+          "page": 602,
+          "start_ayah": 1,
+          "end_ayah": 4
+        }
+      ]
+    },
+    {
+      "surah": 107,
+      "code_3": "107",
+      "name_ar": "الماعون",
+      "name_id": "Al-Ma'un",
+      "name_id_translation": "Barang Yang Berguna",
+      "name_en": "Almsgiving",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 7,
+      "rukus": 1,
+      "juz": {
+        "start": 30,
+        "end": 30
+      },
+      "juz_segments": [
+        {
+          "juz": 30,
+          "start_ayah": 1,
+          "end_ayah": 7
+        }
+      ],
+      "pages": {
+        "start": 602,
+        "end": 602
+      },
+      "page_ranges": [
+        {
+          "page": 602,
+          "start_ayah": 1,
+          "end_ayah": 7
+        }
+      ]
+    },
+    {
+      "surah": 108,
+      "code_3": "108",
+      "name_ar": "الكوثر",
+      "name_id": "Al-Kawthar",
+      "name_id_translation": "Pemberian Yang Banyak",
+      "name_en": "Abundance",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 3,
+      "rukus": 1,
+      "juz": {
+        "start": 30,
+        "end": 30
+      },
+      "juz_segments": [
+        {
+          "juz": 30,
+          "start_ayah": 1,
+          "end_ayah": 3
+        }
+      ],
+      "pages": {
+        "start": 602,
+        "end": 602
+      },
+      "page_ranges": [
+        {
+          "page": 602,
+          "start_ayah": 1,
+          "end_ayah": 3
+        }
+      ]
+    },
+    {
+      "surah": 109,
+      "code_3": "109",
+      "name_ar": "الكافرون",
+      "name_id": "Al-Kafirun",
+      "name_id_translation": "Orang-Orang kafir",
+      "name_en": "The Disbelievers",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 6,
+      "rukus": 1,
+      "juz": {
+        "start": 30,
+        "end": 30
+      },
+      "juz_segments": [
+        {
+          "juz": 30,
+          "start_ayah": 1,
+          "end_ayah": 6
+        }
+      ],
+      "pages": {
+        "start": 603,
+        "end": 603
+      },
+      "page_ranges": [
+        {
+          "page": 603,
+          "start_ayah": 1,
+          "end_ayah": 6
+        }
+      ]
+    },
+    {
+      "surah": 110,
+      "code_3": "110",
+      "name_ar": "النصر",
+      "name_id": "An-Nasr",
+      "name_id_translation": "Pertolongan",
+      "name_en": "Divine Support",
+      "place": "Medina",
+      "type": "Madaniyah",
+      "ayah_count": 3,
+      "rukus": 1,
+      "juz": {
+        "start": 30,
+        "end": 30
+      },
+      "juz_segments": [
+        {
+          "juz": 30,
+          "start_ayah": 1,
+          "end_ayah": 3
+        }
+      ],
+      "pages": {
+        "start": 603,
+        "end": 603
+      },
+      "page_ranges": [
+        {
+          "page": 603,
+          "start_ayah": 1,
+          "end_ayah": 3
+        }
+      ]
+    },
+    {
+      "surah": 111,
+      "code_3": "111",
+      "name_ar": "المسد",
+      "name_id": "Al-Masad",
+      "name_id_translation": "Api Yang Bergejolak",
+      "name_en": "The Palm Fibre",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 5,
+      "rukus": 1,
+      "juz": {
+        "start": 30,
+        "end": 30
+      },
+      "juz_segments": [
+        {
+          "juz": 30,
+          "start_ayah": 1,
+          "end_ayah": 5
+        }
+      ],
+      "pages": {
+        "start": 603,
+        "end": 603
+      },
+      "page_ranges": [
+        {
+          "page": 603,
+          "start_ayah": 1,
+          "end_ayah": 5
+        }
+      ]
+    },
+    {
+      "surah": 112,
+      "code_3": "112",
+      "name_ar": "الإخلاص",
+      "name_id": "Al-Ikhlas",
+      "name_id_translation": "Ikhlas",
+      "name_en": "Sincerity",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 4,
+      "rukus": 1,
+      "juz": {
+        "start": 30,
+        "end": 30
+      },
+      "juz_segments": [
+        {
+          "juz": 30,
+          "start_ayah": 1,
+          "end_ayah": 4
+        }
+      ],
+      "pages": {
+        "start": 604,
+        "end": 604
+      },
+      "page_ranges": [
+        {
+          "page": 604,
+          "start_ayah": 1,
+          "end_ayah": 4
+        }
+      ]
+    },
+    {
+      "surah": 113,
+      "code_3": "113",
+      "name_ar": "الفلق",
+      "name_id": "Al-Falaq",
+      "name_id_translation": "Subuh",
+      "name_en": "The Dawn",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 5,
+      "rukus": 1,
+      "juz": {
+        "start": 30,
+        "end": 30
+      },
+      "juz_segments": [
+        {
+          "juz": 30,
+          "start_ayah": 1,
+          "end_ayah": 5
+        }
+      ],
+      "pages": {
+        "start": 604,
+        "end": 604
+      },
+      "page_ranges": [
+        {
+          "page": 604,
+          "start_ayah": 1,
+          "end_ayah": 5
+        }
+      ]
+    },
+    {
+      "surah": 114,
+      "code_3": "114",
+      "name_ar": "الناس",
+      "name_id": "An-Nas",
+      "name_id_translation": "Manusia",
+      "name_en": "Mankind",
+      "place": "Mecca",
+      "type": "Makkiyah",
+      "ayah_count": 6,
+      "rukus": 1,
+      "juz": {
+        "start": 30,
+        "end": 30
+      },
+      "juz_segments": [
+        {
+          "juz": 30,
+          "start_ayah": 1,
+          "end_ayah": 6
+        }
+      ],
+      "pages": {
+        "start": 604,
+        "end": 604
+      },
+      "page_ranges": [
+        {
+          "page": 604,
+          "start_ayah": 1,
+          "end_ayah": 6
+        }
+      ]
+    }
+  ]
+}

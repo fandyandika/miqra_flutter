@@ -98,12 +98,8 @@ flutter:
     - assets/.env
     - assets/data/
     - assets/data/quran/
-    - assets/data/quran/cpfair/
-    - assets/data/quran/indopak/
-    - assets/data/translation/
     - assets/data/tajwid/
     - assets/fonts/
-    - assets/data/quran/tajweedcpfair/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

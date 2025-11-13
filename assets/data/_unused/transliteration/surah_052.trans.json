@@ -1,0 +1,207 @@
+{
+  "number": 52,
+  "name": "At-Tur",
+  "ayat_count": 49,
+  "ayat": [
+    {
+      "number": 1,
+      "transliteration": "waṭ-ṭụr"
+    },
+    {
+      "number": 2,
+      "transliteration": "wa kitābim masṭụr"
+    },
+    {
+      "number": 3,
+      "transliteration": "fī raqqim mansyụr"
+    },
+    {
+      "number": 4,
+      "transliteration": "wal-baitil-ma'mụr"
+    },
+    {
+      "number": 5,
+      "transliteration": "was-saqfil-marfụ'"
+    },
+    {
+      "number": 6,
+      "transliteration": "wal-baḥril-masjụr"
+    },
+    {
+      "number": 7,
+      "transliteration": "inna 'ażāba rabbika lawāqi'"
+    },
+    {
+      "number": 8,
+      "transliteration": "mā lahụ min dāfi'"
+    },
+    {
+      "number": 9,
+      "transliteration": "yauma tamụrus-samā`u maurā"
+    },
+    {
+      "number": 10,
+      "transliteration": "wa tasīrul-jibālu sairā"
+    },
+    {
+      "number": 11,
+      "transliteration": "fa wailuy yauma`iżil lil-mukażżibīn"
+    },
+    {
+      "number": 12,
+      "transliteration": "allażīna hum fī khauḍiy yal'abụn"
+    },
+    {
+      "number": 13,
+      "transliteration": "yauma yuda''ụna ilā nāri jahannama da''ā"
+    },
+    {
+      "number": 14,
+      "transliteration": "hāżihin-nārullatī kuntum bihā tukażżibụn"
+    },
+    {
+      "number": 15,
+      "transliteration": "a fa siḥrun hāżā am antum lā tubṣirụn"
+    },
+    {
+      "number": 16,
+      "transliteration": "iṣlauhā faṣbirū au lā taṣbirụ, sawā`un 'alaikum, innamā tujzauna mā kuntum ta'malụn"
+    },
+    {
+      "number": 17,
+      "transliteration": "innal-muttaqīna fī jannātiw wa na'īm"
+    },
+    {
+      "number": 18,
+      "transliteration": "fākihīna bimā ātāhum rabbuhum, wa waqāhum rabbuhum 'ażābal-jaḥīm"
+    },
+    {
+      "number": 19,
+      "transliteration": "kulụ wasyrabụ hanī`am bimā kuntum ta'malụn"
+    },
+    {
+      "number": 20,
+      "transliteration": "muttaki`īna 'alā sururim maṣfụfah, wa zawwajnāhum biḥụrin 'īn"
+    },
+    {
+      "number": 21,
+      "transliteration": "wallażīna āmanụ wattaba'at-hum żurriyyatuhum bi`īmānin alḥaqnā bihim żurriyyatahum wa mā alatnāhum min 'amalihim min syaī`, kullumri`im bimā kasaba rahīn"
+    },
+    {
+      "number": 22,
+      "transliteration": "wa amdadnāhum bifākihatiw wa laḥmim mimmā yasytahụn"
+    },
+    {
+      "number": 23,
+      "transliteration": "yatanāza'ụna fīhā ka`sal lā lagwun fīhā wa lā ta`ṡīm"
+    },
+    {
+      "number": 24,
+      "transliteration": "wa yaṭụfu 'alaihim gilmānul lahum ka`annahum lu`lu`um maknụn"
+    },
+    {
+      "number": 25,
+      "transliteration": "wa aqbala ba'ḍuhum 'alā ba'ḍiy yatasā`alụn"
+    },
+    {
+      "number": 26,
+      "transliteration": "qālū innā kunnā qablu fī ahlinā musyfiqīn"
+    },
+    {
+      "number": 27,
+      "transliteration": "fa mannallāhu 'alainā wa waqānā 'ażābas-samụm"
+    },
+    {
+      "number": 28,
+      "transliteration": "innā kunnā ming qablu nad'ụh, innahụ huwal-barrur-raḥīm"
+    },
+    {
+      "number": 29,
+      "transliteration": "fa żakkir fa mā anta bini'mati rabbika bikāhiniw wa lā majnụn"
+    },
+    {
+      "number": 30,
+      "transliteration": "am yaqụlụna syā'irun natarabbaṣu bihī raibal-manụn"
+    },
+    {
+      "number": 31,
+      "transliteration": "qul tarabbaṣụ fa innī ma'akum minal-mutarabbiṣīn"
+    },
+    {
+      "number": 32,
+      "transliteration": "am ta`muruhum aḥlāmuhum bihāżā am hum qaumun ṭāgụn"
+    },
+    {
+      "number": 33,
+      "transliteration": "am yaqụlụna taqawwalah, bal lā yu`minụn"
+    },
+    {
+      "number": 34,
+      "transliteration": "falya`tụ biḥadīṡim miṡlihī ing kānụ ṣādiqīn"
+    },
+    {
+      "number": 35,
+      "transliteration": "am khuliqụ min gairi syai`in am humul-khāliqụn"
+    },
+    {
+      "number": 36,
+      "transliteration": "am khalaqus-samāwāti wal-arḍ, bal lā yụqinụn"
+    },
+    {
+      "number": 37,
+      "transliteration": "am 'indahum khazā`inu rabbika am humul-muṣaiṭirụn"
+    },
+    {
+      "number": 38,
+      "transliteration": "am lahum sullamuy yastami'ụna fīh, falya`ti mustami'uhum bisulṭānim mubīn"
+    },
+    {
+      "number": 39,
+      "transliteration": "am lahul-banātu wa lakumul-banụn"
+    },
+    {
+      "number": 40,
+      "transliteration": "am tas`aluhum ajran fa hum mim magramim muṡqalụn"
+    },
+    {
+      "number": 41,
+      "transliteration": "am 'indahumul-gaibu fa hum yaktubụn"
+    },
+    {
+      "number": 42,
+      "transliteration": "am yurīdụna kaidā, fallażīna kafarụ humul-makīdụn"
+    },
+    {
+      "number": 43,
+      "transliteration": "am lahum ilāhun gairullāh, sub-ḥānallāhi 'ammā yusyrikụn"
+    },
+    {
+      "number": 44,
+      "transliteration": "wa iy yarau kisfam minas-samā`i sāqiṭay yaqụlụ saḥābum markụm"
+    },
+    {
+      "number": 45,
+      "transliteration": "fażar-hum ḥattā yulāqụ yaumahumullażī fīhi yuṣ'aqụn"
+    },
+    {
+      "number": 46,
+      "transliteration": "yauma lā yugnī 'an-hum kaiduhum syai`aw wa lā hum yunṣarụn"
+    },
+    {
+      "number": 47,
+      "transliteration": "wa inna lillażīna ẓalamụ 'ażāban dụna żālika wa lākinna akṡarahum lā ya'lamụn"
+    },
+    {
+      "number": 48,
+      "transliteration": "waṣbir liḥukmi rabbika fa innaka bi`a'yuninā wa sabbiḥ biḥamdi rabbika ḥīna taqụm"
+    },
+    {
+      "number": 49,
+      "transliteration": "wa minal-laili fa sabbiḥ-hu wa idbāran-nujụm"
+    }
+  ],
+  "source": {
+    "dataset": "quran-indonesia-sql",
+    "version": "1.0"
+  }
+}

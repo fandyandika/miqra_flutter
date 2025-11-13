@@ -1,0 +1,31 @@
+{
+  "number": 113,
+  "name": "Al-Falaq",
+  "ayat_count": 5,
+  "ayat": [
+    {
+      "number": 1,
+      "transliteration": "qul a'ụżu birabbil-falaq"
+    },
+    {
+      "number": 2,
+      "transliteration": "min syarri mā khalaq"
+    },
+    {
+      "number": 3,
+      "transliteration": "wa min syarri gāsiqin iżā waqab"
+    },
+    {
+      "number": 4,
+      "transliteration": "wa min syarrin-naffāṡāti fil-'uqad"
+    },
+    {
+      "number": 5,
+      "transliteration": "wa min syarri ḥāsidin iżā ḥasad"
+    }
+  ],
+  "source": {
+    "dataset": "quran-indonesia-sql",
+    "version": "1.0"
+  }
+}

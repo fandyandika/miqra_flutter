@@ -1,0 +1,111 @@
+{
+  "number": 84,
+  "name": "Al-Inshiqaq",
+  "ayat_count": 25,
+  "ayat": [
+    {
+      "number": 1,
+      "transliteration": "iżas-samā`unsyaqqat"
+    },
+    {
+      "number": 2,
+      "transliteration": "wa ażinat lirabbihā wa ḥuqqat"
+    },
+    {
+      "number": 3,
+      "transliteration": "wa iżal-arḍu muddat"
+    },
+    {
+      "number": 4,
+      "transliteration": "wa alqat mā fīhā wa takhallat"
+    },
+    {
+      "number": 5,
+      "transliteration": "wa ażinat lirabbihā wa ḥuqqat"
+    },
+    {
+      "number": 6,
+      "transliteration": "yā ayyuhal-insānu innaka kādiḥun ilā rabbika kad-ḥan fa mulāqīh"
+    },
+    {
+      "number": 7,
+      "transliteration": "fa ammā man ụtiya kitābahụ biyamīnih"
+    },
+    {
+      "number": 8,
+      "transliteration": "fa saufa yuḥāsabu ḥisābay yasīrā"
+    },
+    {
+      "number": 9,
+      "transliteration": "wa yangqalibu ilā ahlihī masrụrā"
+    },
+    {
+      "number": 10,
+      "transliteration": "wa ammā man ụtiya kitābahụ warā`a ẓahrih"
+    },
+    {
+      "number": 11,
+      "transliteration": "fa saufa yad'ụ ṡubụrā"
+    },
+    {
+      "number": 12,
+      "transliteration": "wa yaṣlā sa'īrā"
+    },
+    {
+      "number": 13,
+      "transliteration": "innahụ kāna fī ahlihī masrụrā"
+    },
+    {
+      "number": 14,
+      "transliteration": "innahụ ẓanna al lay yaḥụr"
+    },
+    {
+      "number": 15,
+      "transliteration": "balā inna rabbahụ kāna bihī baṣīrā"
+    },
+    {
+      "number": 16,
+      "transliteration": "fa lā uqsimu bisy-syafaq"
+    },
+    {
+      "number": 17,
+      "transliteration": "wal-laili wa mā wasaq"
+    },
+    {
+      "number": 18,
+      "transliteration": "wal-qamari iżattasaq"
+    },
+    {
+      "number": 19,
+      "transliteration": "latarkabunna ṭabaqan 'an ṭabaq"
+    },
+    {
+      "number": 20,
+      "transliteration": "fa mā lahum lā yu`minụn"
+    },
+    {
+      "number": 21,
+      "transliteration": "wa iżā quri`a 'alaihimul-qur`ānu lā yasjudụn"
+    },
+    {
+      "number": 22,
+      "transliteration": "balillażīna kafarụ yukażżibụn"
+    },
+    {
+      "number": 23,
+      "transliteration": "wallāhu a'lamu bimā yụ'ụn"
+    },
+    {
+      "number": 24,
+      "transliteration": "fa basysyir-hum bi'ażābin alīm"
+    },
+    {
+      "number": 25,
+      "transliteration": "illallażīna āmanụ wa 'amiluṣ-ṣāliḥāti lahum ajrun gairu mamnụn"
+    }
+  ],
+  "source": {
+    "dataset": "quran-indonesia-sql",
+    "version": "1.0"
+  }
+}
