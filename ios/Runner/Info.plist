@@ -45,7 +45,7 @@
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
-	<!-- Deep Links for Supabase Auth -->
+	<!-- Deep Links for Google OAuth -->
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
@@ -53,7 +53,7 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>miqra</string>
+				<string>com.miqra.app</string>
 			</array>
 		</dict>
 	</array>

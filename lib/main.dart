@@ -22,8 +22,6 @@ Future<void> main() async {
   final supabaseUrl = Env.supabaseUrl;
   final supabaseAnonKey = Env.supabaseAnonKey;
   
-  // Initialize Supabase BEFORE running app (as per Supabase official docs)
-  // Reference: https://supabase.com/docs/guides/getting-started/tutorials/with-flutter
   if (supabaseUrl.isEmpty || supabaseAnonKey.isEmpty) {
     throw Exception(
       'Supabase credentials missing.\n'
@@ -32,40 +30,43 @@ Future<void> main() async {
     );
   }
 
-  // Initialize Supabase (as per official docs)
-  await Supabase.initialize(
-    url: supabaseUrl,
-    anonKey: supabaseAnonKey,
-    authOptions: const FlutterAuthClientOptions(
-      authFlowType: AuthFlowType.pkce,
-    ),
-  );
-
-  // Run app AFTER Supabase is ready
-  runApp(const ProviderScope(child: MiqraApp()));
-  
-  // Initialize other services asynchronously without blocking
-  unawaited(_initializeServicesAsync());
-}
-
-Future<void> _initializeServicesAsync() async {
-  // Initialize Sentry only if DSN is provided
+  // Initialize Sentry with Supabase init inside appRunner
   final sentryDsn = Env.sentryDsn;
   if (sentryDsn.isNotEmpty) {
-    try {
-      await SentryFlutter.init((o) {
-        o.dsn = sentryDsn;
-        o.tracesSampleRate = 0.2;
-        o.profilesSampleRate = 0.2;
-      }).timeout(const Duration(seconds: 5), onTimeout: () {
-        // Timeout - continue without Sentry
-      });
-    } catch (e) {
-      // Sentry init failed, continue without it
-    }
+    await SentryFlutter.init(
+      (options) {
+        options.dsn = sentryDsn;
+        options.tracesSampleRate = 0.2;
+        options.profilesSampleRate = 0.2;
+      },
+      appRunner: () async {
+        // Initialize Supabase inside Sentry appRunner
+        await Supabase.initialize(
+          url: supabaseUrl,
+          anonKey: supabaseAnonKey,
+          authOptions: const FlutterAuthClientOptions(
+            authFlowType: AuthFlowType.pkce,
+          ),
+        );
+        
+        // Run app AFTER Supabase is ready
+        runApp(const ProviderScope(child: MiqraApp()));
+      },
+    );
+  } else {
+    // No Sentry - initialize Supabase directly
+    await Supabase.initialize(
+      url: supabaseUrl,
+      anonKey: supabaseAnonKey,
+      authOptions: const FlutterAuthClientOptions(
+        authFlowType: AuthFlowType.pkce,
+      ),
+    );
+    
+    // Run app AFTER Supabase is ready
+    runApp(const ProviderScope(child: MiqraApp()));
   }
 }
-
 
 class MiqraApp extends ConsumerWidget {
   const MiqraApp({super.key});

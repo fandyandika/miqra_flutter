@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 import '../providers/quran_providers.dart';
 import '../data/models/surah_model.dart';
 import '../data/models/tajwid_model_v2.dart';
 import '../data/tajwid/tajwid_rules.dart';
+import '../../auth/providers/auth_providers.dart';
 
 class ReaderScreen extends ConsumerWidget {
   const ReaderScreen({super.key});
@@ -30,7 +32,27 @@ class ReaderScreen extends ConsumerWidget {
               onPressed: () => ref.read(translationVisibleProvider.notifier).state = !showTranslation,
               icon: const Icon(Icons.translate),
               tooltip: 'Toggle translation',
-            )
+            ),
+            // Sign Out button (sementara - nanti akan dipindah ke profile)
+            IconButton(
+              onPressed: () async {
+                try {
+                  final auth = ref.read(authRepositoryProvider);
+                  await auth.signOut();
+                  if (context.mounted) {
+                    context.go('/login');
+                  }
+                } catch (e) {
+                  if (context.mounted) {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      SnackBar(content: Text('Sign out gagal: $e')),
+                    );
+                  }
+                }
+              },
+              icon: const Icon(Icons.logout),
+              tooltip: 'Sign Out',
+            ),
           ],
         ),
         body: asyncSurah.when(

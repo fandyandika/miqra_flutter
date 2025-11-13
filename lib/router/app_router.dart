@@ -1,47 +1,42 @@
+import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../features/quran/presentation/reader_screen.dart';
 import '../features/auth/presentation/login_screen.dart';
 import '../features/auth/presentation/register_screen.dart';
 import '../features/auth/presentation/forgot_password_screen.dart';
-import '../features/auth/presentation/verify_email_screen.dart';
+import '../features/auth/providers/auth_providers.dart';
+import 'go_router_refresh_stream.dart';
 
 final appRouterProvider = Provider<GoRouter>((ref) {
+  final authStream = ref.read(authRepositoryProvider).onAuthState();
   return GoRouter(
-    initialLocation: '/login',
+    initialLocation: '/',
+    refreshListenable: GoRouterRefreshStream(authStream),
+    routes: [
+      GoRoute(path: '/', builder: (_, __) => const ReaderScreen()),
+      GoRoute(path: '/login', builder: (_, __) => const LoginScreen()),
+      GoRoute(path: '/register', builder: (_, __) => const RegisterScreen()),
+      GoRoute(path: '/forgot', builder: (_, __) => const ForgotPasswordScreen()),
+      // Contoh protected route (aktifkan nanti):
+      // GoRoute(
+      //   path: '/write-example',
+      //   builder: (_, __) => const SomeWriteScreen(),
+      //   redirect: (ctx, state) {
+      //     final hasSession = ref.read(authUserProvider) != null;
+      //     return hasSession ? null : '/login';
+      //   },
+      // ),
+    ],
     redirect: (context, state) {
-      // Auth guard will be implemented here later
-      // Deep links from Supabase will be handled automatically by Supabase SDK
+      final user = ref.read(authUserProvider);
+      final loggingIn = state.matchedLocation == '/login' || 
+                       state.matchedLocation == '/register' || 
+                       state.matchedLocation == '/forgot';
+      if (user == null && loggingIn) return null; // stay in auth pages
+      if (user == null && state.matchedLocation.startsWith('/write')) return '/login';
+      if (user != null && loggingIn) return '/'; // already logged-in
       return null;
     },
-    routes: [
-      GoRoute(
-        path: '/',
-        builder: (_, __) => const ReaderScreen(),
-      ),
-      GoRoute(
-        path: '/login',
-        builder: (_, __) => const LoginScreen(),
-      ),
-      GoRoute(
-        path: '/register',
-        builder: (_, __) => const RegisterScreen(),
-      ),
-      GoRoute(
-        path: '/forgot-password',
-        builder: (_, __) => const ForgotPasswordScreen(),
-      ),
-      GoRoute(
-        path: '/verify-email',
-        builder: (context, state) {
-          // Get email from query parameter or extra
-          final email = state.uri.queryParameters['email'] ?? 
-                       (state.extra as Map<String, dynamic>?)?['email'] as String? ?? 
-                       '';
-          return VerifyEmailScreen(email: email);
-        },
-      ),
-    ],
   );
 });
-
