@@ -3,26 +3,30 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import '../providers/quran_providers.dart';
+import '../providers/surah_providers.dart';
 import '../data/models/surah_model.dart';
+import '../data/models/surah_meta_model.dart';
 import '../data/models/tajwid_model_v2.dart';
 import '../data/tajwid/tajwid_rules.dart';
 import '../../auth/providers/auth_providers.dart';
 import '../utils/quran_font_helper.dart';
 
 class ReaderScreen extends ConsumerWidget {
-  const ReaderScreen({super.key});
+  const ReaderScreen({super.key, this.surahNumber = 1});
+  
+  final int surahNumber;
   
   // Konstanta untuk posisi header surah (mudah diubah)
   static const double _headerCircleWidth = 40.0;
   static const double _headerAyahFontSize = 10.0;
-  static const double _headerAyahLabelFontSize = 10.0;
-  static const double _headerSymbolFontSize = 8.5;
+  static const double _headerAyahLabelFontSize = 7.0;
+  static const double _headerSymbolFontSize = 7.5;
   
   // Base offset untuk portrait mode (mudah diubah)
   static const double _headerAyahOffsetXPortrait = -54.0; // Geser nomor ayat horizontal
   static const double _headerAyahOffsetY = 0.0; // Geser nomor ayat vertical
   static const double _headerSymbolOffsetXPortrait = 54.0; // Geser symbol horizontal
-  static const double _headerSymbolOffsetY = -3.0; // Geser symbol vertical
+  static const double _headerSymbolOffsetY = -1.0; // Geser symbol vertical
   
   // Base screen width untuk scaling (typical phone width)
   static const double _baseScreenWidth = 360.0;
@@ -99,8 +103,8 @@ class ReaderScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    // Load surah 2 (Al-Baqarah) for testing tajwid
-    final asyncSurah = ref.watch(surahProvider(2));
+    final asyncSurah = ref.watch(surahProvider(surahNumber));
+    final surahMeta = ref.watch(surahMetaProvider(surahNumber));
     final showTranslation = ref.watch(translationVisibleProvider);
     final tajwidEnabled = ref.watch(tajwidEnabledProvider);
     return Directionality(
@@ -142,7 +146,7 @@ class ReaderScreen extends ConsumerWidget {
           ],
         ),
         body: asyncSurah.when(
-          data: (surah) => _content(context, ref, surah, showTranslation, tajwidEnabled),
+          data: (surah) => _content(context, ref, surah, surahMeta, showTranslation, tajwidEnabled),
           loading: () => const Center(child: CircularProgressIndicator()),
           error: (e, stackTrace) => Directionality(
             textDirection: TextDirection.ltr,
@@ -167,8 +171,8 @@ class ReaderScreen extends ConsumerWidget {
     );
   }
 
-  Widget _content(BuildContext context, WidgetRef ref, SurahData surah, bool showTrans, bool tajwidEnabled) {
-    final asyncTajwid = ref.watch(tajwidSurahProvider(surah.surahNumber));
+  Widget _content(BuildContext context, WidgetRef ref, SurahData surah, SurahMeta? surahMeta, bool showTrans, bool tajwidEnabled) {
+    final asyncTajwid = ref.watch(tajwidSurahProvider(surahNumber));
     
     return asyncTajwid.when(
       data: (tajwidSurah) => ListView.builder(
@@ -228,7 +232,7 @@ class ReaderScreen extends ConsumerWidget {
                                     crossAxisAlignment: CrossAxisAlignment.center,
                                     children: [
                                       Text(
-                                        '${surah.verses.length}',
+                                        '${surahMeta?.ayahCount ?? surah.verses.length}',
                                         style: TextStyle(
                                           fontFamily: 'Inter',
                                           fontSize: _getResponsiveFontSize(context, _headerAyahFontSize),
@@ -257,12 +261,12 @@ class ReaderScreen extends ConsumerWidget {
                               // Tengah: Nama surah + arti
                               Expanded(
                                 child: Transform.translate(
-                                  offset: const Offset(0, 0),
+                                  offset: const Offset(0, -2),
                                   child: Column(
                                     mainAxisSize: MainAxisSize.min,
                                     children: [
                                       Text(
-                                        surah.nameLatin,
+                                        surahMeta?.nameLatin ?? surah.nameLatin,
                                         style: const TextStyle(
                                           fontFamily: 'Inter',
                                           fontSize: 14,
@@ -270,11 +274,11 @@ class ReaderScreen extends ConsumerWidget {
                                           height: 1.5,
                                         ),
                                       ),
-                                      if (QuranFontHelper.getSurahTranslation(surah.surahNumber).isNotEmpty)
+                                      if (surahMeta?.nameTranslationId != null && surahMeta!.nameTranslationId.isNotEmpty)
                                         Transform.translate(
                                           offset: const Offset(0, -2),
                                           child: Text(
-                                            '(${QuranFontHelper.getSurahTranslation(surah.surahNumber)})',
+                                            '(${surahMeta.nameTranslationId})',
                                             style: const TextStyle(
                                               fontFamily: 'Inter',
                                               fontSize: 12,
@@ -295,7 +299,7 @@ class ReaderScreen extends ConsumerWidget {
                                   offset: Offset(_getSymbolOffsetX(context), _headerSymbolOffsetY),
                                   child: Center(
                                     child: Text(
-                                      QuranFontHelper.getSurahType(surah.surahNumber) == 'makkah'
+                                      (surahMeta?.type == 'Makkiyah' || surahMeta == null)
                                           ? QuranFontHelper.getMakkahSymbol()
                                           : QuranFontHelper.getMadinahSymbol(),
                                       style: TextStyle(

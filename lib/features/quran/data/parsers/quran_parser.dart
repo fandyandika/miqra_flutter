@@ -12,7 +12,7 @@ Future<SurahData> loadSurahFromAsset(int surahNumber) async {
     // Load merged surah metadata (names/types/counts) - optional, fallback to hardcoded names
     String? metaRaw;
     try {
-      final metaPath = 'assets/data/metadata/surah_meta_merge.json';
+      final metaPath = 'assets/data/derived/surah_meta_merge.json';
       metaRaw = await rootBundle.loadString(metaPath);
     } catch (_) {
       // Metadata file not found or error loading - will use fallback names

@@ -15,6 +15,7 @@ Future<void> main() async {
   // Load ligatures for Quran font (non-blocking if fails)
   try {
     await QuranFontHelper.loadLigatures();
+    await QuranFontHelper.loadSurahNameLigatures();
   } catch (_) {}
   
   // Load .env file from assets (as per Flutter best practices)

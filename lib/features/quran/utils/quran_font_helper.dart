@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 
 class QuranFontHelper {
   static Map<String, String>? _ligatures;
+  static Map<String, String>? _surahNameLigatures;
   
   static Future<void> loadLigatures() async {
     if (_ligatures != null) return;
@@ -12,6 +13,17 @@ class QuranFontHelper {
     } catch (_) {
       // Fail-safe: don't block startup if ligatures fail to load
       _ligatures = const {};
+    }
+  }
+  
+  static Future<void> loadSurahNameLigatures() async {
+    if (_surahNameLigatures != null) return;
+    try {
+      final jsonString = await rootBundle.loadString('assets/data/fontjuz/ligatures-surah-name.json');
+      _surahNameLigatures = Map<String, String>.from(json.decode(jsonString));
+    } catch (_) {
+      // Fail-safe: don't block startup if ligatures fail to load
+      _surahNameLigatures = const {};
     }
   }
   
@@ -196,6 +208,15 @@ class QuranFontHelper {
       114: 'Manusia',
     };
     return translations[surahNumber] ?? '';
+  }
+  
+  /// Get surah name ligature for a specific surah number
+  static String getSurahNameLigature(int surahNumber) {
+    if (_surahNameLigatures == null) {
+      return ''; // Return empty if not loaded yet
+    }
+    final key = 'surah-$surahNumber';
+    return _surahNameLigatures![key] ?? '';
   }
 }
 
