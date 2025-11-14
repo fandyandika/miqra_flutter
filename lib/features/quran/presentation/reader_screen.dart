@@ -62,6 +62,41 @@ class ReaderScreen extends ConsumerWidget {
     return baseSize;
   }
 
+  // Helper method untuk konversi angka ke Arabic numerals
+  static String _toArabicNumerals(int number) {
+    const arabicNumerals = ['٠', '١', '٢', '٣', '٤', '٥', '٦', '٧', '٨', '٩'];
+    return number.toString().split('').map((digit) => arabicNumerals[int.parse(digit)]).join();
+  }
+
+  // Helper method untuk menambahkan nomor ayat di akhir TextSpan
+  TextSpan _addAyahNumberToTextSpan(TextSpan textSpan, int ayahNumber) {
+    final arabicAyahNumber = _toArabicNumerals(ayahNumber);
+    final open = QuranFontHelper.getAyahOpen1();
+    final close = QuranFontHelper.getAyahClose1();
+    final ayahNumberSpan = TextSpan(
+      text: '$open$arabicAyahNumber$close', // angka Arab dibungkus glyph ayah_open1/ayah_close1
+      style: const TextStyle(
+        fontFamily: 'QuranCommon',
+        fontSize: 20, // ukuran lebih kecil agar nyaman dilihat
+        height: 1.5,
+        letterSpacing: 0,
+        color: Colors.black87,
+      ),
+    );
+
+    final children = <InlineSpan>[];
+    if (textSpan.text != null) {
+      children.add(TextSpan(text: textSpan.text, style: textSpan.style));
+    }
+    if (textSpan.children != null) {
+      children.addAll(textSpan.children!);
+    }
+    // Jarak spasi sebelum marker - seimbang: tidak mepet dengan symbol, tidak terlalu jauh dari huruf
+    children.add(const TextSpan(text: '   ')); // 3 spasi untuk jarak yang seimbang
+    children.add(ayahNumberSpan);
+    return TextSpan(children: children);
+  }
+
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     // Load surah 2 (Al-Baqarah) for testing tajwid
@@ -328,10 +363,16 @@ class ReaderScreen extends ConsumerWidget {
                           padding: const EdgeInsets.only(right: 0),
                           child: RichText(
                             textAlign: TextAlign.right,
-                            text: _buildTajwidTextSpanSafe(v.textAr, spans, tajwidEnabled),
+                            softWrap: true,
+                            overflow: TextOverflow.visible,
+                            text: _addAyahNumberToTextSpan(
+                              _buildTajwidTextSpanSafe(v.textAr, spans, tajwidEnabled),
+                              v.ayah,
+                            ),
                           ),
                         ),
                       ),
+                      SizedBox(width: 6),
                       // Ayah number badge dengan logo (sejajar dengan text latin)
                       Container(
                         margin: const EdgeInsets.only(left: 0, top: 0),
@@ -371,7 +412,7 @@ class ReaderScreen extends ConsumerWidget {
                             fontFamily: 'Inter',
                             fontSize: 14,
                             height: 1.3,
-                            color: Colors.grey[600],
+                            color: const Color(0xFF4E1F0A),
                             fontStyle: FontStyle.italic,
                           ),
                         ),
@@ -389,6 +430,7 @@ class ReaderScreen extends ConsumerWidget {
                               fontFamily: 'Inter',
                               fontSize: 14,
                               height: 1.4,
+                              color: Color(0xFF2E3A46),
                             ),
                         ),
                       ),
@@ -422,10 +464,16 @@ class ReaderScreen extends ConsumerWidget {
                         padding: const EdgeInsets.only(right: 0),
                         child: RichText(
                           textAlign: TextAlign.right,
-                          text: _buildTajwidTextSpanSafe(v.textAr, <TajwidSpan>[], tajwidEnabled),
+                          softWrap: true,
+                          overflow: TextOverflow.visible,
+                          text: _addAyahNumberToTextSpan(
+                            _buildTajwidTextSpanSafe(v.textAr, <TajwidSpan>[], tajwidEnabled),
+                            v.ayah,
+                          ),
                         ),
                       ),
                     ),
+                    SizedBox(width: 6),
                     // Ayah number badge dengan logo (sejajar dengan text latin)
                     Container(
                       margin: const EdgeInsets.only(left: 0, top: 4),
@@ -482,10 +530,16 @@ class ReaderScreen extends ConsumerWidget {
                         padding: const EdgeInsets.only(right: 0),
                         child: RichText(
                           textAlign: TextAlign.right,
-                          text: _buildTajwidTextSpanSafe(v.textAr, <TajwidSpan>[], tajwidEnabled),
+                          softWrap: true,
+                          overflow: TextOverflow.visible,
+                          text: _addAyahNumberToTextSpan(
+                            _buildTajwidTextSpanSafe(v.textAr, <TajwidSpan>[], tajwidEnabled),
+                            v.ayah,
+                          ),
                         ),
                       ),
                     ),
+                    SizedBox(width: 6),
                     // Ayah number badge dengan logo (sejajar dengan text latin)
                     Container(
                       margin: const EdgeInsets.only(left: 0, top: 4),

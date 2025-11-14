@@ -38,6 +38,23 @@ class QuranFontHelper {
     // Fallback ke string "header" yang akan dirender oleh font
     return 'header';
   }
+
+  /// Ayah number wrappers (font: quran-common.ttf)
+  static String getAyahOpen1() {
+    if (_ligatures != null) {
+      if (_ligatures!.containsKey('ayah_open1')) return _ligatures!['ayah_open1']!;
+      if (_ligatures!.containsKey('s1open')) return _ligatures!['s1open']!;
+    }
+    return 's1open'; // fallback: directly use ligature trigger
+  }
+
+  static String getAyahClose1() {
+    if (_ligatures != null) {
+      if (_ligatures!.containsKey('ayah_close1')) return _ligatures!['ayah_close1']!;
+      if (_ligatures!.containsKey('s1close')) return _ligatures!['s1close']!;
+    }
+    return 's1close'; // fallback: directly use ligature trigger
+  }
   
   static String getMakkahSymbol() {
     if (_ligatures != null && _ligatures!.containsKey('makkah')) {
