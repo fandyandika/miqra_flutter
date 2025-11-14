@@ -7,9 +7,60 @@ import '../data/models/surah_model.dart';
 import '../data/models/tajwid_model_v2.dart';
 import '../data/tajwid/tajwid_rules.dart';
 import '../../auth/providers/auth_providers.dart';
+import '../utils/quran_font_helper.dart';
 
 class ReaderScreen extends ConsumerWidget {
   const ReaderScreen({super.key});
+  
+  // Konstanta untuk posisi header surah (mudah diubah)
+  static const double _headerCircleWidth = 40.0;
+  static const double _headerAyahFontSize = 10.0;
+  static const double _headerAyahLabelFontSize = 10.0;
+  static const double _headerSymbolFontSize = 8.5;
+  
+  // Base offset untuk portrait mode (mudah diubah)
+  static const double _headerAyahOffsetXPortrait = -54.0; // Geser nomor ayat horizontal
+  static const double _headerAyahOffsetY = 0.0; // Geser nomor ayat vertical
+  static const double _headerSymbolOffsetXPortrait = 54.0; // Geser symbol horizontal
+  static const double _headerSymbolOffsetY = -3.0; // Geser symbol vertical
+  
+  // Base screen width untuk scaling (typical phone width)
+  static const double _baseScreenWidth = 360.0;
+  
+  // Helper method untuk responsive offset X (ayah)
+  static double _getAyahOffsetX(BuildContext context) {
+    final orientation = MediaQuery.of(context).orientation;
+    final screenWidth = MediaQuery.of(context).size.width;
+    
+    if (orientation == Orientation.landscape) {
+      // Scale berdasarkan lebar layar (adjust ratio sesuai kebutuhan)
+      return _headerAyahOffsetXPortrait * (screenWidth / _baseScreenWidth);
+    }
+    return _headerAyahOffsetXPortrait;
+  }
+  
+  // Helper method untuk responsive offset X (symbol)
+  static double _getSymbolOffsetX(BuildContext context) {
+    final orientation = MediaQuery.of(context).orientation;
+    final screenWidth = MediaQuery.of(context).size.width;
+    
+    if (orientation == Orientation.landscape) {
+      // Scale berdasarkan lebar layar (mirror dari ayah offset)
+      return _headerSymbolOffsetXPortrait * (screenWidth / _baseScreenWidth);
+    }
+    return _headerSymbolOffsetXPortrait;
+  }
+  
+  // Helper method untuk responsive font size
+  static double _getResponsiveFontSize(BuildContext context, double baseSize) {
+    final orientation = MediaQuery.of(context).orientation;
+    
+    if (orientation == Orientation.landscape) {
+      // Font size bisa sedikit lebih kecil di landscape
+      return baseSize * 0.95;
+    }
+    return baseSize;
+  }
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -21,7 +72,6 @@ class ReaderScreen extends ConsumerWidget {
       textDirection: TextDirection.rtl,
       child: Scaffold(
         appBar: AppBar(
-          title: const Text('البقرة', textDirection: TextDirection.rtl),
           centerTitle: true,
           actions: [
             IconButton(
@@ -88,19 +138,183 @@ class ReaderScreen extends ConsumerWidget {
     return asyncTajwid.when(
       data: (tajwidSurah) => ListView.builder(
         padding: EdgeInsets.zero,
-        itemCount: surah.verses.length,
+        itemCount: surah.verses.length + (QuranFontHelper.shouldShowBismillah(surah.surahNumber) ? 1 : 0),
         cacheExtent: 500,
         itemBuilder: (context, i) {
-          final v = surah.verses[i];
+          // Tampilkan bismillah sebagai item pertama
+          if (QuranFontHelper.shouldShowBismillah(surah.surahNumber) && i == 0) {
+            return Column(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                SizedBox(
+                  width: double.infinity,
+                  child: Container(
+                    padding: const EdgeInsets.only(top: 4, bottom: 0),
+                    color: Colors.white,
+                    child: Stack(
+                      alignment: Alignment.center,
+                      children: [
+                        // Background header pattern
+                        FittedBox(
+                          fit: BoxFit.fitWidth,
+                          child: Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 16),
+                            child: Text(
+                              QuranFontHelper.getSurahHeader(),
+                              textDirection: TextDirection.rtl,
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                fontFamily: 'QuranCommon',
+                                fontFamilyFallback: const ['IndopakNastaleeq'],
+                                fontSize: 100,
+                                height: 1.5,
+                                color: const Color(0xFFE56115),
+                              ),
+                            ),
+                          ),
+                        ),
+                        // Content overlay
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 16),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              // Kiri: Jumlah ayat (di tengah lingkaran kiri)
+                              SizedBox(
+                                width: _headerCircleWidth,
+                                child: Transform.translate(
+                                  offset: Offset(_getAyahOffsetX(context), _headerAyahOffsetY),
+                                  child: Center(
+                                  child: Column(
+                                    mainAxisSize: MainAxisSize.min,
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    children: [
+                                      Text(
+                                        '${surah.verses.length}',
+                                        style: TextStyle(
+                                          fontFamily: 'Inter',
+                                          fontSize: _getResponsiveFontSize(context, _headerAyahFontSize),
+                                          fontWeight: FontWeight.bold,
+                                          color: Colors.black,
+                                          height: 1.0,
+                                        ),
+                                      ),
+                                      Transform.translate(
+                                        offset: const Offset(0, 0),
+                                        child: Text(
+                                          'Ayat',
+                                          style: TextStyle(
+                                            fontFamily: 'Inter',
+                                            fontSize: _getResponsiveFontSize(context, _headerAyahLabelFontSize),
+                                            color: Colors.black,
+                                            height: 1.0,
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                  ),
+                                ),
+                              ),
+                              // Tengah: Nama surah + arti
+                              Expanded(
+                                child: Transform.translate(
+                                  offset: const Offset(0, 0),
+                                  child: Column(
+                                    mainAxisSize: MainAxisSize.min,
+                                    children: [
+                                      Text(
+                                        surah.nameLatin,
+                                        style: const TextStyle(
+                                          fontFamily: 'Inter',
+                                          fontSize: 14,
+                                          color: Colors.black,
+                                          height: 1.5,
+                                        ),
+                                      ),
+                                      if (QuranFontHelper.getSurahTranslation(surah.surahNumber).isNotEmpty)
+                                        Transform.translate(
+                                          offset: const Offset(0, -2),
+                                          child: Text(
+                                            '(${QuranFontHelper.getSurahTranslation(surah.surahNumber)})',
+                                            style: const TextStyle(
+                                              fontFamily: 'Inter',
+                                              fontSize: 12,
+                                              color: Colors.black,
+                                              height: 1.0,
+                                              fontStyle: FontStyle.italic,
+                                            ),
+                                          ),
+                                        ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                              // Kanan: Simbol Makkah/Madinah (di tengah lingkaran kanan)
+                              SizedBox(
+                                width: _headerCircleWidth,
+                                child: Transform.translate(
+                                  offset: Offset(_getSymbolOffsetX(context), _headerSymbolOffsetY),
+                                  child: Center(
+                                    child: Text(
+                                      QuranFontHelper.getSurahType(surah.surahNumber) == 'makkah'
+                                          ? QuranFontHelper.getMakkahSymbol()
+                                          : QuranFontHelper.getMadinahSymbol(),
+                                      style: TextStyle(
+                                        fontFamily: 'QuranCommon',
+                                        fontFamilyFallback: const ['IndopakNastaleeq'],
+                                        fontSize: _getResponsiveFontSize(context, _headerSymbolFontSize),
+                                        color: Colors.black,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                Transform.translate(
+                  offset: const Offset(0, -8),
+                  child: Container(
+                    color: Colors.white,
+                    padding: const EdgeInsets.only(top: 0, bottom: 4),
+                    child: Text(
+                      QuranFontHelper.getBismillah(),
+                      textDirection: TextDirection.rtl,
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontFamily: 'QuranCommon',
+                        fontFamilyFallback: const ['IndopakNastaleeq'],
+                        fontSize: 34,
+                        height: 1.5,
+                        color: Colors.black87,
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            );
+          }
+          
+          // Adjust index untuk verses jika ada bismillah
+          final verseIndex = QuranFontHelper.shouldShowBismillah(surah.surahNumber) ? i - 1 : i;
+          final v = surah.verses[verseIndex];
           final spans = tajwidEnabled 
               ? tajwidSurah.getSpansForAyah(v.ayah)
               : <TajwidSpan>[];
           // Selang-seling warna background
-          final isEven = i % 2 == 0;
+          final isEven = verseIndex % 2 == 0;
           return RepaintBoundary(
             child: Container(
               color: isEven ? Colors.transparent : Colors.grey[50],
-              padding: const EdgeInsets.fromLTRB(8, 8, 8, 8),
+              padding: const EdgeInsets.fromLTRB(8, 12, 8, 12),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
@@ -149,13 +363,13 @@ class ReaderScreen extends ConsumerWidget {
                     Directionality(
                       textDirection: TextDirection.ltr,
                       child: Padding(
-                        padding: const EdgeInsets.only(top: 4, left: 24, right: 8),
+                        padding: const EdgeInsets.only(top: 8, left: 24, right: 8),
                         child: Text(
                           v.textTranslit!,
                           textAlign: TextAlign.left,
                           style: TextStyle(
                             fontFamily: 'Inter',
-                            fontSize: 12,
+                            fontSize: 14,
                             height: 1.3,
                             color: Colors.grey[600],
                             fontStyle: FontStyle.italic,
@@ -171,11 +385,11 @@ class ReaderScreen extends ConsumerWidget {
                         child: Text(
                           v.textId,
                           textAlign: TextAlign.left,
-                          style: const TextStyle(
-                            fontFamily: 'Inter',
-                            fontSize: 14,
-                            height: 1.4,
-                          ),
+                            style: const TextStyle(
+                              fontFamily: 'Inter',
+                              fontSize: 14,
+                              height: 1.4,
+                            ),
                         ),
                       ),
                     ),
@@ -194,7 +408,7 @@ class ReaderScreen extends ConsumerWidget {
           final isEven = i % 2 == 0;
           return Container(
             color: isEven ? Colors.transparent : Colors.grey[50],
-            padding: const EdgeInsets.fromLTRB(16, 8, 8, 8),
+            padding: const EdgeInsets.fromLTRB(8, 12, 8, 12),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
@@ -254,7 +468,7 @@ class ReaderScreen extends ConsumerWidget {
           final isEven = i % 2 == 0;
           return Container(
             color: isEven ? Colors.transparent : Colors.grey[50],
-            padding: const EdgeInsets.fromLTRB(16, 8, 8, 8),
+            padding: const EdgeInsets.fromLTRB(8, 12, 8, 12),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
@@ -310,7 +524,7 @@ class ReaderScreen extends ConsumerWidget {
   TextSpan _buildTajwidTextSpan(String textAr, List<TajwidSpan> spans, bool enabled) {
     const baseStyle = TextStyle(
       fontFamily: 'IndopakNastaleeq',
-      fontSize: 28,
+      fontSize: 30,
       height: 1.5,
       letterSpacing: 0,
       color: Colors.black87,
@@ -381,7 +595,7 @@ class ReaderScreen extends ConsumerWidget {
         text: textAr,
         style: const TextStyle(
           fontFamily: 'IndopakNastaleeq',
-          fontSize: 28,
+          fontSize: 34,
           height: 1.5,
           letterSpacing: 0,
           color: Colors.black87,

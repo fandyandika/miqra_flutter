@@ -103,6 +103,7 @@ flutter:
     - assets/data/quran/
     - assets/data/tajwid/
     - assets/data/image/
+    - assets/data/metadata/
     - assets/fonts/
 
   # An image asset can refer to one or more resolution-specific "variants", see
@@ -119,3 +120,6 @@ flutter:
     - family: Inter
       fonts:
         - asset: assets/fonts/Inter-VariableFont_opsz,wght.ttf
+    - family: QuranCommon
+      fonts:
+        - asset: assets/data/fontjuz/quran-common.ttf

@@ -7,9 +7,15 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 import 'core/env/env.dart';
 import 'core/theme/app_theme.dart';
 import 'router/app_router.dart';
+import 'features/quran/utils/quran_font_helper.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  
+  // Load ligatures for Quran font (non-blocking if fails)
+  try {
+    await QuranFontHelper.loadLigatures();
+  } catch (_) {}
   
   // Load .env file from assets (as per Flutter best practices)
   try {

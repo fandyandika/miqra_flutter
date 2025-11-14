@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import '../models/surah_model.dart';
@@ -7,8 +8,18 @@ Future<SurahData> loadSurahFromAsset(int surahNumber) async {
     // Load from SQL format (single file with all surahs, includes Arabic + Translation)
     final sqlPath = 'assets/data/quran/quran-indonesia.sql';
     final sqlRaw = await rootBundle.loadString(sqlPath);
+
+    // Load merged surah metadata (names/types/counts) - optional, fallback to hardcoded names
+    String? metaRaw;
+    try {
+      final metaPath = 'assets/data/metadata/surah_meta_merge.json';
+      metaRaw = await rootBundle.loadString(metaPath);
+    } catch (_) {
+      // Metadata file not found or error loading - will use fallback names
+      metaRaw = null;
+    }
     
-    return compute(_parseSurahFromSQL, {'sql': sqlRaw, 'number': surahNumber});
+    return compute(_parseSurahFromSQL, {'sql': sqlRaw, 'number': surahNumber, 'meta': metaRaw});
   } catch (e, stackTrace) {
     throw Exception('Failed to load surah $surahNumber: $e\n$stackTrace');
   }
@@ -17,6 +28,7 @@ Future<SurahData> loadSurahFromAsset(int surahNumber) async {
 SurahData _parseSurahFromSQL(Map<String, dynamic> data) {
   final sqlContent = data['sql'] as String;
   final surahNumber = data['number'] as int;
+  final metaRaw = data['meta'] as String?;
   
   // Parse SQL INSERT statements line by line
   // Format: INSERT INTO quran_id (id, suraId, verseID, ayahText, indoText, readText ) VALUES (0,1,1,"...", "...", "...");
@@ -69,13 +81,36 @@ SurahData _parseSurahFromSQL(Map<String, dynamic> data) {
   if (verses.isEmpty) {
     throw Exception('Surah $surahNumber not found in SQL data');
   }
+
+  // Prefer name_id from merged metadata for Latin name
+  final latinNameFromMeta = _lookupLatinNameFromMeta(metaRaw, surahNumber);
   
   return SurahData(
     surahNumber: surahNumber,
     nameArabic: _getArabicName(surahNumber),
-    nameLatin: _getArabicName(surahNumber),
+    nameLatin: latinNameFromMeta ?? _getLatinName(surahNumber),
     verses: verses,
   );
+}
+
+String? _lookupLatinNameFromMeta(String? metaRaw, int surahNumber) {
+  if (metaRaw == null || metaRaw.isEmpty) return null;
+  try {
+    final decoded = json.decode(metaRaw) as Map<String, dynamic>;
+    final surahs = decoded['surahs'] as List<dynamic>?;
+    if (surahs == null) return null;
+    for (final item in surahs) {
+      final m = item as Map<String, dynamic>;
+      if ((m['surah'] as num?)?.toInt() == surahNumber) {
+        final nameId = m['name_id'] as String?;
+        if (nameId != null && nameId.trim().isNotEmpty) {
+          return nameId.trim();
+        }
+        break;
+      }
+    }
+  } catch (_) {}
+  return null;
 }
 
 List<String> _parseSQLValues(String valuesContent) {
@@ -139,8 +174,17 @@ String _getArabicName(int surahNumber) {
     1: 'الفاتحة',
     2: 'البقرة',
     3: 'آل عمران',
-    // Add more as needed
   };
   return names[surahNumber] ?? 'الفاتحة';
+}
+
+String _getLatinName(int surahNumber) {
+  // Minimal Latin names (fallback only)
+  const names = {
+    1: 'Al-Fatihah',
+    2: 'Al-Baqarah',
+    3: "Ali 'Imran",
+  };
+  return names[surahNumber] ?? 'Al-Fatihah';
 }
 
