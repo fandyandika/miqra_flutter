@@ -4,13 +4,31 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:sentry_flutter/sentry_flutter.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
+import 'package:hive_flutter/hive_flutter.dart';
 import 'core/env/env.dart';
 import 'core/theme/app_theme.dart';
 import 'router/app_router.dart';
 import 'features/quran/utils/quran_font_helper.dart';
+import 'features/quran/data/last_read_hive.dart';
+import 'features/quran/data/last_read_service.dart';
+import 'features/bookmark/data/bookmark_hive.dart';
+import 'features/bookmark/data/bookmark_service.dart';
+import 'features/settings/data/reader_settings_hive.dart';
+import 'features/settings/data/reader_settings_service.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  
+  // Initialize Hive
+  await Hive.initFlutter();
+  Hive.registerAdapter(LastReadPositionAdapter());
+  Hive.registerAdapter(BookmarkFolderAdapter());
+  Hive.registerAdapter(BookmarkItemAdapter());
+  Hive.registerAdapter(SurahProgressAdapter());
+  Hive.registerAdapter(ReaderSettingsAdapter());
+  await LastReadService.init();
+  await BookmarkService.init();
+  await ReaderSettingsService.init();
   
   // Load ligatures for Quran font (non-blocking if fails)
   try {

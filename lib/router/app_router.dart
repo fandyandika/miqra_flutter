@@ -1,7 +1,11 @@
+import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../features/quran/presentation/reader_screen.dart';
+import '../features/quran/presentation/focus_reader_screen.dart';
 import '../features/quran/presentation/screens/surah_list_screen.dart';
+import '../features/quran/presentation/surah_browser_screen.dart';
+import '../features/readhub/presentation/reading_hub_screen.dart';
 import '../features/auth/presentation/login_screen.dart';
 import '../features/auth/presentation/register_screen.dart';
 import '../features/auth/presentation/forgot_password_screen.dart';
@@ -31,17 +35,48 @@ final appRouterProvider = Provider<GoRouter>((ref) {
         path: '/read',
         builder: (ctx, state) => MiqraShellScaffold(
           currentLocation: state.matchedLocation,
-          child: const SurahListScreen(),
+          child: const ReadingHubScreen(),
         ),
       ),
       GoRoute(
-        path: '/read/:surahNumber',
+        path: '/read/surah',
+        builder: (ctx, state) => MiqraShellScaffold(
+          currentLocation: state.matchedLocation,
+          child: const SurahBrowserScreen(),
+        ),
+      ),
+      GoRoute(
+        path: '/read/surah/:surahNumber',
         builder: (ctx, state) {
           final surahNumberStr = state.pathParameters['surahNumber'] ?? '1';
           final surahNumber = int.tryParse(surahNumberStr) ?? 1;
+          final ayahStr = state.uri.queryParameters['ayat'];
+          final ayah = ayahStr != null ? int.tryParse(ayahStr) : null;
+          final juzStr = state.uri.queryParameters['juz'];
+          final juz = juzStr != null ? int.tryParse(juzStr) : null;
           return MiqraShellScaffold(
             currentLocation: state.matchedLocation,
-            child: ReaderScreen(surahNumber: surahNumber),
+            child: ReaderScreen(
+              surahNumber: surahNumber,
+              initialAyah: ayah,
+              juzNumber: juz,
+            ),
+          );
+        },
+      ),
+      GoRoute(
+        path: '/read/focus',
+        builder: (ctx, state) {
+          final surahStr = state.uri.queryParameters['surah'];
+          final ayahStr = state.uri.queryParameters['ayah'];
+          final surah = surahStr != null ? int.tryParse(surahStr) : null;
+          final ayah = ayahStr != null ? int.tryParse(ayahStr) : null;
+          return MiqraShellScaffold(
+            currentLocation: state.matchedLocation,
+            child: FocusReaderScreen(
+              surahNumber: surah,
+              initialAyah: ayah,
+            ),
           );
         },
       ),

@@ -41,6 +41,11 @@ class QuranFontHelper {
     // Tidak tampilkan di surah 1 (Al-Fatihah) dan surah 9 (At-Taubah)
     return surahNumber != 1 && surahNumber != 9;
   }
+
+  static bool shouldShowSurahHeader(int surahNumber) {
+    // Surah header tampil untuk semua surah, termasuk Al-Fatihah dan At-Taubah
+    return true;
+  }
   
   static String getSurahHeader() {
     // Menggunakan ligature "header" untuk surah header

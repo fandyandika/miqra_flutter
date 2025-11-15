@@ -186,7 +186,7 @@ class _SurahTile extends StatelessWidget {
         ],
       ),
       onTap: () {
-        context.go('/read/${item.number}');
+        context.go('/read/surah/${item.number}');
       },
     );
   }

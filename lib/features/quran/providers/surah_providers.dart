@@ -47,4 +47,45 @@ final surahMetaProvider = Provider.family<SurahMeta?, int>((ref, surahNumber) {
   );
 });
 
+class JuzSurahSegment {
+  final int surahNumber;
+  final int startAyah;
+  final int endAyah;
+  final SurahMeta surahMeta;
+
+  const JuzSurahSegment({
+    required this.surahNumber,
+    required this.startAyah,
+    required this.endAyah,
+    required this.surahMeta,
+  });
+}
+
+final juzSegmentsProvider = FutureProvider.family<List<JuzSurahSegment>, int>((ref, juzNumber) async {
+  final surahs = await ref.read(surahMetaListProvider.future);
+  final segments = <JuzSurahSegment>[];
+
+  for (final surah in surahs) {
+    for (final segment in surah.juzSegments) {
+      if (segment.juz == juzNumber) {
+        segments.add(JuzSurahSegment(
+          surahNumber: surah.number,
+          startAyah: segment.startAyah,
+          endAyah: segment.endAyah,
+          surahMeta: surah,
+        ));
+      }
+    }
+  }
+
+  // Sort by surah number, then by start ayah
+  segments.sort((a, b) {
+    if (a.surahNumber != b.surahNumber) {
+      return a.surahNumber.compareTo(b.surahNumber);
+    }
+    return a.startAyah.compareTo(b.startAyah);
+  });
+
+  return segments;
+});
 
