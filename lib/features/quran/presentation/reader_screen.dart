@@ -15,6 +15,7 @@ import '../utils/quran_font_helper.dart';
 import '../../bookmark/presentation/bookmark_save_sheet.dart';
 import '../../settings/presentation/reader_settings_sheet.dart';
 import '../../reading/presentation/manual_reading_log_sheet.dart';
+import '../../../core/constants/colors.dart';
 
 class ReaderScreen extends ConsumerStatefulWidget {
   const ReaderScreen({
@@ -225,11 +226,12 @@ class _ReaderScreenState extends ConsumerState<ReaderScreen> {
                       child: ManualReadingLogSheet(
                         surahNumber: widget.surahNumber,
                         maxAyat: surah.verses.length,
+                        readingMode: 'surah',
                       ),
                     ),
                   );
                 },
-              ),
+            ),
             // Sign Out button (sementara - nanti akan dipindah ke profile)
             IconButton(
               onPressed: () async {
@@ -1290,7 +1292,8 @@ class _JuzReaderContent extends ConsumerWidget {
                           fontFamily: 'Inter',
                           fontSize: 14,
                           height: 1.4,
-                          color: Color(0xFF2E3A46),
+                          fontWeight: FontWeight.w400,
+                          color: miqraText,
                         ),
                       ),
                     ),

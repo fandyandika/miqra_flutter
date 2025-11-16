@@ -91,5 +91,31 @@ class ReadingSessionService {
       return TodayReadingStats.empty();
     }
   }
+
+  /// Deletes the most recent reading session for the current user.
+  /// 
+  /// Only deletes the last session to prevent accidental mass deletion.
+  Future<void> deleteLastSession() async {
+    final userId = client.auth.currentUser?.id;
+    if (userId == null) {
+      throw Exception('User not authenticated');
+    }
+
+    final response = await client
+        .from('reading_sessions')
+        .select()
+        .eq('user_id', userId)
+        .order('created_at', ascending: false)
+        .limit(1)
+        .maybeSingle();
+
+    if (response != null) {
+      final sessionId = response['id'] as String;
+      await client
+          .from('reading_sessions')
+          .delete()
+          .eq('id', sessionId);
+    }
+  }
 }
 

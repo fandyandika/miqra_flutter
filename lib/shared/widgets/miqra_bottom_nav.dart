@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import '../../../core/constants/colors.dart';
 
 class MiqraBottomNav extends StatelessWidget {
@@ -23,27 +24,109 @@ class MiqraBottomNav extends StatelessWidget {
       selectedItemColor: miqraPrimary,
       unselectedItemColor: Colors.grey,
       items: [
-        const BottomNavigationBarItem(
-          icon: Icon(Icons.home),
+        BottomNavigationBarItem(
+          icon: SvgPicture.asset(
+            'assets/icons/home.svg',
+            width: 24,
+            height: 24,
+            colorFilter: ColorFilter.mode(
+              Colors.grey,
+              BlendMode.srcIn,
+            ),
+          ),
+          activeIcon: SvgPicture.asset(
+            'assets/icons/home.svg',
+            width: 24,
+            height: 24,
+            colorFilter: ColorFilter.mode(
+              miqraPrimary,
+              BlendMode.srcIn,
+            ),
+          ),
           label: 'Home',
         ),
-        const BottomNavigationBarItem(
-          icon: Icon(Icons.trending_up),
+        BottomNavigationBarItem(
+          icon: SvgPicture.asset(
+            'assets/icons/progress.svg',
+            width: 24,
+            height: 24,
+            colorFilter: ColorFilter.mode(
+              Colors.grey,
+              BlendMode.srcIn,
+            ),
+          ),
+          activeIcon: SvgPicture.asset(
+            'assets/icons/progress.svg',
+            width: 24,
+            height: 24,
+            colorFilter: ColorFilter.mode(
+              miqraPrimary,
+              BlendMode.srcIn,
+            ),
+          ),
           label: 'Progress',
         ),
         BottomNavigationBarItem(
-          icon: Icon(
-            Icons.menu_book,
-            size: 28,
+          icon: SvgPicture.asset(
+            'assets/icons/book.svg',
+            width: 24,
+            height: 24,
+            colorFilter: ColorFilter.mode(
+              Colors.grey,
+              BlendMode.srcIn,
+            ),
+          ),
+          activeIcon: SvgPicture.asset(
+            'assets/icons/book.svg',
+            width: 24,
+            height: 24,
+            colorFilter: ColorFilter.mode(
+              miqraPrimary,
+              BlendMode.srcIn,
+            ),
           ),
           label: 'Read',
         ),
-        const BottomNavigationBarItem(
-          icon: Icon(Icons.people),
+        BottomNavigationBarItem(
+          icon: SvgPicture.asset(
+            'assets/icons/group.svg',
+            width: 24,
+            height: 24,
+            colorFilter: ColorFilter.mode(
+              Colors.grey,
+              BlendMode.srcIn,
+            ),
+          ),
+          activeIcon: SvgPicture.asset(
+            'assets/icons/group.svg',
+            width: 24,
+            height: 24,
+            colorFilter: ColorFilter.mode(
+              miqraPrimary,
+              BlendMode.srcIn,
+            ),
+          ),
           label: 'Group',
         ),
-        const BottomNavigationBarItem(
-          icon: Icon(Icons.person),
+        BottomNavigationBarItem(
+          icon: SvgPicture.asset(
+            'assets/icons/profile.svg',
+            width: 24,
+            height: 24,
+            colorFilter: ColorFilter.mode(
+              Colors.grey,
+              BlendMode.srcIn,
+            ),
+          ),
+          activeIcon: SvgPicture.asset(
+            'assets/icons/profile.svg',
+            width: 24,
+            height: 24,
+            colorFilter: ColorFilter.mode(
+              miqraPrimary,
+              BlendMode.srcIn,
+            ),
+          ),
           label: 'Profile',
         ),
       ],

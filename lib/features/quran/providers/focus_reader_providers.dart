@@ -10,6 +10,9 @@ class FocusReaderState {
   final int totalAyatInSurah;
   final int todayReadCount;
   final int dailyTargetAyat;
+  final int? lastLoggedSurah;
+  final int? lastLoggedAyah;
+  final bool isLogging;
 
   const FocusReaderState({
     required this.surahNumber,
@@ -17,6 +20,9 @@ class FocusReaderState {
     required this.totalAyatInSurah,
     required this.todayReadCount,
     required this.dailyTargetAyat,
+    this.lastLoggedSurah,
+    this.lastLoggedAyah,
+    this.isLogging = false,
   });
 
   FocusReaderState copyWith({
@@ -25,6 +31,9 @@ class FocusReaderState {
     int? totalAyatInSurah,
     int? todayReadCount,
     int? dailyTargetAyat,
+    int? lastLoggedSurah,
+    int? lastLoggedAyah,
+    bool? isLogging,
   }) {
     return FocusReaderState(
       surahNumber: surahNumber ?? this.surahNumber,
@@ -32,6 +41,9 @@ class FocusReaderState {
       totalAyatInSurah: totalAyatInSurah ?? this.totalAyatInSurah,
       todayReadCount: todayReadCount ?? this.todayReadCount,
       dailyTargetAyat: dailyTargetAyat ?? this.dailyTargetAyat,
+      lastLoggedSurah: lastLoggedSurah ?? this.lastLoggedSurah,
+      lastLoggedAyah: lastLoggedAyah ?? this.lastLoggedAyah,
+      isLogging: isLogging ?? this.isLogging,
     );
   }
 }
@@ -43,6 +55,9 @@ class FocusReaderController extends StateNotifier<FocusReaderState> {
     totalAyatInSurah: 7,
     todayReadCount: 0,
     dailyTargetAyat: 5,
+    lastLoggedSurah: null,
+    lastLoggedAyah: null,
+    isLogging: false,
   ));
 
   void setPosition(int surah, int ayah, int totalAyat) {
@@ -70,6 +85,24 @@ class FocusReaderController extends StateNotifier<FocusReaderState> {
       todayReadCount: todayReadCount,
       dailyTargetAyat: dailyTarget,
     );
+  }
+
+  void setLastLogged(int surah, int ayah) {
+    state = state.copyWith(
+      lastLoggedSurah: surah,
+      lastLoggedAyah: ayah,
+    );
+  }
+
+  void resetLastLogged() {
+    state = state.copyWith(
+      lastLoggedSurah: null,
+      lastLoggedAyah: null,
+    );
+  }
+
+  void setLogging(bool isLogging) {
+    state = state.copyWith(isLogging: isLogging);
   }
 }
 

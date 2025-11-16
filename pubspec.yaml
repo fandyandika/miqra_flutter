@@ -57,9 +57,6 @@ dependencies:
   # Monitoring
   sentry_flutter: ^7.19.0
 
-  # Fonts
-  google_fonts: ^6.1.0
-
   # SVG support
   flutter_svg: ^2.0.10+1
 
@@ -71,6 +68,9 @@ dependencies:
 
   # UUID generation
   uuid: ^4.5.1
+
+  # Celebration effects
+  confetti: ^0.7.0
 
 dev_dependencies:
   flutter_test:
@@ -109,6 +109,7 @@ flutter:
     - assets/data/metadata/
     - assets/data/derived/
     - assets/fonts/
+    - assets/icons/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
@@ -118,12 +119,18 @@ flutter:
 
   # Fonts
   fonts:
-    - family: IndopakNastaleeq
+    - family: Lexend
       fonts:
-        - asset: assets/fonts/IndopakNastaleeq.ttf
+        - asset: assets/fonts/Lexend-VariableFont_wght.ttf
+    - family: PlusJakartaSans
+      fonts:
+        - asset: assets/fonts/PlusJakartaSans-VariableFont_wght.ttf
     - family: Inter
       fonts:
         - asset: assets/fonts/Inter-VariableFont_opsz,wght.ttf
+    - family: IndopakNastaleeq
+      fonts:
+        - asset: assets/fonts/IndopakNastaleeq.ttf
     - family: QuranCommon
       fonts:
         - asset: assets/data/fontjuz/quran-common.ttf

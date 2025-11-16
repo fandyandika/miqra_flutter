@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import '../../../../core/constants/colors.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import '../../providers/surah_providers.dart';
 import '../../data/models/surah_meta_model.dart';
 
@@ -118,21 +118,42 @@ class _JuzTile extends StatelessWidget {
         : '${juzItem.startSurahName} (${juzItem.startAyah}) → ${juzItem.endSurahName} (${juzItem.endAyah})';
 
     return ListTile(
-      leading: CircleAvatar(
-        backgroundColor: miqraPrimary.withOpacity(0.1),
-        child: Text(
-          '${juzItem.juz}',
-          style: const TextStyle(
-            fontWeight: FontWeight.bold,
-            color: miqraPrimary,
-          ),
+      leading: Container(
+        width: 32,
+        height: 32,
+        child: Stack(
+          alignment: Alignment.center,
+          children: [
+            SvgPicture.asset(
+              'assets/data/image/logoayat.svg',
+              width: 32,
+              height: 32,
+              fit: BoxFit.contain,
+            ),
+            Text(
+              '${juzItem.juz}',
+              style: const TextStyle(
+                fontFamily: 'Inter',
+                fontSize: 12,
+                fontWeight: FontWeight.w700,
+              ),
+            ),
+          ],
         ),
       ),
       title: Text(
         'Juz ${juzItem.juz}',
-        style: const TextStyle(fontWeight: FontWeight.bold),
+        style: const TextStyle(
+          fontWeight: FontWeight.bold,
+          height: 1.4,
+        ),
       ),
-      subtitle: Text(rangeText),
+      subtitle: Text(
+        rangeText,
+        style: const TextStyle(
+          height: 1.4,
+        ),
+      ),
       onTap: () {
         context.go('/read/surah/${juzItem.startSurah}?ayat=${juzItem.startAyah}&juz=${juzItem.juz}');
       },

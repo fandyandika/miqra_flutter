@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import '../../../../core/constants/colors.dart';
 import '../../providers/surah_providers.dart';
 import '../../data/models/surah_meta_model.dart';
@@ -88,9 +89,9 @@ class _SurahListView extends ConsumerWidget {
     final filtered = ref.watch(filteredSurahListProvider);
 
     return ListView.separated(
-      padding: const EdgeInsets.symmetric(horizontal: 16),
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
       itemCount: filtered.length,
-      separatorBuilder: (context, index) => const Divider(height: 1),
+      separatorBuilder: (context, index) => const SizedBox(height: 6),
       itemBuilder: (context, index) {
         return _SurahTile(item: filtered[index]);
       },
@@ -105,89 +106,137 @@ class _SurahTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final isMakkiyah = item.type == 'Makkiyah';
-    final badgeColor = isMakkiyah ? miqraPrimary : miqraCoral;
     final surahNameLigature = QuranFontHelper.getSurahNameLigature(item.number);
 
-    return ListTile(
-      leading: CircleAvatar(
-        backgroundColor: miqraPrimary.withOpacity(0.1),
-        child: Text(
-          '${item.number}',
-          style: const TextStyle(
-            fontWeight: FontWeight.bold,
-            color: miqraPrimary,
+    return Container(
+      margin: const EdgeInsets.symmetric(vertical: 1),
+      decoration: BoxDecoration(
+        color: miqraSand,
+        borderRadius: BorderRadius.circular(8),
+        border: Border.all(
+          color: Colors.grey[350]!,
+          width: 1,
+        ),
+      ),
+      child: Material(
+        color: Colors.transparent,
+        child: InkWell(
+          borderRadius: BorderRadius.circular(8),
+          onTap: () {
+            context.go('/read/surah/${item.number}');
+          },
+          child: Padding(
+            padding: const EdgeInsets.only(left: 8, top: 8, bottom: 8, right: 7),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                // Logo ayat di tengah vertikal
+                Container(
+                  width: 36,
+                  height: 36,
+                  margin: const EdgeInsets.only(right: 6),
+                  child: Stack(
+                    alignment: Alignment.center,
+                    children: [
+                      SvgPicture.asset(
+                        'assets/data/image/logoayat.svg',
+                        width: 36,
+                        height: 36,
+                        fit: BoxFit.contain,
+                      ),
+                      Text(
+                        '${item.number}',
+                        style: const TextStyle(
+                          fontFamily: 'Inter',
+                          fontSize: 12,
+                          fontWeight: FontWeight.w700,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Text(
+                        item.nameLatin,
+                        style: const TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 16,
+                          height: 1.3,
+                        ),
+                        overflow: TextOverflow.ellipsis,
+                        maxLines: 1,
+                      ),
+                      if (item.nameTranslationId.isNotEmpty) ...[
+                        const SizedBox(height: 3),
+                        Text(
+                          '${item.nameTranslationId} | ${item.ayahCount} Ayat',
+                          style: TextStyle(
+                            fontSize: 13,
+                            color: Colors.grey[700],
+                            fontWeight: FontWeight.w500,
+                            height: 1.3,
+                          ),
+                          overflow: TextOverflow.ellipsis,
+                          maxLines: 1,
+                        ),
+                      ] else ...[
+                        const SizedBox(height: 3),
+                        Text(
+                          '${item.ayahCount} Ayat',
+                          style: TextStyle(
+                            fontSize: 13,
+                            color: Colors.grey[700],
+                            fontWeight: FontWeight.w500,
+                            height: 1.3,
+                          ),
+                        ),
+                      ],
+                    ],
+                  ),
+                ),
+                Text(
+                  surahNameLigature.isNotEmpty 
+                      ? surahNameLigature 
+                      : 'surah${item.number.toString().padLeft(3, '0')}',
+                  textAlign: TextAlign.end,
+                  style: const TextStyle(
+                    fontFamily: 'SurahName',
+                    fontSize: 36,
+                    height: 1.2,
+                  ),
+                ),
+                // Download button dengan SVG
+                Material(
+                  color: Colors.transparent,
+                  child: InkWell(
+                    borderRadius: BorderRadius.circular(6),
+                    onTap: () {
+                      // TODO: Implement download audio functionality
+                      // Audio path: assets/data/audio/mishari_rashid/
+                    },
+                    child: Padding(
+                      padding: const EdgeInsets.only(left: 7, top: 7, bottom: 7, right: 0),
+                      child: SvgPicture.asset(
+                        'assets/icons/download.svg',
+                        width: 18,
+                        height: 18,
+                        colorFilter: ColorFilter.mode(
+                          miqraPrimary,
+                          BlendMode.srcIn,
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
       ),
-      title: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          Expanded(
-            child: Text(
-              item.nameLatin,
-              style: const TextStyle(fontWeight: FontWeight.bold),
-            ),
-          ),
-          const SizedBox(width: 8),
-          Text(
-            surahNameLigature.isNotEmpty 
-                ? surahNameLigature 
-                : 'surah${item.number.toString().padLeft(3, '0')}',
-            textAlign: TextAlign.end,
-            style: const TextStyle(
-              fontFamily: 'SurahName',
-              fontSize: 36,
-              height: 1.2,
-            ),
-          ),
-        ],
-      ),
-      subtitle: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          const SizedBox(height: 4),
-          Row(
-            children: [
-              Container(
-                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                decoration: BoxDecoration(
-                  color: badgeColor.withOpacity(0.1),
-                  borderRadius: BorderRadius.circular(12),
-                  border: Border.all(color: badgeColor, width: 1),
-                ),
-                child: Text(
-                  item.type,
-                  style: TextStyle(
-                    color: badgeColor,
-                    fontSize: 12,
-                    fontWeight: FontWeight.w600,
-                  ),
-                ),
-              ),
-              const SizedBox(width: 8),
-              Text(
-                '${item.ayahCount} ayat',
-                style: const TextStyle(fontSize: 12),
-              ),
-            ],
-          ),
-          if (item.nameTranslationId.isNotEmpty) ...[
-            const SizedBox(height: 4),
-            Text(
-              item.nameTranslationId,
-              style: const TextStyle(
-                fontSize: 12,
-                color: Colors.grey,
-              ),
-            ),
-          ],
-        ],
-      ),
-      onTap: () {
-        context.go('/read/surah/${item.number}');
-      },
     );
   }
 }
