@@ -56,7 +56,7 @@ class HomeScreen extends StatelessWidget {
     );
   }
 
-  /// Builds streak visualization section with Lottie tree.
+  /// Builds streak visualization section with SVG tree.
   Widget _buildStreakSection() {
     return const Card(
       elevation: 1,
@@ -70,5 +70,3 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
-
-

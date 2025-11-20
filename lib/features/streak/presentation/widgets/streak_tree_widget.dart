@@ -47,6 +47,7 @@ class StreakTreeWidget extends ConsumerWidget {
           width: _kTreeSize,
           height: _kTreeSize,
           fit: BoxFit.contain,
+          placeholderBuilder: (context) => const CircularProgressIndicator(),
         ),
       ),
     );
