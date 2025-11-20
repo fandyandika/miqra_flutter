@@ -72,9 +72,6 @@ dependencies:
   # Celebration effects
   confetti: ^0.7.0
 
-  # Lottie animations
-  lottie: ^3.1.2
-
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -113,7 +110,7 @@ flutter:
     - assets/data/derived/
     - assets/fonts/
     - assets/icons/
-    - assets/animations/
+    - assets/images/streak/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

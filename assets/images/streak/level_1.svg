@@ -1,0 +1,79 @@
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Soil gradient -->
+    <radialGradient id="soilGrad1" cx="50%" cy="40%">
+      <stop offset="0%" style="stop-color:#8B7355;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#77594B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5D4A3A;stop-opacity:1" />
+    </radialGradient>
+
+    <!-- Seed gradient -->
+    <radialGradient id="seedGrad">
+      <stop offset="0%" style="stop-color:#FFB399;stop-opacity:1" />
+      <stop offset="60%" style="stop-color:#FF8A65;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E67352;stop-opacity:1" />
+    </radialGradient>
+
+    <!-- Glow effect for seed -->
+    <radialGradient id="seedGlow">
+      <stop offset="0%" style="stop-color:#FF8A65;stop-opacity:0.6" />
+      <stop offset="50%" style="stop-color:#FF8A65;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#FF8A65;stop-opacity:0" />
+    </radialGradient>
+
+    <filter id="softShadow1">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4"/>
+      <feOffset dx="0" dy="3" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <pattern id="soilTex1" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="1" fill="#6B5444" opacity="0.3"/>
+      <circle cx="12" cy="8" r="1.5" fill="#5D4A3A" opacity="0.2"/>
+    </pattern>
+  </defs>
+
+  <rect width="400" height="400" fill="#FFF8F0"/>
+
+  <!-- Soil -->
+  <g filter="url(#softShadow1)">
+    <ellipse cx="200" cy="320" rx="92" ry="32" fill="url(#soilGrad1)"/>
+    <ellipse cx="200" cy="320" rx="92" ry="32" fill="url(#soilTex1)" opacity="0.5"/>
+    <ellipse cx="200" cy="312" rx="76" ry="8" fill="#9A8169" opacity="0.4"/>
+  </g>
+
+  <!-- Seed with glow -->
+  <g transform="translate(200, 315)">
+    <!-- Outer glow (largest) -->
+    <ellipse cx="0" cy="0" rx="20" ry="14" fill="url(#seedGlow)" opacity="0.5"/>
+
+    <!-- Middle glow -->
+    <ellipse cx="0" cy="0" rx="12" ry="8" fill="url(#seedGlow)" opacity="0.7"/>
+
+    <!-- The seed itself -->
+    <ellipse cx="0" cy="0" rx="7" ry="5" fill="url(#seedGrad)"/>
+
+    <!-- Highlight on seed -->
+    <ellipse cx="-1.5" cy="-1" rx="3" ry="2" fill="#FFD4C0" opacity="0.7"/>
+
+    <!-- Seed detail line -->
+    <path d="M -4,0 Q 0,-2 4,0" stroke="#D67152" stroke-width="0.5" fill="none" opacity="0.6"/>
+  </g>
+
+  <!-- Subtle particles around seed -->
+  <circle cx="190" cy="312" r="1" fill="#FF8A65" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="210" cy="310" r="0.8" fill="#FF8A65" opacity="0.25">
+    <animate attributeName="opacity" values="0.25;0.5;0.25" dur="2.3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="198" cy="308" r="1.2" fill="#FFB399" opacity="0.2">
+    <animate attributeName="opacity" values="0.2;0.45;0.2" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+</svg>

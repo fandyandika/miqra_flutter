@@ -1,0 +1,150 @@
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="soilGrad6" cx="50%" cy="40%">
+      <stop offset="0%" style="stop-color:#8B7355;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#77594B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5D4A3A;stop-opacity:1" />
+    </radialGradient>
+
+    <linearGradient id="trunkGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#00A577;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00C896;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="branchGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00C896;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2FD4A0;stop-opacity:1" />
+    </linearGradient>
+
+    <radialGradient id="leafGrad6">
+      <stop offset="0%" style="stop-color:#4FFFB0;stop-opacity:1" />
+      <stop offset="45%" style="stop-color:#00C896;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00A577;stop-opacity:1" />
+    </radialGradient>
+
+    <radialGradient id="fruitGrad6">
+      <stop offset="0%" style="stop-color:#FFB399;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FF8A65;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E67352;stop-opacity:1" />
+    </radialGradient>
+
+    <filter id="softShadow6">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="5"/>
+      <feOffset dx="0" dy="4"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.25"/></feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="leafShadow6">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+      <feOffset dx="0" dy="2"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.2"/></feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="400" height="400" fill="#FFF8F0"/>
+
+  <!-- Soil -->
+  <g filter="url(#softShadow6)">
+    <ellipse cx="200" cy="320" rx="102" ry="37" fill="url(#soilGrad6)"/>
+    <ellipse cx="200" cy="313" rx="86" ry="8" fill="#9A8169" opacity="0.4"/>
+  </g>
+
+  <!-- Small tree with branching -->
+  <g>
+    <!-- Main trunk (darker, thicker) -->
+    <path d="M 200,315 Q 198,270 200,190"
+          stroke="url(#trunkGrad)"
+          stroke-width="6"
+          fill="none"
+          stroke-linecap="round"/>
+
+    <!-- Left branch -->
+    <path d="M 200,240 Q 180,235 165,228"
+          stroke="url(#branchGrad)"
+          stroke-width="3"
+          fill="none"
+          stroke-linecap="round"/>
+
+    <!-- Right branch -->
+    <path d="M 200,240 Q 220,235 235,228"
+          stroke="url(#branchGrad)"
+          stroke-width="3"
+          fill="none"
+          stroke-linecap="round"/>
+
+    <!-- Canopy leaves cluster (10 leaves) -->
+    <!-- Bottom layer -->
+    <g filter="url(#leafShadow6)">
+      <ellipse cx="155" cy="238" rx="14" ry="18" fill="url(#leafGrad6)" transform="rotate(-25 155 238)"/>
+      <path d="M 155,238 Q 158,228" stroke="#00A577" stroke-width="1" fill="none" opacity="0.4"/>
+      <ellipse cx="158" cy="232" rx="5" ry="4" fill="#80FFD4" opacity="0.3"/>
+    </g>
+    <g filter="url(#leafShadow6)">
+      <ellipse cx="245" cy="238" rx="14" ry="18" fill="url(#leafGrad6)" transform="rotate(25 245 238)"/>
+      <path d="M 245,238 Q 242,228" stroke="#00A577" stroke-width="1" fill="none" opacity="0.4"/>
+      <ellipse cx="242" cy="232" rx="5" ry="4" fill="#80FFD4" opacity="0.3"/>
+    </g>
+
+    <!-- Mid-left leaves -->
+    <g filter="url(#leafShadow6)">
+      <ellipse cx="170" cy="222" rx="13" ry="17" fill="url(#leafGrad6)" transform="rotate(-20 170 222)"/>
+      <path d="M 170,222 Q 172,214" stroke="#00A577" stroke-width="1" fill="none" opacity="0.4"/>
+      <ellipse cx="172" cy="217" rx="4" ry="3" fill="#80FFD4" opacity="0.3"/>
+    </g>
+    <g filter="url(#leafShadow6)">
+      <ellipse cx="230" cy="222" rx="13" ry="17" fill="url(#leafGrad6)" transform="rotate(20 230 222)"/>
+      <path d="M 230,222 Q 228,214" stroke="#00A577" stroke-width="1" fill="none" opacity="0.4"/>
+      <ellipse cx="228" cy="217" rx="4" ry="3" fill="#80FFD4" opacity="0.3"/>
+    </g>
+
+    <!-- Center cluster -->
+    <g filter="url(#leafShadow6)">
+      <ellipse cx="188" cy="208" rx="12" ry="16" fill="url(#leafGrad6)" transform="rotate(-10 188 208)"/>
+      <path d="M 188,208 Q 189,200" stroke="#00A577" stroke-width="0.9" fill="none" opacity="0.4"/>
+    </g>
+    <g filter="url(#leafShadow6)">
+      <ellipse cx="212" cy="208" rx="12" ry="16" fill="url(#leafGrad6)" transform="rotate(10 212 208)"/>
+      <path d="M 212,208 Q 211,200" stroke="#00A577" stroke-width="0.9" fill="none" opacity="0.4"/>
+    </g>
+
+    <!-- Top leaves -->
+    <g filter="url(#leafShadow6)">
+      <ellipse cx="195" cy="192" rx="11" ry="15" fill="url(#leafGrad6)" transform="rotate(-15 195 192)"/>
+      <path d="M 195,192 Q 196,185" stroke="#00A577" stroke-width="0.8" fill="none" opacity="0.4"/>
+      <ellipse cx="196" cy="188" rx="4" ry="3" fill="#80FFD4" opacity="0.35"/>
+    </g>
+    <g filter="url(#leafShadow6)">
+      <ellipse cx="205" cy="192" rx="11" ry="15" fill="url(#leafGrad6)" transform="rotate(15 205 192)"/>
+      <path d="M 205,192 Q 204,185" stroke="#00A577" stroke-width="0.8" fill="none" opacity="0.4"/>
+      <ellipse cx="204" cy="188" rx="4" ry="3" fill="#80FFD4" opacity="0.35"/>
+    </g>
+
+    <!-- Crown leaves -->
+    <g filter="url(#leafShadow6)">
+      <ellipse cx="193" cy="180" rx="10" ry="13" fill="url(#leafGrad6)" transform="rotate(-10 193 180)"/>
+      <ellipse cx="194" cy="176" rx="3" ry="2" fill="#80FFD4" opacity="0.35"/>
+    </g>
+    <g filter="url(#leafShadow6)">
+      <ellipse cx="207" cy="180" rx="10" ry="13" fill="url(#leafGrad6)" transform="rotate(10 207 180)"/>
+      <ellipse cx="206" cy="176" rx="3" ry="2" fill="#80FFD4" opacity="0.35"/>
+    </g>
+
+    <!-- 2 Fruits in canopy -->
+    <g filter="url(#leafShadow6)">
+      <circle cx="178" cy="215" r="6" fill="url(#fruitGrad6)"/>
+      <ellipse cx="176" cy="213" rx="2.5" ry="1.8" fill="#FFD4C0" opacity="0.7"/>
+    </g>
+    <g filter="url(#leafShadow6)">
+      <circle cx="222" cy="215" r="6" fill="url(#fruitGrad6)"/>
+      <ellipse cx="220" cy="213" rx="2.5" ry="1.8" fill="#FFD4C0" opacity="0.7"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,97 @@
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="soilGrad2" cx="50%" cy="40%">
+      <stop offset="0%" style="stop-color:#8B7355;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#77594B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5D4A3A;stop-opacity:1" />
+    </radialGradient>
+
+    <!-- Stem gradient -->
+    <linearGradient id="stemGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2FD4A0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00C896;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Leaf gradient -->
+    <radialGradient id="leafGrad">
+      <stop offset="0%" style="stop-color:#4FFFB0;stop-opacity:1" />
+      <stop offset="40%" style="stop-color:#00C896;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00A577;stop-opacity:1" />
+    </radialGradient>
+
+    <filter id="softShadow2">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4"/>
+      <feOffset dx="0" dy="3"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.25"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="leafShadow">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+      <feOffset dx="0" dy="1"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="400" height="400" fill="#FFF8F0"/>
+
+  <!-- Soil -->
+  <g filter="url(#softShadow2)">
+    <ellipse cx="200" cy="320" rx="94" ry="33" fill="url(#soilGrad2)"/>
+    <ellipse cx="200" cy="313" rx="78" ry="8" fill="#9A8169" opacity="0.4"/>
+  </g>
+
+  <!-- Sprout -->
+  <g>
+    <!-- Stem -->
+    <path d="M 200,315 Q 198,295 200,280"
+          stroke="url(#stemGrad)"
+          stroke-width="3"
+          fill="none"
+          stroke-linecap="round"/>
+
+    <!-- Single leaf with detail -->
+    <g filter="url(#leafShadow)">
+      <!-- Leaf shape -->
+      <path d="M 200,285 Q 185,282 178,275 Q 175,270 178,265 Q 185,260 200,262 Z"
+            fill="url(#leafGrad)"/>
+
+      <!-- Leaf vein (central) -->
+      <path d="M 200,285 Q 192,278 188,270"
+            stroke="#00A577"
+            stroke-width="0.8"
+            fill="none"
+            opacity="0.5"/>
+
+      <!-- Side veins -->
+      <path d="M 192,280 L 186,277"
+            stroke="#00A577"
+            stroke-width="0.5"
+            fill="none"
+            opacity="0.4"/>
+      <path d="M 190,275 L 184,273"
+            stroke="#00A577"
+            stroke-width="0.5"
+            fill="none"
+            opacity="0.4"/>
+
+      <!-- Highlight on leaf -->
+      <ellipse cx="190" cy="272" rx="4" ry="3" fill="#80FFD4" opacity="0.4" transform="rotate(-30 190 272)"/>
+    </g>
+  </g>
+
+  <!-- Small emerging bud at top -->
+  <circle cx="200" cy="280" r="2" fill="#4FFFB0" opacity="0.6"/>
+  <circle cx="200" cy="278" r="1.2" fill="#80FFD4" opacity="0.5"/>
+</svg>

@@ -1,48 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:lottie/lottie.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import '../../providers/streak_providers.dart';
 import '../../../../core/constants/colors.dart';
 
-/// Displays animated tree showing streak progress.
+/// Displays tree visualization showing streak progress.
 ///
 /// Visual representation of reading consistency following Rahmah UX:
 /// - Calm, minimal aesthetic
-/// - No unnecessary motion (static display)
-/// - Clear visual progression from soil to mature tree
-class StreakTreeWidget extends ConsumerStatefulWidget {
+/// - Static display (no unnecessary motion)
+/// - Clear visual progression from soil to mature tree (12 levels)
+class StreakTreeWidget extends ConsumerWidget {
   const StreakTreeWidget({super.key});
 
-  @override
-  ConsumerState<StreakTreeWidget> createState() => _StreakTreeWidgetState();
-}
-
-class _StreakTreeWidgetState extends ConsumerState<StreakTreeWidget>
-    with SingleTickerProviderStateMixin {
-  // Animation constants
-  static const String _kAnimationPath =
-      'assets/animations/soil_to_tree.json';
+  // Display constants
   static const double _kTreeSize = 200.0;
-  static const int _kTotalFrames = 330;
-  static const int _kFramesPerLevel = 30;
   static const int _kMaxLevel = 11;
 
-  late AnimationController _controller;
-
   @override
-  void initState() {
-    super.initState();
-    _controller = AnimationController(vsync: this);
-  }
-
-  @override
-  void dispose() {
-    _controller.dispose();
-    super.dispose();
-  }
-
-  @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     final streakCount = ref.watch(streakCurrentProvider);
     final level = _calculateLevel(streakCount);
 
@@ -56,7 +32,7 @@ class _StreakTreeWidgetState extends ConsumerState<StreakTreeWidget>
     );
   }
 
-  /// Builds the Lottie tree animation.
+  /// Builds the SVG tree visualization.
   Widget _buildTree(int level) {
     return Container(
       width: _kTreeSize,
@@ -65,21 +41,12 @@ class _StreakTreeWidgetState extends ConsumerState<StreakTreeWidget>
         color: miqraSand,
         borderRadius: BorderRadius.circular(16),
       ),
-      child: Lottie.asset(
-        _kAnimationPath,
-        fit: BoxFit.contain,
-        frameRate: FrameRate.composition,
-        repeat: false,
-        controller: _controller,
-        onLoaded: (composition) {
-          _controller.duration = composition.duration;
-          // Seek to specific level frame (static, no animation)
-          // Rahmah UX: calm, no unnecessary motion
-          final progress = _calculateProgress(level);
-          _controller.value = progress;
-        },
-        options: const LottieOptions(
-          enableMergePaths: true,
+      child: Center(
+        child: SvgPicture.asset(
+          'assets/images/streak/level_$level.svg',
+          width: _kTreeSize,
+          height: _kTreeSize,
+          fit: BoxFit.contain,
         ),
       ),
     );
@@ -130,12 +97,6 @@ class _StreakTreeWidgetState extends ConsumerState<StreakTreeWidget>
     if (streakCount <= 45) return 9; // Mature Small Tree
     if (streakCount <= 60) return 10; // Near Final Tree
     return _kMaxLevel; // Final Tree (Mastery)
-  }
-
-  /// Calculates animation progress (0.0-1.0) for given level.
-  double _calculateProgress(int level) {
-    final targetFrame = level * _kFramesPerLevel;
-    return targetFrame / _kTotalFrames;
   }
 
   /// Returns display name for each level.
