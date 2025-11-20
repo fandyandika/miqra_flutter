@@ -147,6 +147,7 @@ class _FocusReaderScreenState extends ConsumerState<FocusReaderScreen> {
               );
 
               if (confirm == true && mounted) {
+                final messenger = ScaffoldMessenger.of(context);
                 try {
                   await ref.read(readingSessionServiceProvider).deleteLastSession();
                   ref.invalidate(todayReadingStatsProvider);
@@ -156,7 +157,7 @@ class _FocusReaderScreenState extends ConsumerState<FocusReaderScreen> {
                   controller.resetLastLogged();
 
                   if (mounted) {
-                    ScaffoldMessenger.of(context).showSnackBar(
+                    messenger.showSnackBar(
                       const SnackBar(
                         content: Text('Log terakhir dibatalkan'),
                         backgroundColor: Colors.green,
@@ -165,7 +166,7 @@ class _FocusReaderScreenState extends ConsumerState<FocusReaderScreen> {
                   }
                 } catch (e) {
                   if (mounted) {
-                    ScaffoldMessenger.of(context).showSnackBar(
+                    messenger.showSnackBar(
                       SnackBar(
                         content: Text('Gagal membatalkan log: $e'),
                         backgroundColor: Colors.red,
@@ -647,8 +648,8 @@ class _GoalTracker extends ConsumerWidget {
           padding: const EdgeInsets.all(16),
           decoration: BoxDecoration(
             color: reachedTarget 
-                ? Colors.green.withOpacity(0.1)
-                : miqraPrimary.withOpacity(0.1),
+                ? Colors.green.withValues(alpha: 0.1)
+                : miqraPrimary.withValues(alpha: 0.1),
             borderRadius: BorderRadius.circular(12),
             border: Border.all(
               color: reachedTarget ? Colors.green : miqraPrimary,
@@ -765,11 +766,11 @@ class _FocusBottomBar extends ConsumerWidget {
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
         color: reachedTarget 
-            ? Colors.green.withOpacity(0.05)
+            ? Colors.green.withValues(alpha: 0.05)
             : Colors.white,
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.1),
+            color: Colors.black.withValues(alpha: 0.1),
             blurRadius: 4,
             offset: const Offset(0, -2),
           ),

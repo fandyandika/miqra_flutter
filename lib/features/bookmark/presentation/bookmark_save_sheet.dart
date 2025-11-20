@@ -159,13 +159,20 @@ class _BookmarkSaveSheetState extends ConsumerState<BookmarkSaveSheet> {
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
                   const SizedBox(height: 8),
-                  ...folders.map((folder) => RadioListTile<String>(
+                  ...folders.map((folder) => ListTile(
                     title: Text(folder.name),
-                    value: folder.id,
-                    groupValue: _selectedFolderId,
-                    onChanged: (value) {
+                    leading: Radio<String>(
+                      value: folder.id,
+                      groupValue: _selectedFolderId,
+                      onChanged: (value) {
+                        setState(() {
+                          _selectedFolderId = value;
+                        });
+                      },
+                    ),
+                    onTap: () {
                       setState(() {
-                        _selectedFolderId = value;
+                        _selectedFolderId = folder.id;
                       });
                     },
                   )),

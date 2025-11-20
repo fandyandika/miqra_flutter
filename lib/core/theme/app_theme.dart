@@ -8,7 +8,7 @@ ThemeData buildAppTheme() {
       seedColor: miqraPrimary,
       primary: miqraPrimary,
       secondary: miqraCoral,
-      background: Colors.white,
+      surface: Colors.white,
     ),
     scaffoldBackgroundColor: Colors.white,
     fontFamily: 'Inter', // Default body font

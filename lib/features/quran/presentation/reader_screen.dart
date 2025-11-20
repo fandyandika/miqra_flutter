@@ -878,7 +878,7 @@ class _ReaderScreenState extends ConsumerState<ReaderScreen> {
     
     // Assert: joined text equals original
     assert(buffer.toString() == textAr, 
-        'TextSpan concatenation mismatch: expected "${textAr}", got "${buffer.toString()}"');
+        'TextSpan concatenation mismatch: expected "$textAr", got "${buffer.toString()}"');
     
     return TextSpan(children: textSpans);
   }

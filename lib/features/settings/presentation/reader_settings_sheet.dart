@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../data/reader_settings_hive.dart';
 import '../data/reader_settings_service.dart';
 import '../providers/reader_settings_providers.dart';
 

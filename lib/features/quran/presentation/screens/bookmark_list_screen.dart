@@ -103,7 +103,7 @@ class _BookmarkView extends ConsumerWidget {
               data: (items) {
                 return ListTile(
                   leading: CircleAvatar(
-                    backgroundColor: miqraPrimary.withOpacity(0.1),
+                    backgroundColor: miqraPrimary.withValues(alpha: 0.1),
                     child: Icon(Icons.folder, color: miqraPrimary),
                   ),
                   title: Text(folder.name),
@@ -186,7 +186,7 @@ class _RiwayatView extends ConsumerWidget {
 
             return ListTile(
               leading: CircleAvatar(
-                backgroundColor: miqraCoral.withOpacity(0.1),
+                backgroundColor: miqraCoral.withValues(alpha: 0.1),
                 child: Text(
                   '${progress.surahNumber}',
                   style: TextStyle(color: miqraCoral, fontWeight: FontWeight.bold),

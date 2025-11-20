@@ -72,7 +72,7 @@ class BookmarkFolderDetailScreen extends ConsumerWidget {
                 elevation: 1,
                 child: ListTile(
                   leading: CircleAvatar(
-                    backgroundColor: miqraPrimary.withOpacity(0.1),
+                    backgroundColor: miqraPrimary.withValues(alpha: 0.1),
                     child: Text(
                       '${bookmark.surahNumber}:${bookmark.ayahNumber}',
                       style: TextStyle(

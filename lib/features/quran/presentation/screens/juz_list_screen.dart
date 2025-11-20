@@ -118,7 +118,7 @@ class _JuzTile extends StatelessWidget {
         : '${juzItem.startSurahName} (${juzItem.startAyah}) → ${juzItem.endSurahName} (${juzItem.endAyah})';
 
     return ListTile(
-      leading: Container(
+      leading: SizedBox(
         width: 32,
         height: 32,
         child: Stack(

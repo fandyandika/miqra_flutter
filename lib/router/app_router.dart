@@ -1,9 +1,7 @@
-import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../features/quran/presentation/reader_screen.dart';
 import '../features/quran/presentation/focus_reader_screen.dart';
-import '../features/quran/presentation/screens/surah_list_screen.dart';
 import '../features/quran/presentation/surah_browser_screen.dart';
 import '../features/readhub/presentation/reading_hub_screen.dart';
 import '../features/auth/presentation/login_screen.dart';
