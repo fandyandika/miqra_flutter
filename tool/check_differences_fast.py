@@ -1,5 +1,6 @@
 import json
 import os
+import sys
 
 # Data yang diharapkan
 expected_data = [
@@ -119,52 +120,76 @@ expected_data = [
   {"name_id": "An-Nas", "name_id_translation": "Manusia"}
 ]
 
-# Load JSON
+# Load JSON dengan error handling
 script_dir = os.path.dirname(os.path.abspath(__file__))
 project_root = os.path.dirname(script_dir)
 json_path = os.path.join(project_root, 'assets', 'data', 'derived', 'surah_meta_merge.json')
 
-with open(json_path, 'r', encoding='utf-8') as f:
-    data = json.load(f)
-
-surahs = data['surahs']
-diffs = []
-
-output_lines = []
-output_lines.append("Membandingkan name_id dan name_id_translation...\n")
-output_lines.append(f"{'No':<4} {'Field':<25} {'Expected':<50} {'Actual':<50}")
-output_lines.append("=" * 135)
-
-for i, exp in enumerate(expected_data):
-    surah = surahs[i]
-    num = surah['surah']
-    act_name = surah.get('name_id', '')
-    act_trans = surah.get('name_id_translation', '')
+try:
+    # Flush output immediately untuk melihat progress
+    sys.stdout.write("Loading JSON...")
+    sys.stdout.flush()
     
-    if exp['name_id'] != act_name:
-        diffs.append({'num': num, 'field': 'name_id', 'exp': exp['name_id'], 'act': act_name})
-        output_lines.append(f"{num:<4} {'name_id':<25} {exp['name_id']:<50} {act_name:<50}")
+    with open(json_path, 'r', encoding='utf-8') as f:
+        data = json.load(f)
     
-    if exp['name_id_translation'] != act_trans:
-        diffs.append({'num': num, 'field': 'name_id_translation', 'exp': exp['name_id_translation'], 'act': act_trans})
-        output_lines.append(f"{num:<4} {'name_id_translation':<25} {exp['name_id_translation']:<50} {act_trans:<50}")
-
-output_lines.append(f"\n\nTotal perbedaan: {len(diffs)}")
-if len(diffs) == 0:
-    output_lines.append("✅ Semua data sudah sesuai!")
-else:
-    output_lines.append(f"\nRincian perbedaan:")
-    output_lines.append(f"- name_id: {sum(1 for d in diffs if d['field'] == 'name_id')}")
-    output_lines.append(f"- name_id_translation: {sum(1 for d in diffs if d['field'] == 'name_id_translation')}")
-
-# Write to file
-output_file = os.path.join(script_dir, 'surah_differences.txt')
-with open(output_file, 'w', encoding='utf-8') as f:
-    f.write('\n'.join(output_lines))
-
-# Print to console
-for line in output_lines:
-    print(line)
-
-print(f"\n✅ Hasil juga ditulis ke {output_file}")
+    sys.stdout.write(" Done.\n")
+    sys.stdout.flush()
+    
+    surahs = data['surahs']
+    diffs = []
+    
+    sys.stdout.write("Comparing data...")
+    sys.stdout.flush()
+    
+    for i, exp in enumerate(expected_data):
+        surah = surahs[i]
+        num = surah['surah']
+        act_name = surah.get('name_id', '')
+        act_trans = surah.get('name_id_translation', '')
+        
+        if exp['name_id'] != act_name:
+            diffs.append({'num': num, 'field': 'name_id', 'exp': exp['name_id'], 'act': act_name})
+        
+        if exp['name_id_translation'] != act_trans:
+            diffs.append({'num': num, 'field': 'name_id_translation', 'exp': exp['name_id_translation'], 'act': act_trans})
+    
+    sys.stdout.write(" Done.\n\n")
+    sys.stdout.flush()
+    
+    # Build output
+    output_lines = []
+    output_lines.append("Membandingkan name_id dan name_id_translation...\n")
+    output_lines.append(f"{'No':<4} {'Field':<25} {'Expected':<50} {'Actual':<50}")
+    output_lines.append("=" * 135)
+    
+    for diff in diffs:
+        output_lines.append(f"{diff['num']:<4} {diff['field']:<25} {diff['exp']:<50} {diff['act']:<50}")
+    
+    output_lines.append(f"\n\nTotal perbedaan: {len(diffs)}")
+    if len(diffs) == 0:
+        output_lines.append("✅ Semua data sudah sesuai!")
+    else:
+        output_lines.append(f"\nRincian perbedaan:")
+        output_lines.append(f"- name_id: {sum(1 for d in diffs if d['field'] == 'name_id')}")
+        output_lines.append(f"- name_id_translation: {sum(1 for d in diffs if d['field'] == 'name_id_translation')}")
+    
+    # Write to file
+    output_file = os.path.join(script_dir, 'surah_differences.txt')
+    with open(output_file, 'w', encoding='utf-8') as f:
+        f.write('\n'.join(output_lines))
+    
+    # Print to console (lebih cepat dengan join)
+    print('\n'.join(output_lines))
+    print(f"\n✅ Hasil juga ditulis ke {output_file}")
+    
+except FileNotFoundError:
+    print(f"❌ Error: File tidak ditemukan: {json_path}")
+    sys.exit(1)
+except json.JSONDecodeError as e:
+    print(f"❌ Error: JSON tidak valid: {e}")
+    sys.exit(1)
+except Exception as e:
+    print(f"❌ Error: {e}")
+    sys.exit(1)
 

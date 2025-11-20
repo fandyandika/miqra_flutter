@@ -12,6 +12,7 @@ import '../../settings/presentation/reader_settings_sheet.dart';
 import '../../settings/data/reader_settings_hive.dart';
 import '../../reading/providers/reading_providers.dart';
 import '../../reading/data/today_reading_stats_model.dart';
+import '../../streak/providers/streak_providers.dart';
 import '../../../core/constants/colors.dart';
 
 class FocusReaderScreen extends ConsumerStatefulWidget {
@@ -395,6 +396,7 @@ class _FocusReaderScreenState extends ConsumerState<FocusReaderScreen> {
 
       // Invalidate stats to refresh
       ref.invalidate(todayReadingStatsProvider);
+      ref.invalidate(streakSummaryProvider);
     } catch (e) {
       // Silently fail - don't interrupt user experience
       // Could add analytics/logging here if needed

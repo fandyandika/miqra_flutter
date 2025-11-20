@@ -220,15 +220,15 @@ class _SurahTile extends StatelessWidget {
                     },
                     child: Padding(
                       padding: const EdgeInsets.only(left: 7, top: 7, bottom: 7, right: 0),
-                      child: SvgPicture.asset(
-                        'assets/icons/download.svg',
-                        width: 18,
-                        height: 18,
-                        colorFilter: ColorFilter.mode(
-                          miqraPrimary,
-                          BlendMode.srcIn,
-                        ),
-                      ),
+                             child: SvgPicture.asset(
+                               'assets/icons/download.svg',
+                               width: 18,
+                               height: 18,
+                               colorFilter: ColorFilter.mode(
+                                 Colors.grey[600]!,
+                                 BlendMode.srcIn,
+                               ),
+                             ),
                     ),
                   ),
                 ),

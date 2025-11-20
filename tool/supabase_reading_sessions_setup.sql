@@ -10,8 +10,9 @@ create table if not exists public.reading_sessions (
   ayah_end smallint not null,
   letters_count integer not null,
   hasanat integer not null,
-  reading_mode text not null check (reading_mode in ('surah','focus')),
+  reading_mode text not null check (reading_mode in ('surah','focus','manual')),
   created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now(),
   notes text
 );
 
@@ -60,7 +61,8 @@ begin
     ayah_end,
     letters_count,
     hasanat,
-    reading_mode
+    reading_mode,
+    updated_at
   ) values (
     v_user_id,
     p_surah,
@@ -68,7 +70,8 @@ begin
     p_ayah_end,
     v_letters,
     v_letters * 10,  -- hasanat = letters_count * 10
-    p_mode
+    p_mode,
+    now()
   )
   returning * into v_session;
 
@@ -94,4 +97,19 @@ create policy "Users can update own sessions"
   for update
   using (auth.uid() = user_id)
   with check (auth.uid() = user_id);
+
+-- Optional: keep updated_at in sync on updates
+create or replace function public.set_reading_sessions_updated_at()
+returns trigger as $$
+begin
+  new.updated_at = now();
+  return new;
+end;
+$$ language plpgsql;
+
+drop trigger if exists trg_reading_sessions_updated_at on public.reading_sessions;
+create trigger trg_reading_sessions_updated_at
+  before update on public.reading_sessions
+  for each row
+  execute function public.set_reading_sessions_updated_at();
 
