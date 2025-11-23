@@ -1,10 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../../core/constants/colors.dart';
+import '../../../../core/constants/typography.dart';
+import '../../../../core/constants/spacing.dart';
 import '../../providers/streak_providers.dart';
 import '../../data/streak_summary_model.dart';
 
 /// Calendar widget displaying 30-day streak visualization.
+///
+/// Design System:
+/// - Uses MiqraTextStyles for weekday labels
+/// - Uses MiqraColors for semantic colors
+/// - Uses MiqraSpacing for gaps
 class StreakCalendar extends ConsumerWidget {
   const StreakCalendar({super.key});
 
@@ -29,10 +36,10 @@ class StreakCalendar extends ConsumerWidget {
     // Add empty slots for days before first date (if needed)
     final firstDate = sortedCalendar.first.date;
     final firstWeekday = firstDate.weekday; // 1 = Monday, 7 = Sunday
-    
+
     // Adjust: Sunday = 0, Monday = 1, ..., Saturday = 6
     final startOffset = (firstWeekday % 7);
-    
+
     for (int i = 0; i < startOffset; i++) {
       currentWeek.add(null);
     }
@@ -56,9 +63,9 @@ class StreakCalendar extends ConsumerWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        // Optional weekday labels
+        // Weekday labels
         Padding(
-          padding: const EdgeInsets.only(bottom: 8),
+          padding: EdgeInsets.only(bottom: MiqraSpacing.xs),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: ['S', 'M', 'T', 'W', 'T', 'F', 'S']
@@ -67,9 +74,8 @@ class StreakCalendar extends ConsumerWidget {
                       child: Text(
                         label,
                         textAlign: TextAlign.center,
-                        style: TextStyle(
-                          fontSize: 10,
-                          color: Colors.grey[600],
+                        style: MiqraTextStyles.label.copyWith(
+                          color: MiqraColors.textSecondary,
                           fontWeight: FontWeight.w500,
                         ),
                       ),
@@ -79,7 +85,7 @@ class StreakCalendar extends ConsumerWidget {
         ),
         // Calendar grid
         ...weeks.map((week) => Padding(
-              padding: const EdgeInsets.only(bottom: 8),
+              padding: EdgeInsets.only(bottom: MiqraSpacing.xs),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: week.map((day) => _buildDayCircle(day, todayDate)).toList(),
@@ -103,11 +109,11 @@ class StreakCalendar extends ConsumerWidget {
       height: 32,
       decoration: BoxDecoration(
         shape: BoxShape.circle,
-        color: day.read ? miqraPrimary : Colors.transparent,
+        color: day.read ? MiqraColors.streakActive : Colors.transparent,
         border: Border.all(
           color: day.read
-              ? miqraPrimary
-              : (isToday ? miqraGold : Colors.grey[300]!),
+              ? MiqraColors.streakActive
+              : (isToday ? MiqraColors.streakToday : MiqraColors.streakInactive),
           width: isToday ? 2 : 1,
         ),
       ),

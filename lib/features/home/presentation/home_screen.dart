@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import '../../../core/constants/typography.dart';
+import '../../../core/constants/spacing.dart';
+import '../../../core/constants/colors.dart';
+import '../../../shared/widgets/miqra_card.dart';
 import '../../streak/presentation/widgets/streak_tree_widget.dart';
 import '../../streak/presentation/widgets/streak_card.dart';
 
@@ -8,6 +12,11 @@ import '../../streak/presentation/widgets/streak_card.dart';
 /// - One primary action per screen
 /// - Calm, minimal design
 /// - Clear visual hierarchy
+///
+/// Design System:
+/// - Uses MiqraTextStyles for typography
+/// - Uses MiqraSpacing for consistent gaps
+/// - Uses MiqraCard for flat, modern design
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
@@ -16,14 +25,14 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
-          padding: const EdgeInsets.all(16),
+          padding: MiqraSpacing.screenPadding,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               _buildHeader(),
-              const SizedBox(height: 24),
+              MiqraSpacing.gapLG,
               _buildStreakSection(),
-              const SizedBox(height: 16),
+              MiqraSpacing.gapMD,
               const StreakCard(),
             ],
           ),
@@ -34,22 +43,18 @@ class HomeScreen extends StatelessWidget {
 
   /// Builds header section with greeting.
   Widget _buildHeader() {
-    return const Column(
+    return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
           'Assalamu\'alaikum',
-          style: TextStyle(
-            fontSize: 24,
-            fontWeight: FontWeight.bold,
-          ),
+          style: MiqraTextStyles.title1,
         ),
-        SizedBox(height: 4),
+        const SizedBox(height: 4),
         Text(
           'Yuk lanjutkan perjalanan membaca Al-Qur\'an',
-          style: TextStyle(
-            fontSize: 16,
-            color: Colors.grey,
+          style: MiqraTextStyles.body.copyWith(
+            color: MiqraColors.textSecondary,
           ),
         ),
       ],
@@ -58,15 +63,9 @@ class HomeScreen extends StatelessWidget {
 
   /// Builds streak visualization section with SVG tree.
   Widget _buildStreakSection() {
-    return const Card(
-      elevation: 1,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.all(Radius.circular(16)),
-      ),
-      child: Padding(
-        padding: EdgeInsets.all(20),
-        child: StreakTreeWidget(),
-      ),
+    return MiqraCard(
+      padding: const EdgeInsets.all(20),
+      child: const StreakTreeWidget(),
     );
   }
 }

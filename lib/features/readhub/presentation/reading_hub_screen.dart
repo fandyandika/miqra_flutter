@@ -2,11 +2,22 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import '../../../core/constants/colors.dart';
+import '../../../core/constants/typography.dart';
+import '../../../core/constants/spacing.dart';
+import '../../../shared/widgets/miqra_card.dart';
 import '../../quran/providers/last_read_providers.dart';
 import '../../quran/providers/surah_providers.dart';
 import '../../reading/providers/reading_providers.dart';
 import '../../reading/presentation/manual_reading_log_sheet.dart';
 
+/// Reading Hub Screen - Central place for all reading actions.
+///
+/// Design System:
+/// - Uses MiqraCard for all cards
+/// - Uses MiqraIconCard for stats
+/// - Uses MiqraTextStyles for typography
+/// - Uses MiqraSpacing for gaps
+/// - Theme handles button styles
 class ReadingHubScreen extends ConsumerWidget {
   const ReadingHubScreen({super.key});
 
@@ -21,7 +32,7 @@ class ReadingHubScreen extends ConsumerWidget {
         centerTitle: true,
       ),
       body: SingleChildScrollView(
-        padding: const EdgeInsets.all(16),
+        padding: MiqraSpacing.screenPadding,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
@@ -34,49 +45,22 @@ class ReadingHubScreen extends ConsumerWidget {
               loading: () => const SizedBox.shrink(),
               error: (_, __) => const SizedBox.shrink(),
             ),
-            if (lastReadAsync.valueOrNull != null) const SizedBox(height: 16),
+            if (lastReadAsync.valueOrNull != null) MiqraSpacing.gapMD,
 
-            // Action Buttons
+            // Action Buttons (theme handles styling)
             ElevatedButton(
               onPressed: () => context.go('/read/surah'),
-              style: ElevatedButton.styleFrom(
-                backgroundColor: miqraPrimary,
-                foregroundColor: Colors.white,
-                padding: const EdgeInsets.symmetric(vertical: 16),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(12),
-                ),
-                elevation: 2,
-              ),
-              child: const Text(
-                'Baca Qur\'an',
-                style: TextStyle(
-                  fontSize: 16,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
+              child: const Text('Baca Qur\'an'),
             ),
-            const SizedBox(height: 12),
+            MiqraSpacing.gapSM,
             ElevatedButton(
               onPressed: () => context.go('/read/focus'),
               style: ElevatedButton.styleFrom(
-                backgroundColor: miqraCoral,
-                foregroundColor: Colors.white,
-                padding: const EdgeInsets.symmetric(vertical: 16),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(12),
-                ),
-                elevation: 2,
+                backgroundColor: MiqraColors.secondary,
               ),
-              child: const Text(
-                'Baca Fokus',
-                style: TextStyle(
-                  fontSize: 16,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
+              child: const Text('Baca Fokus'),
             ),
-            const SizedBox(height: 12),
+            MiqraSpacing.gapSM,
             OutlinedButton.icon(
               onPressed: () {
                 showModalBottomSheet(
@@ -93,47 +77,40 @@ class ReadingHubScreen extends ConsumerWidget {
                 );
               },
               icon: const Icon(Icons.edit_note),
-              label: const Text(
-                'Catat Manual',
-                style: TextStyle(fontWeight: FontWeight.w600),
-              ),
+              label: const Text('Catat Manual'),
               style: OutlinedButton.styleFrom(
-                padding: const EdgeInsets.symmetric(vertical: 16),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(12),
-                ),
-                side: BorderSide(color: miqraGold, width: 2),
-                foregroundColor: miqraGold,
+                side: BorderSide(color: MiqraColors.accent, width: 1.5),
+                foregroundColor: MiqraColors.accent,
               ),
             ),
-            const SizedBox(height: 24),
+            MiqraSpacing.gapLG,
 
-            // Mini Stats Cards
+            // Mini Stats Cards (using MiqraIconCard)
             Row(
               children: [
                 Expanded(
-                  child: _MiniStatsCard(
-                    label: 'Hasanat Harian',
+                  child: MiqraIconCard(
+                    icon: Icons.stars,
+                    iconColor: MiqraColors.accent,
+                    title: 'Hasanat Harian',
                     value: statsAsync.when(
                       data: (stats) => '${stats.totalHasanat}',
                       loading: () => '...',
                       error: (_, __) => '0',
                     ),
-                    icon: Icons.stars,
-                    color: miqraGold,
                   ),
                 ),
-                const SizedBox(width: 12),
+                MiqraSpacing.gapHorizontalSM,
                 Expanded(
-                  child: _MiniStatsCard(
-                    label: 'Total Ayat Dibaca',
+                  child: MiqraIconCard(
+                    icon: Icons.book,
+                    iconColor: MiqraColors.primary,
+                    title: 'Total Ayat Dibaca',
                     value: statsAsync.when(
                       data: (stats) => '${stats.totalAyat}',
                       loading: () => '...',
                       error: (_, __) => '0',
                     ),
-                    icon: Icons.book,
-                    color: miqraPrimary,
                   ),
                 ),
               ],
@@ -194,106 +171,42 @@ class _LastReadCard extends ConsumerWidget {
     final surahMeta = ref.watch(surahMetaProvider(lastRead.surah));
     final surahName = surahMeta?.nameLatin ?? 'Surah ${lastRead.surah}';
 
-    return Card(
-      elevation: 1,
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-      child: InkWell(
-        onTap: () => _showReadingOptions(context, lastRead),
-        borderRadius: BorderRadius.circular(12),
-        child: Padding(
-          padding: const EdgeInsets.all(16),
-          child: Row(
-            children: [
-              Container(
-                padding: const EdgeInsets.all(12),
-                decoration: BoxDecoration(
-                  color: miqraPrimary.withValues(alpha: 0.1),
-                  borderRadius: BorderRadius.circular(8),
-                ),
-                child: const Icon(Icons.history, color: miqraPrimary),
-              ),
-              const SizedBox(width: 12),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      'Terakhir Dibaca',
-                      style: TextStyle(
-                        fontSize: 12,
-                        color: Colors.grey[600],
-                        fontWeight: FontWeight.w500,
-                      ),
-                    ),
-                    const SizedBox(height: 4),
-                    Text(
-                      'QS. $surahName - ${lastRead.ayah}',
-                      style: const TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.w600,
-                        color: miqraText,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              const Icon(Icons.arrow_forward_ios, size: 16),
-            ],
+    return MiqraCard(
+      onTap: () => _showReadingOptions(context, lastRead),
+      child: Row(
+        children: [
+          Container(
+            padding: const EdgeInsets.all(12),
+            decoration: BoxDecoration(
+              color: MiqraColors.primarySubtle,
+              borderRadius: MiqraSpacing.radiusSmall,
+            ),
+            child: Icon(Icons.history, color: MiqraColors.primary),
           ),
-        ),
-      ),
-    );
-  }
-}
-
-class _MiniStatsCard extends StatelessWidget {
-  final String label;
-  final String value;
-  final IconData icon;
-  final Color color;
-
-  const _MiniStatsCard({
-    required this.label,
-    required this.value,
-    required this.icon,
-    required this.color,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Card(
-      elevation: 1,
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-      child: Container(
-        padding: const EdgeInsets.all(16),
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(12),
-          border: Border.all(color: color.withValues(alpha: 0.3), width: 1),
-        ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Icon(icon, color: color, size: 24),
-            const SizedBox(height: 8),
-            Text(
-              label,
-              style: TextStyle(
-                fontSize: 12,
-                color: Colors.grey[600],
-                fontWeight: FontWeight.w500,
-              ),
+          MiqraSpacing.gapHorizontalSM,
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  'Terakhir Dibaca',
+                  style: MiqraTextStyles.label.copyWith(
+                    color: MiqraColors.textSecondary,
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
+                const SizedBox(height: 4),
+                Text(
+                  'QS. $surahName - ${lastRead.ayah}',
+                  style: MiqraTextStyles.headline.copyWith(
+                    color: MiqraColors.textPrimary,
+                  ),
+                ),
+              ],
             ),
-            const SizedBox(height: 4),
-            Text(
-              value,
-              style: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
-                color: color,
-              ),
-            ),
-          ],
-        ),
+          ),
+          Icon(Icons.arrow_forward_ios, size: 16, color: MiqraColors.textTertiary),
+        ],
       ),
     );
   }
