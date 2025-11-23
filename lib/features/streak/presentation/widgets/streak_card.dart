@@ -1,10 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../../core/constants/colors.dart';
+import '../../../../core/constants/typography.dart';
+import '../../../../core/constants/spacing.dart';
+import '../../../../shared/widgets/miqra_card.dart';
+import '../../../../shared/widgets/miqra_loading.dart';
 import '../../providers/streak_providers.dart';
 import '../../data/streak_summary_model.dart';
 
 /// Card widget displaying streak information.
+///
+/// Design System:
+/// - Uses MiqraCard for flat design
+/// - Uses MiqraTextStyles for typography
+/// - Uses MiqraSpacing for gaps
+/// - Uses MiqraLoading for loading state
+/// - Uses MiqraColors for semantic colors
 class StreakCard extends ConsumerWidget {
   const StreakCard({super.key});
 
@@ -23,149 +34,123 @@ class StreakCard extends ConsumerWidget {
     final currentStreak = summary.currentStreak;
     final bestStreak = summary.bestStreak;
 
-    return Card(
-      elevation: 1,
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-      child: Padding(
-        padding: const EdgeInsets.all(16),
-        child: Row(
-          children: [
-            // Left section: Title and subtitle
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    'Streak kamu',
-                    style: TextStyle(
-                      fontSize: 14,
-                      fontWeight: FontWeight.w600,
-                      color: Colors.grey[600],
-                    ),
-                  ),
-                  const SizedBox(height: 4),
-                  Text(
-                    currentStreak > 0
-                        ? 'Istiqomah $currentStreak hari'
-                        : 'Belum membaca hari ini',
-                    style: TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.w600,
-                      color: currentStreak > 0 ? miqraPrimary : Colors.grey[600],
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            // Right section: Icon and best streak
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.end,
+    return MiqraCard(
+      child: Row(
+        children: [
+          // Left section: Title and subtitle
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Icon(
-                  Icons.local_fire_department,
-                  color: miqraGold,
-                  size: 24,
+                Text(
+                  'Streak kamu',
+                  style: MiqraTextStyles.caption.copyWith(
+                    fontWeight: FontWeight.w600,
+                    color: MiqraColors.textSecondary,
+                  ),
                 ),
                 const SizedBox(height: 4),
                 Text(
-                  'Rekor: $bestStreak hari',
-                  style: TextStyle(
-                    fontSize: 12,
-                    color: Colors.grey[600],
+                  currentStreak > 0
+                      ? 'Istiqomah $currentStreak hari'
+                      : 'Belum membaca hari ini',
+                  style: MiqraTextStyles.headline.copyWith(
+                    color: currentStreak > 0
+                        ? MiqraColors.primary
+                        : MiqraColors.textTertiary,
                   ),
                 ),
               ],
             ),
-          ],
-        ),
+          ),
+          // Right section: Icon and best streak
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.end,
+            children: [
+              Icon(
+                Icons.local_fire_department,
+                color: MiqraColors.accent,
+                size: 24,
+              ),
+              const SizedBox(height: 4),
+              Text(
+                'Rekor: $bestStreak hari',
+                style: MiqraTextStyles.label.copyWith(
+                  color: MiqraColors.textSecondary,
+                ),
+              ),
+            ],
+          ),
+        ],
       ),
     );
   }
 
   Widget _buildLoadingCard(BuildContext context) {
-    return Card(
-      elevation: 1,
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-      child: Padding(
-        padding: const EdgeInsets.all(16),
-        child: Row(
-          children: [
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    'Streak kamu',
-                    style: TextStyle(
-                      fontSize: 14,
-                      fontWeight: FontWeight.w600,
-                      color: Colors.grey[600],
-                    ),
+    return MiqraCard(
+      child: Row(
+        children: [
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  'Streak kamu',
+                  style: MiqraTextStyles.caption.copyWith(
+                    fontWeight: FontWeight.w600,
+                    color: MiqraColors.textSecondary,
                   ),
-                  const SizedBox(height: 4),
-                  Text(
-                    'Menghitung streak...',
-                    style: TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.w600,
-                      color: Colors.grey[400],
-                    ),
+                ),
+                const SizedBox(height: 4),
+                Text(
+                  'Menghitung streak...',
+                  style: MiqraTextStyles.headline.copyWith(
+                    color: MiqraColors.textTertiary,
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
-            const SizedBox(
-              width: 24,
-              height: 24,
-              child: CircularProgressIndicator(strokeWidth: 2),
-            ),
-          ],
-        ),
+          ),
+          const MiqraLoading.inline(),
+        ],
       ),
     );
   }
 
   Widget _buildErrorCard(BuildContext context, WidgetRef ref) {
-    return Card(
-      elevation: 1,
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-      child: Padding(
-        padding: const EdgeInsets.all(16),
-        child: Row(
-          children: [
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    'Streak kamu',
-                    style: TextStyle(
-                      fontSize: 14,
-                      fontWeight: FontWeight.w600,
-                      color: Colors.grey[600],
-                    ),
+    return MiqraCard(
+      child: Row(
+        children: [
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  'Streak kamu',
+                  style: MiqraTextStyles.caption.copyWith(
+                    fontWeight: FontWeight.w600,
+                    color: MiqraColors.textSecondary,
                   ),
-                  const SizedBox(height: 4),
-                  Text(
-                    'Streak belum tersedia',
-                    style: TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.w600,
-                      color: Colors.grey[600],
-                    ),
+                ),
+                const SizedBox(height: 4),
+                Text(
+                  'Streak belum tersedia',
+                  style: MiqraTextStyles.headline.copyWith(
+                    color: MiqraColors.textTertiary,
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
-            IconButton(
-              icon: const Icon(Icons.refresh),
-              onPressed: () {
-                ref.invalidate(streakSummaryProvider);
-              },
-              tooltip: 'Coba lagi',
-            ),
-          ],
-        ),
+          ),
+          IconButton(
+            icon: const Icon(Icons.refresh),
+            onPressed: () {
+              ref.invalidate(streakSummaryProvider);
+            },
+            tooltip: 'Coba lagi',
+            color: MiqraColors.primary,
+          ),
+        ],
       ),
     );
   }
