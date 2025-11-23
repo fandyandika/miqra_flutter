@@ -13,6 +13,8 @@ class FocusReaderState {
   final int? lastLoggedSurah;
   final int? lastLoggedAyah;
   final bool isLogging;
+  final DateTime? sessionStartTime;
+  final Duration elapsedTime;
 
   const FocusReaderState({
     required this.surahNumber,
@@ -23,6 +25,8 @@ class FocusReaderState {
     this.lastLoggedSurah,
     this.lastLoggedAyah,
     this.isLogging = false,
+    this.sessionStartTime,
+    this.elapsedTime = Duration.zero,
   });
 
   FocusReaderState copyWith({
@@ -34,6 +38,8 @@ class FocusReaderState {
     int? lastLoggedSurah,
     int? lastLoggedAyah,
     bool? isLogging,
+    DateTime? sessionStartTime,
+    Duration? elapsedTime,
   }) {
     return FocusReaderState(
       surahNumber: surahNumber ?? this.surahNumber,
@@ -44,6 +50,8 @@ class FocusReaderState {
       lastLoggedSurah: lastLoggedSurah ?? this.lastLoggedSurah,
       lastLoggedAyah: lastLoggedAyah ?? this.lastLoggedAyah,
       isLogging: isLogging ?? this.isLogging,
+      sessionStartTime: sessionStartTime ?? this.sessionStartTime,
+      elapsedTime: elapsedTime ?? this.elapsedTime,
     );
   }
 }
@@ -103,6 +111,25 @@ class FocusReaderController extends StateNotifier<FocusReaderState> {
 
   void setLogging(bool isLogging) {
     state = state.copyWith(isLogging: isLogging);
+  }
+
+  void startTimer() {
+    state = state.copyWith(
+      sessionStartTime: DateTime.now(),
+      elapsedTime: Duration.zero,
+    );
+  }
+
+  void updateElapsedTime(Duration elapsed) {
+    state = state.copyWith(elapsedTime: elapsed);
+  }
+
+  void changeSurah(int newSurahNumber, int newTotalAyat) {
+    state = state.copyWith(
+      surahNumber: newSurahNumber,
+      ayahNumber: 1,
+      totalAyatInSurah: newTotalAyat,
+    );
   }
 }
 
