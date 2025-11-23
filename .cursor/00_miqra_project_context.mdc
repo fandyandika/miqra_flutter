@@ -27,7 +27,7 @@ alwaysApply: false
 
 ## Rahmah UX (only what impacts code)
 - Calmer feedback (no guilt): use soft states, timeouts ≤ 250ms
-- Typography: Amiri (Arabic), Inter (Latin) if applicable
+- Typography: Indopak (Arabic), Inter (Latin) if applicable
 - Colors (tokens only): turquoise, coral, gold, sand
 - Large tap targets; accessible contrast; support RTL
 

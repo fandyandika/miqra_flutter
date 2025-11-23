@@ -14,7 +14,6 @@ Generate code, corrections, and refactorings that comply with the basic principl
 - Always declare the type of each variable and function (parameters and return value).
   - Avoid using any.
   - Create necessary types.
-- Don't leave blank lines within a function.
 - One export per file.
 
 ### Nomenclature
@@ -37,7 +36,7 @@ Generate code, corrections, and refactorings that comply with the basic principl
 ### Functions
 
 - In this context, what is understood as a function will also apply to a method.
-- Write short functions with a single purpose. Less than 20 instructions.
+- Write short functions with a single purpose. Focus on complexity over line count.
 - Name functions with a verb and something else.
   - If it returns a boolean, use isX or hasX, canX, etc.
   - If it doesn't return anything, use executeX or saveX, etc.

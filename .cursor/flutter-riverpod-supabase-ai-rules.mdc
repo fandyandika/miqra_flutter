@@ -19,8 +19,8 @@ Dart/Flutter
 - Use trailing commas for better formatting and diffs.
 
 Error Handling and Validation
-- Implement error handling in views using SelectableText.rich instead of SnackBars.
-- Display errors in SelectableText.rich with red color for visibility.
+- Use SnackBars for transient user feedback.
+- Use SelectableText.rich for detailed error messages that users might need to copy.
 - Handle empty states within the displaying screen.
 - Use AsyncValue for proper error handling and loading states.
 
@@ -64,7 +64,7 @@ Widgets and UI Components
 Miscellaneous
 - Use log instead of print for debugging.
 - Use Flutter Hooks / Riverpod Hooks where appropriate.
-- Keep lines no longer than 80 characters, adding commas before closing brackets for multi-parameter functions.
+- Use trailing commas for better formatting and diffs.
 - Use @JsonValue(int) for enums that go to the database.
 
 Code Generation
