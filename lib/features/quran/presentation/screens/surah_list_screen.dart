@@ -6,6 +6,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import '../../../../core/constants/colors.dart';
 import '../../../../core/constants/typography.dart';
 import '../../../../core/constants/spacing.dart';
+import '../../../../core/utils/animations.dart';
 import '../../../../shared/widgets/miqra_components.dart';
 import '../../providers/surah_providers.dart';
 import '../../data/models/surah_meta_model.dart';
@@ -96,7 +97,10 @@ class _SurahListView extends ConsumerWidget {
       itemCount: filtered.length,
       separatorBuilder: (context, index) => MiqraSpacing.gapXS,
       itemBuilder: (context, index) {
-        return _SurahTile(item: filtered[index]);
+        return MiqraAnimations.staggeredItem(
+          index: index,
+          child: _SurahTile(item: filtered[index]),
+        );
       },
     );
   }

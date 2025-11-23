@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 import '../../../core/constants/colors.dart';
 import '../../../core/constants/typography.dart';
 import '../../../core/constants/spacing.dart';
+import '../../../core/utils/animations.dart';
 import '../../../shared/widgets/miqra_card.dart';
 import '../../quran/providers/last_read_providers.dart';
 import '../../quran/providers/surah_providers.dart';
@@ -36,84 +37,97 @@ class ReadingHubScreen extends ConsumerWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            // Terakhir Dibaca Card
+            // Terakhir Dibaca Card (animated)
             lastReadAsync.when(
               data: (lastRead) {
                 if (lastRead == null) return const SizedBox.shrink();
-                return _LastReadCard(lastRead: lastRead);
+                return MiqraAnimations.scaleIn(
+                  child: _LastReadCard(lastRead: lastRead),
+                );
               },
               loading: () => const SizedBox.shrink(),
               error: (_, __) => const SizedBox.shrink(),
             ),
             if (lastReadAsync.valueOrNull != null) MiqraSpacing.gapMD,
 
-            // Action Buttons (theme handles styling)
-            ElevatedButton(
-              onPressed: () => context.go('/read/surah'),
-              child: const Text('Baca Qur\'an'),
-            ),
-            MiqraSpacing.gapSM,
-            ElevatedButton(
-              onPressed: () => context.go('/read/focus'),
-              style: ElevatedButton.styleFrom(
-                backgroundColor: MiqraColors.secondary,
-              ),
-              child: const Text('Baca Fokus'),
-            ),
-            MiqraSpacing.gapSM,
-            OutlinedButton.icon(
-              onPressed: () {
-                showModalBottomSheet(
-                  context: context,
-                  isScrollControlled: true,
-                  builder: (context) => Padding(
-                    padding: EdgeInsets.only(
-                      bottom: MediaQuery.of(context).viewInsets.bottom,
+            // Action Buttons (animated, theme handles styling)
+            MiqraAnimations.fadeIn(
+              delay: 100,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  ElevatedButton(
+                    onPressed: () => context.go('/read/surah'),
+                    child: const Text('Baca Qur\'an'),
+                  ),
+                  MiqraSpacing.gapSM,
+                  ElevatedButton(
+                    onPressed: () => context.go('/read/focus'),
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: MiqraColors.secondary,
                     ),
-                    child: const ManualReadingLogSheet(
-                      readingMode: 'manual',
+                    child: const Text('Baca Fokus'),
+                  ),
+                  MiqraSpacing.gapSM,
+                  OutlinedButton.icon(
+                    onPressed: () {
+                      showModalBottomSheet(
+                        context: context,
+                        isScrollControlled: true,
+                        builder: (context) => Padding(
+                          padding: EdgeInsets.only(
+                            bottom: MediaQuery.of(context).viewInsets.bottom,
+                          ),
+                          child: const ManualReadingLogSheet(
+                            readingMode: 'manual',
+                          ),
+                        ),
+                      );
+                    },
+                    icon: const Icon(Icons.edit_note),
+                    label: const Text('Catat Manual'),
+                    style: OutlinedButton.styleFrom(
+                      side: BorderSide(color: MiqraColors.accent, width: 1.5),
+                      foregroundColor: MiqraColors.accent,
                     ),
                   ),
-                );
-              },
-              icon: const Icon(Icons.edit_note),
-              label: const Text('Catat Manual'),
-              style: OutlinedButton.styleFrom(
-                side: BorderSide(color: MiqraColors.accent, width: 1.5),
-                foregroundColor: MiqraColors.accent,
+                ],
               ),
             ),
             MiqraSpacing.gapLG,
 
-            // Mini Stats Cards (using MiqraIconCard)
-            Row(
-              children: [
-                Expanded(
-                  child: MiqraIconCard(
-                    icon: Icons.stars,
-                    iconColor: MiqraColors.accent,
-                    title: 'Hasanat Harian',
-                    value: statsAsync.when(
-                      data: (stats) => '${stats.totalHasanat}',
-                      loading: () => '...',
-                      error: (_, __) => '0',
+            // Mini Stats Cards (animated)
+            MiqraAnimations.scaleIn(
+              delay: 200,
+              child: Row(
+                children: [
+                  Expanded(
+                    child: MiqraIconCard(
+                      icon: Icons.stars,
+                      iconColor: MiqraColors.accent,
+                      title: 'Hasanat Harian',
+                      value: statsAsync.when(
+                        data: (stats) => '${stats.totalHasanat}',
+                        loading: () => '...',
+                        error: (_, __) => '0',
+                      ),
                     ),
                   ),
-                ),
-                MiqraSpacing.gapHorizontalSM,
-                Expanded(
-                  child: MiqraIconCard(
-                    icon: Icons.book,
-                    iconColor: MiqraColors.primary,
-                    title: 'Total Ayat Dibaca',
-                    value: statsAsync.when(
-                      data: (stats) => '${stats.totalAyat}',
-                      loading: () => '...',
-                      error: (_, __) => '0',
+                  MiqraSpacing.gapHorizontalSM,
+                  Expanded(
+                    child: MiqraIconCard(
+                      icon: Icons.book,
+                      iconColor: MiqraColors.primary,
+                      title: 'Total Ayat Dibaca',
+                      value: statsAsync.when(
+                        data: (stats) => '${stats.totalAyat}',
+                        loading: () => '...',
+                        error: (_, __) => '0',
+                      ),
                     ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ],
         ),
