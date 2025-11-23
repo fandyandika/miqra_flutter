@@ -16,6 +16,9 @@ import '../../bookmark/presentation/bookmark_save_sheet.dart';
 import '../../settings/presentation/reader_settings_sheet.dart';
 import '../../reading/presentation/manual_reading_log_sheet.dart';
 import '../../../core/constants/colors.dart';
+import '../../../core/constants/spacing.dart';
+import '../../../core/constants/typography.dart';
+import '../../../core/utils/animations.dart';
 
 class ReaderScreen extends ConsumerStatefulWidget {
   const ReaderScreen({
@@ -35,6 +38,7 @@ class ReaderScreen extends ConsumerStatefulWidget {
 
 class _ReaderScreenState extends ConsumerState<ReaderScreen> {
   final ScrollController _scrollController = ScrollController();
+  final ScrollController _surahTabController = ScrollController();
   bool _hasScrolledToInitialAyah = false;
   
   // Konstanta untuk posisi header surah (mudah diubah)
@@ -125,7 +129,42 @@ class _ReaderScreenState extends ConsumerState<ReaderScreen> {
   @override
   void dispose() {
     _scrollController.dispose();
+    _surahTabController.dispose();
     super.dispose();
+  }
+
+  /// Centers the current surah in the horizontal tab view
+  void _scrollToCurrentSurah() {
+    if (!_surahTabController.hasClients) return;
+
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!_surahTabController.hasClients) return;
+
+      // Calculate offset to center current surah
+      // Each tab is approximately 140px wide + 8px gap
+      final tabWidth = 140.0 + MiqraSpacing.xs;
+      final screenWidth = MediaQuery.of(context).size.width;
+      final targetOffset = (widget.surahNumber - 1) * tabWidth - (screenWidth / 2) + (tabWidth / 2);
+
+      final clampedOffset = targetOffset.clamp(
+        0.0,
+        _surahTabController.position.maxScrollExtent,
+      );
+
+      _surahTabController.animateTo(
+        clampedOffset,
+        duration: MiqraAnimations.normal,
+        curve: MiqraAnimations.easeOut,
+      );
+    });
+  }
+
+  /// Navigate to a different surah
+  void _navigateToSurah(int surahNumber) {
+    if (surahNumber == widget.surahNumber) return;
+    if (surahNumber < 1 || surahNumber > 114) return;
+
+    context.go('/reader/$surahNumber');
   }
 
   void _scrollToAyah(int ayahIndex) {
@@ -150,24 +189,96 @@ class _ReaderScreenState extends ConsumerState<ReaderScreen> {
     });
   }
 
+  /// Build horizontal surah navigation tabs
+  Widget _buildSurahNavigationBar() {
+    final allSurahs = ref.watch(surahMetaListProvider);
+
+    return allSurahs.when(
+      data: (surahs) {
+        // Scroll to current surah on first build
+        _scrollToCurrentSurah();
+
+        return Container(
+          height: 56,
+          decoration: BoxDecoration(
+            color: MiqraColors.surface,
+            border: Border(
+              bottom: BorderSide(
+                color: MiqraColors.borderLight,
+                width: 1,
+              ),
+            ),
+          ),
+          child: Row(
+            children: [
+              // Previous button
+              if (widget.surahNumber > 1)
+                IconButton(
+                  icon: Icon(Icons.chevron_left, color: MiqraColors.primary),
+                  onPressed: () => _navigateToSurah(widget.surahNumber - 1),
+                  tooltip: 'Surah sebelumnya',
+                ),
+              // Horizontal scrollable tabs
+              Expanded(
+                child: ListView.separated(
+                  controller: _surahTabController,
+                  scrollDirection: Axis.horizontal,
+                  padding: EdgeInsets.symmetric(
+                    horizontal: MiqraSpacing.xs,
+                    vertical: MiqraSpacing.xs,
+                  ),
+                  itemCount: surahs.length,
+                  separatorBuilder: (_, __) => MiqraSpacing.gapHorizontalXS,
+                  itemBuilder: (context, index) {
+                    final surah = surahs[index];
+                    final isActive = surah.number == widget.surahNumber;
+
+                    return MiqraAnimations.fadeIn(
+                      delay: index * 10,
+                      duration: MiqraAnimations.fast,
+                      child: _SurahTab(
+                        surah: surah,
+                        isActive: isActive,
+                        onTap: () => _navigateToSurah(surah.number),
+                      ),
+                    );
+                  },
+                ),
+              ),
+              // Next button
+              if (widget.surahNumber < 114)
+                IconButton(
+                  icon: Icon(Icons.chevron_right, color: MiqraColors.primary),
+                  onPressed: () => _navigateToSurah(widget.surahNumber + 1),
+                  tooltip: 'Surah berikutnya',
+                ),
+            ],
+          ),
+        );
+      },
+      loading: () => const SizedBox(height: 56),
+      error: (_, __) => const SizedBox(height: 56),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     final showTranslation = ref.watch(translationVisibleProvider);
     final tajwidEnabled = ref.watch(tajwidEnabledProvider);
-    
+
     // Juz mode
     if (widget.juzNumber != null) {
       return _buildJuzMode(context, ref, showTranslation, tajwidEnabled);
     }
-    
+
     // Normal surah mode
     final asyncSurah = ref.watch(surahProvider(widget.surahNumber));
     final surahMeta = ref.watch(surahMetaProvider(widget.surahNumber));
-    
+
     final lastRead = ref.watch(lastReadOnceProvider);
-    final targetAyah = widget.initialAyah ?? 
+    final targetAyah = widget.initialAyah ??
         (lastRead != null && lastRead.surah == widget.surahNumber ? lastRead.ayah : null);
-    
+
     if (targetAyah != null && !_hasScrolledToInitialAyah) {
       final ayahIndex = targetAyah - 1;
       if (asyncSurah.hasValue) {
@@ -254,27 +365,36 @@ class _ReaderScreenState extends ConsumerState<ReaderScreen> {
             ),
           ],
         ),
-        body: asyncSurah.when(
-          data: (surah) => _content(context, ref, surah, surahMeta, showTranslation, tajwidEnabled),
-          loading: () => const Center(child: CircularProgressIndicator()),
-          error: (e, stackTrace) => Directionality(
-            textDirection: TextDirection.ltr,
-            child: Center(
-              child: Padding(
-                padding: const EdgeInsets.all(16.0),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    const Icon(Icons.error_outline, size: 48, color: Colors.red),
-                    const SizedBox(height: 16),
-                    Text('Failed to load: $e', textAlign: TextAlign.center),
-                    const SizedBox(height: 8),
-                    Text('$stackTrace', style: const TextStyle(fontSize: 10), textAlign: TextAlign.left),
-                  ],
+        body: Column(
+          children: [
+            // Horizontal surah navigation tabs
+            _buildSurahNavigationBar(),
+            // Main content
+            Expanded(
+              child: asyncSurah.when(
+                data: (surah) => _content(context, ref, surah, surahMeta, showTranslation, tajwidEnabled),
+                loading: () => const Center(child: CircularProgressIndicator()),
+                error: (e, stackTrace) => Directionality(
+                  textDirection: TextDirection.ltr,
+                  child: Center(
+                    child: Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          const Icon(Icons.error_outline, size: 48, color: Colors.red),
+                          const SizedBox(height: 16),
+                          Text('Failed to load: $e', textAlign: TextAlign.center),
+                          const SizedBox(height: 8),
+                          Text('$stackTrace', style: const TextStyle(fontSize: 10), textAlign: TextAlign.left),
+                        ],
+                      ),
+                    ),
+                  ),
                 ),
               ),
             ),
-          ),
+          ],
         ),
       ),
     );
@@ -1421,6 +1541,87 @@ class _SegmentData {
   });
 }
 
+/// Individual surah tab for horizontal navigation
+class _SurahTab extends StatelessWidget {
+  final SurahMeta surah;
+  final bool isActive;
+  final VoidCallback onTap;
 
+  const _SurahTab({
+    required this.surah,
+    required this.isActive,
+    required this.onTap,
+  });
 
-
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: onTap,
+      child: AnimatedContainer(
+        duration: MiqraAnimations.fast,
+        curve: MiqraAnimations.easeOut,
+        padding: EdgeInsets.symmetric(
+          horizontal: MiqraSpacing.md,
+          vertical: MiqraSpacing.xs,
+        ),
+        decoration: BoxDecoration(
+          color: isActive ? MiqraColors.primary : MiqraColors.surface,
+          borderRadius: MiqraSpacing.radiusMedium,
+          border: Border.all(
+            color: isActive ? MiqraColors.primary : MiqraColors.borderLight,
+            width: isActive ? 2 : 1,
+          ),
+          boxShadow: isActive
+              ? [
+                  BoxShadow(
+                    color: MiqraColors.primary.withOpacity(0.2),
+                    blurRadius: 8,
+                    offset: const Offset(0, 2),
+                  ),
+                ]
+              : null,
+        ),
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            // Surah number
+            Container(
+              width: 24,
+              height: 24,
+              decoration: BoxDecoration(
+                color: isActive
+                    ? MiqraColors.textInverse.withOpacity(0.2)
+                    : MiqraColors.primarySubtle,
+                shape: BoxShape.circle,
+              ),
+              child: Center(
+                child: Text(
+                  '${surah.number}',
+                  style: MiqraTextStyles.label.copyWith(
+                    color: isActive ? MiqraColors.textInverse : MiqraColors.primary,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+              ),
+            ),
+            MiqraSpacing.gapHorizontalXS,
+            // Surah name
+            Column(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  surah.nameLatin,
+                  style: MiqraTextStyles.caption.copyWith(
+                    color: isActive ? MiqraColors.textInverse : MiqraColors.textPrimary,
+                    fontWeight: isActive ? FontWeight.w600 : FontWeight.w500,
+                  ),
+                ),
+              ],
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}

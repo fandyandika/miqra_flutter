@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import '../../../../core/constants/spacing.dart';
+import '../../../../shared/widgets/miqra_components.dart';
 import '../providers/auth_providers.dart';
 import 'widgets/auth_text_field.dart';
 
@@ -66,28 +68,27 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final spacing = const SizedBox(height: 12);
     return Scaffold(
       appBar: AppBar(title: const Text('Login')),
       body: Padding(
-        padding: const EdgeInsets.all(16),
+        padding: MiqraSpacing.screenPadding,
         child: ListView(
           children: [
             AuthTextField(controller: _email, label: 'Email', keyboardType: TextInputType.emailAddress),
-            spacing,
+            MiqraSpacing.gapSM,
             AuthTextField(controller: _password, label: 'Password', obscure: true),
-            spacing,
+            MiqraSpacing.gapSM,
             ElevatedButton(
               onPressed: _busy ? null : _loginEmail,
-              child: _busy ? const CircularProgressIndicator() : const Text('Masuk'),
+              child: _busy ? const MiqraLoading.inline() : const Text('Masuk'),
             ),
-            spacing,
+            MiqraSpacing.gapSM,
             OutlinedButton.icon(
               onPressed: _busy ? null : _loginGoogle,
               icon: const Icon(Icons.g_mobiledata),
               label: const Text('Masuk dengan Google'),
             ),
-            spacing,
+            MiqraSpacing.gapSM,
             TextButton(
               onPressed: () => context.push('/forgot'),
               child: const Text('Lupa password?'),

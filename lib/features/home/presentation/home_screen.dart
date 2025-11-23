@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../../../core/constants/typography.dart';
 import '../../../core/constants/spacing.dart';
 import '../../../core/constants/colors.dart';
+import '../../../core/utils/animations.dart';
 import '../../../shared/widgets/miqra_card.dart';
 import '../../streak/presentation/widgets/streak_tree_widget.dart';
 import '../../streak/presentation/widgets/streak_card.dart';
@@ -29,11 +30,19 @@ class HomeScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              _buildHeader(),
+              MiqraAnimations.fadeIn(
+                child: _buildHeader(),
+              ),
               MiqraSpacing.gapLG,
-              _buildStreakSection(),
+              MiqraAnimations.scaleIn(
+                delay: 100,
+                child: _buildStreakSection(),
+              ),
               MiqraSpacing.gapMD,
-              const StreakCard(),
+              MiqraAnimations.scaleIn(
+                delay: 200,
+                child: const StreakCard(),
+              ),
             ],
           ),
         ),

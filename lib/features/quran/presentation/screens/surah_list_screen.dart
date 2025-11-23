@@ -4,6 +4,10 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import '../../../../core/constants/colors.dart';
+import '../../../../core/constants/typography.dart';
+import '../../../../core/constants/spacing.dart';
+import '../../../../core/utils/animations.dart';
+import '../../../../shared/widgets/miqra_components.dart';
 import '../../providers/surah_providers.dart';
 import '../../data/models/surah_meta_model.dart';
 import '../../utils/quran_font_helper.dart';
@@ -25,7 +29,7 @@ class SurahListScreen extends ConsumerWidget {
           Expanded(
             child: surahListAsync.when(
               data: (surahs) => _SurahListView(surahs: surahs),
-              loading: () => const Center(child: CircularProgressIndicator()),
+              loading: () => const MiqraLoading(),
               error: (error, stackTrace) => Center(
                 child: Text('Error: $error'),
               ),
@@ -65,7 +69,7 @@ class _SearchBarState extends ConsumerState<_SearchBar> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(16.0),
+      padding: MiqraSpacing.screenPadding,
       child: TextField(
         controller: _controller,
         decoration: const InputDecoration(
@@ -89,11 +93,14 @@ class _SurahListView extends ConsumerWidget {
     final filtered = ref.watch(filteredSurahListProvider);
 
     return ListView.separated(
-      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
+      padding: MiqraSpacing.listPadding,
       itemCount: filtered.length,
-      separatorBuilder: (context, index) => const SizedBox(height: 6),
+      separatorBuilder: (context, index) => MiqraSpacing.gapXS,
       itemBuilder: (context, index) {
-        return _SurahTile(item: filtered[index]);
+        return MiqraAnimations.staggeredItem(
+          index: index,
+          child: _SurahTile(item: filtered[index]),
+        );
       },
     );
   }
@@ -112,16 +119,16 @@ class _SurahTile extends StatelessWidget {
       margin: const EdgeInsets.symmetric(vertical: 1),
       decoration: BoxDecoration(
         color: miqraSand,
-        borderRadius: BorderRadius.circular(8),
+        borderRadius: MiqraSpacing.radiusSmall,
         border: Border.all(
-          color: Colors.grey[350]!,
+          color: MiqraColors.borderLight,
           width: 1,
         ),
       ),
       child: Material(
         color: Colors.transparent,
         child: InkWell(
-          borderRadius: BorderRadius.circular(8),
+          borderRadius: MiqraSpacing.radiusSmall,
           onTap: () {
             context.go('/read/surah/${item.number}');
           },
@@ -146,9 +153,7 @@ class _SurahTile extends StatelessWidget {
                       ),
                       Text(
                         '${item.number}',
-                        style: const TextStyle(
-                          fontFamily: 'Inter',
-                          fontSize: 12,
+                        style: MiqraTextStyles.label.copyWith(
                           fontWeight: FontWeight.w700,
                         ),
                       ),
@@ -162,10 +167,8 @@ class _SurahTile extends StatelessWidget {
                     children: [
                       Text(
                         item.nameLatin,
-                        style: const TextStyle(
+                        style: MiqraTextStyles.body.copyWith(
                           fontWeight: FontWeight.bold,
-                          fontSize: 16,
-                          height: 1.3,
                         ),
                         overflow: TextOverflow.ellipsis,
                         maxLines: 1,
@@ -174,11 +177,9 @@ class _SurahTile extends StatelessWidget {
                         const SizedBox(height: 3),
                         Text(
                           '${item.nameTranslationId} | ${item.ayahCount} Ayat',
-                          style: TextStyle(
-                            fontSize: 13,
-                            color: Colors.grey[700],
+                          style: MiqraTextStyles.caption.copyWith(
+                            color: MiqraColors.textSecondary,
                             fontWeight: FontWeight.w500,
-                            height: 1.3,
                           ),
                           overflow: TextOverflow.ellipsis,
                           maxLines: 1,
@@ -187,11 +188,9 @@ class _SurahTile extends StatelessWidget {
                         const SizedBox(height: 3),
                         Text(
                           '${item.ayahCount} Ayat',
-                          style: TextStyle(
-                            fontSize: 13,
-                            color: Colors.grey[700],
+                          style: MiqraTextStyles.caption.copyWith(
+                            color: MiqraColors.textSecondary,
                             fontWeight: FontWeight.w500,
-                            height: 1.3,
                           ),
                         ),
                       ],
@@ -225,7 +224,7 @@ class _SurahTile extends StatelessWidget {
                                width: 18,
                                height: 18,
                                colorFilter: ColorFilter.mode(
-                                 Colors.grey[600]!,
+                                 MiqraColors.textSecondary,
                                  BlendMode.srcIn,
                                ),
                              ),
