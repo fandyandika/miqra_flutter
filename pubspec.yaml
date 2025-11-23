@@ -101,12 +101,11 @@ flutter:
 
   # Assets
   assets:
-    - assets/.env
+    - .env
     - assets/data/
     - assets/data/quran/
     - assets/data/tajwid/
     - assets/data/image/
-    - assets/data/metadata/
     - assets/data/derived/
     - assets/fonts/
     - assets/icons/

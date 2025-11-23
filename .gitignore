@@ -16,7 +16,6 @@ migrate_working_dir/
 .env*
 # But allow .env.example files (templates)
 !.env.example
-!assets/.env.example
 
 # IntelliJ related
 *.iml

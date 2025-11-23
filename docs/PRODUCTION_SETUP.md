@@ -4,14 +4,14 @@
 
 ✅ **Development setup is secure:**
 - `.env.dev` (root) - gitignored, contains real credentials
-- `assets/.env` - gitignored, contains real credentials (bundled with app)
-- `assets/.env.example` - safe to commit (template only)
+- `.env` (root) - gitignored, contains real credentials (bundled with app)
+- `.env.example` - safe to commit (template only)
 
 ## 🚀 Production Build
 
 ### ⚠️ Important: Do NOT bundle credentials in production!
 
-For production builds, you should **NOT** include `assets/.env` with real credentials. Instead, use `--dart-define` flags.
+For production builds, you should **NOT** include `.env` with real credentials. Instead, use `--dart-define` flags.
 
 ### Option 1: Build with --dart-define (Recommended)
 
@@ -43,13 +43,13 @@ If using CI/CD (GitHub Actions, GitLab CI, etc.), inject secrets as environment 
       --dart-define=SENTRY_DSN=${{ secrets.SENTRY_DSN }}
 ```
 
-### Option 3: Remove assets/.env before production build
+### Option 3: Remove .env before production build
 
-If you must use assets/.env approach, ensure it's removed before production build:
+If you must use .env approach, ensure it's removed before production build:
 
 ```bash
-# Remove assets/.env before building
-rm assets/.env
+# Remove .env before building
+rm .env
 
 # Build (will use --dart-define if provided, or fail safely)
 flutter build apk --release \
@@ -62,11 +62,11 @@ flutter build apk --release \
 The app uses this priority order (see `lib/core/env/env.dart`):
 
 1. **`--dart-define`** (highest priority - for production)
-2. **`assets/.env`** (fallback - for development)
+2. **`.env` (root)** (fallback - for development)
 
 ## ✅ Pre-Production Checklist
 
-- [ ] Remove or empty `assets/.env` before production build
+- [ ] Remove or empty `.env` before production build
 - [ ] Use `--dart-define` flags in production build command
 - [ ] Verify credentials are NOT in the built APK/IPA
 - [ ] Test production build locally before deploying
@@ -86,7 +86,7 @@ unzip -l build/app/outputs/flutter-apk/app-release.apk | grep -i "\.env"
 
 ## 📝 Notes
 
-- **Development**: `assets/.env` is fine (convenient, gitignored)
+- **Development**: `.env` in project root is fine (gitignored)
 - **Production**: Use `--dart-define` (secure, not bundled)
 - **CI/CD**: Use secrets management (most secure)
 

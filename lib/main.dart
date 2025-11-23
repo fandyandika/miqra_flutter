@@ -36,23 +36,26 @@ Future<void> main() async {
     await QuranFontHelper.loadSurahNameLigatures();
   } catch (_) {}
   
-  // Load .env file from assets (as per Flutter best practices)
+  // Load .env file from root (standard Flutter practice)
+  // Note: Supabase tutorial shows hardcoded credentials for quickstart only.
+  // This implementation uses .env file (dev) or --dart-define (production) which is more secure.
   try {
-    await dotenv.load(fileName: "assets/.env");
+    await dotenv.load();
   } catch (e) {
     // Will try to use --dart-define or fallback to empty values
   }
 
   // Get credentials (priority: --dart-define > .env file)
+  // Supports both legacy anon key and new publishable key (sb_publishable_xxx)
   final supabaseUrl = Env.supabaseUrl;
   final supabaseAnonKey = Env.supabaseAnonKey;
   
-  if (supabaseUrl.isEmpty || supabaseAnonKey.isEmpty) {
-    throw Exception(
-      'Supabase credentials missing.\n'
-      'Please ensure assets/.env exists with SUPABASE_URL and SUPABASE_ANON_KEY\n'
-      'Or use --dart-define flags when running the app.',
-    );
+  if (supabaseUrl.isEmpty || supabaseAnonKey.isEmpty || 
+      supabaseUrl == 'your_supabase_url_here' || 
+      supabaseAnonKey == 'your_supabase_anon_key_here') {
+    // Show error screen instead of crashing
+    runApp(const ProviderScope(child: _ConfigErrorApp()));
+    return;
   }
 
   // Initialize Sentry with Supabase init inside appRunner
@@ -105,6 +108,51 @@ class MiqraApp extends ConsumerWidget {
       theme: buildAppTheme(),
       routerConfig: router,
       debugShowCheckedModeBanner: false,
+    );
+  }
+}
+
+class _ConfigErrorApp extends StatelessWidget {
+  const _ConfigErrorApp();
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Miqra',
+      theme: buildAppTheme(),
+      home: Scaffold(
+        body: Center(
+          child: Padding(
+            padding: const EdgeInsets.all(24.0),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const Icon(Icons.error_outline, size: 64, color: Colors.red),
+                const SizedBox(height: 24),
+                const Text(
+                  'Configuration Error',
+                  style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                ),
+                const SizedBox(height: 16),
+                const Text(
+                  'Supabase credentials missing.\n\n'
+                  'Please ensure .env exists in project root with:\n'
+                  '• SUPABASE_URL\n'
+                  '• SUPABASE_ANON_KEY\n\n'
+                  'Or use --dart-define flags when running the app.',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(fontSize: 16),
+                ),
+                const SizedBox(height: 24),
+                const Text(
+                  'See .env.example for template',
+                  style: TextStyle(fontSize: 12, color: Colors.grey),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
     );
   }
 }

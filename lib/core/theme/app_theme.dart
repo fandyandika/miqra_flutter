@@ -86,7 +86,7 @@ ThemeData buildAppTheme() {
     ),
 
     // ========== CARD ==========
-    cardTheme: CardTheme(
+    cardTheme: CardThemeData(
       elevation: 0, // Flat design (Notion-style)
       shape: RoundedRectangleBorder(
         borderRadius: MiqraSpacing.radiusMedium,
@@ -236,7 +236,7 @@ ThemeData buildAppTheme() {
     ),
 
     // ========== TAB BAR ==========
-    tabBarTheme: TabBarTheme(
+    tabBarTheme: TabBarThemeData(
       labelColor: MiqraColors.primary,
       unselectedLabelColor: MiqraColors.textSecondary,
       labelStyle: MiqraTextStyles.bodyBold,
@@ -263,7 +263,7 @@ ThemeData buildAppTheme() {
     ),
 
     // ========== DIALOG ==========
-    dialogTheme: DialogTheme(
+    dialogTheme: DialogThemeData(
       elevation: 0,
       backgroundColor: MiqraColors.surface,
       shape: RoundedRectangleBorder(

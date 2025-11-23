@@ -8,7 +8,7 @@ class Env {
       return fromEnv;
     }
     
-    // Second priority: dotenv (from assets/.env file, for development)
+    // Second priority: dotenv (from .env file in root, for development)
     // Handle case where dotenv is not initialized
     try {
       return dotenv.env[k] ?? '';
