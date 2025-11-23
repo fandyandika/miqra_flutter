@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
+import '../../../../core/constants/spacing.dart';
+import '../../../../core/constants/typography.dart';
+import '../../../../shared/widgets/miqra_components.dart';
 import '../providers/auth_providers.dart';
 import 'widgets/auth_text_field.dart';
 
@@ -111,18 +114,18 @@ class _RegisterScreenState extends ConsumerState<RegisterScreen> {
     showModalBottomSheet(
       context: context,
       builder: (_) => Padding(
-        padding: const EdgeInsets.all(16),
+        padding: MiqraSpacing.screenPadding,
         child: Column(
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Text(
               'Email sudah terdaftar',
-              style: Theme.of(context).textTheme.titleMedium,
+              style: MiqraTextStyles.headline,
             ),
-            const SizedBox(height: 8),
+            MiqraSpacing.gapXS,
             const Text('Pilih salah satu opsi di bawah agar bisa lanjut.'),
-            const SizedBox(height: 16),
+            MiqraSpacing.gapMD,
             ElevatedButton(
               onPressed: () {
                 Navigator.pop(context);
@@ -130,7 +133,7 @@ class _RegisterScreenState extends ConsumerState<RegisterScreen> {
               },
               child: const Text('Masuk'),
             ),
-            const SizedBox(height: 8),
+            MiqraSpacing.gapXS,
             OutlinedButton(
               onPressed: () async {
                 Navigator.pop(context);
@@ -152,7 +155,7 @@ class _RegisterScreenState extends ConsumerState<RegisterScreen> {
               },
               child: const Text('Reset Password'),
             ),
-            const SizedBox(height: 8),
+            MiqraSpacing.gapXS,
             TextButton(
               onPressed: () async {
                 Navigator.pop(context);
@@ -182,11 +185,10 @@ class _RegisterScreenState extends ConsumerState<RegisterScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final spacing = const SizedBox(height: 12);
     return Scaffold(
       appBar: AppBar(title: const Text('Register')),
       body: Padding(
-        padding: const EdgeInsets.all(16),
+        padding: MiqraSpacing.screenPadding,
         child: ListView(
           children: [
             AuthTextField(
@@ -194,12 +196,12 @@ class _RegisterScreenState extends ConsumerState<RegisterScreen> {
               label: 'Email',
               keyboardType: TextInputType.emailAddress,
             ),
-            spacing,
+            MiqraSpacing.gapSM,
             AuthTextField(controller: _password, label: 'Password', obscure: true),
-            spacing,
+            MiqraSpacing.gapSM,
             ElevatedButton(
               onPressed: _busy ? null : _registerEmail,
-              child: _busy ? const CircularProgressIndicator() : const Text('Daftar'),
+              child: _busy ? const MiqraLoading.inline() : const Text('Daftar'),
             ),
           ],
         ),
